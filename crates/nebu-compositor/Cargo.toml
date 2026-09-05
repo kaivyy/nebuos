@@ -12,5 +12,5 @@ description = "NebuOS native Wayland display server substrate"
 workspace = true
 
 [dependencies]
-smithay = { workspace = true, features = ["backend_session_libseat"] }
+smithay = { workspace = true, features = ["backend_session_libseat", "backend_drm"] }
 calloop = { workspace = true }

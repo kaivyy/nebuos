@@ -1,0 +1,18 @@
+# ==============================================================================
+# NebuOS Milestone P1 Containerfile
+# Base Image: nebuos:p0-latest
+# Target: Milestone P1 NebuCompositor Foundation
+# ==============================================================================
+FROM nebuos:p0-latest
+
+LABEL org.opencontainers.image.title="NebuOS Milestone P1" \
+      org.opencontainers.image.version="0.1.0-p1" \
+      org.opencontainers.image.vendor="NebuOS Project" \
+      org.nebu.os.milestone="P1"
+
+# Install libseat runtime for unprivileged compositor session management
+RUN dnf -y install --setopt=install_weak_deps=False libseat && dnf clean all
+
+# Install nebu-compositor binary
+COPY target/cargo/release/nebu-compositor /usr/bin/nebu-compositor
+RUN chmod 755 /usr/bin/nebu-compositor
