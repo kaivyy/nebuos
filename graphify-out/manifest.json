@@ -1110,23 +1110,23 @@
     "semantic_hash": ""
   },
   "crates/nebu-compositor/src/lib.rs": {
-    "mtime": 1788575191.7881565,
-    "ast_hash": "872d2ec63b73ce42fda1de40898b5a5f",
+    "mtime": 1788581256.6755066,
+    "ast_hash": "0e4a42b016bf43190e2d32cf2ca115aa",
     "semantic_hash": ""
   },
   "crates/nebu-compositor/src/main.rs": {
-    "mtime": 1788577007.5883389,
-    "ast_hash": "d93acb2d134f0693e63cefb4c25f7146",
+    "mtime": 1788581261.9773207,
+    "ast_hash": "c91f0a4b7956dee44acef1bcf7b5509a",
     "semantic_hash": ""
   },
   "crates/nebu-compositor/src/render.rs": {
-    "mtime": 1788575136.7698176,
-    "ast_hash": "2e2cf2f27cd6e7eebf5d27487d525279",
+    "mtime": 1788580759.0194418,
+    "ast_hash": "2b4b7cdd5c426468614bc9ed102cbfd2",
     "semantic_hash": ""
   },
   "crates/nebu-compositor/src/session.rs": {
-    "mtime": 1788577048.3165898,
-    "ast_hash": "4f56d701185e1571e9ad4c9c5e72639c",
+    "mtime": 1788580759.020442,
+    "ast_hash": "89fab8846442aa927c3e0426d79c74ed",
     "semantic_hash": ""
   },
   "crates/nebu-compositor/src/state.rs": {
@@ -1152,6 +1152,16 @@
   "docs/p1/P1_2_DRM_KMS_PROOF.md": {
     "mtime": 1788578428.8780918,
     "ast_hash": "8f20d494ad71d1284744d40411ed6322",
+    "semantic_hash": ""
+  },
+  "scripts/vm102_renderer_proof.py": {
+    "mtime": 1788580881.4421527,
+    "ast_hash": "b5e82c0ca3df049b3aea4dcf52541dd5",
+    "semantic_hash": ""
+  },
+  "docs/p1/P1_3_RENDERER_INITIALIZATION_PROOF.md": {
+    "mtime": 1788581293.7097347,
+    "ast_hash": "87e1e849d5c6be49a1f04d64cba244c4",
     "semantic_hash": ""
   }
 }

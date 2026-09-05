@@ -1100,8 +1100,8 @@
     "semantic_hash": ""
   },
   "crates/nebu-compositor/src/backend.rs": {
-    "mtime": 1788575136.7558174,
-    "ast_hash": "6e7133bbb5a6d913c67ede7b7a0b0d3b",
+    "mtime": 1788577048.3155897,
+    "ast_hash": "3aa8fce0ae39c21cc064ddec0fb7d7ba",
     "semantic_hash": ""
   },
   "crates/nebu-compositor/src/input.rs": {
@@ -1115,8 +1115,8 @@
     "semantic_hash": ""
   },
   "crates/nebu-compositor/src/main.rs": {
-    "mtime": 1788575136.7938178,
-    "ast_hash": "9defcbbe4b170b29d48d9980f33209b3",
+    "mtime": 1788577007.5883389,
+    "ast_hash": "d93acb2d134f0693e63cefb4c25f7146",
     "semantic_hash": ""
   },
   "crates/nebu-compositor/src/render.rs": {
@@ -1125,8 +1125,8 @@
     "semantic_hash": ""
   },
   "crates/nebu-compositor/src/session.rs": {
-    "mtime": 1788575136.7678175,
-    "ast_hash": "e97073da14349736ea6e5a03c3c86351",
+    "mtime": 1788577048.3165898,
+    "ast_hash": "4f56d701185e1571e9ad4c9c5e72639c",
     "semantic_hash": ""
   },
   "crates/nebu-compositor/src/state.rs": {
@@ -1142,6 +1142,16 @@
   "docs/p1/P1_1_IMPLEMENTATION_NOTE.md": {
     "mtime": 1788575214.781298,
     "ast_hash": "6f3fd35800a444749e40d034ee2ea523",
+    "semantic_hash": ""
+  },
+  "scripts/vm102_drm_proof.py": {
+    "mtime": 1788578385.3328238,
+    "ast_hash": "a4618708b87ab26d7cec21a6363289db",
+    "semantic_hash": ""
+  },
+  "docs/p1/P1_2_DRM_KMS_PROOF.md": {
+    "mtime": 1788578428.8780918,
+    "ast_hash": "8f20d494ad71d1284744d40411ed6322",
     "semantic_hash": ""
   }
 }

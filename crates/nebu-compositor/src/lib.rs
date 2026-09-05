@@ -3,6 +3,8 @@
 //! Provides the architectural scaffolding and entrypoint for the
 //! native Wayland display server built upon Smithay primitives.
 
+#![forbid(unsafe_code)]
+
 pub mod backend;
 pub mod input;
 pub mod render;

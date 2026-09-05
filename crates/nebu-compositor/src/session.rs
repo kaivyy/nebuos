@@ -42,6 +42,8 @@ pub struct SessionHandle {
 /// Errors occurring during session creation or device acquisition.
 #[derive(Debug)]
 pub enum SessionError {
+    /// Failed to initialize production session via libseat / systemd-logind.
+    ProductionSessionUnavailable(String),
     /// Failed to open a device file descriptor.
     DeviceOpenFailed(PathBuf, String),
 }
@@ -49,6 +51,12 @@ pub enum SessionError {
 impl std::fmt::Display for SessionError {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
         match self {
+            Self::ProductionSessionUnavailable(msg) => {
+                write!(
+                    f,
+                    "production session unavailable (libseat/logind required): {msg}"
+                )
+            }
             Self::DeviceOpenFailed(p, msg) => {
                 write!(f, "failed to open device '{}': {msg}", p.display())
             }
@@ -59,9 +67,26 @@ impl std::fmt::Display for SessionError {
 impl std::error::Error for SessionError {}
 
 impl SessionHandle {
-    /// Initializes session access. Attempts libseat/systemd-logind first;
-    /// falls back cleanly to direct open if running in a standalone diagnostic context.
-    pub fn new() -> Result<Self, SessionError> {
+    /// Initializes production session access using unprivileged `libseat` interfacing with `systemd-logind`.
+    /// Fails immediately if logind/libseat session is not active (will never silently fall back to direct root access).
+    pub fn new_production() -> Result<Self, SessionError> {
+        match LibSeatSession::new() {
+            Ok((session, _notifier)) => {
+                let seat_name = session.seat();
+                Ok(Self {
+                    libseat: Some(session),
+                    manager: SessionManagerType::SystemdLogind,
+                    seat_name,
+                    active: true,
+                })
+            }
+            Err(e) => Err(SessionError::ProductionSessionUnavailable(e.to_string())),
+        }
+    }
+
+    /// Initializes diagnostic session access. Attempts `libseat/systemd-logind` first,
+    /// but permits a direct descriptor fallback when running in standalone diagnostic contexts.
+    pub fn new_diagnostic() -> Result<Self, SessionError> {
         if let Ok((session, _notifier)) = LibSeatSession::new() {
             let seat_name = session.seat();
             Ok(Self {
@@ -71,7 +96,7 @@ impl SessionHandle {
                 active: true,
             })
         } else {
-            // Direct access fallback for standalone/diagnostic environments
+            // Direct access fallback for standalone/diagnostic environments only
             Ok(Self {
                 libseat: None,
                 manager: SessionManagerType::Direct,
@@ -79,6 +104,16 @@ impl SessionHandle {
                 active: true,
             })
         }
+    }
+
+    /// Default constructor (diagnostic mode for CLI probes).
+    pub fn new() -> Result<Self, SessionError> {
+        Self::new_diagnostic()
+    }
+
+    /// Returns whether this session is operating on the approved unprivileged production path.
+    pub fn is_production(&self) -> bool {
+        self.manager == SessionManagerType::SystemdLogind
     }
 
     /// Opens a device through the active session.

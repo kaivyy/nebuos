@@ -10,8 +10,14 @@ LABEL org.opencontainers.image.title="NebuOS Milestone P1" \
       org.opencontainers.image.vendor="NebuOS Project" \
       org.nebu.os.milestone="P1"
 
-# Install libseat runtime for unprivileged compositor session management
-RUN dnf -y install --setopt=install_weak_deps=False libseat && dnf clean all
+# Install libseat, Mesa GBM, EGL, and DRI drivers for unprivileged compositor and renderer
+RUN dnf -y install --setopt=install_weak_deps=False \
+    libseat \
+    mesa-libgbm \
+    mesa-libEGL \
+    mesa-dri-drivers \
+    libglvnd-gles \
+    && dnf clean all
 
 # Install nebu-compositor binary
 COPY target/cargo/release/nebu-compositor /usr/bin/nebu-compositor

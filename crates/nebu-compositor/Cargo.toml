@@ -12,5 +12,14 @@ description = "NebuOS native Wayland display server substrate"
 workspace = true
 
 [dependencies]
-smithay = { workspace = true, features = ["backend_session_libseat", "backend_drm"] }
+smithay = { workspace = true, features = [
+    "backend_session_libseat",
+    "backend_drm",
+    "backend_gbm",
+    "backend_egl",
+    "renderer_gl",
+    "renderer_multi",
+] }
 calloop = { workspace = true }
+tracing = "0.1"
+tracing-core = "0.1"
