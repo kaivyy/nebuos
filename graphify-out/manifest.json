@@ -230,8 +230,8 @@
     "semantic_hash": ""
   },
   "docs/INDEX.md": {
-    "mtime": 1788538385.372486,
-    "ast_hash": "45cac15d147b47821b710a23f698b008",
+    "mtime": 1788606887.9753556,
+    "ast_hash": "19c1130dd961619f92a3e68d479a0712",
     "semantic_hash": ""
   },
   "docs/OPEN_QUESTIONS.md": {
@@ -1105,8 +1105,8 @@
     "semantic_hash": ""
   },
   "crates/nebu-compositor/src/input.rs": {
-    "mtime": 1788605180.45484,
-    "ast_hash": "afe42ad8832ecb3fd395649b1b192d17",
+    "mtime": 1788606126.2576647,
+    "ast_hash": "8ba32a8ae99e107aa7886f6346ef0174",
     "semantic_hash": ""
   },
   "crates/nebu-compositor/src/lib.rs": {
@@ -1115,8 +1115,8 @@
     "semantic_hash": ""
   },
   "crates/nebu-compositor/src/main.rs": {
-    "mtime": 1788604354.8867557,
-    "ast_hash": "caf195cd3b0f17f6412d5736298d652b",
+    "mtime": 1788606369.7751644,
+    "ast_hash": "5d6650dacb372b48152fe26bd9bd6626",
     "semantic_hash": ""
   },
   "crates/nebu-compositor/src/render.rs": {
@@ -1125,8 +1125,8 @@
     "semantic_hash": ""
   },
   "crates/nebu-compositor/src/session.rs": {
-    "mtime": 1788605158.874707,
-    "ast_hash": "63b292f902f6eecb121f46ab86c8b886",
+    "mtime": 1788606111.1255715,
+    "ast_hash": "7e7ce55022a88aa87c54b77d6fabecae",
     "semantic_hash": ""
   },
   "crates/nebu-compositor/src/state.rs": {
@@ -1135,8 +1135,8 @@
     "semantic_hash": ""
   },
   "crates/nebu-compositor/src/wayland.rs": {
-    "mtime": 1788575136.7898178,
-    "ast_hash": "7ece1fe24b20ff92b182d9d49130768e",
+    "mtime": 1788606376.1592035,
+    "ast_hash": "a3c2d5321604b008eb8c9e046a5e5b20",
     "semantic_hash": ""
   },
   "docs/p1/P1_1_IMPLEMENTATION_NOTE.md": {
@@ -1185,8 +1185,18 @@
     "semantic_hash": ""
   },
   "docs/p1/P1_5_INPUT_SUBSYSTEM_INTEGRATION_PROOF.md": {
-    "mtime": 1788605588.5722332,
-    "ast_hash": "3fe981037ae1d169bd1d01f6bc574144",
+    "mtime": 1788605636.3252366,
+    "ast_hash": "d9dc63b4595a61d7d999fb7452399089",
+    "semantic_hash": ""
+  },
+  "scripts/vm102_wayland_proof.py": {
+    "mtime": 1788606827.1741338,
+    "ast_hash": "ca92d44fd8b86a0821f1eb9279b54f31",
+    "semantic_hash": ""
+  },
+  "docs/p1/P1_6_WAYLAND_CORE_SURFACE_LIFECYCLE_PROOF.md": {
+    "mtime": 1788607310.7699592,
+    "ast_hash": "2aa300e99107ee077d739df008c02f30",
     "semantic_hash": ""
   }
 }

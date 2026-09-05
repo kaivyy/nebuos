@@ -21,8 +21,12 @@ smithay = { workspace = true, features = [
     "backend_udev",
     "renderer_gl",
     "renderer_multi",
+    "wayland_frontend",
 ] }
 calloop = { workspace = true }
 tracing = "0.1"
 tracing-core = "0.1"
 xkbcommon = "0.8"
+wayland-client = "0.31"
+tempfile = "3"
+

@@ -26,6 +26,17 @@ Welcome to the authoritative engineering documentation repository for **NebuOS**
 | [audit/UI_DESIGN_AND_ICON_ARCHITECTURE_AUDIT.md](audit/UI_DESIGN_AND_ICON_ARCHITECTURE_AUDIT.md) | Comprehensive UI/UX, Design System, Iconography & Phase Ownership Enhancement Audit Report (ADR-0013, design tokens, NebuIcon, tripartite shell, Slint native). |
 | [audit/BOOT_EXPERIENCE_ARCHITECTURE_AUDIT.md](audit/BOOT_EXPERIENCE_ARCHITECTURE_AUDIT.md) | Comprehensive Boot Experience Architecture, Lifecycle & Graphical Handoff Audit Report (ADR-0014, 10-stage lifecycle, 3 boot modes, BGRT handover, silent cmdline, P0 headless boundary). |
 
+### Phase P1 Milestone Empirical Proof Reports (`docs/p1/`)
+
+| Verification Report | Milestone & Purpose |
+|---|---|
+| [p1/P1_1_IMPLEMENTATION_NOTE.md](p1/P1_1_IMPLEMENTATION_NOTE.md) | Milestone P1.1: Minimal Rust Workspace & NebuCompositor Skeleton Implementation Note. |
+| [p1/P1_2_DRM_KMS_PROOF.md](p1/P1_2_DRM_KMS_PROOF.md) | Milestone P1.2: DRM/KMS Device Management & Atomic Modesetting Verification Report. |
+| [p1/P1_3_RENDERER_INITIALIZATION_PROOF.md](p1/P1_3_RENDERER_INITIALIZATION_PROOF.md) | Milestone P1.3: GBM, EGL & OpenGL ES Renderer Initialization Verification Report. |
+| [p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md](p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md) | Milestone P1.4: Output Presentation & Calloop Event Loop Reactor Verification Report. |
+| [p1/P1_5_INPUT_SUBSYSTEM_INTEGRATION_PROOF.md](p1/P1_5_INPUT_SUBSYSTEM_INTEGRATION_PROOF.md) | Milestone P1.5: Input Subsystem, Device Discovery & Key Translation Verification Report. |
+| [p1/P1_6_WAYLAND_CORE_SURFACE_LIFECYCLE_PROOF.md](p1/P1_6_WAYLAND_CORE_SURFACE_LIFECYCLE_PROOF.md) | Milestone P1.6: Wayland Core Display Server & Surface Lifecycle Verification Report. |
+
 ---
 
 ## 2. Technical Specifications by Subsystem

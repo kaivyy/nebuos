@@ -430,7 +430,7 @@ impl LibinputInterface for NebuLibinputInterface {
     }
 
     fn close_restricted(&mut self, fd: OwnedFd) {
-        drop(fd);
+        let _ = self.session.close_device(fd);
     }
 }
 
