@@ -759,8 +759,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "crates_nebu_compositor_src_backend_rs_string",
-      "community": 271,
-      "community_name": "2. Dedicated P1 Graphical Validation Environment",
+      "community": 270,
+      "community_name": "15. Final Architecture",
       "norm_label": "string"
     },
     {
@@ -770,8 +770,8 @@
       "source_location": "L62",
       "_origin": "ast",
       "id": "crates_nebu_compositor_src_backend_drmprobeerror",
-      "community": 271,
-      "community_name": "2. Dedicated P1 Graphical Validation Environment",
+      "community": 270,
+      "community_name": "15. Final Architecture",
       "norm_label": "drmprobeerror"
     },
     {
@@ -781,8 +781,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "crates_nebu_compositor_src_backend_rs_display",
-      "community": 271,
-      "community_name": "2. Dedicated P1 Graphical Validation Environment",
+      "community": 270,
+      "community_name": "15. Final Architecture",
       "norm_label": "display"
     },
     {
@@ -792,8 +792,8 @@
       "source_location": "L72",
       "_origin": "ast",
       "id": "crates_nebu_compositor_src_backend_drmprobeerror_fmt",
-      "community": 271,
-      "community_name": "2. Dedicated P1 Graphical Validation Environment",
+      "community": 270,
+      "community_name": "15. Final Architecture",
       "norm_label": ".fmt()"
     },
     {
@@ -803,8 +803,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "crates_nebu_compositor_src_backend_rs_formatter",
-      "community": 271,
-      "community_name": "2. Dedicated P1 Graphical Validation Environment",
+      "community": 270,
+      "community_name": "15. Final Architecture",
       "norm_label": "formatter"
     },
     {
@@ -814,8 +814,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "crates_nebu_compositor_src_backend_rs_result",
-      "community": 271,
-      "community_name": "2. Dedicated P1 Graphical Validation Environment",
+      "community": 270,
+      "community_name": "15. Final Architecture",
       "norm_label": "result"
     },
     {
@@ -825,8 +825,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "crates_nebu_compositor_src_backend_rs_error",
-      "community": 271,
-      "community_name": "2. Dedicated P1 Graphical Validation Environment",
+      "community": 270,
+      "community_name": "15. Final Architecture",
       "norm_label": "error"
     },
     {
@@ -836,8 +836,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "crates_nebu_compositor_src_backend_rs_from",
-      "community": 271,
-      "community_name": "2. Dedicated P1 Graphical Validation Environment",
+      "community": 270,
+      "community_name": "15. Final Architecture",
       "norm_label": "from"
     },
     {
@@ -847,8 +847,8 @@
       "source_location": "L84",
       "_origin": "ast",
       "id": "crates_nebu_compositor_src_backend_drmprobeerror_from",
-      "community": 271,
-      "community_name": "2. Dedicated P1 Graphical Validation Environment",
+      "community": 270,
+      "community_name": "15. Final Architecture",
       "norm_label": ".from()"
     },
     {
@@ -858,8 +858,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "crates_nebu_compositor_src_backend_rs_self",
-      "community": 271,
-      "community_name": "2. Dedicated P1 Graphical Validation Environment",
+      "community": 270,
+      "community_name": "15. Final Architecture",
       "norm_label": "self"
     },
     {
@@ -998,7 +998,7 @@
       "label": "CompositorError",
       "file_type": "code",
       "source_file": "crates/nebu-compositor/src/lib.rs",
-      "source_location": "L19",
+      "source_location": "L20",
       "_origin": "ast",
       "id": "crates_nebu_compositor_src_lib_compositorerror",
       "community": 112,
@@ -1020,7 +1020,7 @@
       "label": ".fmt()",
       "file_type": "code",
       "source_file": "crates/nebu-compositor/src/lib.rs",
-      "source_location": "L25",
+      "source_location": "L26",
       "_origin": "ast",
       "id": "crates_nebu_compositor_src_lib_compositorerror_fmt",
       "community": 112,
@@ -1064,7 +1064,7 @@
       "label": "run()",
       "file_type": "code",
       "source_file": "crates/nebu-compositor/src/lib.rs",
-      "source_location": "L43",
+      "source_location": "L44",
       "_origin": "ast",
       "id": "crates_nebu_compositor_src_lib_run",
       "community": 112,
@@ -1075,7 +1075,7 @@
       "label": "test_compositor_skeleton_run()",
       "file_type": "code",
       "source_file": "crates/nebu-compositor/src/lib.rs",
-      "source_location": "L59",
+      "source_location": "L60",
       "_origin": "ast",
       "id": "crates_nebu_compositor_src_lib_test_compositor_skeleton_run",
       "community": 112,
@@ -1086,7 +1086,7 @@
       "label": "test_error_display()",
       "file_type": "code",
       "source_file": "crates/nebu-compositor/src/lib.rs",
-      "source_location": "L64",
+      "source_location": "L65",
       "_origin": "ast",
       "id": "crates_nebu_compositor_src_lib_test_error_display",
       "community": 112,
@@ -1125,6 +1125,501 @@
       "community": 263,
       "community_name": "Hardware Architecture Specification \u2014 NebuOS",
       "norm_label": "exitcode"
+    },
+    {
+      "label": "output.rs",
+      "file_type": "code",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "crates_nebu_compositor_src_output",
+      "community": 271,
+      "community_name": "2. Dedicated P1 Graphical Validation Environment",
+      "norm_label": "output.rs"
+    },
+    {
+      "label": "OutputMode",
+      "file_type": "code",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "crates_nebu_compositor_src_output_outputmode",
+      "community": 271,
+      "community_name": "2. Dedicated P1 Graphical Validation Environment",
+      "norm_label": "outputmode"
+    },
+    {
+      "label": ".new()",
+      "file_type": "code",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "crates_nebu_compositor_src_output_outputmode_new",
+      "community": 271,
+      "community_name": "2. Dedicated P1 Graphical Validation Environment",
+      "norm_label": ".new()"
+    },
+    {
+      "label": "Self",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "crates_nebu_compositor_src_output_rs_self",
+      "community": 271,
+      "community_name": "2. Dedicated P1 Graphical Validation Environment",
+      "norm_label": "self"
+    },
+    {
+      "label": ".pixel_count()",
+      "file_type": "code",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "crates_nebu_compositor_src_output_outputmode_pixel_count",
+      "community": 271,
+      "community_name": "2. Dedicated P1 Graphical Validation Environment",
+      "norm_label": ".pixel_count()"
+    },
+    {
+      "label": "Display",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "crates_nebu_compositor_src_output_rs_display",
+      "community": 272,
+      "community_name": "3. GPU Selection",
+      "norm_label": "display"
+    },
+    {
+      "label": ".fmt()",
+      "file_type": "code",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L55",
+      "_origin": "ast",
+      "id": "crates_nebu_compositor_src_output_outputmode_fmt",
+      "community": 272,
+      "community_name": "3. GPU Selection",
+      "norm_label": ".fmt()"
+    },
+    {
+      "label": "Formatter",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "crates_nebu_compositor_src_output_rs_formatter",
+      "community": 272,
+      "community_name": "3. GPU Selection",
+      "norm_label": "formatter"
+    },
+    {
+      "label": "Result",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "crates_nebu_compositor_src_output_rs_result",
+      "community": 272,
+      "community_name": "3. GPU Selection",
+      "norm_label": "result"
+    },
+    {
+      "label": "select_best_mode()",
+      "file_type": "code",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L67",
+      "_origin": "ast",
+      "id": "crates_nebu_compositor_src_output_select_best_mode",
+      "community": 271,
+      "community_name": "2. Dedicated P1 Graphical Validation Environment",
+      "norm_label": "select_best_mode()"
+    },
+    {
+      "label": "Option",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "crates_nebu_compositor_src_output_rs_option",
+      "community": 271,
+      "community_name": "2. Dedicated P1 Graphical Validation Environment",
+      "norm_label": "option"
+    },
+    {
+      "label": "negotiate_pixel_format()",
+      "file_type": "code",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L86",
+      "_origin": "ast",
+      "id": "crates_nebu_compositor_src_output_negotiate_pixel_format",
+      "community": 271,
+      "community_name": "2. Dedicated P1 Graphical Validation Environment",
+      "norm_label": "negotiate_pixel_format()"
+    },
+    {
+      "label": "Fourcc",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "fourcc",
+      "community": 271,
+      "community_name": "2. Dedicated P1 Graphical Validation Environment",
+      "norm_label": "fourcc"
+    },
+    {
+      "label": "PresentationStage",
+      "file_type": "code",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L101",
+      "_origin": "ast",
+      "id": "crates_nebu_compositor_src_output_presentationstage",
+      "community": 272,
+      "community_name": "3. GPU Selection",
+      "norm_label": "presentationstage"
+    },
+    {
+      "label": "String",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "crates_nebu_compositor_src_output_rs_string",
+      "community": 272,
+      "community_name": "3. GPU Selection",
+      "norm_label": "string"
+    },
+    {
+      "label": "LifecycleError",
+      "file_type": "code",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L116",
+      "_origin": "ast",
+      "id": "crates_nebu_compositor_src_output_lifecycleerror",
+      "community": 272,
+      "community_name": "3. GPU Selection",
+      "norm_label": "lifecycleerror"
+    },
+    {
+      "label": ".fmt()",
+      "file_type": "code",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L119",
+      "_origin": "ast",
+      "id": "crates_nebu_compositor_src_output_lifecycleerror_fmt",
+      "community": 272,
+      "community_name": "3. GPU Selection",
+      "norm_label": ".fmt()"
+    },
+    {
+      "label": "Error",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "crates_nebu_compositor_src_output_rs_error",
+      "community": 272,
+      "community_name": "3. GPU Selection",
+      "norm_label": "error"
+    },
+    {
+      "label": "PresentationLifecycle",
+      "file_type": "code",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L128",
+      "_origin": "ast",
+      "id": "crates_nebu_compositor_src_output_presentationlifecycle",
+      "community": 272,
+      "community_name": "3. GPU Selection",
+      "norm_label": "presentationlifecycle"
+    },
+    {
+      "label": ".new()",
+      "file_type": "code",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L133",
+      "_origin": "ast",
+      "id": "crates_nebu_compositor_src_output_presentationlifecycle_new",
+      "community": 271,
+      "community_name": "2. Dedicated P1 Graphical Validation Environment",
+      "norm_label": ".new()"
+    },
+    {
+      "label": ".current_stage()",
+      "file_type": "code",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L139",
+      "_origin": "ast",
+      "id": "crates_nebu_compositor_src_output_presentationlifecycle_current_stage",
+      "community": 272,
+      "community_name": "3. GPU Selection",
+      "norm_label": ".current_stage()"
+    },
+    {
+      "label": ".can_transition()",
+      "file_type": "code",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L143",
+      "_origin": "ast",
+      "id": "crates_nebu_compositor_src_output_presentationlifecycle_can_transition",
+      "community": 272,
+      "community_name": "3. GPU Selection",
+      "norm_label": ".can_transition()"
+    },
+    {
+      "label": ".transition_to()",
+      "file_type": "code",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L186",
+      "_origin": "ast",
+      "id": "crates_nebu_compositor_src_output_presentationlifecycle_transition_to",
+      "community": 272,
+      "community_name": "3. GPU Selection",
+      "norm_label": ".transition_to()"
+    },
+    {
+      "label": "Default",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "default",
+      "community": 272,
+      "community_name": "3. GPU Selection",
+      "norm_label": "default"
+    },
+    {
+      "label": ".default()",
+      "file_type": "code",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L200",
+      "_origin": "ast",
+      "id": "crates_nebu_compositor_src_output_presentationlifecycle_default",
+      "community": 271,
+      "community_name": "2. Dedicated P1 Graphical Validation Environment",
+      "norm_label": ".default()"
+    },
+    {
+      "label": "OutputPresentationReport",
+      "file_type": "code",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L207",
+      "_origin": "ast",
+      "id": "crates_nebu_compositor_src_output_outputpresentationreport",
+      "community": 271,
+      "community_name": "2. Dedicated P1 Graphical Validation Environment",
+      "norm_label": "outputpresentationreport"
+    },
+    {
+      "label": "PathBuf",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "crates_nebu_compositor_src_output_rs_pathbuf",
+      "community": 271,
+      "community_name": "2. Dedicated P1 Graphical Validation Environment",
+      "norm_label": "pathbuf"
+    },
+    {
+      "label": "OutputProbeError",
+      "file_type": "code",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L242",
+      "_origin": "ast",
+      "id": "crates_nebu_compositor_src_output_outputprobeerror",
+      "community": 272,
+      "community_name": "3. GPU Selection",
+      "norm_label": "outputprobeerror"
+    },
+    {
+      "label": ".fmt()",
+      "file_type": "code",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L260",
+      "_origin": "ast",
+      "id": "crates_nebu_compositor_src_output_outputprobeerror_fmt",
+      "community": 272,
+      "community_name": "3. GPU Selection",
+      "norm_label": ".fmt()"
+    },
+    {
+      "label": "From",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "crates_nebu_compositor_src_output_rs_from",
+      "community": 272,
+      "community_name": "3. GPU Selection",
+      "norm_label": "from"
+    },
+    {
+      "label": ".from()",
+      "file_type": "code",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L283",
+      "_origin": "ast",
+      "id": "crates_nebu_compositor_src_output_outputprobeerror_from",
+      "community": 272,
+      "community_name": "3. GPU Selection",
+      "norm_label": ".from()"
+    },
+    {
+      "label": "PresentationLoopContext",
+      "file_type": "code",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L296",
+      "_origin": "ast",
+      "id": "crates_nebu_compositor_src_output_presentationloopcontext",
+      "community": 271,
+      "community_name": "2. Dedicated P1 Graphical Validation Environment",
+      "norm_label": "presentationloopcontext"
+    },
+    {
+      "label": "run_output_probe()",
+      "file_type": "code",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L303",
+      "_origin": "ast",
+      "id": "crates_nebu_compositor_src_output_run_output_probe",
+      "community": 271,
+      "community_name": "2. Dedicated P1 Graphical Validation Environment",
+      "norm_label": "run_output_probe()"
+    },
+    {
+      "label": "print_output_probe_report()",
+      "file_type": "code",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L671",
+      "_origin": "ast",
+      "id": "crates_nebu_compositor_src_output_print_output_probe_report",
+      "community": 271,
+      "community_name": "2. Dedicated P1 Graphical Validation Environment",
+      "norm_label": "print_output_probe_report()"
+    },
+    {
+      "label": "test_mode_selection_empty()",
+      "file_type": "code",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L820",
+      "_origin": "ast",
+      "id": "crates_nebu_compositor_src_output_test_mode_selection_empty",
+      "community": 271,
+      "community_name": "2. Dedicated P1 Graphical Validation Environment",
+      "norm_label": "test_mode_selection_empty()"
+    },
+    {
+      "label": "test_mode_selection_single()",
+      "file_type": "code",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L825",
+      "_origin": "ast",
+      "id": "crates_nebu_compositor_src_output_test_mode_selection_single",
+      "community": 271,
+      "community_name": "2. Dedicated P1 Graphical Validation Environment",
+      "norm_label": "test_mode_selection_single()"
+    },
+    {
+      "label": "test_mode_selection_preferred_priority()",
+      "file_type": "code",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L831",
+      "_origin": "ast",
+      "id": "crates_nebu_compositor_src_output_test_mode_selection_preferred_priority",
+      "community": 271,
+      "community_name": "2. Dedicated P1 Graphical Validation Environment",
+      "norm_label": "test_mode_selection_preferred_priority()"
+    },
+    {
+      "label": "test_mode_selection_highest_resolution_fallback()",
+      "file_type": "code",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L840",
+      "_origin": "ast",
+      "id": "crates_nebu_compositor_src_output_test_mode_selection_highest_resolution_fallback",
+      "community": 271,
+      "community_name": "2. Dedicated P1 Graphical Validation Environment",
+      "norm_label": "test_mode_selection_highest_resolution_fallback()"
+    },
+    {
+      "label": "test_mode_selection_refresh_tiebreaker()",
+      "file_type": "code",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L849",
+      "_origin": "ast",
+      "id": "crates_nebu_compositor_src_output_test_mode_selection_refresh_tiebreaker",
+      "community": 271,
+      "community_name": "2. Dedicated P1 Graphical Validation Environment",
+      "norm_label": "test_mode_selection_refresh_tiebreaker()"
+    },
+    {
+      "label": "test_format_negotiation_preferred()",
+      "file_type": "code",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L857",
+      "_origin": "ast",
+      "id": "crates_nebu_compositor_src_output_test_format_negotiation_preferred",
+      "community": 271,
+      "community_name": "2. Dedicated P1 Graphical Validation Environment",
+      "norm_label": "test_format_negotiation_preferred()"
+    },
+    {
+      "label": "test_format_negotiation_fallback()",
+      "file_type": "code",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L868",
+      "_origin": "ast",
+      "id": "crates_nebu_compositor_src_output_test_format_negotiation_fallback",
+      "community": 271,
+      "community_name": "2. Dedicated P1 Graphical Validation Environment",
+      "norm_label": "test_format_negotiation_fallback()"
+    },
+    {
+      "label": "test_format_negotiation_no_match()",
+      "file_type": "code",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L879",
+      "_origin": "ast",
+      "id": "crates_nebu_compositor_src_output_test_format_negotiation_no_match",
+      "community": 271,
+      "community_name": "2. Dedicated P1 Graphical Validation Environment",
+      "norm_label": "test_format_negotiation_no_match()"
+    },
+    {
+      "label": "test_lifecycle_valid_sequence()",
+      "file_type": "code",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L887",
+      "_origin": "ast",
+      "id": "crates_nebu_compositor_src_output_test_lifecycle_valid_sequence",
+      "community": 271,
+      "community_name": "2. Dedicated P1 Graphical Validation Environment",
+      "norm_label": "test_lifecycle_valid_sequence()"
+    },
+    {
+      "label": "test_lifecycle_invalid_transition()",
+      "file_type": "code",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L902",
+      "_origin": "ast",
+      "id": "crates_nebu_compositor_src_output_test_lifecycle_invalid_transition",
+      "community": 271,
+      "community_name": "2. Dedicated P1 Graphical Validation Environment",
+      "norm_label": "test_lifecycle_invalid_transition()"
+    },
+    {
+      "label": "test_lifecycle_failure_transition()",
+      "file_type": "code",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L910",
+      "_origin": "ast",
+      "id": "crates_nebu_compositor_src_output_test_lifecycle_failure_transition",
+      "community": 271,
+      "community_name": "2. Dedicated P1 Graphical Validation Environment",
+      "norm_label": "test_lifecycle_failure_transition()"
     },
     {
       "label": "render.rs",
@@ -1243,8 +1738,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "crates_nebu_compositor_src_render_rs_string",
-      "community": 272,
-      "community_name": "3. GPU Selection",
+      "community": 266,
+      "community_name": "Memory Management & Low-End Mode Specification \u2014 NebuOS",
       "norm_label": "string"
     },
     {
@@ -1364,8 +1859,8 @@
       "source_location": "L175",
       "_origin": "ast",
       "id": "crates_nebu_compositor_src_render_visitor",
-      "community": 272,
-      "community_name": "3. GPU Selection",
+      "community": 266,
+      "community_name": "Memory Management & Low-End Mode Specification \u2014 NebuOS",
       "norm_label": "visitor"
     },
     {
@@ -1375,8 +1870,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "visit",
-      "community": 272,
-      "community_name": "3. GPU Selection",
+      "community": 266,
+      "community_name": "Memory Management & Low-End Mode Specification \u2014 NebuOS",
       "norm_label": "visit"
     },
     {
@@ -1386,8 +1881,8 @@
       "source_location": "L177",
       "_origin": "ast",
       "id": "crates_nebu_compositor_src_render_visitor_record_debug",
-      "community": 272,
-      "community_name": "3. GPU Selection",
+      "community": 266,
+      "community_name": "Memory Management & Low-End Mode Specification \u2014 NebuOS",
       "norm_label": ".record_debug()"
     },
     {
@@ -1397,8 +1892,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "field",
-      "community": 272,
-      "community_name": "3. GPU Selection",
+      "community": 266,
+      "community_name": "Memory Management & Low-End Mode Specification \u2014 NebuOS",
       "norm_label": "field"
     },
     {
@@ -1408,8 +1903,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "debug",
-      "community": 272,
-      "community_name": "3. GPU Selection",
+      "community": 266,
+      "community_name": "Memory Management & Low-End Mode Specification \u2014 NebuOS",
       "norm_label": "debug"
     },
     {
@@ -1419,8 +1914,8 @@
       "source_location": "L182",
       "_origin": "ast",
       "id": "crates_nebu_compositor_src_render_visitor_record_str",
-      "community": 272,
-      "community_name": "3. GPU Selection",
+      "community": 266,
+      "community_name": "Memory Management & Low-End Mode Specification \u2014 NebuOS",
       "norm_label": ".record_str()"
     },
     {
@@ -2267,6 +2762,61 @@
       "norm_label": "run_cmd()"
     },
     {
+      "label": "vm102_output_proof.py",
+      "file_type": "code",
+      "source_file": "scripts/vm102_output_proof.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "scripts_vm102_output_proof",
+      "community": 276,
+      "community_name": "7. EGL Findings",
+      "norm_label": "vm102_output_proof.py"
+    },
+    {
+      "label": "get_socket()",
+      "file_type": "code",
+      "source_file": "scripts/vm102_output_proof.py",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "scripts_vm102_output_proof_get_socket",
+      "community": 276,
+      "community_name": "7. EGL Findings",
+      "norm_label": "get_socket()"
+    },
+    {
+      "label": "read_all()",
+      "file_type": "code",
+      "source_file": "scripts/vm102_output_proof.py",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "scripts_vm102_output_proof_read_all",
+      "community": 276,
+      "community_name": "7. EGL Findings",
+      "norm_label": "read_all()"
+    },
+    {
+      "label": "ensure_shell()",
+      "file_type": "code",
+      "source_file": "scripts/vm102_output_proof.py",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "scripts_vm102_output_proof_ensure_shell",
+      "community": 276,
+      "community_name": "7. EGL Findings",
+      "norm_label": "ensure_shell()"
+    },
+    {
+      "label": "run_cmd()",
+      "file_type": "code",
+      "source_file": "scripts/vm102_output_proof.py",
+      "source_location": "L81",
+      "_origin": "ast",
+      "id": "scripts_vm102_output_proof_run_cmd",
+      "community": 276,
+      "community_name": "7. EGL Findings",
+      "norm_label": "run_cmd()"
+    },
+    {
       "label": "vm102_renderer_proof.py",
       "file_type": "code",
       "source_file": "scripts/vm102_renderer_proof.py",
@@ -2823,8 +3373,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "root_nebu_os_architecture_nebuos_architecture_navigation_map",
-      "community": 194,
-      "community_name": "3. Subsystem Directory Navigation",
+      "community": 233,
+      "community_name": "ARCHITECTURE.md",
       "norm_label": "nebuos architecture navigation map"
     },
     {
@@ -2834,8 +3384,8 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "root_nebu_os_architecture_1_system_vision_invariants",
-      "community": 194,
-      "community_name": "3. Subsystem Directory Navigation",
+      "community": 233,
+      "community_name": "ARCHITECTURE.md",
       "norm_label": "1. system vision & invariants"
     },
     {
@@ -2845,8 +3395,8 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "root_nebu_os_architecture_the_three_master_invariants",
-      "community": 194,
-      "community_name": "3. Subsystem Directory Navigation",
+      "community": 233,
+      "community_name": "ARCHITECTURE.md",
       "norm_label": "the three master invariants:"
     },
     {
@@ -2856,8 +3406,8 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "root_nebu_os_architecture_2_conceptual_layer_topology",
-      "community": 194,
-      "community_name": "3. Subsystem Directory Navigation",
+      "community": 233,
+      "community_name": "ARCHITECTURE.md",
       "norm_label": "2. conceptual layer topology"
     },
     {
@@ -8356,8 +8906,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "root_nebu_os_docs_architecture_05_security_md",
-      "community": 276,
-      "community_name": "7. EGL Findings",
+      "community": 207,
+      "community_name": "GPU Profiles Specification \u2014 NebuOS",
       "norm_label": "05-security.md"
     },
     {
@@ -8532,8 +9082,8 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "docs_architecture_decisions_p1_graphical_environment_1_protected_p0_vm_policy",
-      "community": 261,
-      "community_name": "Architecture Decision Record: NebuOS Milestone P1 Graphical Environment",
+      "community": 278,
+      "community_name": "9. Renderer Findings",
       "norm_label": "1. protected p0 vm policy"
     },
     {
@@ -8543,8 +9093,8 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "docs_architecture_decisions_p1_graphical_environment_1_1_reference_environment_definition",
-      "community": 261,
-      "community_name": "Architecture Decision Record: NebuOS Milestone P1 Graphical Environment",
+      "community": 278,
+      "community_name": "9. Renderer Findings",
       "norm_label": "1.1 reference environment definition"
     },
     {
@@ -8554,8 +9104,8 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "docs_architecture_decisions_p1_graphical_environment_1_2_invariant_hardware_specification",
-      "community": 261,
-      "community_name": "Architecture Decision Record: NebuOS Milestone P1 Graphical Environment",
+      "community": 278,
+      "community_name": "9. Renderer Findings",
       "norm_label": "1.2 invariant hardware specification"
     },
     {
@@ -8565,8 +9115,8 @@
       "source_location": "L31",
       "_origin": "ast",
       "id": "docs_architecture_decisions_p1_graphical_environment_1_3_strict_protection_non_invasive_governance",
-      "community": 261,
-      "community_name": "Architecture Decision Record: NebuOS Milestone P1 Graphical Environment",
+      "community": 278,
+      "community_name": "9. Renderer Findings",
       "norm_label": "1.3 strict protection & non-invasive governance"
     },
     {
@@ -8576,8 +9126,8 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "docs_architecture_decisions_p1_graphical_environment_2_dedicated_p1_graphical_validation_environment",
-      "community": 261,
-      "community_name": "Architecture Decision Record: NebuOS Milestone P1 Graphical Environment",
+      "community": 292,
+      "community_name": "5. Requirements",
       "norm_label": "2. dedicated p1 graphical validation environment"
     },
     {
@@ -8587,8 +9137,8 @@
       "source_location": "L42",
       "_origin": "ast",
       "id": "docs_architecture_decisions_p1_graphical_environment_2_1_identification_and_isolation",
-      "community": 261,
-      "community_name": "Architecture Decision Record: NebuOS Milestone P1 Graphical Environment",
+      "community": 292,
+      "community_name": "5. Requirements",
       "norm_label": "2.1 identification and isolation"
     },
     {
@@ -8598,8 +9148,8 @@
       "source_location": "L47",
       "_origin": "ast",
       "id": "docs_architecture_decisions_p1_graphical_environment_2_2_validation_topologies",
-      "community": 261,
-      "community_name": "Architecture Decision Record: NebuOS Milestone P1 Graphical Environment",
+      "community": 292,
+      "community_name": "5. Requirements",
       "norm_label": "2.2 validation topologies"
     },
     {
@@ -8642,8 +9192,8 @@
       "source_location": "L116",
       "_origin": "ast",
       "id": "docs_architecture_decisions_p1_graphical_environment_4_drm_kms_findings",
-      "community": 261,
-      "community_name": "Architecture Decision Record: NebuOS Milestone P1 Graphical Environment",
+      "community": 293,
+      "community_name": "7. Components",
       "norm_label": "4. drm/kms findings"
     },
     {
@@ -8653,8 +9203,8 @@
       "source_location": "L118",
       "_origin": "ast",
       "id": "docs_architecture_decisions_p1_graphical_environment_4_1_driver_kernel_verification",
-      "community": 261,
-      "community_name": "Architecture Decision Record: NebuOS Milestone P1 Graphical Environment",
+      "community": 293,
+      "community_name": "7. Components",
       "norm_label": "4.1 driver & kernel verification"
     },
     {
@@ -8664,8 +9214,8 @@
       "source_location": "L125",
       "_origin": "ast",
       "id": "docs_architecture_decisions_p1_graphical_environment_4_2_modesetting_capabilities",
-      "community": 261,
-      "community_name": "Architecture Decision Record: NebuOS Milestone P1 Graphical Environment",
+      "community": 293,
+      "community_name": "7. Components",
       "norm_label": "4.2 modesetting capabilities"
     },
     {
@@ -8708,8 +9258,8 @@
       "source_location": "L159",
       "_origin": "ast",
       "id": "docs_architecture_decisions_p1_graphical_environment_6_mesa_findings",
-      "community": 261,
-      "community_name": "Architecture Decision Record: NebuOS Milestone P1 Graphical Environment",
+      "community": 294,
+      "community_name": "6. Mesa Findings",
       "norm_label": "6. mesa findings"
     },
     {
@@ -8719,8 +9269,8 @@
       "source_location": "L161",
       "_origin": "ast",
       "id": "docs_architecture_decisions_p1_graphical_environment_6_1_userspace_mesa_stack_in_fedora_44",
-      "community": 261,
-      "community_name": "Architecture Decision Record: NebuOS Milestone P1 Graphical Environment",
+      "community": 294,
+      "community_name": "6. Mesa Findings",
       "norm_label": "6.1 userspace mesa stack in fedora 44"
     },
     {
@@ -8730,8 +9280,8 @@
       "source_location": "L168",
       "_origin": "ast",
       "id": "docs_architecture_decisions_p1_graphical_environment_6_2_installed_driver_shared_objects",
-      "community": 261,
-      "community_name": "Architecture Decision Record: NebuOS Milestone P1 Graphical Environment",
+      "community": 294,
+      "community_name": "6. Mesa Findings",
       "norm_label": "6.2 installed driver shared objects"
     },
     {
@@ -8774,8 +9324,8 @@
       "source_location": "L196",
       "_origin": "ast",
       "id": "docs_architecture_decisions_p1_graphical_environment_8_gbm_findings",
-      "community": 261,
-      "community_name": "Architecture Decision Record: NebuOS Milestone P1 Graphical Environment",
+      "community": 295,
+      "community_name": "8. GBM Findings",
       "norm_label": "8. gbm findings"
     },
     {
@@ -8785,8 +9335,8 @@
       "source_location": "L198",
       "_origin": "ast",
       "id": "docs_architecture_decisions_p1_graphical_environment_8_1_buffer_allocation_subsystem",
-      "community": 261,
-      "community_name": "Architecture Decision Record: NebuOS Milestone P1 Graphical Environment",
+      "community": 295,
+      "community_name": "8. GBM Findings",
       "norm_label": "8.1 buffer allocation subsystem"
     },
     {
@@ -8796,8 +9346,8 @@
       "source_location": "L204",
       "_origin": "ast",
       "id": "docs_architecture_decisions_p1_graphical_environment_8_2_memory_backing_behavior",
-      "community": 261,
-      "community_name": "Architecture Decision Record: NebuOS Milestone P1 Graphical Environment",
+      "community": 295,
+      "community_name": "8. GBM Findings",
       "norm_label": "8.2 memory backing behavior"
     },
     {
@@ -8895,8 +9445,8 @@
       "source_location": "L273",
       "_origin": "ast",
       "id": "docs_architecture_decisions_p1_graphical_environment_12_input_architecture_decision",
-      "community": 261,
-      "community_name": "Architecture Decision Record: NebuOS Milestone P1 Graphical Environment",
+      "community": 290,
+      "community_name": "10. Interfaces",
       "norm_label": "12. input architecture decision"
     },
     {
@@ -8906,8 +9456,8 @@
       "source_location": "L275",
       "_origin": "ast",
       "id": "docs_architecture_decisions_p1_graphical_environment_12_1_input_pipeline_stack",
-      "community": 261,
-      "community_name": "Architecture Decision Record: NebuOS Milestone P1 Graphical Environment",
+      "community": 290,
+      "community_name": "10. Interfaces",
       "norm_label": "12.1 input pipeline stack"
     },
     {
@@ -8917,8 +9467,8 @@
       "source_location": "L303",
       "_origin": "ast",
       "id": "docs_architecture_decisions_p1_graphical_environment_12_2_virtualization_input_handling",
-      "community": 261,
-      "community_name": "Architecture Decision Record: NebuOS Milestone P1 Graphical Environment",
+      "community": 290,
+      "community_name": "10. Interfaces",
       "norm_label": "12.2 virtualization input handling"
     },
     {
@@ -8950,8 +9500,8 @@
       "source_location": "L332",
       "_origin": "ast",
       "id": "docs_architecture_decisions_p1_graphical_environment_15_final_architecture",
-      "community": 261,
-      "community_name": "Architecture Decision Record: NebuOS Milestone P1 Graphical Environment",
+      "community": 291,
+      "community_name": "11. Dependencies",
       "norm_label": "15. final architecture"
     },
     {
@@ -8961,8 +9511,8 @@
       "source_location": "L334",
       "_origin": "ast",
       "id": "docs_architecture_decisions_p1_graphical_environment_15_1_architectural_blueprint",
-      "community": 261,
-      "community_name": "Architecture Decision Record: NebuOS Milestone P1 Graphical Environment",
+      "community": 291,
+      "community_name": "11. Dependencies",
       "norm_label": "15.1 architectural blueprint"
     },
     {
@@ -8972,8 +9522,8 @@
       "source_location": "L380",
       "_origin": "ast",
       "id": "docs_architecture_decisions_p1_graphical_environment_15_2_end_to_end_boot_session_flow",
-      "community": 261,
-      "community_name": "Architecture Decision Record: NebuOS Milestone P1 Graphical Environment",
+      "community": 291,
+      "community_name": "11. Dependencies",
       "norm_label": "15.2 end-to-end boot & session flow"
     },
     {
@@ -12118,8 +12668,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "root_nebu_os_docs_audit_os_update_architecture_enhancement_audit_md",
-      "community": 264,
-      "community_name": "System Architecture Specification \u2014 NebuOS",
+      "community": 111,
+      "community_name": "3. Subsystem Directory Navigation",
       "norm_label": "os_update_architecture_enhancement_audit.md"
     },
     {
@@ -22095,8 +22645,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "root_nebu_os_docs_desktop_03_ui_theme_system_md",
-      "community": 276,
-      "community_name": "7. EGL Findings",
+      "community": 207,
+      "community_name": "GPU Profiles Specification \u2014 NebuOS",
       "norm_label": "03-ui-theme-system.md"
     },
     {
@@ -22623,8 +23173,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "root_nebu_os_docs_desktop_04_layout_system_md",
-      "community": 276,
-      "community_name": "7. EGL Findings",
+      "community": 207,
+      "community_name": "GPU Profiles Specification \u2014 NebuOS",
       "norm_label": "04-layout-system.md"
     },
     {
@@ -23118,8 +23668,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "root_nebu_os_docs_desktop_05_window_management_md",
-      "community": 276,
-      "community_name": "7. EGL Findings",
+      "community": 207,
+      "community_name": "GPU Profiles Specification \u2014 NebuOS",
       "norm_label": "05-window-management.md"
     },
     {
@@ -23360,8 +23910,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "root_nebu_os_docs_desktop_06_input_display_md",
-      "community": 276,
-      "community_name": "7. EGL Findings",
+      "community": 207,
+      "community_name": "GPU Profiles Specification \u2014 NebuOS",
       "norm_label": "06-input-display.md"
     },
     {
@@ -23602,8 +24152,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "root_nebu_os_docs_desktop_07_system_ui_md",
-      "community": 276,
-      "community_name": "7. EGL Findings",
+      "community": 207,
+      "community_name": "GPU Profiles Specification \u2014 NebuOS",
       "norm_label": "07-system-ui.md"
     },
     {
@@ -24493,8 +25043,8 @@
       "source_location": "L36",
       "_origin": "ast",
       "id": "root_nebu_os_docs_development_01_repository_structure_5_requirements",
-      "community": 292,
-      "community_name": "5. Requirements",
+      "community": 44,
+      "community_name": "Process Supervision and Cgroups Model \u2014 NebuOS",
       "norm_label": "5. requirements"
     },
     {
@@ -24504,8 +25054,8 @@
       "source_location": "L38",
       "_origin": "ast",
       "id": "root_nebu_os_docs_development_01_repository_structure_5_1_functional_requirements",
-      "community": 292,
-      "community_name": "5. Requirements",
+      "community": 44,
+      "community_name": "Process Supervision and Cgroups Model \u2014 NebuOS",
       "norm_label": "5.1 functional requirements"
     },
     {
@@ -24515,8 +25065,8 @@
       "source_location": "L45",
       "_origin": "ast",
       "id": "root_nebu_os_docs_development_01_repository_structure_5_2_non_functional_requirements",
-      "community": 292,
-      "community_name": "5. Requirements",
+      "community": 44,
+      "community_name": "Process Supervision and Cgroups Model \u2014 NebuOS",
       "norm_label": "5.2 non-functional requirements"
     },
     {
@@ -24537,8 +25087,8 @@
       "source_location": "L96",
       "_origin": "ast",
       "id": "root_nebu_os_docs_development_01_repository_structure_7_components",
-      "community": 293,
-      "community_name": "7. Components",
+      "community": 44,
+      "community_name": "Process Supervision and Cgroups Model \u2014 NebuOS",
       "norm_label": "7. components"
     },
     {
@@ -24548,8 +25098,8 @@
       "source_location": "L98",
       "_origin": "ast",
       "id": "root_nebu_os_docs_development_01_repository_structure_7_1_monorepo_topography",
-      "community": 293,
-      "community_name": "7. Components",
+      "community": 44,
+      "community_name": "Process Supervision and Cgroups Model \u2014 NebuOS",
       "norm_label": "7.1 monorepo topography"
     },
     {
@@ -24559,8 +25109,8 @@
       "source_location": "L136",
       "_origin": "ast",
       "id": "root_nebu_os_docs_development_01_repository_structure_7_2_crate_taxonomy_responsibilities",
-      "community": 293,
-      "community_name": "7. Components",
+      "community": 44,
+      "community_name": "Process Supervision and Cgroups Model \u2014 NebuOS",
       "norm_label": "7.2 crate taxonomy & responsibilities"
     },
     {
@@ -24603,8 +25153,8 @@
       "source_location": "L188",
       "_origin": "ast",
       "id": "root_nebu_os_docs_development_01_repository_structure_10_interfaces",
-      "community": 290,
-      "community_name": "10. Interfaces",
+      "community": 44,
+      "community_name": "Process Supervision and Cgroups Model \u2014 NebuOS",
       "norm_label": "10. interfaces"
     },
     {
@@ -24614,8 +25164,8 @@
       "source_location": "L190",
       "_origin": "ast",
       "id": "root_nebu_os_docs_development_01_repository_structure_10_1_master_workspace_manifest_cargo_toml",
-      "community": 290,
-      "community_name": "10. Interfaces",
+      "community": 44,
+      "community_name": "Process Supervision and Cgroups Model \u2014 NebuOS",
       "norm_label": "10.1 master workspace manifest (`cargo.toml`)"
     },
     {
@@ -24625,8 +25175,8 @@
       "source_location": "L225",
       "_origin": "ast",
       "id": "root_nebu_os_docs_development_01_repository_structure_10_2_feature_flags_matrix",
-      "community": 290,
-      "community_name": "10. Interfaces",
+      "community": 44,
+      "community_name": "Process Supervision and Cgroups Model \u2014 NebuOS",
       "norm_label": "10.2 feature flags matrix"
     },
     {
@@ -24636,8 +25186,8 @@
       "source_location": "L243",
       "_origin": "ast",
       "id": "root_nebu_os_docs_development_01_repository_structure_11_dependencies",
-      "community": 291,
-      "community_name": "11. Dependencies",
+      "community": 44,
+      "community_name": "Process Supervision and Cgroups Model \u2014 NebuOS",
       "norm_label": "11. dependencies"
     },
     {
@@ -24647,8 +25197,8 @@
       "source_location": "L245",
       "_origin": "ast",
       "id": "root_nebu_os_docs_development_01_repository_structure_11_1_internal_workspace_dependencies",
-      "community": 291,
-      "community_name": "11. Dependencies",
+      "community": 44,
+      "community_name": "Process Supervision and Cgroups Model \u2014 NebuOS",
       "norm_label": "11.1 internal workspace dependencies"
     },
     {
@@ -24658,8 +25208,8 @@
       "source_location": "L251",
       "_origin": "ast",
       "id": "root_nebu_os_docs_development_01_repository_structure_11_2_external_c_libraries_dynamic_linking",
-      "community": 291,
-      "community_name": "11. Dependencies",
+      "community": 44,
+      "community_name": "Process Supervision and Cgroups Model \u2014 NebuOS",
       "norm_label": "11.2 external c libraries (dynamic linking)"
     },
     {
@@ -25175,8 +25725,8 @@
       "source_location": "L38",
       "_origin": "ast",
       "id": "root_nebu_os_docs_development_03_ci_cd_5_requirements",
-      "community": 55,
-      "community_name": "Release Certification Specification \u2014 NebuOS",
+      "community": 296,
+      "community_name": "5. Requirements",
       "norm_label": "5. requirements"
     },
     {
@@ -25186,8 +25736,8 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "root_nebu_os_docs_development_03_ci_cd_5_1_functional_requirements",
-      "community": 55,
-      "community_name": "Release Certification Specification \u2014 NebuOS",
+      "community": 296,
+      "community_name": "5. Requirements",
       "norm_label": "5.1 functional requirements"
     },
     {
@@ -25197,8 +25747,8 @@
       "source_location": "L48",
       "_origin": "ast",
       "id": "root_nebu_os_docs_development_03_ci_cd_5_2_non_functional_requirements",
-      "community": 55,
-      "community_name": "Release Certification Specification \u2014 NebuOS",
+      "community": 296,
+      "community_name": "5. Requirements",
       "norm_label": "5.2 non-functional requirements"
     },
     {
@@ -25219,8 +25769,8 @@
       "source_location": "L113",
       "_origin": "ast",
       "id": "root_nebu_os_docs_development_03_ci_cd_7_components",
-      "community": 55,
-      "community_name": "Release Certification Specification \u2014 NebuOS",
+      "community": 297,
+      "community_name": "7. Components",
       "norm_label": "7. components"
     },
     {
@@ -25230,8 +25780,8 @@
       "source_location": "L115",
       "_origin": "ast",
       "id": "root_nebu_os_docs_development_03_ci_cd_7_1_workflow_definitions_github_workflows",
-      "community": 55,
-      "community_name": "Release Certification Specification \u2014 NebuOS",
+      "community": 297,
+      "community_name": "7. Components",
       "norm_label": "7.1 workflow definitions (`.github/workflows/`)"
     },
     {
@@ -25241,8 +25791,8 @@
       "source_location": "L122",
       "_origin": "ast",
       "id": "root_nebu_os_docs_development_03_ci_cd_7_2_subsystem_ownership_classification",
-      "community": 55,
-      "community_name": "Release Certification Specification \u2014 NebuOS",
+      "community": 297,
+      "community_name": "7. Components",
       "norm_label": "7.2 subsystem ownership classification"
     },
     {
@@ -26154,8 +26704,8 @@
       "source_location": "L39",
       "_origin": "ast",
       "id": "root_nebu_os_docs_development_06_release_engineering_5_requirements",
-      "community": 52,
-      "community_name": "Master Graphics Specification \u2014 NebuOS",
+      "community": 299,
+      "community_name": "5. Requirements",
       "norm_label": "5. requirements"
     },
     {
@@ -26165,8 +26715,8 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "root_nebu_os_docs_development_06_release_engineering_5_1_functional_requirements",
-      "community": 52,
-      "community_name": "Master Graphics Specification \u2014 NebuOS",
+      "community": 299,
+      "community_name": "5. Requirements",
       "norm_label": "5.1 functional requirements"
     },
     {
@@ -26176,8 +26726,8 @@
       "source_location": "L49",
       "_origin": "ast",
       "id": "root_nebu_os_docs_development_06_release_engineering_5_2_non_functional_requirements",
-      "community": 52,
-      "community_name": "Master Graphics Specification \u2014 NebuOS",
+      "community": 299,
+      "community_name": "5. Requirements",
       "norm_label": "5.2 non-functional requirements"
     },
     {
@@ -26264,8 +26814,8 @@
       "source_location": "L168",
       "_origin": "ast",
       "id": "root_nebu_os_docs_development_06_release_engineering_10_interfaces",
-      "community": 52,
-      "community_name": "Master Graphics Specification \u2014 NebuOS",
+      "community": 298,
+      "community_name": "10. Interfaces",
       "norm_label": "10. interfaces"
     },
     {
@@ -26275,8 +26825,8 @@
       "source_location": "L170",
       "_origin": "ast",
       "id": "root_nebu_os_docs_development_06_release_engineering_10_1_changelog_configuration_cliff_toml",
-      "community": 52,
-      "community_name": "Master Graphics Specification \u2014 NebuOS",
+      "community": 298,
+      "community_name": "10. Interfaces",
       "norm_label": "10.1 changelog configuration (`cliff.toml`)"
     },
     {
@@ -26286,8 +26836,8 @@
       "source_location": "L195",
       "_origin": "ast",
       "id": "root_nebu_os_docs_development_06_release_engineering_10_2_release_commands",
-      "community": 52,
-      "community_name": "Master Graphics Specification \u2014 NebuOS",
+      "community": 298,
+      "community_name": "10. Interfaces",
       "norm_label": "10.2 release commands"
     },
     {
@@ -33318,6 +33868,413 @@
       "community": 148,
       "community_name": "4. P0 Scope Verification",
       "norm_label": "22. conclusion and sign-off"
+    },
+    {
+      "label": "P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "file_type": "document",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_p1_p1_4_output_presentation_event_loop_proof",
+      "community": 286,
+      "community_name": "P1_GRAPHICAL_ENVIRONMENT.md",
+      "norm_label": "p1_4_output_presentation_event_loop_proof.md"
+    },
+    {
+      "label": "NebuOS Milestone P1.4: Output Presentation & Event-Loop Layer Verification Report",
+      "file_type": "document",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "docs_p1_p1_4_output_presentation_event_loop_proof_nebuos_milestone_p1_4_output_presentation_event_loop_layer_verification_report",
+      "community": 264,
+      "community_name": "System Architecture Specification \u2014 NebuOS",
+      "norm_label": "nebuos milestone p1.4: output presentation & event-loop layer verification report"
+    },
+    {
+      "label": "1. Objective",
+      "file_type": "document",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "docs_p1_p1_4_output_presentation_event_loop_proof_1_objective",
+      "community": 264,
+      "community_name": "System Architecture Specification \u2014 NebuOS",
+      "norm_label": "1. objective"
+    },
+    {
+      "label": "2. Scope",
+      "file_type": "document",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "docs_p1_p1_4_output_presentation_event_loop_proof_2_scope",
+      "community": 264,
+      "community_name": "System Architecture Specification \u2014 NebuOS",
+      "norm_label": "2. scope"
+    },
+    {
+      "label": "In Scope",
+      "file_type": "document",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L35",
+      "_origin": "ast",
+      "id": "docs_p1_p1_4_output_presentation_event_loop_proof_in_scope",
+      "community": 264,
+      "community_name": "System Architecture Specification \u2014 NebuOS",
+      "norm_label": "in scope"
+    },
+    {
+      "label": "Out of Scope (Strict Anti-Scope Boundaries)",
+      "file_type": "document",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L48",
+      "_origin": "ast",
+      "id": "docs_p1_p1_4_output_presentation_event_loop_proof_out_of_scope_strict_anti_scope_boundaries",
+      "community": 264,
+      "community_name": "System Architecture Specification \u2014 NebuOS",
+      "norm_label": "out of scope (strict anti-scope boundaries)"
+    },
+    {
+      "label": "3. Environment",
+      "file_type": "document",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L58",
+      "_origin": "ast",
+      "id": "docs_p1_p1_4_output_presentation_event_loop_proof_3_environment",
+      "community": 264,
+      "community_name": "System Architecture Specification \u2014 NebuOS",
+      "norm_label": "3. environment"
+    },
+    {
+      "label": "3.1 Protected P0 Reference VM (VM 101)",
+      "file_type": "document",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L62",
+      "_origin": "ast",
+      "id": "docs_p1_p1_4_output_presentation_event_loop_proof_3_1_protected_p0_reference_vm_vm_101",
+      "community": 264,
+      "community_name": "System Architecture Specification \u2014 NebuOS",
+      "norm_label": "3.1 protected p0 reference vm (vm 101)"
+    },
+    {
+      "label": "3.2 Dedicated P1 Graphical Validation Target (VM 102)",
+      "file_type": "document",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L69",
+      "_origin": "ast",
+      "id": "docs_p1_p1_4_output_presentation_event_loop_proof_3_2_dedicated_p1_graphical_validation_target_vm_102",
+      "community": 264,
+      "community_name": "System Architecture Specification \u2014 NebuOS",
+      "norm_label": "3.2 dedicated p1 graphical validation target (vm 102)"
+    },
+    {
+      "label": "3.3 Development & Build Container (CT 100)",
+      "file_type": "document",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L81",
+      "_origin": "ast",
+      "id": "docs_p1_p1_4_output_presentation_event_loop_proof_3_3_development_build_container_ct_100",
+      "community": 264,
+      "community_name": "System Architecture Specification \u2014 NebuOS",
+      "norm_label": "3.3 development & build container (ct 100)"
+    },
+    {
+      "label": "4. Session Architecture",
+      "file_type": "document",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L87",
+      "_origin": "ast",
+      "id": "docs_p1_p1_4_output_presentation_event_loop_proof_4_session_architecture",
+      "community": 264,
+      "community_name": "System Architecture Specification \u2014 NebuOS",
+      "norm_label": "4. session architecture"
+    },
+    {
+      "label": "5. DRM Device Selection",
+      "file_type": "document",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L96",
+      "_origin": "ast",
+      "id": "docs_p1_p1_4_output_presentation_event_loop_proof_5_drm_device_selection",
+      "community": 264,
+      "community_name": "System Architecture Specification \u2014 NebuOS",
+      "norm_label": "5. drm device selection"
+    },
+    {
+      "label": "6. Connector Selection",
+      "file_type": "document",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L106",
+      "_origin": "ast",
+      "id": "docs_p1_p1_4_output_presentation_event_loop_proof_6_connector_selection",
+      "community": 264,
+      "community_name": "System Architecture Specification \u2014 NebuOS",
+      "norm_label": "6. connector selection"
+    },
+    {
+      "label": "7. CRTC Selection",
+      "file_type": "document",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L115",
+      "_origin": "ast",
+      "id": "docs_p1_p1_4_output_presentation_event_loop_proof_7_crtc_selection",
+      "community": 264,
+      "community_name": "System Architecture Specification \u2014 NebuOS",
+      "norm_label": "7. crtc selection"
+    },
+    {
+      "label": "8. Primary Plane Selection",
+      "file_type": "document",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L123",
+      "_origin": "ast",
+      "id": "docs_p1_p1_4_output_presentation_event_loop_proof_8_primary_plane_selection",
+      "community": 264,
+      "community_name": "System Architecture Specification \u2014 NebuOS",
+      "norm_label": "8. primary plane selection"
+    },
+    {
+      "label": "9. Mode Selection",
+      "file_type": "document",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L132",
+      "_origin": "ast",
+      "id": "docs_p1_p1_4_output_presentation_event_loop_proof_9_mode_selection",
+      "community": 264,
+      "community_name": "System Architecture Specification \u2014 NebuOS",
+      "norm_label": "9. mode selection"
+    },
+    {
+      "label": "10. Pixel Format Selection",
+      "file_type": "document",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L143",
+      "_origin": "ast",
+      "id": "docs_p1_p1_4_output_presentation_event_loop_proof_10_pixel_format_selection",
+      "community": 264,
+      "community_name": "System Architecture Specification \u2014 NebuOS",
+      "norm_label": "10. pixel format selection"
+    },
+    {
+      "label": "11. GBM Presentation Target",
+      "file_type": "document",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L152",
+      "_origin": "ast",
+      "id": "docs_p1_p1_4_output_presentation_event_loop_proof_11_gbm_presentation_target",
+      "community": 264,
+      "community_name": "System Architecture Specification \u2014 NebuOS",
+      "norm_label": "11. gbm presentation target"
+    },
+    {
+      "label": "12. EGL / Renderer Integration",
+      "file_type": "document",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L163",
+      "_origin": "ast",
+      "id": "docs_p1_p1_4_output_presentation_event_loop_proof_12_egl_renderer_integration",
+      "community": 264,
+      "community_name": "System Architecture Specification \u2014 NebuOS",
+      "norm_label": "12. egl / renderer integration"
+    },
+    {
+      "label": "13. Test Frame",
+      "file_type": "document",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L175",
+      "_origin": "ast",
+      "id": "docs_p1_p1_4_output_presentation_event_loop_proof_13_test_frame",
+      "community": 264,
+      "community_name": "System Architecture Specification \u2014 NebuOS",
+      "norm_label": "13. test frame"
+    },
+    {
+      "label": "14. Framebuffer Creation",
+      "file_type": "document",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L188",
+      "_origin": "ast",
+      "id": "docs_p1_p1_4_output_presentation_event_loop_proof_14_framebuffer_creation",
+      "community": 264,
+      "community_name": "System Architecture Specification \u2014 NebuOS",
+      "norm_label": "14. framebuffer creation"
+    },
+    {
+      "label": "15. Atomic Commit",
+      "file_type": "document",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L196",
+      "_origin": "ast",
+      "id": "docs_p1_p1_4_output_presentation_event_loop_proof_15_atomic_commit",
+      "community": 264,
+      "community_name": "System Architecture Specification \u2014 NebuOS",
+      "norm_label": "15. atomic commit"
+    },
+    {
+      "label": "16. Page-Flip Event",
+      "file_type": "document",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L205",
+      "_origin": "ast",
+      "id": "docs_p1_p1_4_output_presentation_event_loop_proof_16_page_flip_event",
+      "community": 264,
+      "community_name": "System Architecture Specification \u2014 NebuOS",
+      "norm_label": "16. page-flip event"
+    },
+    {
+      "label": "17. Event-Loop Architecture",
+      "file_type": "document",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L217",
+      "_origin": "ast",
+      "id": "docs_p1_p1_4_output_presentation_event_loop_proof_17_event_loop_architecture",
+      "community": 264,
+      "community_name": "System Architecture Specification \u2014 NebuOS",
+      "norm_label": "17. event-loop architecture"
+    },
+    {
+      "label": "18. Shutdown Lifecycle",
+      "file_type": "document",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L228",
+      "_origin": "ast",
+      "id": "docs_p1_p1_4_output_presentation_event_loop_proof_18_shutdown_lifecycle",
+      "community": 264,
+      "community_name": "System Architecture Specification \u2014 NebuOS",
+      "norm_label": "18. shutdown lifecycle"
+    },
+    {
+      "label": "19. Resource Cleanup",
+      "file_type": "document",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L243",
+      "_origin": "ast",
+      "id": "docs_p1_p1_4_output_presentation_event_loop_proof_19_resource_cleanup",
+      "community": 264,
+      "community_name": "System Architecture Specification \u2014 NebuOS",
+      "norm_label": "19. resource cleanup"
+    },
+    {
+      "label": "20. Unit-Test Results",
+      "file_type": "document",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L257",
+      "_origin": "ast",
+      "id": "docs_p1_p1_4_output_presentation_event_loop_proof_20_unit_test_results",
+      "community": 264,
+      "community_name": "System Architecture Specification \u2014 NebuOS",
+      "norm_label": "20. unit-test results"
+    },
+    {
+      "label": "21. VM 102 Empirical Results",
+      "file_type": "document",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L290",
+      "_origin": "ast",
+      "id": "docs_p1_p1_4_output_presentation_event_loop_proof_21_vm_102_empirical_results",
+      "community": 264,
+      "community_name": "System Architecture Specification \u2014 NebuOS",
+      "norm_label": "21. vm 102 empirical results"
+    },
+    {
+      "label": "22. Security Audit",
+      "file_type": "document",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L343",
+      "_origin": "ast",
+      "id": "docs_p1_p1_4_output_presentation_event_loop_proof_22_security_audit",
+      "community": 264,
+      "community_name": "System Architecture Specification \u2014 NebuOS",
+      "norm_label": "22. security audit"
+    },
+    {
+      "label": "23. Scope Audit",
+      "file_type": "document",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L353",
+      "_origin": "ast",
+      "id": "docs_p1_p1_4_output_presentation_event_loop_proof_23_scope_audit",
+      "community": 264,
+      "community_name": "System Architecture Specification \u2014 NebuOS",
+      "norm_label": "23. scope audit"
+    },
+    {
+      "label": "24. Known Limitations & Architecture Classification",
+      "file_type": "document",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L362",
+      "_origin": "ast",
+      "id": "docs_p1_p1_4_output_presentation_event_loop_proof_24_known_limitations_architecture_classification",
+      "community": 264,
+      "community_name": "System Architecture Specification \u2014 NebuOS",
+      "norm_label": "24. known limitations & architecture classification"
+    },
+    {
+      "label": "PROVEN",
+      "file_type": "document",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L364",
+      "_origin": "ast",
+      "id": "docs_p1_p1_4_output_presentation_event_loop_proof_proven",
+      "community": 264,
+      "community_name": "System Architecture Specification \u2014 NebuOS",
+      "norm_label": "proven"
+    },
+    {
+      "label": "NOT PROVEN / LIMITATIONS",
+      "file_type": "document",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L374",
+      "_origin": "ast",
+      "id": "docs_p1_p1_4_output_presentation_event_loop_proof_not_proven_limitations",
+      "community": 264,
+      "community_name": "System Architecture Specification \u2014 NebuOS",
+      "norm_label": "not proven / limitations"
+    },
+    {
+      "label": "DEFERRED TO P1.5",
+      "file_type": "document",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L378",
+      "_origin": "ast",
+      "id": "docs_p1_p1_4_output_presentation_event_loop_proof_deferred_to_p1_5",
+      "community": 264,
+      "community_name": "System Architecture Specification \u2014 NebuOS",
+      "norm_label": "deferred to p1.5"
+    },
+    {
+      "label": "OUT OF SCOPE",
+      "file_type": "document",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L382",
+      "_origin": "ast",
+      "id": "docs_p1_p1_4_output_presentation_event_loop_proof_out_of_scope",
+      "community": 264,
+      "community_name": "System Architecture Specification \u2014 NebuOS",
+      "norm_label": "out of scope"
+    },
+    {
+      "label": "25. Acceptance Criteria",
+      "file_type": "document",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L388",
+      "_origin": "ast",
+      "id": "docs_p1_p1_4_output_presentation_event_loop_proof_25_acceptance_criteria",
+      "community": 264,
+      "community_name": "System Architecture Specification \u2014 NebuOS",
+      "norm_label": "25. acceptance criteria"
+    },
+    {
+      "label": "26. Exact Commit Hash",
+      "file_type": "document",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L425",
+      "_origin": "ast",
+      "id": "docs_p1_p1_4_output_presentation_event_loop_proof_26_exact_commit_hash",
+      "community": 264,
+      "community_name": "System Architecture Specification \u2014 NebuOS",
+      "norm_label": "26. exact commit hash"
     },
     {
       "label": "00-performance-goals.md",
@@ -41675,8 +42632,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "root_nebu_os_docs_testing_00_test_strategy_md",
-      "community": 278,
-      "community_name": "9. Renderer Findings",
+      "community": 107,
+      "community_name": "Verification & Testing Engineering Skill \u2014 NebuOS",
       "norm_label": "00-test-strategy.md"
     },
     {
@@ -42027,8 +42984,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "root_nebu_os_docs_testing_01_unit_testing_md",
-      "community": 278,
-      "community_name": "9. Renderer Findings",
+      "community": 107,
+      "community_name": "Verification & Testing Engineering Skill \u2014 NebuOS",
       "norm_label": "01-unit-testing.md"
     },
     {
@@ -42390,8 +43347,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "root_nebu_os_docs_testing_02_integration_testing_md",
-      "community": 278,
-      "community_name": "9. Renderer Findings",
+      "community": 107,
+      "community_name": "Verification & Testing Engineering Skill \u2014 NebuOS",
       "norm_label": "02-integration-testing.md"
     },
     {
@@ -42742,8 +43699,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "root_nebu_os_docs_testing_03_system_testing_md",
-      "community": 278,
-      "community_name": "9. Renderer Findings",
+      "community": 107,
+      "community_name": "Verification & Testing Engineering Skill \u2014 NebuOS",
       "norm_label": "03-system-testing.md"
     },
     {
@@ -42984,8 +43941,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "root_nebu_os_docs_testing_04_compatibility_testing_md",
-      "community": 278,
-      "community_name": "9. Renderer Findings",
+      "community": 107,
+      "community_name": "Verification & Testing Engineering Skill \u2014 NebuOS",
       "norm_label": "04-compatibility-testing.md"
     },
     {
@@ -45030,8 +45987,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "root_nebu_os_docs_updates_01_image_build_md",
-      "community": 264,
-      "community_name": "System Architecture Specification \u2014 NebuOS",
+      "community": 111,
+      "community_name": "3. Subsystem Directory Navigation",
       "norm_label": "01-image-build.md"
     },
     {
@@ -45261,8 +46218,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "root_nebu_os_docs_updates_02_release_channels_md",
-      "community": 264,
-      "community_name": "System Architecture Specification \u2014 NebuOS",
+      "community": 111,
+      "community_name": "3. Subsystem Directory Navigation",
       "norm_label": "02-release-channels.md"
     },
     {
@@ -45448,8 +46405,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "root_nebu_os_docs_updates_03_regression_gates_md",
-      "community": 264,
-      "community_name": "System Architecture Specification \u2014 NebuOS",
+      "community": 111,
+      "community_name": "3. Subsystem Directory Navigation",
       "norm_label": "03-regression-gates.md"
     },
     {
@@ -45459,8 +46416,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "root_nebu_os_docs_updates_03_regression_gates_regression_gates_and_release_promotion_specification_nebuos",
-      "community": 264,
-      "community_name": "System Architecture Specification \u2014 NebuOS",
+      "community": 108,
+      "community_name": "Boot and Initialization Specification \u2014 NebuOS",
       "norm_label": "regression gates and release promotion specification \u2014 nebuos"
     },
     {
@@ -45470,8 +46427,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "root_nebu_os_docs_updates_03_regression_gates_1_status_and_invariants",
-      "community": 264,
-      "community_name": "System Architecture Specification \u2014 NebuOS",
+      "community": 108,
+      "community_name": "Boot and Initialization Specification \u2014 NebuOS",
       "norm_label": "1. status and invariants"
     },
     {
@@ -45481,8 +46438,8 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "root_nebu_os_docs_updates_03_regression_gates_2_multi_tiered_gating_pipeline_architecture",
-      "community": 264,
-      "community_name": "System Architecture Specification \u2014 NebuOS",
+      "community": 108,
+      "community_name": "Boot and Initialization Specification \u2014 NebuOS",
       "norm_label": "2. multi-tiered gating pipeline architecture"
     },
     {
@@ -45591,8 +46548,8 @@
       "source_location": "L121",
       "_origin": "ast",
       "id": "root_nebu_os_docs_updates_03_regression_gates_4_decoupled_subsystem_update_lifecycle",
-      "community": 264,
-      "community_name": "System Architecture Specification \u2014 NebuOS",
+      "community": 108,
+      "community_name": "Boot and Initialization Specification \u2014 NebuOS",
       "norm_label": "4. decoupled subsystem update lifecycle"
     },
     {
@@ -45602,8 +46559,8 @@
       "source_location": "L135",
       "_origin": "ast",
       "id": "root_nebu_os_docs_updates_03_regression_gates_5_failure_handling_and_triage_protocol",
-      "community": 264,
-      "community_name": "System Architecture Specification \u2014 NebuOS",
+      "community": 108,
+      "community_name": "Boot and Initialization Specification \u2014 NebuOS",
       "norm_label": "5. failure handling and triage protocol"
     },
     {
@@ -45613,8 +46570,8 @@
       "source_location": "L147",
       "_origin": "ast",
       "id": "root_nebu_os_docs_updates_03_regression_gates_6_related_specifications",
-      "community": 264,
-      "community_name": "System Architecture Specification \u2014 NebuOS",
+      "community": 108,
+      "community_name": "Boot and Initialization Specification \u2014 NebuOS",
       "norm_label": "6. related specifications"
     },
     {
@@ -48621,6 +49578,18 @@
       "context": "call",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L314",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_run_output_probe",
+      "target": "crates_nebu_compositor_src_backend_discover_drm_devices"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
       "source_file": "crates/nebu-compositor/src/render.rs",
       "source_location": "L230",
       "weight": 1.0,
@@ -48680,7 +49649,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "crates/nebu-compositor/src/lib.rs",
-      "source_location": "L19",
+      "source_location": "L20",
       "weight": 1.0,
       "_origin": "ast",
       "source": "crates_nebu_compositor_src_lib",
@@ -48691,7 +49660,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "crates/nebu-compositor/src/lib.rs",
-      "source_location": "L43",
+      "source_location": "L44",
       "weight": 1.0,
       "_origin": "ast",
       "source": "crates_nebu_compositor_src_lib",
@@ -48702,7 +49671,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "crates/nebu-compositor/src/lib.rs",
-      "source_location": "L59",
+      "source_location": "L60",
       "weight": 1.0,
       "_origin": "ast",
       "source": "crates_nebu_compositor_src_lib",
@@ -48713,7 +49682,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "crates/nebu-compositor/src/lib.rs",
-      "source_location": "L64",
+      "source_location": "L65",
       "weight": 1.0,
       "_origin": "ast",
       "source": "crates_nebu_compositor_src_lib",
@@ -48724,7 +49693,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "crates/nebu-compositor/src/lib.rs",
-      "source_location": "L25",
+      "source_location": "L26",
       "weight": 1.0,
       "_origin": "ast",
       "source": "crates_nebu_compositor_src_lib_compositorerror",
@@ -48735,7 +49704,7 @@
       "relation": "implements",
       "confidence": "EXTRACTED",
       "source_file": "crates/nebu-compositor/src/lib.rs",
-      "source_location": "L24",
+      "source_location": "L25",
       "weight": 1.0,
       "_origin": "ast",
       "source": "crates_nebu_compositor_src_lib_compositorerror",
@@ -48746,7 +49715,7 @@
       "relation": "implements",
       "confidence": "EXTRACTED",
       "source_file": "crates/nebu-compositor/src/lib.rs",
-      "source_location": "L37",
+      "source_location": "L38",
       "weight": 1.0,
       "_origin": "ast",
       "source": "crates_nebu_compositor_src_lib_compositorerror",
@@ -48757,7 +49726,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "crates/nebu-compositor/src/lib.rs",
-      "source_location": "L43",
+      "source_location": "L44",
       "weight": 1.0,
       "context": "generic_arg",
       "_origin": "ast",
@@ -48769,7 +49738,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "crates/nebu-compositor/src/lib.rs",
-      "source_location": "L25",
+      "source_location": "L26",
       "weight": 1.0,
       "context": "parameter_type",
       "_origin": "ast",
@@ -48781,7 +49750,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "crates/nebu-compositor/src/lib.rs",
-      "source_location": "L25",
+      "source_location": "L26",
       "weight": 1.0,
       "context": "return_type",
       "_origin": "ast",
@@ -48793,7 +49762,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "crates/nebu-compositor/src/lib.rs",
-      "source_location": "L43",
+      "source_location": "L44",
       "weight": 1.0,
       "context": "return_type",
       "_origin": "ast",
@@ -48835,6 +49804,1190 @@
       "source": "crates_nebu_compositor_src_main_main",
       "target": "exitcode",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L116",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output",
+      "target": "crates_nebu_compositor_src_output_lifecycleerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L86",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output",
+      "target": "crates_nebu_compositor_src_output_negotiate_pixel_format",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output",
+      "target": "crates_nebu_compositor_src_output_outputmode",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L207",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output",
+      "target": "crates_nebu_compositor_src_output_outputpresentationreport",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L242",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output",
+      "target": "crates_nebu_compositor_src_output_outputprobeerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L128",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output",
+      "target": "crates_nebu_compositor_src_output_presentationlifecycle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L296",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output",
+      "target": "crates_nebu_compositor_src_output_presentationloopcontext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L101",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output",
+      "target": "crates_nebu_compositor_src_output_presentationstage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L671",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output",
+      "target": "crates_nebu_compositor_src_output_print_output_probe_report",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L8",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output",
+      "target": "crates_nebu_compositor_src_output_rs_pathbuf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L303",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output",
+      "target": "crates_nebu_compositor_src_output_run_output_probe",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L67",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output",
+      "target": "crates_nebu_compositor_src_output_select_best_mode",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L868",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output",
+      "target": "crates_nebu_compositor_src_output_test_format_negotiation_fallback",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L879",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output",
+      "target": "crates_nebu_compositor_src_output_test_format_negotiation_no_match",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L857",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output",
+      "target": "crates_nebu_compositor_src_output_test_format_negotiation_preferred",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L910",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output",
+      "target": "crates_nebu_compositor_src_output_test_lifecycle_failure_transition",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L902",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output",
+      "target": "crates_nebu_compositor_src_output_test_lifecycle_invalid_transition",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L887",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output",
+      "target": "crates_nebu_compositor_src_output_test_lifecycle_valid_sequence",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L820",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output",
+      "target": "crates_nebu_compositor_src_output_test_mode_selection_empty",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L840",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output",
+      "target": "crates_nebu_compositor_src_output_test_mode_selection_highest_resolution_fallback",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L831",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output",
+      "target": "crates_nebu_compositor_src_output_test_mode_selection_preferred_priority",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L849",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output",
+      "target": "crates_nebu_compositor_src_output_test_mode_selection_refresh_tiebreaker",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L825",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output",
+      "target": "crates_nebu_compositor_src_output_test_mode_selection_single",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L13",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output",
+      "target": "fourcc",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L27",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output",
+      "target": "crates_nebu_compositor_src_render",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L28",
+      "weight": 1.0,
+      "context": "import",
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output",
+      "target": "crates_nebu_compositor_src_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L55",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_outputmode",
+      "target": "crates_nebu_compositor_src_output_outputmode_fmt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_outputmode",
+      "target": "crates_nebu_compositor_src_output_outputmode_new",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_outputmode",
+      "target": "crates_nebu_compositor_src_output_outputmode_pixel_count",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L54",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_outputmode",
+      "target": "crates_nebu_compositor_src_output_rs_display",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L67",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_select_best_mode",
+      "target": "crates_nebu_compositor_src_output_outputmode",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L40",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_outputmode_new",
+      "target": "crates_nebu_compositor_src_output_rs_self",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L289",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_outputprobeerror_from",
+      "target": "crates_nebu_compositor_src_output_rs_self",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L200",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_presentationlifecycle_default",
+      "target": "crates_nebu_compositor_src_output_rs_self",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L133",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_presentationlifecycle_new",
+      "target": "crates_nebu_compositor_src_output_rs_self",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L77",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_select_best_mode",
+      "target": "crates_nebu_compositor_src_output_outputmode_pixel_count",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L118",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_lifecycleerror",
+      "target": "crates_nebu_compositor_src_output_rs_display",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L259",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_outputprobeerror",
+      "target": "crates_nebu_compositor_src_output_rs_display",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L55",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_outputmode_fmt",
+      "target": "crates_nebu_compositor_src_output_rs_formatter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L55",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_outputmode_fmt",
+      "target": "crates_nebu_compositor_src_output_rs_result",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L119",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_lifecycleerror_fmt",
+      "target": "crates_nebu_compositor_src_output_rs_formatter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L260",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_outputprobeerror_fmt",
+      "target": "crates_nebu_compositor_src_output_rs_formatter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L119",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_lifecycleerror_fmt",
+      "target": "crates_nebu_compositor_src_output_rs_result",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L260",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_outputprobeerror_fmt",
+      "target": "crates_nebu_compositor_src_output_rs_result",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L186",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_presentationlifecycle_transition_to",
+      "target": "crates_nebu_compositor_src_output_rs_result",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L303",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_run_output_probe",
+      "target": "crates_nebu_compositor_src_output_rs_result",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L356",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_run_output_probe",
+      "target": "crates_nebu_compositor_src_output_select_best_mode",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L67",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_select_best_mode",
+      "target": "crates_nebu_compositor_src_output_rs_option",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L844",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_test_mode_selection_highest_resolution_fallback",
+      "target": "crates_nebu_compositor_src_output_select_best_mode",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L835",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_test_mode_selection_preferred_priority",
+      "target": "crates_nebu_compositor_src_output_select_best_mode",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L852",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_test_mode_selection_refresh_tiebreaker",
+      "target": "crates_nebu_compositor_src_output_select_best_mode",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L86",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_negotiate_pixel_format",
+      "target": "crates_nebu_compositor_src_output_rs_option",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L213",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_outputpresentationreport",
+      "target": "crates_nebu_compositor_src_output_rs_option",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L299",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_presentationloopcontext",
+      "target": "crates_nebu_compositor_src_output_rs_option",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L86",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_negotiate_pixel_format",
+      "target": "fourcc",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L129",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_presentationlifecycle",
+      "target": "crates_nebu_compositor_src_output_presentationstage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L143",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_presentationlifecycle_can_transition",
+      "target": "crates_nebu_compositor_src_output_presentationstage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L139",
+      "weight": 1.0,
+      "context": "return_type",
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_presentationlifecycle_current_stage",
+      "target": "crates_nebu_compositor_src_output_presentationstage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L186",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_presentationlifecycle_transition_to",
+      "target": "crates_nebu_compositor_src_output_presentationstage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L112",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_presentationstage",
+      "target": "crates_nebu_compositor_src_output_rs_string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L116",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_lifecycleerror",
+      "target": "crates_nebu_compositor_src_output_rs_string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L223",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_outputpresentationreport",
+      "target": "crates_nebu_compositor_src_output_rs_string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L254",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_outputprobeerror",
+      "target": "crates_nebu_compositor_src_output_rs_string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L299",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_presentationloopcontext",
+      "target": "crates_nebu_compositor_src_output_rs_string",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L119",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_lifecycleerror",
+      "target": "crates_nebu_compositor_src_output_lifecycleerror_fmt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L124",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_lifecycleerror",
+      "target": "crates_nebu_compositor_src_output_rs_error",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L288",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_outputprobeerror",
+      "target": "crates_nebu_compositor_src_output_lifecycleerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L289",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_outputprobeerror_from",
+      "target": "crates_nebu_compositor_src_output_lifecycleerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L186",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_presentationlifecycle_transition_to",
+      "target": "crates_nebu_compositor_src_output_lifecycleerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L280",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_outputprobeerror",
+      "target": "crates_nebu_compositor_src_output_rs_error",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L143",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_presentationlifecycle",
+      "target": "crates_nebu_compositor_src_output_presentationlifecycle_can_transition",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L139",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_presentationlifecycle",
+      "target": "crates_nebu_compositor_src_output_presentationlifecycle_current_stage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L200",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_presentationlifecycle",
+      "target": "crates_nebu_compositor_src_output_presentationlifecycle_default",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L133",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_presentationlifecycle",
+      "target": "crates_nebu_compositor_src_output_presentationlifecycle_new",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L186",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_presentationlifecycle",
+      "target": "crates_nebu_compositor_src_output_presentationlifecycle_transition_to",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L199",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_presentationlifecycle",
+      "target": "default",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L201",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_presentationlifecycle_default",
+      "target": "crates_nebu_compositor_src_output_presentationlifecycle_new",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L305",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_run_output_probe",
+      "target": "crates_nebu_compositor_src_output_presentationlifecycle_new",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L911",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_test_lifecycle_failure_transition",
+      "target": "crates_nebu_compositor_src_output_presentationlifecycle_new",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L903",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_test_lifecycle_invalid_transition",
+      "target": "crates_nebu_compositor_src_output_presentationlifecycle_new",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L888",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_test_lifecycle_valid_sequence",
+      "target": "crates_nebu_compositor_src_output_presentationlifecycle_new",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L841",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_test_mode_selection_highest_resolution_fallback",
+      "target": "crates_nebu_compositor_src_output_presentationlifecycle_new",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L832",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_test_mode_selection_preferred_priority",
+      "target": "crates_nebu_compositor_src_output_presentationlifecycle_new",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L850",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_test_mode_selection_refresh_tiebreaker",
+      "target": "crates_nebu_compositor_src_output_presentationlifecycle_new",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L826",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_test_mode_selection_single",
+      "target": "crates_nebu_compositor_src_output_presentationlifecycle_new",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L187",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_presentationlifecycle_transition_to",
+      "target": "crates_nebu_compositor_src_output_presentationlifecycle_can_transition",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L410",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_run_output_probe",
+      "target": "crates_nebu_compositor_src_output_presentationlifecycle_transition_to",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L426",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_run_output_probe",
+      "target": "crates_nebu_compositor_src_output_presentationlifecycle_default",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L213",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_outputpresentationreport",
+      "target": "crates_nebu_compositor_src_output_rs_pathbuf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L224",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_outputpresentationreport",
+      "target": "crates_nebu_compositor_src_render_accelerationclassification",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L209",
+      "weight": 1.0,
+      "context": "field",
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_outputpresentationreport",
+      "target": "crates_nebu_compositor_src_session_sessionmanagertype",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L671",
+      "weight": 1.0,
+      "context": "parameter_type",
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_print_output_probe_report",
+      "target": "crates_nebu_compositor_src_output_outputpresentationreport",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L303",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_run_output_probe",
+      "target": "crates_nebu_compositor_src_output_outputpresentationreport",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L260",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_outputprobeerror",
+      "target": "crates_nebu_compositor_src_output_outputprobeerror_fmt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L289",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_outputprobeerror",
+      "target": "crates_nebu_compositor_src_output_outputprobeerror_from",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L288",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_outputprobeerror",
+      "target": "crates_nebu_compositor_src_output_rs_from",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L282",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_outputprobeerror",
+      "target": "crates_nebu_compositor_src_session_sessionerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L303",
+      "weight": 1.0,
+      "context": "generic_arg",
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_run_output_probe",
+      "target": "crates_nebu_compositor_src_output_outputprobeerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L283",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_outputprobeerror_from",
+      "target": "crates_nebu_compositor_src_session_sessionerror",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L337",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_run_output_probe",
+      "target": "crates_nebu_compositor_src_output_outputprobeerror_from",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L665",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_run_output_probe",
+      "target": "crates_nebu_compositor_src_output_print_output_probe_report",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "crates/nebu-compositor/src/output.rs",
+      "source_location": "L439",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "crates_nebu_compositor_src_output_run_output_probe",
+      "target": "crates_nebu_compositor_src_render_classify_renderer_string"
     },
     {
       "relation": "contains",
@@ -50474,6 +52627,62 @@
       "_origin": "ast",
       "source": "scripts_vm102_drm_proof_ensure_shell",
       "target": "scripts_vm102_drm_proof_read_all",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/vm102_output_proof.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_vm102_output_proof",
+      "target": "scripts_vm102_output_proof_ensure_shell",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/vm102_output_proof.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_vm102_output_proof",
+      "target": "scripts_vm102_output_proof_get_socket",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/vm102_output_proof.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_vm102_output_proof",
+      "target": "scripts_vm102_output_proof_read_all",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/vm102_output_proof.py",
+      "source_location": "L81",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_vm102_output_proof",
+      "target": "scripts_vm102_output_proof_run_cmd",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "scripts/vm102_output_proof.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "scripts_vm102_output_proof_ensure_shell",
+      "target": "scripts_vm102_output_proof_read_all",
       "confidence_score": 1.0
     },
     {
@@ -58086,6 +60295,17 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "docs_p1_p1_3_renderer_initialization_proof",
+      "target": "docs_architecture_decisions_p1_graphical_environment",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_p1_p1_4_output_presentation_event_loop_proof",
       "target": "docs_architecture_decisions_p1_graphical_environment",
       "confidence_score": 1.0
     },
@@ -83964,6 +86184,402 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_p1_p1_4_output_presentation_event_loop_proof",
+      "target": "docs_p1_p1_4_output_presentation_event_loop_proof_nebuos_milestone_p1_4_output_presentation_event_loop_layer_verification_report",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L143",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_p1_p1_4_output_presentation_event_loop_proof_nebuos_milestone_p1_4_output_presentation_event_loop_layer_verification_report",
+      "target": "docs_p1_p1_4_output_presentation_event_loop_proof_10_pixel_format_selection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L152",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_p1_p1_4_output_presentation_event_loop_proof_nebuos_milestone_p1_4_output_presentation_event_loop_layer_verification_report",
+      "target": "docs_p1_p1_4_output_presentation_event_loop_proof_11_gbm_presentation_target",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L163",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_p1_p1_4_output_presentation_event_loop_proof_nebuos_milestone_p1_4_output_presentation_event_loop_layer_verification_report",
+      "target": "docs_p1_p1_4_output_presentation_event_loop_proof_12_egl_renderer_integration",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L175",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_p1_p1_4_output_presentation_event_loop_proof_nebuos_milestone_p1_4_output_presentation_event_loop_layer_verification_report",
+      "target": "docs_p1_p1_4_output_presentation_event_loop_proof_13_test_frame",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L188",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_p1_p1_4_output_presentation_event_loop_proof_nebuos_milestone_p1_4_output_presentation_event_loop_layer_verification_report",
+      "target": "docs_p1_p1_4_output_presentation_event_loop_proof_14_framebuffer_creation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L196",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_p1_p1_4_output_presentation_event_loop_proof_nebuos_milestone_p1_4_output_presentation_event_loop_layer_verification_report",
+      "target": "docs_p1_p1_4_output_presentation_event_loop_proof_15_atomic_commit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L205",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_p1_p1_4_output_presentation_event_loop_proof_nebuos_milestone_p1_4_output_presentation_event_loop_layer_verification_report",
+      "target": "docs_p1_p1_4_output_presentation_event_loop_proof_16_page_flip_event",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L217",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_p1_p1_4_output_presentation_event_loop_proof_nebuos_milestone_p1_4_output_presentation_event_loop_layer_verification_report",
+      "target": "docs_p1_p1_4_output_presentation_event_loop_proof_17_event_loop_architecture",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L228",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_p1_p1_4_output_presentation_event_loop_proof_nebuos_milestone_p1_4_output_presentation_event_loop_layer_verification_report",
+      "target": "docs_p1_p1_4_output_presentation_event_loop_proof_18_shutdown_lifecycle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L243",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_p1_p1_4_output_presentation_event_loop_proof_nebuos_milestone_p1_4_output_presentation_event_loop_layer_verification_report",
+      "target": "docs_p1_p1_4_output_presentation_event_loop_proof_19_resource_cleanup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_p1_p1_4_output_presentation_event_loop_proof_nebuos_milestone_p1_4_output_presentation_event_loop_layer_verification_report",
+      "target": "docs_p1_p1_4_output_presentation_event_loop_proof_1_objective",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L257",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_p1_p1_4_output_presentation_event_loop_proof_nebuos_milestone_p1_4_output_presentation_event_loop_layer_verification_report",
+      "target": "docs_p1_p1_4_output_presentation_event_loop_proof_20_unit_test_results",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L290",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_p1_p1_4_output_presentation_event_loop_proof_nebuos_milestone_p1_4_output_presentation_event_loop_layer_verification_report",
+      "target": "docs_p1_p1_4_output_presentation_event_loop_proof_21_vm_102_empirical_results",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L343",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_p1_p1_4_output_presentation_event_loop_proof_nebuos_milestone_p1_4_output_presentation_event_loop_layer_verification_report",
+      "target": "docs_p1_p1_4_output_presentation_event_loop_proof_22_security_audit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L353",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_p1_p1_4_output_presentation_event_loop_proof_nebuos_milestone_p1_4_output_presentation_event_loop_layer_verification_report",
+      "target": "docs_p1_p1_4_output_presentation_event_loop_proof_23_scope_audit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L362",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_p1_p1_4_output_presentation_event_loop_proof_nebuos_milestone_p1_4_output_presentation_event_loop_layer_verification_report",
+      "target": "docs_p1_p1_4_output_presentation_event_loop_proof_24_known_limitations_architecture_classification",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L388",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_p1_p1_4_output_presentation_event_loop_proof_nebuos_milestone_p1_4_output_presentation_event_loop_layer_verification_report",
+      "target": "docs_p1_p1_4_output_presentation_event_loop_proof_25_acceptance_criteria",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L425",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_p1_p1_4_output_presentation_event_loop_proof_nebuos_milestone_p1_4_output_presentation_event_loop_layer_verification_report",
+      "target": "docs_p1_p1_4_output_presentation_event_loop_proof_26_exact_commit_hash",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_p1_p1_4_output_presentation_event_loop_proof_nebuos_milestone_p1_4_output_presentation_event_loop_layer_verification_report",
+      "target": "docs_p1_p1_4_output_presentation_event_loop_proof_2_scope",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L58",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_p1_p1_4_output_presentation_event_loop_proof_nebuos_milestone_p1_4_output_presentation_event_loop_layer_verification_report",
+      "target": "docs_p1_p1_4_output_presentation_event_loop_proof_3_environment",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L87",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_p1_p1_4_output_presentation_event_loop_proof_nebuos_milestone_p1_4_output_presentation_event_loop_layer_verification_report",
+      "target": "docs_p1_p1_4_output_presentation_event_loop_proof_4_session_architecture",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L96",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_p1_p1_4_output_presentation_event_loop_proof_nebuos_milestone_p1_4_output_presentation_event_loop_layer_verification_report",
+      "target": "docs_p1_p1_4_output_presentation_event_loop_proof_5_drm_device_selection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L106",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_p1_p1_4_output_presentation_event_loop_proof_nebuos_milestone_p1_4_output_presentation_event_loop_layer_verification_report",
+      "target": "docs_p1_p1_4_output_presentation_event_loop_proof_6_connector_selection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L115",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_p1_p1_4_output_presentation_event_loop_proof_nebuos_milestone_p1_4_output_presentation_event_loop_layer_verification_report",
+      "target": "docs_p1_p1_4_output_presentation_event_loop_proof_7_crtc_selection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L123",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_p1_p1_4_output_presentation_event_loop_proof_nebuos_milestone_p1_4_output_presentation_event_loop_layer_verification_report",
+      "target": "docs_p1_p1_4_output_presentation_event_loop_proof_8_primary_plane_selection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L132",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_p1_p1_4_output_presentation_event_loop_proof_nebuos_milestone_p1_4_output_presentation_event_loop_layer_verification_report",
+      "target": "docs_p1_p1_4_output_presentation_event_loop_proof_9_mode_selection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_p1_p1_4_output_presentation_event_loop_proof_2_scope",
+      "target": "docs_p1_p1_4_output_presentation_event_loop_proof_in_scope",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_p1_p1_4_output_presentation_event_loop_proof_2_scope",
+      "target": "docs_p1_p1_4_output_presentation_event_loop_proof_out_of_scope_strict_anti_scope_boundaries",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L62",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_p1_p1_4_output_presentation_event_loop_proof_3_environment",
+      "target": "docs_p1_p1_4_output_presentation_event_loop_proof_3_1_protected_p0_reference_vm_vm_101",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L69",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_p1_p1_4_output_presentation_event_loop_proof_3_environment",
+      "target": "docs_p1_p1_4_output_presentation_event_loop_proof_3_2_dedicated_p1_graphical_validation_target_vm_102",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L81",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_p1_p1_4_output_presentation_event_loop_proof_3_environment",
+      "target": "docs_p1_p1_4_output_presentation_event_loop_proof_3_3_development_build_container_ct_100",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L378",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_p1_p1_4_output_presentation_event_loop_proof_24_known_limitations_architecture_classification",
+      "target": "docs_p1_p1_4_output_presentation_event_loop_proof_deferred_to_p1_5",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L374",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_p1_p1_4_output_presentation_event_loop_proof_24_known_limitations_architecture_classification",
+      "target": "docs_p1_p1_4_output_presentation_event_loop_proof_not_proven_limitations",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L382",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_p1_p1_4_output_presentation_event_loop_proof_24_known_limitations_architecture_classification",
+      "target": "docs_p1_p1_4_output_presentation_event_loop_proof_out_of_scope",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md",
+      "source_location": "L364",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_p1_p1_4_output_presentation_event_loop_proof_24_known_limitations_architecture_classification",
+      "target": "docs_p1_p1_4_output_presentation_event_loop_proof_proven",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "docs/performance/00-performance-goals.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -98538,5 +101154,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "5bea1bb1cae29d3fb4816c4d8d3f3cc8e4051de2"
+  "built_at_commit": "69082f1748e463aa2b3c6ff4652dc705d36a9e2b"
 }

@@ -283,5 +283,14 @@
   "281": "render.rs",
   "282": "session.rs",
   "283": "state.rs",
-  "284": "wayland.rs"
+  "284": "wayland.rs",
+  "285": "vm102_renderer_proof.py",
+  "286": "P1_GRAPHICAL_ENVIRONMENT.md",
+  "287": "10. Interfaces",
+  "288": "Memory Management & Low-End Mode Specification — NebuOS",
+  "289": "2. Protected Reference and Validation Environment Topology",
+  "290": "10. Interfaces",
+  "291": "11. Dependencies",
+  "292": "5. Requirements",
+  "293": "7. Components"
 }
