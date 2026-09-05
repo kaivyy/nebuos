@@ -4,6 +4,7 @@ target/*.img
 target/vmlinuz*
 target/tmp-*
 target/*.pid
+target/vm102_*.json
 *.qcow2
 *.iso
 

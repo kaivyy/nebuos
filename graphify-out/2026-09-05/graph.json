@@ -4913,8 +4913,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "root_nebu_os_architecture_nebuos_architecture_navigation_map",
-      "community": 233,
-      "community_name": "ARCHITECTURE.md",
+      "community": 194,
+      "community_name": "3. Subsystem Directory Navigation",
       "norm_label": "nebuos architecture navigation map"
     },
     {
@@ -4924,8 +4924,8 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "root_nebu_os_architecture_1_system_vision_invariants",
-      "community": 233,
-      "community_name": "ARCHITECTURE.md",
+      "community": 194,
+      "community_name": "3. Subsystem Directory Navigation",
       "norm_label": "1. system vision & invariants"
     },
     {
@@ -4935,8 +4935,8 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "root_nebu_os_architecture_the_three_master_invariants",
-      "community": 233,
-      "community_name": "ARCHITECTURE.md",
+      "community": 194,
+      "community_name": "3. Subsystem Directory Navigation",
       "norm_label": "the three master invariants:"
     },
     {
@@ -4946,8 +4946,8 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "root_nebu_os_architecture_2_conceptual_layer_topology",
-      "community": 233,
-      "community_name": "ARCHITECTURE.md",
+      "community": 194,
+      "community_name": "3. Subsystem Directory Navigation",
       "norm_label": "2. conceptual layer topology"
     },
     {
@@ -6310,8 +6310,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "docs_index",
-      "community": 0,
-      "community_name": "DOCUMENTATION_AUDIT_REPORT.md",
+      "community": 237,
+      "community_name": "docs/README.md",
       "norm_label": "index.md"
     },
     {
@@ -7256,8 +7256,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "root_nebu_os_docs_readme_md",
-      "community": 237,
-      "community_name": "docs/README.md",
+      "community": 113,
+      "community_name": "34. Issues Classification Matrix",
       "norm_label": "docs/readme.md"
     },
     {
@@ -7267,8 +7267,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "root_nebu_os_docs_readme_nebuos_master_engineering_blueprint_technical_specification",
-      "community": 237,
-      "community_name": "docs/README.md",
+      "community": 113,
+      "community_name": "34. Issues Classification Matrix",
       "norm_label": "nebuos \u2014 master engineering blueprint & technical specification"
     },
     {
@@ -7278,8 +7278,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "root_nebu_os_docs_readme_1_architectural_topology_component_layers",
-      "community": 237,
-      "community_name": "docs/README.md",
+      "community": 113,
+      "community_name": "34. Issues Classification Matrix",
       "norm_label": "1. architectural topology & component layers"
     },
     {
@@ -7289,8 +7289,8 @@
       "source_location": "L69",
       "_origin": "ast",
       "id": "root_nebu_os_docs_readme_2_documentation_architecture_directory_map",
-      "community": 237,
-      "community_name": "docs/README.md",
+      "community": 113,
+      "community_name": "34. Issues Classification Matrix",
       "norm_label": "2. documentation architecture & directory map"
     },
     {
@@ -7300,8 +7300,8 @@
       "source_location": "L92",
       "_origin": "ast",
       "id": "root_nebu_os_docs_readme_3_core_architectural_invariants",
-      "community": 237,
-      "community_name": "docs/README.md",
+      "community": 113,
+      "community_name": "34. Issues Classification Matrix",
       "norm_label": "3. core architectural invariants"
     },
     {
@@ -7311,8 +7311,8 @@
       "source_location": "L103",
       "_origin": "ast",
       "id": "root_nebu_os_docs_readme_4_master_registers_matrices",
-      "community": 237,
-      "community_name": "docs/README.md",
+      "community": 113,
+      "community_name": "34. Issues Classification Matrix",
       "norm_label": "4. master registers & matrices"
     },
     {
@@ -9896,8 +9896,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "root_nebu_os_docs_architecture_00_overview_md",
-      "community": 242,
-      "community_name": "Interfaces",
+      "community": 195,
+      "community_name": "4. Decision Outcome",
       "norm_label": "00-overview.md"
     },
     {
@@ -9995,8 +9995,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "root_nebu_os_docs_architecture_01_system_architecture_md",
-      "community": 242,
-      "community_name": "Interfaces",
+      "community": 195,
+      "community_name": "4. Decision Outcome",
       "norm_label": "01-system-architecture.md"
     },
     {
@@ -10006,8 +10006,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "root_nebu_os_docs_architecture_01_system_architecture_system_architecture_specification_nebuos",
-      "community": 275,
-      "community_name": "6. Mesa Findings",
+      "community": 109,
+      "community_name": "ADR-0007: Absolute Prohibition of Virtual Machines for Windows Compatibility",
       "norm_label": "system architecture specification \u2014 nebuos"
     },
     {
@@ -10017,8 +10017,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "root_nebu_os_docs_architecture_01_system_architecture_1_system_topology_layers",
-      "community": 275,
-      "community_name": "6. Mesa Findings",
+      "community": 109,
+      "community_name": "ADR-0007: Absolute Prohibition of Virtual Machines for Windows Compatibility",
       "norm_label": "1. system topology & layers"
     },
     {
@@ -10116,8 +10116,8 @@
       "source_location": "L70",
       "_origin": "ast",
       "id": "root_nebu_os_docs_architecture_01_system_architecture_3_data_interfaces_contracts",
-      "community": 275,
-      "community_name": "6. Mesa Findings",
+      "community": 109,
+      "community_name": "ADR-0007: Absolute Prohibition of Virtual Machines for Windows Compatibility",
       "norm_label": "3. data interfaces & contracts"
     },
     {
@@ -10127,8 +10127,8 @@
       "source_location": "L75",
       "_origin": "ast",
       "id": "root_nebu_os_docs_architecture_01_system_architecture_4_security_privilege_boundaries",
-      "community": 275,
-      "community_name": "6. Mesa Findings",
+      "community": 109,
+      "community_name": "ADR-0007: Absolute Prohibition of Virtual Machines for Windows Compatibility",
       "norm_label": "4. security & privilege boundaries"
     },
     {
@@ -10138,8 +10138,8 @@
       "source_location": "L82",
       "_origin": "ast",
       "id": "root_nebu_os_docs_architecture_01_system_architecture_5_performance_invariants",
-      "community": 275,
-      "community_name": "6. Mesa Findings",
+      "community": 109,
+      "community_name": "ADR-0007: Absolute Prohibition of Virtual Machines for Windows Compatibility",
       "norm_label": "5. performance invariants"
     },
     {
@@ -10149,8 +10149,8 @@
       "source_location": "L86",
       "_origin": "ast",
       "id": "root_nebu_os_docs_architecture_01_system_architecture_6_related_documents",
-      "community": 275,
-      "community_name": "6. Mesa Findings",
+      "community": 109,
+      "community_name": "ADR-0007: Absolute Prohibition of Virtual Machines for Windows Compatibility",
       "norm_label": "6. related documents"
     },
     {
@@ -10160,8 +10160,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "root_nebu_os_docs_architecture_02_boot_and_init_md",
-      "community": 242,
-      "community_name": "Interfaces",
+      "community": 195,
+      "community_name": "4. Decision Outcome",
       "norm_label": "02-boot-and-init.md"
     },
     {
@@ -10457,8 +10457,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "root_nebu_os_docs_architecture_05_security_md",
-      "community": 207,
-      "community_name": "GPU Profiles Specification \u2014 NebuOS",
+      "community": 101,
+      "community_name": "Release Engineering & Update Lifecycle Skill \u2014 NebuOS",
       "norm_label": "05-security.md"
     },
     {
@@ -10611,8 +10611,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "docs_architecture_decisions_p1_graphical_environment",
-      "community": 142,
-      "community_name": "7. Nodatacow Policy Audit",
+      "community": 237,
+      "community_name": "docs/README.md",
       "norm_label": "p1_graphical_environment.md"
     },
     {
@@ -11106,8 +11106,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "docs_audit_agents_skills_alignment_audit",
-      "community": 0,
-      "community_name": "DOCUMENTATION_AUDIT_REPORT.md",
+      "community": 237,
+      "community_name": "docs/README.md",
       "norm_label": "agents_skills_alignment_audit.md"
     },
     {
@@ -11909,8 +11909,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "docs_audit_application_platform_marketplace_enhancement_audit",
-      "community": 0,
-      "community_name": "DOCUMENTATION_AUDIT_REPORT.md",
+      "community": 237,
+      "community_name": "docs/README.md",
       "norm_label": "application_platform_marketplace_enhancement_audit.md"
     },
     {
@@ -18894,8 +18894,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "root_nebu_os_docs_decisions_adr_0001_linux_kernel_md",
-      "community": 237,
-      "community_name": "docs/README.md",
+      "community": 113,
+      "community_name": "34. Issues Classification Matrix",
       "norm_label": "adr-0001-linux-kernel.md"
     },
     {
@@ -21149,8 +21149,8 @@
       "source_location": "L111",
       "_origin": "ast",
       "id": "root_nebu_os_docs_decisions_adr_0013_ui_design_system_and_icon_architecture_5_detailed_architectural_decisions",
-      "community": 69,
-      "community_name": "NebuShell Technical Specification \u2014 NebuOS",
+      "community": 265,
+      "community_name": "Control Flow",
       "norm_label": "5. detailed architectural decisions"
     },
     {
@@ -21160,8 +21160,8 @@
       "source_location": "L113",
       "_origin": "ast",
       "id": "root_nebu_os_docs_decisions_adr_0013_ui_design_system_and_icon_architecture_5_1_design_system_semantic_design_tokens",
-      "community": 69,
-      "community_name": "NebuShell Technical Specification \u2014 NebuOS",
+      "community": 265,
+      "community_name": "Control Flow",
       "norm_label": "5.1 design system & semantic design tokens"
     },
     {
@@ -21171,8 +21171,8 @@
       "source_location": "L153",
       "_origin": "ast",
       "id": "root_nebu_os_docs_decisions_adr_0013_ui_design_system_and_icon_architecture_5_2_iconography_architecture_nebuicon_abstraction",
-      "community": 69,
-      "community_name": "NebuShell Technical Specification \u2014 NebuOS",
+      "community": 265,
+      "community_name": "Control Flow",
       "norm_label": "5.2 iconography architecture & `nebuicon` abstraction"
     },
     {
@@ -21182,8 +21182,8 @@
       "source_location": "L216",
       "_origin": "ast",
       "id": "root_nebu_os_docs_decisions_adr_0013_ui_design_system_and_icon_architecture_5_3_tripartite_desktop_architecture_theme_layout_behavior",
-      "community": 69,
-      "community_name": "NebuShell Technical Specification \u2014 NebuOS",
+      "community": 265,
+      "community_name": "Control Flow",
       "norm_label": "5.3 tripartite desktop architecture (theme, layout, behavior)"
     },
     {
@@ -21193,8 +21193,8 @@
       "source_location": "L235",
       "_origin": "ast",
       "id": "root_nebu_os_docs_decisions_adr_0013_ui_design_system_and_icon_architecture_5_4_component_taxonomy",
-      "community": 69,
-      "community_name": "NebuShell Technical Specification \u2014 NebuOS",
+      "community": 265,
+      "community_name": "Control Flow",
       "norm_label": "5.4 component taxonomy"
     },
     {
@@ -21204,8 +21204,8 @@
       "source_location": "L249",
       "_origin": "ast",
       "id": "root_nebu_os_docs_decisions_adr_0013_ui_design_system_and_icon_architecture_5_5_phase_ownership_boundaries",
-      "community": 69,
-      "community_name": "NebuShell Technical Specification \u2014 NebuOS",
+      "community": 265,
+      "community_name": "Control Flow",
       "norm_label": "5.5 phase ownership boundaries"
     },
     {
@@ -21215,8 +21215,8 @@
       "source_location": "L278",
       "_origin": "ast",
       "id": "root_nebu_os_docs_decisions_adr_0013_ui_design_system_and_icon_architecture_5_6_external_asset_governance_licensing",
-      "community": 69,
-      "community_name": "NebuShell Technical Specification \u2014 NebuOS",
+      "community": 265,
+      "community_name": "Control Flow",
       "norm_label": "5.6 external asset governance & licensing"
     },
     {
@@ -21226,8 +21226,8 @@
       "source_location": "L292",
       "_origin": "ast",
       "id": "root_nebu_os_docs_decisions_adr_0013_ui_design_system_and_icon_architecture_5_7_accessibility_performance_taxonomy",
-      "community": 69,
-      "community_name": "NebuShell Technical Specification \u2014 NebuOS",
+      "community": 265,
+      "community_name": "Control Flow",
       "norm_label": "5.7 accessibility & performance taxonomy"
     },
     {
@@ -24196,8 +24196,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "root_nebu_os_docs_desktop_03_ui_theme_system_md",
-      "community": 207,
-      "community_name": "GPU Profiles Specification \u2014 NebuOS",
+      "community": 101,
+      "community_name": "Release Engineering & Update Lifecycle Skill \u2014 NebuOS",
       "norm_label": "03-ui-theme-system.md"
     },
     {
@@ -24724,8 +24724,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "root_nebu_os_docs_desktop_04_layout_system_md",
-      "community": 207,
-      "community_name": "GPU Profiles Specification \u2014 NebuOS",
+      "community": 101,
+      "community_name": "Release Engineering & Update Lifecycle Skill \u2014 NebuOS",
       "norm_label": "04-layout-system.md"
     },
     {
@@ -25219,8 +25219,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "root_nebu_os_docs_desktop_05_window_management_md",
-      "community": 207,
-      "community_name": "GPU Profiles Specification \u2014 NebuOS",
+      "community": 101,
+      "community_name": "Release Engineering & Update Lifecycle Skill \u2014 NebuOS",
       "norm_label": "05-window-management.md"
     },
     {
@@ -25461,8 +25461,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "root_nebu_os_docs_desktop_06_input_display_md",
-      "community": 207,
-      "community_name": "GPU Profiles Specification \u2014 NebuOS",
+      "community": 101,
+      "community_name": "Release Engineering & Update Lifecycle Skill \u2014 NebuOS",
       "norm_label": "06-input-display.md"
     },
     {
@@ -25703,8 +25703,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "root_nebu_os_docs_desktop_07_system_ui_md",
-      "community": 207,
-      "community_name": "GPU Profiles Specification \u2014 NebuOS",
+      "community": 101,
+      "community_name": "Release Engineering & Update Lifecycle Skill \u2014 NebuOS",
       "norm_label": "07-system-ui.md"
     },
     {
@@ -26242,8 +26242,8 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "root_nebu_os_docs_development_00_development_model_5_requirements",
-      "community": 295,
-      "community_name": "8. GBM Findings",
+      "community": 35,
+      "community_name": "Master Development Specification \u2014 NebuOS",
       "norm_label": "5. requirements"
     },
     {
@@ -26253,8 +26253,8 @@
       "source_location": "L42",
       "_origin": "ast",
       "id": "root_nebu_os_docs_development_00_development_model_5_1_functional_requirements",
-      "community": 295,
-      "community_name": "8. GBM Findings",
+      "community": 35,
+      "community_name": "Master Development Specification \u2014 NebuOS",
       "norm_label": "5.1 functional requirements"
     },
     {
@@ -26264,8 +26264,8 @@
       "source_location": "L53",
       "_origin": "ast",
       "id": "root_nebu_os_docs_development_00_development_model_5_2_non_functional_requirements",
-      "community": 295,
-      "community_name": "8. GBM Findings",
+      "community": 35,
+      "community_name": "Master Development Specification \u2014 NebuOS",
       "norm_label": "5.2 non-functional requirements"
     },
     {
@@ -26286,8 +26286,8 @@
       "source_location": "L103",
       "_origin": "ast",
       "id": "root_nebu_os_docs_development_00_development_model_7_components",
-      "community": 293,
-      "community_name": "7. Components",
+      "community": 35,
+      "community_name": "Master Development Specification \u2014 NebuOS",
       "norm_label": "7. components"
     },
     {
@@ -26297,8 +26297,8 @@
       "source_location": "L105",
       "_origin": "ast",
       "id": "root_nebu_os_docs_development_00_development_model_7_1_development_environment_subsystems",
-      "community": 293,
-      "community_name": "7. Components",
+      "community": 35,
+      "community_name": "Master Development Specification \u2014 NebuOS",
       "norm_label": "7.1 development environment subsystems"
     },
     {
@@ -26308,8 +26308,8 @@
       "source_location": "L113",
       "_origin": "ast",
       "id": "root_nebu_os_docs_development_00_development_model_7_2_subsystem_ownership_classification",
-      "community": 293,
-      "community_name": "7. Components",
+      "community": 35,
+      "community_name": "Master Development Specification \u2014 NebuOS",
       "norm_label": "7.2 subsystem ownership classification"
     },
     {
@@ -26319,8 +26319,8 @@
       "source_location": "L121",
       "_origin": "ast",
       "id": "root_nebu_os_docs_development_00_development_model_7_3_developer_tooling_and_diagnostics_matrix",
-      "community": 293,
-      "community_name": "7. Components",
+      "community": 35,
+      "community_name": "Master Development Specification \u2014 NebuOS",
       "norm_label": "7.3 developer tooling and diagnostics matrix"
     },
     {
@@ -26396,8 +26396,8 @@
       "source_location": "L213",
       "_origin": "ast",
       "id": "root_nebu_os_docs_development_00_development_model_11_dependencies",
-      "community": 294,
-      "community_name": "6. Mesa Findings",
+      "community": 35,
+      "community_name": "Master Development Specification \u2014 NebuOS",
       "norm_label": "11. dependencies"
     },
     {
@@ -26407,8 +26407,8 @@
       "source_location": "L215",
       "_origin": "ast",
       "id": "root_nebu_os_docs_development_00_development_model_11_1_host_workstation_requirements",
-      "community": 294,
-      "community_name": "6. Mesa Findings",
+      "community": 35,
+      "community_name": "Master Development Specification \u2014 NebuOS",
       "norm_label": "11.1 host workstation requirements"
     },
     {
@@ -26418,8 +26418,8 @@
       "source_location": "L220",
       "_origin": "ast",
       "id": "root_nebu_os_docs_development_00_development_model_11_2_toolchain_versions",
-      "community": 294,
-      "community_name": "6. Mesa Findings",
+      "community": 35,
+      "community_name": "Master Development Specification \u2014 NebuOS",
       "norm_label": "11.2 toolchain versions"
     },
     {
@@ -26935,8 +26935,8 @@
       "source_location": "L36",
       "_origin": "ast",
       "id": "root_nebu_os_docs_development_02_build_system_5_requirements",
-      "community": 45,
-      "community_name": "Compatibility Testing Specification \u2014 NebuOS",
+      "community": 275,
+      "community_name": "6. Mesa Findings",
       "norm_label": "5. requirements"
     },
     {
@@ -26946,8 +26946,8 @@
       "source_location": "L38",
       "_origin": "ast",
       "id": "root_nebu_os_docs_development_02_build_system_5_1_functional_requirements",
-      "community": 45,
-      "community_name": "Compatibility Testing Specification \u2014 NebuOS",
+      "community": 275,
+      "community_name": "6. Mesa Findings",
       "norm_label": "5.1 functional requirements"
     },
     {
@@ -26957,8 +26957,8 @@
       "source_location": "L45",
       "_origin": "ast",
       "id": "root_nebu_os_docs_development_02_build_system_5_2_non_functional_requirements",
-      "community": 45,
-      "community_name": "Compatibility Testing Specification \u2014 NebuOS",
+      "community": 275,
+      "community_name": "6. Mesa Findings",
       "norm_label": "5.2 non-functional requirements"
     },
     {
@@ -27045,8 +27045,8 @@
       "source_location": "L160",
       "_origin": "ast",
       "id": "root_nebu_os_docs_development_02_build_system_10_interfaces",
-      "community": 297,
-      "community_name": "7. Components",
+      "community": 45,
+      "community_name": "Compatibility Testing Specification \u2014 NebuOS",
       "norm_label": "10. interfaces"
     },
     {
@@ -27056,8 +27056,8 @@
       "source_location": "L162",
       "_origin": "ast",
       "id": "root_nebu_os_docs_development_02_build_system_10_1_multi_stage_containerfile_specification_packaging_bootc_containerfile",
-      "community": 297,
-      "community_name": "7. Components",
+      "community": 45,
+      "community_name": "Compatibility Testing Specification \u2014 NebuOS",
       "norm_label": "10.1 multi-stage containerfile specification (`packaging/bootc/containerfile`)"
     },
     {
@@ -27067,8 +27067,8 @@
       "source_location": "L212",
       "_origin": "ast",
       "id": "root_nebu_os_docs_development_02_build_system_10_2_build_invocation_commands",
-      "community": 297,
-      "community_name": "7. Components",
+      "community": 45,
+      "community_name": "Compatibility Testing Specification \u2014 NebuOS",
       "norm_label": "10.2 build invocation commands"
     },
     {
@@ -34756,8 +34756,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "docs_p1_p1_1_implementation_note",
-      "community": 142,
-      "community_name": "7. Nodatacow Policy Audit",
+      "community": 237,
+      "community_name": "docs/README.md",
       "norm_label": "p1_1_implementation_note.md"
     },
     {
@@ -34877,8 +34877,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "docs_p1_p1_2_drm_kms_proof",
-      "community": 239,
-      "community_name": "05-security.md",
+      "community": 237,
+      "community_name": "docs/README.md",
       "norm_label": "p1_2_drm_kms_proof.md"
     },
     {
@@ -35086,8 +35086,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "docs_p1_p1_3_renderer_initialization_proof",
-      "community": 142,
-      "community_name": "7. Nodatacow Policy Audit",
+      "community": 237,
+      "community_name": "docs/README.md",
       "norm_label": "p1_3_renderer_initialization_proof.md"
     },
     {
@@ -35427,8 +35427,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "docs_p1_p1_4_output_presentation_event_loop_proof",
-      "community": 142,
-      "community_name": "7. Nodatacow Policy Audit",
+      "community": 237,
+      "community_name": "docs/README.md",
       "norm_label": "p1_4_output_presentation_event_loop_proof.md"
     },
     {
@@ -35834,8 +35834,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "docs_p1_p1_5_input_subsystem_integration_proof",
-      "community": 142,
-      "community_name": "7. Nodatacow Policy Audit",
+      "community": 237,
+      "community_name": "docs/README.md",
       "norm_label": "p1_5_input_subsystem_integration_proof.md"
     },
     {
@@ -36230,8 +36230,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "docs_p1_p1_6_wayland_core_surface_lifecycle_proof",
-      "community": 142,
-      "community_name": "7. Nodatacow Policy Audit",
+      "community": 237,
+      "community_name": "docs/README.md",
       "norm_label": "p1_6_wayland_core_surface_lifecycle_proof.md"
     },
     {
@@ -36488,32 +36488,43 @@
       "norm_label": "11. unsafe code audit"
     },
     {
-      "label": "12. Verification Matrix",
+      "label": "12. Verification Matrix & Status Taxonomy",
       "file_type": "document",
       "source_file": "docs/p1/P1_6_WAYLAND_CORE_SURFACE_LIFECYCLE_PROOF.md",
-      "source_location": "L443",
+      "source_location": "L445",
       "_origin": "ast",
-      "id": "docs_p1_p1_6_wayland_core_surface_lifecycle_proof_12_verification_matrix",
+      "id": "docs_p1_p1_6_wayland_core_surface_lifecycle_proof_12_verification_matrix_status_taxonomy",
       "community": 274,
       "community_name": "5. Render-Node Findings",
-      "norm_label": "12. verification matrix"
+      "norm_label": "12. verification matrix & status taxonomy"
     },
     {
-      "label": "13. Conclusion & Transition to P1.7",
+      "label": "13. Environmental Limitations & Architecture Notes",
       "file_type": "document",
       "source_file": "docs/p1/P1_6_WAYLAND_CORE_SURFACE_LIFECYCLE_PROOF.md",
-      "source_location": "L468",
+      "source_location": "L482",
       "_origin": "ast",
-      "id": "docs_p1_p1_6_wayland_core_surface_lifecycle_proof_13_conclusion_transition_to_p1_7",
+      "id": "docs_p1_p1_6_wayland_core_surface_lifecycle_proof_13_environmental_limitations_architecture_notes",
       "community": 274,
       "community_name": "5. Render-Node Findings",
-      "norm_label": "13. conclusion & transition to p1.7"
+      "norm_label": "13. environmental limitations & architecture notes"
+    },
+    {
+      "label": "14. Conclusion & Transition to P1.7",
+      "file_type": "document",
+      "source_file": "docs/p1/P1_6_WAYLAND_CORE_SURFACE_LIFECYCLE_PROOF.md",
+      "source_location": "L495",
+      "_origin": "ast",
+      "id": "docs_p1_p1_6_wayland_core_surface_lifecycle_proof_14_conclusion_transition_to_p1_7",
+      "community": 274,
+      "community_name": "5. Render-Node Findings",
+      "norm_label": "14. conclusion & transition to p1.7"
     },
     {
       "label": "Boundary to Milestone P1.7",
       "file_type": "document",
       "source_file": "docs/p1/P1_6_WAYLAND_CORE_SURFACE_LIFECYCLE_PROOF.md",
-      "source_location": "L472",
+      "source_location": "L499",
       "_origin": "ast",
       "id": "docs_p1_p1_6_wayland_core_surface_lifecycle_proof_boundary_to_milestone_p1_7",
       "community": 274,
@@ -36593,8 +36604,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "root_nebu_os_docs_performance_01_memory_memory_management_low_end_mode_specification_nebuos",
-      "community": 288,
-      "community_name": "Memory Management & Low-End Mode Specification \u2014 NebuOS",
+      "community": 211,
+      "community_name": "Boot Optimization Specification \u2014 NebuOS",
       "norm_label": "memory management & low-end mode specification \u2014 nebuos"
     },
     {
@@ -36604,8 +36615,8 @@
       "source_location": "L8",
       "_origin": "ast",
       "id": "root_nebu_os_docs_performance_01_memory_1_the_4gb_ram_first_class_citizen_rule",
-      "community": 288,
-      "community_name": "Memory Management & Low-End Mode Specification \u2014 NebuOS",
+      "community": 211,
+      "community_name": "Boot Optimization Specification \u2014 NebuOS",
       "norm_label": "1. the 4gb ram first-class citizen rule"
     },
     {
@@ -36615,8 +36626,8 @@
       "source_location": "L27",
       "_origin": "ast",
       "id": "root_nebu_os_docs_performance_01_memory_2_low_end_mode_architectural_adaptations",
-      "community": 288,
-      "community_name": "Memory Management & Low-End Mode Specification \u2014 NebuOS",
+      "community": 211,
+      "community_name": "Boot Optimization Specification \u2014 NebuOS",
       "norm_label": "2. low-end mode architectural adaptations"
     },
     {
@@ -36626,8 +36637,8 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "root_nebu_os_docs_performance_01_memory_3_related_documents",
-      "community": 288,
-      "community_name": "Memory Management & Low-End Mode Specification \u2014 NebuOS",
+      "community": 211,
+      "community_name": "Boot Optimization Specification \u2014 NebuOS",
       "norm_label": "3. related documents"
     },
     {
@@ -39684,8 +39695,8 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "root_nebu_os_docs_runtime_02_process_model_requirements",
-      "community": 269,
-      "community_name": "Requirements",
+      "community": 46,
+      "community_name": "Graphics Testing Specification \u2014 NebuOS",
       "norm_label": "requirements"
     },
     {
@@ -39695,8 +39706,8 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "root_nebu_os_docs_runtime_02_process_model_functional_requirements",
-      "community": 269,
-      "community_name": "Requirements",
+      "community": 46,
+      "community_name": "Graphics Testing Specification \u2014 NebuOS",
       "norm_label": "functional requirements"
     },
     {
@@ -39706,8 +39717,8 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "root_nebu_os_docs_runtime_02_process_model_non_functional_requirements",
-      "community": 269,
-      "community_name": "Requirements",
+      "community": 46,
+      "community_name": "Graphics Testing Specification \u2014 NebuOS",
       "norm_label": "non-functional requirements"
     },
     {
@@ -39761,8 +39772,8 @@
       "source_location": "L146",
       "_origin": "ast",
       "id": "root_nebu_os_docs_runtime_02_process_model_control_flow",
-      "community": 265,
-      "community_name": "Control Flow",
+      "community": 46,
+      "community_name": "Graphics Testing Specification \u2014 NebuOS",
       "norm_label": "control flow"
     },
     {
@@ -39772,8 +39783,8 @@
       "source_location": "L148",
       "_origin": "ast",
       "id": "root_nebu_os_docs_runtime_02_process_model_cgroups_v2_slice_hierarchy_and_configuration",
-      "community": 265,
-      "community_name": "Control Flow",
+      "community": 46,
+      "community_name": "Graphics Testing Specification \u2014 NebuOS",
       "norm_label": "cgroups v2 slice hierarchy and configuration"
     },
     {
@@ -39783,8 +39794,8 @@
       "source_location": "L166",
       "_origin": "ast",
       "id": "root_nebu_os_docs_runtime_02_process_model_controller_limits_per_scope",
-      "community": 265,
-      "community_name": "Control Flow",
+      "community": 46,
+      "community_name": "Graphics Testing Specification \u2014 NebuOS",
       "norm_label": "controller limits per scope"
     },
     {
@@ -39794,8 +39805,8 @@
       "source_location": "L183",
       "_origin": "ast",
       "id": "root_nebu_os_docs_runtime_02_process_model_process_teardown_signal_handling",
-      "community": 265,
-      "community_name": "Control Flow",
+      "community": 46,
+      "community_name": "Graphics Testing Specification \u2014 NebuOS",
       "norm_label": "process teardown & signal handling"
     },
     {
@@ -39805,8 +39816,8 @@
       "source_location": "L213",
       "_origin": "ast",
       "id": "root_nebu_os_docs_runtime_02_process_model_oom_score_adjustment_architecture",
-      "community": 265,
-      "community_name": "Control Flow",
+      "community": 46,
+      "community_name": "Graphics Testing Specification \u2014 NebuOS",
       "norm_label": "oom score adjustment architecture"
     },
     {
@@ -41411,8 +41422,8 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "root_nebu_os_docs_runtime_07_runtime_security_requirements",
-      "community": 301,
-      "community_name": "Requirements",
+      "community": 38,
+      "community_name": "Runtime Sandboxing and Security Specification \u2014 NebuOS",
       "norm_label": "requirements"
     },
     {
@@ -41422,8 +41433,8 @@
       "source_location": "L27",
       "_origin": "ast",
       "id": "root_nebu_os_docs_runtime_07_runtime_security_functional_requirements",
-      "community": 301,
-      "community_name": "Requirements",
+      "community": 38,
+      "community_name": "Runtime Sandboxing and Security Specification \u2014 NebuOS",
       "norm_label": "functional requirements"
     },
     {
@@ -41433,8 +41444,8 @@
       "source_location": "L35",
       "_origin": "ast",
       "id": "root_nebu_os_docs_runtime_07_runtime_security_non_functional_requirements",
-      "community": 301,
-      "community_name": "Requirements",
+      "community": 38,
+      "community_name": "Runtime Sandboxing and Security Specification \u2014 NebuOS",
       "norm_label": "non-functional requirements"
     },
     {
@@ -45338,8 +45349,8 @@
       "source_location": "L92",
       "_origin": "ast",
       "id": "root_nebu_os_docs_testing_01_unit_testing_7_components",
-      "community": 34,
-      "community_name": "Unit Testing Specification \u2014 NebuOS",
+      "community": 288,
+      "community_name": "Memory Management & Low-End Mode Specification \u2014 NebuOS",
       "norm_label": "7. components"
     },
     {
@@ -45349,8 +45360,8 @@
       "source_location": "L94",
       "_origin": "ast",
       "id": "root_nebu_os_docs_testing_01_unit_testing_7_1_workspace_crates_and_coverage_mandates",
-      "community": 34,
-      "community_name": "Unit Testing Specification \u2014 NebuOS",
+      "community": 288,
+      "community_name": "Memory Management & Low-End Mode Specification \u2014 NebuOS",
       "norm_label": "7.1 workspace crates and coverage mandates"
     },
     {
@@ -45360,8 +45371,8 @@
       "source_location": "L107",
       "_origin": "ast",
       "id": "root_nebu_os_docs_testing_01_unit_testing_7_2_framework_selection",
-      "community": 34,
-      "community_name": "Unit Testing Specification \u2014 NebuOS",
+      "community": 288,
+      "community_name": "Memory Management & Low-End Mode Specification \u2014 NebuOS",
       "norm_label": "7.2 framework selection"
     },
     {
@@ -45404,8 +45415,8 @@
       "source_location": "L154",
       "_origin": "ast",
       "id": "root_nebu_os_docs_testing_01_unit_testing_10_interfaces",
-      "community": 34,
-      "community_name": "Unit Testing Specification \u2014 NebuOS",
+      "community": 269,
+      "community_name": "Requirements",
       "norm_label": "10. interfaces"
     },
     {
@@ -45415,8 +45426,8 @@
       "source_location": "L156",
       "_origin": "ast",
       "id": "root_nebu_os_docs_testing_01_unit_testing_10_1_test_naming_conventions",
-      "community": 34,
-      "community_name": "Unit Testing Specification \u2014 NebuOS",
+      "community": 269,
+      "community_name": "Requirements",
       "norm_label": "10.1 test naming conventions"
     },
     {
@@ -45426,8 +45437,8 @@
       "source_location": "L162",
       "_origin": "ast",
       "id": "root_nebu_os_docs_testing_01_unit_testing_examples",
-      "community": 34,
-      "community_name": "Unit Testing Specification \u2014 NebuOS",
+      "community": 269,
+      "community_name": "Requirements",
       "norm_label": "examples:"
     },
     {
@@ -45437,8 +45448,8 @@
       "source_location": "L169",
       "_origin": "ast",
       "id": "root_nebu_os_docs_testing_01_unit_testing_10_2_mock_trait_definition_example_nebu_runtime_core",
-      "community": 34,
-      "community_name": "Unit Testing Specification \u2014 NebuOS",
+      "community": 269,
+      "community_name": "Requirements",
       "norm_label": "10.2 mock trait definition example (`nebu-runtime-core`)"
     },
     {
@@ -45448,8 +45459,8 @@
       "source_location": "L185",
       "_origin": "ast",
       "id": "root_nebu_os_docs_testing_01_unit_testing_10_3_mock_d_bus_interface_example_zbus_in_nebu_runtime_daemon",
-      "community": 34,
-      "community_name": "Unit Testing Specification \u2014 NebuOS",
+      "community": 269,
+      "community_name": "Requirements",
       "norm_label": "10.3 mock d-bus interface example (`zbus` in `nebu-runtime-daemon`)"
     },
     {
@@ -45459,8 +45470,8 @@
       "source_location": "L206",
       "_origin": "ast",
       "id": "root_nebu_os_docs_testing_01_unit_testing_10_4_property_based_testing_example_nebu_patcher",
-      "community": 34,
-      "community_name": "Unit Testing Specification \u2014 NebuOS",
+      "community": 269,
+      "community_name": "Requirements",
       "norm_label": "10.4 property-based testing example (`nebu-patcher`)"
     },
     {
@@ -50783,8 +50794,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "skills_system_skill",
-      "community": 0,
-      "community_name": "DOCUMENTATION_AUDIT_REPORT.md",
+      "community": 203,
+      "community_name": "2.4 Runtime Engine & Sandboxing",
       "norm_label": "system/skill.md"
     },
     {
@@ -92577,22 +92588,33 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/p1/P1_6_WAYLAND_CORE_SURFACE_LIFECYCLE_PROOF.md",
-      "source_location": "L443",
+      "source_location": "L445",
       "weight": 1.0,
       "_origin": "ast",
       "source": "docs_p1_p1_6_wayland_core_surface_lifecycle_proof_nebuos_milestone_p1_6_wayland_core_surface_lifecycle_verification_report",
-      "target": "docs_p1_p1_6_wayland_core_surface_lifecycle_proof_12_verification_matrix",
+      "target": "docs_p1_p1_6_wayland_core_surface_lifecycle_proof_12_verification_matrix_status_taxonomy",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/p1/P1_6_WAYLAND_CORE_SURFACE_LIFECYCLE_PROOF.md",
-      "source_location": "L468",
+      "source_location": "L482",
       "weight": 1.0,
       "_origin": "ast",
       "source": "docs_p1_p1_6_wayland_core_surface_lifecycle_proof_nebuos_milestone_p1_6_wayland_core_surface_lifecycle_verification_report",
-      "target": "docs_p1_p1_6_wayland_core_surface_lifecycle_proof_13_conclusion_transition_to_p1_7",
+      "target": "docs_p1_p1_6_wayland_core_surface_lifecycle_proof_13_environmental_limitations_architecture_notes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/p1/P1_6_WAYLAND_CORE_SURFACE_LIFECYCLE_PROOF.md",
+      "source_location": "L495",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "docs_p1_p1_6_wayland_core_surface_lifecycle_proof_nebuos_milestone_p1_6_wayland_core_surface_lifecycle_verification_report",
+      "target": "docs_p1_p1_6_wayland_core_surface_lifecycle_proof_14_conclusion_transition_to_p1_7",
       "confidence_score": 1.0
     },
     {
@@ -92819,10 +92841,10 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "docs/p1/P1_6_WAYLAND_CORE_SURFACE_LIFECYCLE_PROOF.md",
-      "source_location": "L472",
+      "source_location": "L499",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "docs_p1_p1_6_wayland_core_surface_lifecycle_proof_13_conclusion_transition_to_p1_7",
+      "source": "docs_p1_p1_6_wayland_core_surface_lifecycle_proof_14_conclusion_transition_to_p1_7",
       "target": "docs_p1_p1_6_wayland_core_surface_lifecycle_proof_boundary_to_milestone_p1_7",
       "confidence_score": 1.0
     },
@@ -107403,5 +107425,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "b5905e0307f3332a4bd80433e4ff161fc90d0d20"
+  "built_at_commit": "55c91cde80ee9e737d953c45f508f837fd54cfe6"
 }

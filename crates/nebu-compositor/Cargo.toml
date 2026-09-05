@@ -29,4 +29,5 @@ tracing-core = "0.1"
 xkbcommon = "0.8"
 wayland-client = "0.31"
 tempfile = "3"
+sha2 = "0.10"
 

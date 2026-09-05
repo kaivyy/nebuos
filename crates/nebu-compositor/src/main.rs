@@ -7,7 +7,21 @@ use std::process::ExitCode;
 
 fn main() -> ExitCode {
     let args: Vec<String> = env::args().collect();
-    if args.iter().any(|arg| arg == "--wayland-probe") {
+    if args.iter().any(|arg| arg == "--presentation-probe") {
+        match nebu_compositor::presentation::run_presentation_probe() {
+            Ok(report) => {
+                if report.probe_success {
+                    ExitCode::SUCCESS
+                } else {
+                    ExitCode::FAILURE
+                }
+            }
+            Err(err) => {
+                eprintln!("nebu-compositor --presentation-probe failed: {err}");
+                ExitCode::FAILURE
+            }
+        }
+    } else if args.iter().any(|arg| arg == "--wayland-probe") {
         match nebu_compositor::wayland::run_wayland_probe() {
             Ok(report) => {
                 if report.probe_success {
@@ -83,6 +97,9 @@ fn main() -> ExitCode {
         println!("Usage: nebu-compositor [OPTIONS]");
         println!();
         println!("Options:");
+        println!(
+            "  --presentation-probe Execute Milestone P1.7 Surface Presentation & Scene Rendering Proof"
+        );
         println!(
             "  --wayland-probe    Execute Milestone P1.6 Wayland Core & Surface Lifecycle Proof"
         );

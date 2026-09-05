@@ -36,6 +36,7 @@ Welcome to the authoritative engineering documentation repository for **NebuOS**
 | [p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md](p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md) | Milestone P1.4: Output Presentation & Calloop Event Loop Reactor Verification Report. |
 | [p1/P1_5_INPUT_SUBSYSTEM_INTEGRATION_PROOF.md](p1/P1_5_INPUT_SUBSYSTEM_INTEGRATION_PROOF.md) | Milestone P1.5: Input Subsystem, Device Discovery & Key Translation Verification Report. |
 | [p1/P1_6_WAYLAND_CORE_SURFACE_LIFECYCLE_PROOF.md](p1/P1_6_WAYLAND_CORE_SURFACE_LIFECYCLE_PROOF.md) | Milestone P1.6: Wayland Core Display Server & Surface Lifecycle Verification Report. |
+| [p1/P1_7_SURFACE_PRESENTATION_SCENE_RENDERING_PROOF.md](p1/P1_7_SURFACE_PRESENTATION_SCENE_RENDERING_PROOF.md) | Milestone P1.7: Surface Presentation, Scene Rendering & Safe Framebuffer Readback Verification Report. |
 
 ---
 

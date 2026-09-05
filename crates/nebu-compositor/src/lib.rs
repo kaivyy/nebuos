@@ -8,6 +8,7 @@
 pub mod backend;
 pub mod input;
 pub mod output;
+pub mod presentation;
 pub mod render;
 pub mod session;
 pub mod state;
