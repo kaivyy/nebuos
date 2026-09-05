@@ -25,6 +25,7 @@ Welcome to the authoritative engineering documentation repository for **NebuOS**
 | [audit/APPLICATION_PLATFORM_MARKETPLACE_ENHANCEMENT_AUDIT.md](audit/APPLICATION_PLATFORM_MARKETPLACE_ENHANCEMENT_AUDIT.md) | Comprehensive Application Platform & Nebu Marketplace Phase Enhancement Audit Report (Flatpak, Flathub, App Manager, security, P6 subphases). |
 | [audit/UI_DESIGN_AND_ICON_ARCHITECTURE_AUDIT.md](audit/UI_DESIGN_AND_ICON_ARCHITECTURE_AUDIT.md) | Comprehensive UI/UX, Design System, Iconography & Phase Ownership Enhancement Audit Report (ADR-0013, design tokens, NebuIcon, tripartite shell, Slint native). |
 | [audit/BOOT_EXPERIENCE_ARCHITECTURE_AUDIT.md](audit/BOOT_EXPERIENCE_ARCHITECTURE_AUDIT.md) | Comprehensive Boot Experience Architecture, Lifecycle & Graphical Handoff Audit Report (ADR-0014, 10-stage lifecycle, 3 boot modes, BGRT handover, silent cmdline, P0 headless boundary). |
+| [audit/P1_FINAL_VALIDATION_AUDIT.md](audit/P1_FINAL_VALIDATION_AUDIT.md) | Milestone P1.8: Final Compositor Stack Validation, Security Audit & P1 Baseline Lock Report. |
 
 ### Phase P1 Milestone Empirical Proof Reports (`docs/p1/`)
 

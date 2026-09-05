@@ -12,6 +12,8 @@
 **P1.4 Output Presentation Proof:** `docs/p1/P1_4_OUTPUT_PRESENTATION_EVENT_LOOP_PROOF.md` (`ca7b489`)  
 **P1.5 Input Subsystem Proof:** `docs/p1/P1_5_INPUT_SUBSYSTEM_INTEGRATION_PROOF.md` (`b5905e0`)  
 **P1.6 Wayland Core Proof:** `docs/p1/P1_6_WAYLAND_CORE_SURFACE_LIFECYCLE_PROOF.md` (`de6c406`)  
+**P1.7 Presentation Commit:** `04d8886` (`04d88868a421dd2787a4dbf01c848dbcbf8b9fee`)  
+**P1.7 Git Tag:** `p1.7-locked`  
 **Protected P0 Reference:** Proxmox VM 101 (`nebuos-test`) — UNTOUCHED & RUNNING (PID `2181796`)  
 **Dedicated P1 Validation Target:** Proxmox VM 102 (`nebuos-p1-graphical`)  
 
