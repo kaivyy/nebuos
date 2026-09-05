@@ -1115,8 +1115,8 @@
     "semantic_hash": ""
   },
   "crates/nebu-compositor/src/main.rs": {
-    "mtime": 1788608115.8349173,
-    "ast_hash": "35f3293c2b831c56a0eb83abde06e317",
+    "mtime": 1788619651.835961,
+    "ast_hash": "73bf4d1cf1d48052a00ed0c3f70cf863",
     "semantic_hash": ""
   },
   "crates/nebu-compositor/src/render.rs": {
@@ -1135,8 +1135,8 @@
     "semantic_hash": ""
   },
   "crates/nebu-compositor/src/wayland.rs": {
-    "mtime": 1788606376.1592035,
-    "ast_hash": "a3c2d5321604b008eb8c9e046a5e5b20",
+    "mtime": 1788619700.5972612,
+    "ast_hash": "44239fae8e509e9796f01784689e3e2f",
     "semantic_hash": ""
   },
   "docs/p1/P1_1_IMPLEMENTATION_NOTE.md": {

@@ -306,8 +306,6 @@
   "304": "5. Detailed Architectural Decisions",
   "305": ".grab",
   "306": "Requirements",
-  "307": "docs/README.md",
   "308": ".new_layer_surface",
-  "309": ".ack_configure",
-  "310": "10. Interfaces"
+  "309": ".ack_configure"
 }

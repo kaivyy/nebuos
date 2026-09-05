@@ -1263,5 +1263,10 @@
     "mtime": 1788618794.5316455,
     "ast_hash": "75df1c38755b68b06f60d565dacac71b",
     "semantic_hash": ""
+  },
+  "scripts/vm103_p2_proof.py": {
+    "mtime": 1788621106.1579173,
+    "ast_hash": "ede1b74d513df79d2613a51bf75fe4f0",
+    "semantic_hash": ""
   }
 }

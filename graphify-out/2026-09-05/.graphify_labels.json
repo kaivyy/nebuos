@@ -287,6 +287,7 @@
   "285": "vm102_renderer_proof.py",
   "286": "P1_GRAPHICAL_ENVIRONMENT.md",
   "287": "10. Interfaces",
+  "288": "DesktopProtocolClientState",
   "289": "2. Protected Reference and Validation Environment Topology",
   "290": "10. Interfaces",
   "291": "11. Dependencies",
@@ -294,7 +295,19 @@
   "293": "Requirements",
   "294": "11. Dependencies",
   "295": "7. Components",
+  "296": "2. Detailed Layer Specifications",
+  "297": "NebuClientState",
+  "298": "05-hardware-specification.md",
   "299": "5. Requirements",
   "300": "Control Flow",
-  "306": "Requirements"
+  "301": "Regression Gates and Release Promotion Specification — NebuOS",
+  "302": "skills/README.md",
+  "303": "01-system-architecture.md",
+  "304": "5. Detailed Architectural Decisions",
+  "305": ".grab",
+  "306": "Requirements",
+  "307": "docs/README.md",
+  "308": ".new_layer_surface",
+  "309": ".ack_configure",
+  "310": "10. Interfaces"
 }
