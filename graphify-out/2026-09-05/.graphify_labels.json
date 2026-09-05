@@ -287,7 +287,6 @@
   "285": "vm102_renderer_proof.py",
   "286": "P1_GRAPHICAL_ENVIRONMENT.md",
   "287": "10. Interfaces",
-  "288": "Memory Management & Low-End Mode Specification — NebuOS",
   "289": "2. Protected Reference and Validation Environment Topology",
   "290": "10. Interfaces",
   "291": "11. Dependencies",
@@ -295,6 +294,7 @@
   "293": "Requirements",
   "294": "11. Dependencies",
   "295": "7. Components",
-  "296": "5. Requirements",
-  "299": "5. Requirements"
+  "299": "5. Requirements",
+  "300": "Control Flow",
+  "306": "Requirements"
 }

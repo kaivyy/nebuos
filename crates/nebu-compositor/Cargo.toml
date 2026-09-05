@@ -28,6 +28,8 @@ tracing = "0.1"
 tracing-core = "0.1"
 xkbcommon = "0.8"
 wayland-client = "0.31"
+wayland-protocols = { version = "0.32", features = ["client"] }
+wayland-protocols-wlr = { version = "0.3", features = ["client"] }
 tempfile = "3"
 sha2 = "0.10"
 

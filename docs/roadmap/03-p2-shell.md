@@ -11,8 +11,8 @@
 Implement `nebu-shell`, the unified native Rust desktop shell implementing ADR-0009. P2 delivers the taskbar, application launcher, status tray (SNI), quick settings flyout, lock screen (`ext-session-lock-v1`), and the dynamic theme/layout engine supporting runtime switching between Nebu, Windows-like, and macOS-like paradigms in <= 150ms without process restart.
 
 ## 2. Scope (What's IN)
-- Rust Crates: `crates/nebu-shell-core`, `crates/nebu-shell-layout`, `crates/nebu-shell-theme`.
-- Native GUI rendering via Slint or Iced toolkit.
+- Rust Crate: `crates/nebu-shell` (lean single crate with `core`, `layout`, `theme`, `system_api`, `ui` modules).
+- Native GUI rendering via Slint 1.7+ toolkit ([ADR-0019](../decisions/ADR-0019-slint-toolkit-adoption.md)).
 - Wayland layer-shell surfaces (`zwlr_layer_surface_v1`): Panel, Dock, Launcher, Quick Settings, OSD.
 - Dynamic layout engine: runtime switching between Nebu Default, Windows-like, and macOS-like paradigms.
 - Fast application launcher with sub-millisecond in-memory SQLite indexing.

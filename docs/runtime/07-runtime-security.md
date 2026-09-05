@@ -1,7 +1,7 @@
 # Runtime Sandboxing and Security Specification — NebuOS
 
 ## Status
-DRAFT
+APPROVED
 
 ## Purpose
 This specification formalizes the sandboxing, privilege containment, network access, IPC isolation, and auditing architecture enforced upon Windows applications executing under NebuRuntime. It defines how NebuOS leverages Bubblewrap (`bwrap`), Linux namespaces, Seccomp-BPF filters, and systemd journal audit logging to ensure that untrusted or vulnerable Windows software cannot compromise the immutable host OS, exfiltrate personal user data, or escape execution boundaries.
@@ -16,6 +16,8 @@ This document covers:
 - Virtual filesystem filtering (`/proc` private PID masking, restricted `/sys`).
 - Device node access policies (`/dev/dri/renderD*` vs `/dev/dri/card*`, selective evdev joystick mapping).
 - Security event and Seccomp violation audit logging into `systemd-journald`.
+- Decoupled runtime read-only mount enforcement (`/var/lib/nebu/runtimes/stores/` per [ADR-0017](file:///root/NebuOS/docs/decisions/ADR-0017-decoupled-runtime-packaging-and-storage.md)).
+- Strict AI governance boundaries preventing autonomous security policy alterations.
 
 ## Non-goals
 - **Hypervisor Hardware Enclaves:** Hardware virtualization or confidential computing enclaves (SEV/TDX).
@@ -31,6 +33,9 @@ This document covers:
 - **REQ-SEC-004:** Drop all Linux capabilities unconditionally prior to executing child processes, preventing privilege escalation even in the event of local setuid binary exploitation.
 - **REQ-SEC-005:** Mount GPU acceleration interfaces strictly through unprivileged DRM render nodes (`/dev/dri/renderD128`), blocking display master nodes (`/dev/dri/card0`) to prevent compositor surface hijacking.
 - **REQ-SEC-006:** Log all sandbox policy violations and Seccomp syscall rejections to `systemd-journald` with structured metadata fields.
+- **REQ-SEC-007 (Hard Release Gate):** Enforce the mandatory gate invariant:
+$$\text{Compatibility PASS} + \text{Security FAIL} = \mathbf{REJECT}$$
+No runtime, patch, profile, or update will be promoted to Candidate or Stable if it degrades security posture, disables sandboxing, weakens SELinux, or creates uncontained privilege escalation paths.
 
 ### Non-Functional Requirements
 - **NFR-SEC-001 (Sandbox Launch Overhead):** Bubblewrap namespace setup and mount assembly must take less than 15 ms.
@@ -321,6 +326,27 @@ pub fn log_security_event(
 - **Ransomware Neutralization:** Ransomware executing inside `drive_c` can only encrypt files inside that single prefix. The host operating system, other application prefixes, and unbridged documents are physically invisible and unreachable.
 - **Credential Protection:** Because `/home/nebu/` is masked except for explicit subdirectories, browser tokens, SSH keys, GPG rings, and shell histories are safe from data exfiltration.
 
+### The Fundamental Security Release Gate
+$$\text{Compatibility PASS} + \text{Security FAIL} = \mathbf{REJECT}$$
+
+Under no circumstances will a patch, DLL override, compatibility profile, or runtime configuration be approved if it:
+1. Disables SELinux enforcement or requires `setenforce 0`.
+2. Weakens Bubblewrap isolation (e.g. binding `/etc`, `/root`, or raw host storage devices).
+3. Bypasses host firewall rules or allows unfiltered socket creation.
+4. Suppresses pointer sanitization or introduces buffer overflow vulnerabilities into `ntdll` or `wineserver`.
+5. Bypasses application licensing, commercial DRM, or kernel anti-cheat mechanisms.
+
+### Decoupled Runtime Mount Security (ADR-0017)
+- All compatibility runtime packages residing on the decoupled `@runtimes` subvolume (`/var/lib/nebu/runtimes/stores/`) are owned strictly by `root:root` with permissions `0755`.
+- At container instantiation, `nebu-runtime-daemon` mounts the selected runtime path using `--ro-bind /var/lib/nebu/runtimes/stores/<runtime_id> /usr/lib/nebu/runtime`.
+- Write access inside `/usr/lib/nebu/runtime` is physically impossible; neither the Windows executable nor rogue Wine processes can overwrite runtime binaries or libraries.
+
+### AI Governance and Autonomous Security Guardrails
+AI models, agents, and automated development assistants operate under non-negotiable security guardrails:
+1. **NO Autonomous Security Relaxations:** AI agents are cryptographically and procedurally blocked from modifying Seccomp filter rules, removing capability drops, or expanding Bubblewrap bind vectors.
+2. **NO Autonomous Release Authorization:** AI tools can analyze logs and draft candidate fixes, but production promotion into `Candidate` or `Stable` requires human verification.
+3. **NO Anti-Cheat or DRM Tampering:** AI tools are strictly forbidden from generating code or profiles designed to spoof, crack, or bypass vendor DRM or anti-cheat systems.
+
 ## Resource Requirements
 
 - **Bubblewrap Process Memory:** ~1.4 MB RSS per sandbox root process.
@@ -370,3 +396,7 @@ pub fn log_security_event(
 - [03-windows-runtime.md](03-windows-runtime.md) — Executable classification and PE headers.
 - [04-prefix-management.md](04-prefix-management.md) — Prefix layout and Btrfs reflink snapshotting.
 - [05-wine-integration.md](05-wine-integration.md) — Wine runtime engines and environment configuration.
+- [08-nebuwine-specification.md](08-nebuwine-specification.md) — NebuWine downstream distribution specification.
+- [../decisions/ADR-0016-nebuwine-architecture.md](../decisions/ADR-0016-nebuwine-architecture.md) — NebuWine architecture.
+- [../decisions/ADR-0017-decoupled-runtime-packaging-and-storage.md](../decisions/ADR-0017-decoupled-runtime-packaging-and-storage.md) — Decoupled runtime storage.
+- [../compatibility/07-wine-patch-governance.md](../compatibility/07-wine-patch-governance.md) — Wine patch governance.

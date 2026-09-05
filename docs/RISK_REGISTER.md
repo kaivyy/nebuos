@@ -91,10 +91,14 @@ Impact  5 |  5 (M)   10 (H)   15 (H)   20 (C)   25 (C)
 | **RSK-052** | Network | Network Disconnect or Packet Corruption During Multi-Gigabyte App Download | 4 | 2 | **8** | HTTP range request resumable downloads; atomic staging directory; SHA-256 payload checksum validation before extraction. | DevOps Lead | MITIGATED |
 | **RSK-053** | Legal | DMCA Notice or Copyright Dispute Regarding Third-Party App Recipe | 2 | 4 | **8** | Zero proprietary binary distribution; recipes fetch legal media from official vendor CDNs; formal notice-and-takedown protocol. | Lead Architect | MONITORING |
 | **RSK-054** | Infrastructure | Nebu Marketplace Metadata Origin Server Outage | 2 | 3 | **6** | Static anycast CDN distribution with multi-origin replication; client-side stale-while-revalidate local cache. | DevOps Lead | ACTIVE |
-| **RSK-055** | Compatibility | Windows Application Compatibility Drift Across Wine Runtime Updates | 3 | 4 | **12** | Freeze Wine version per application prefix; gate runtime upgrades behind Compatibility Lab automated regression benchmarks. | Compatibility Lead | ACTIVE |
+| **RSK-055** | Compatibility | Windows Application Compatibility Drift Across Wine Runtime Updates | 3 | 4 | **12** | Decoupled runtime architecture on `/var/lib/nebu/runtimes/` (ADR-0017); per-app version pinning; 14-day Compatibility Lab quarantine; instant atomic rollback. | Compatibility Lead | ACTIVE |
 | **RSK-056** | Technical | Display Modesetting Flicker During DRM/KMS Handover | 3 | 3 | **9** | Inherit EFI framebuffer scanout plane via SimpleDRM (with BGRT metadata); atomic modesetting under scanout preservation principle (ADR-0014). | Compositor Lead | ACTIVE |
 | **RSK-057** | Kernel/Boot | Early Boot Silent Hang Obscuring Critical Diagnostic Information | 3 | 4 | **12** | Emergency Escape/F8 unblank keypress; explicit diagnostic BLS entry; hardware watchdog 60s timeout with automatic rollback. | Systems Architect | ACTIVE |
 | **RSK-058** | Governance | Milestone Scope Creep via Premature Splash Implementation in Headless P0 | 2 | 5 | **10** | Strict milestone isolation in AGENTS.md Sec 24; omit Plymouth in P0 dracut; CI image linting blocks GUI packages. | Lead Architect | ACTIVE |
+| **RSK-059** | Maintenance | Downstream Wine Patchset Drift and Rebase Bankruptcy | 3 | 4 | **12** | Upstream-First governance (ADR-0016); strict cap of $\le 60\text{ patches}$; automated equivalence detection; mandatory 180-day review. | Compatibility Lead | ACTIVE |
+| **RSK-060** | Architecture | Immutable Base OS Coupling with Wine Runtime Updates | 4 | 4 | **16** | Relocate runtimes to dedicated `@runtimes` Btrfs subvolume at `/var/lib/nebu/runtimes/stores/` with `--ro-bind` execution (ADR-0017). | Storage Lead | MITIGATED |
+| **RSK-061** | Compatibility | Gaming Runtime Hacks Destabilizing Enterprise CAD/Productivity Workflows | 3 | 4 | **12** | Composable extension profile model (ADR-0018); core NebuWine remains pure Win32/NT baseline; gaming components isolated in gaming prefixes. | Graphics Lead | ACTIVE |
+| **RSK-062** | Security | Autonomous AI Code Modification Compromising Sandbox or Wine Security | 2 | 5 | **10** | Strict AI governance specification; AI tools prohibited from autonomous commit, merge, security relaxation, or patch deletion. | Security Lead | ACTIVE |
 
 ---
 
@@ -194,6 +198,39 @@ Impact  5 |  5 (M)   10 (H)   15 (H)   20 (C)   25 (C)
   1. *Strict Milestone Isolation Governance:* Section 24 in `AGENTS.md` strictly confines P0 to 100% headless foundation (`omit_dracutmodules+=" plymouth "`).
   2. *Automated CI Package Audits:* CI tests fail immediately if graphical, Plymouth, or Wayland packages are detected in the P0 image manifest.
 
+### 3.13 RSK-059: Downstream Wine Patchset Drift and Rebase Bankruptcy
+- **Score:** 12 (Likelihood: 3, Impact: 4) — HIGH
+- **Root Cause:** Accumulating unmaintained downstream patches in `wine.git` leads to insurmountable merge conflicts during bi-weekly WineHQ rebases, creating a divergent hard fork.
+- **Architectural Safeguards:**
+  1. *Upstream-First Governance (ADR-0016):* Enforce $\text{NebuWine} = \text{Upstream Wine} + \text{Minimal Maintained Delta}$.
+  2. *Patch Count Cap:* Hard limit of $\le 60\text{ active patches}$; exceeding this blocks new patch ingestion until upstreaming occurs.
+  3. *Automated Equivalence Detection:* Multi-stage detection (`git patch-id`, semantic diff, behavioral test) automatically flags upstreamed patches for removal.
+  4. *Mandatory 180-Day Eviction:* Patches unmerged upstream after 180 days must either be refactored into prefix workarounds (`nebu-patcher`) or reviewed for deprecation.
+
+### 3.14 RSK-060: Immutable Base OS Coupling with Wine Runtime Updates
+- **Score:** 16 (Likelihood: 4, Impact: 4) — CRITICAL (MITIGATED by ADR-0017)
+- **Root Cause:** Placing Wine runtimes in `/usr/lib/nebu/runtimes/` forces entire 3.5GB base OS rebuilds and reboots for minor Wine bug fixes, causing update friction and image bloat.
+- **Architectural Safeguards:**
+  1. *Decoupled Subvolume Storage (ADR-0017):* Runtimes reside on dedicated Btrfs subvolume `@runtimes` mounted at `/var/lib/nebu/runtimes/stores/`.
+  2. *Read-Only Bubblewrap Mapping:* At launch, the target runtime is mounted `--ro-bind` into the sandbox at `/usr/lib/nebu/runtime`, preserving immutability during execution.
+  3. *Zero-Reboot Hot-Swap:* Runtime updates, candidate testing, and rollback execute immediately without host OS reboot.
+
+### 3.15 RSK-061: Gaming Runtime Hacks Destabilizing Enterprise CAD/Productivity Workflows
+- **Score:** 12 (Likelihood: 3, Impact: 4) — HIGH
+- **Root Cause:** Merging aggressive gaming patches, experimental wine-staging hacks, or custom memory allocators into core Wine introduces subtle regressions in Microsoft Office, AutoCAD, and Revit.
+- **Architectural Safeguards:**
+  1. *Composable Gaming Profile (ADR-0018):* $\text{NebuWine Gaming} = \text{NebuWine Core} + \text{Gaming Runtime Components}$.
+  2. *Pristine Core Engine:* Enterprise productivity applications execute on clean NebuWine Stable without gaming hacks.
+  3. *Dynamic Component Injection:* DXVK, VKD3D-Proton, NTSYNC/fsync, and low-latency audio are injected exclusively into designated gaming prefixes.
+
+### 3.16 RSK-062: Autonomous AI Code Modification Compromising Sandbox or Wine Security
+- **Score:** 10 (Likelihood: 2, Impact: 5) — HIGH
+- **Root Cause:** Automated AI coding assistants or autonomous agents relaxing Seccomp filters, disabling Bubblewrap namespaces, or applying insecure Wine stubs to make broken applications run.
+- **Architectural Safeguards:**
+  1. *AI Boundary Governance (`07-wine-patch-governance.md`):* AI tools are strictly prohibited from committing to release branches, deleting patches, or approving security exceptions.
+  2. *Hard Security Invariant:* $\text{Compatibility PASS} + \text{Security FAIL} = \mathbf{REJECT}$.
+  3. *Cryptographic Verification:* All production builds and promotions require human-reviewed GPG cryptographic signatures.
+
 ---
 
 ## 4. Risk Review Cadence & Ownership Governance
@@ -208,7 +245,7 @@ Impact  5 |  5 (M)   10 (H)   15 (H)   20 (C)   25 (C)
 - [README.md](file:///root/NebuOS/docs/README.md) — Master architecture overview
 - [OPEN_QUESTIONS.md](file:///root/NebuOS/docs/OPEN_QUESTIONS.md) — Unresolved design decisions and trade-offs
 - [ASSUMPTIONS.md](file:///root/NebuOS/docs/ASSUMPTIONS.md) — Foundational engineering assumptions
-- [decisions/ADR-0009-no-vm.md](file:///root/NebuOS/docs/decisions/ADR-0009-no-vm.md) — Prohibition of Virtual Machines
-- [testing/00-testing-strategy.md](file:///root/NebuOS/docs/testing/00-testing-strategy.md) — Testing strategy and QA gates
-- [updates/04-rollback.md](file:///root/NebuOS/docs/updates/04-rollback.md) — Atomic rollback and boot recovery
+- [decisions/ADR-0007-no-vm.md](file:///root/NebuOS/docs/decisions/ADR-0007-no-vm.md) — Prohibition of Virtual Machines
+- [testing/00-test-strategy.md](file:///root/NebuOS/docs/testing/00-test-strategy.md) — Testing strategy and QA gates
+- [updates/04-rollback-recovery.md](file:///root/NebuOS/docs/updates/04-rollback-recovery.md) — Atomic rollback and boot recovery
 - [decisions/ADR-0014-boot-experience-and-graphical-handoff.md](file:///root/NebuOS/docs/decisions/ADR-0014-boot-experience-and-graphical-handoff.md) — Boot experience and graphical handoff

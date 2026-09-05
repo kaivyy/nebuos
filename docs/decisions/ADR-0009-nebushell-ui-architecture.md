@@ -17,7 +17,7 @@ Specifically, the PRD mandates first-class support for three primary desktop int
 2. **macOS-like Paradigm ("Dock + Top Bar"):** Persistent slim menu/status bar anchored to the top edge (system status, clock, quick toggles), paired with a floating, auto-hiding application Dock anchored to the bottom edge displaying pinned and active applications with magnification/bounce indicators.
 3. **Traditional Paradigm ("Classic Desktop"):** Dual-panel or single classic panel (GNOME 2 / MATE / XFCE mental model) with hierarchical category application menus ("Applications", "Places", "System"), explicit window lists with text labels, and a dedicated workspace pager.
 
-In accordance with [ADR-0006](ADR-0006-nebu-shell.md), NebuShell must be authored entirely in native Rust using a declarative UI toolkit (Slint/Iced) communicating with `nebu-compositor` via the `wlr-layer-shell-unstable-v1` protocol. NebuShell strictly prohibits web runtime environments (Electron, Chromium, Node.js).
+In accordance with [ADR-0004](ADR-0004-rust.md) and [ADR-0019](ADR-0019-slint-toolkit-adoption.md), NebuShell must be authored entirely in native Rust using the declarative Slint UI toolkit communicating with `nebu-compositor` via the `wlr-layer-shell-unstable-v1` protocol. NebuShell strictly prohibits web runtime environments (Electron, Chromium, Node.js).
 
 ---
 

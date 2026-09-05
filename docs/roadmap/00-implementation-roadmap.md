@@ -161,32 +161,41 @@ Engineer the native Wayland display server (`nebu-compositor`) in Rust using the
 ### Phase P2: NebuShell (Desktop Shell with Theme/Layout Engine)
 
 #### 3.1 Objective
-Implement the native declarative desktop shell (`nebu-shell`) in Rust, delivering taskbars, docks, application launchers, status trays, and notification overlays. The shell connects to `nebu-compositor` via `wlr-layer-shell` and incorporates the pluggable Theme + Layout + Behavior paradigm engine defined in [ADR-0009](ADR-0009-nebushell-ui-architecture.md), enabling instant runtime switching between Windows-like, macOS-like, and Traditional desktop workflows without user logout.
+Implement the native declarative desktop shell (`nebu-shell`) in Rust, delivering taskbars, docks, application launchers, status trays, and notification overlays. The shell connects to `nebu-compositor` via `wlr-layer-shell` and incorporates the pluggable Theme + Layout + Behavior paradigm engine defined in [ADR-0009](../decisions/ADR-0009-nebushell-ui-architecture.md) and [ADR-0019](../decisions/ADR-0019-slint-toolkit-adoption.md), enabling instant runtime switching between Windows-like, macOS-like, and Traditional desktop workflows without user logout.
+
+Phase P2 is structured into two gated sub-phases:
+- **Phase P2.0 (Compositor Desktop Protocol Enablement & Architecture Lock):** Pre-implementation enablement gating. Ratifies Slint adoption (ADR-0019, resolving OQ-001), establishes the System API specification (`docs/interfaces/08-system-api-interfaces.md`), adds `xdg_wm_base` and `wlr-layer-shell-unstable-v1` to `nebu-compositor` as additive capabilities, and reruns the P1 regression test suite. Zero UI code is written in P2.0.
+- **Phase P2.1 (NebuShell Core & UI Implementation):** Implementation of `crates/nebu-shell`, desktop panels, dock, launcher, OSD, quick settings, and theme hot-reloading.
 
 #### 3.2 Scope (What's IN)
-- Rust crate workspace `crates/nebu-shell/` partitioned into:
-  - `nebu-shell-core`: Wayland layer-shell event loop, D-Bus session coordinator, service watchdog.
-  - `nebu-shell-layout`: Layer-shell surface AST calculator, dynamic anchoring, exclusive zone solver.
-  - `nebu-shell-theme`: Design tokens, color palettes, border radii, icon resolution (`freedesktop-icons`).
-  - `nebu-shell-behavior`: Input mapper, task switcher, window grouping logic.
-- UI components: Taskbar, Floating Dock, Application Launcher (`nebu-launcher`), System Tray (`StatusNotifierItem`), Quick Settings flyout (PipeWire volume, NetworkManager Wi-Fi), Notification center.
-- In-memory SQLite indexing for `.desktop` application files.
-- D-Bus interface `org.nebu.Shell1` for dynamic paradigm switching.
-- Pre-packaged canonical paradigms: Windows-like, macOS-like, Traditional.
+- **Phase P2.0 Deliverables:**
+  - `ADR-0019-slint-toolkit-adoption.md` (Toolkit ratification; closes OQ-001).
+  - `docs/interfaces/08-system-api-interfaces.md` (NetworkManager, UPower, logind, BlueZ, PipeWire contracts).
+  - Additive protocol support in `crates/nebu-compositor`: `xdg_wm_base` and `wlr-layer-shell-unstable-v1`.
+  - Headless layer shell verification harness: `nebu-layer-shell-probe`.
+  - Re-run full 6-probe P1 regression suite (`--drm-probe` through `--presentation-probe`).
+- **Phase P2.1 Deliverables:**
+  - Rust crate `crates/nebu-shell/` (lean single crate with internal modules: `core`, `layout`, `theme`, `system_api`, `ui`).
+  - UI components: Taskbar, Floating Dock, Application Launcher (`nebu-launcher`), System Tray (`StatusNotifierItem`), Quick Settings flyout (PipeWire volume, NetworkManager Wi-Fi), Notification center (`org.freedesktop.Notifications`), Session lock screen (`ext-session-lock-v1`).
+  - In-memory SQLite indexing for `.desktop` application files.
+  - D-Bus interface `org.nebu.Shell1` for dynamic paradigm switching.
+  - Pre-packaged canonical paradigms: Windows-like, macOS-like, Traditional.
 
 #### 3.3 Anti-Scope (What's NOT in P2)
 - NO Windows binary execution or Wine prefix management (deferred to P3).
 - NO graphical software center or package manager GUI (deferred to P6).
 - NO arbitrary third-party compiled `.so` plugins or untrusted JavaScript/Python scripting engines.
+- NO modifying locked Milestone P0 (`71d0c9e`) or P1 (`81c9791`) foundational baselines.
 
 #### 3.4 Dependencies
-- P0 Foundation base image, P1 NebuCompositor.
-- Rust GUI framework: Slint 1.7+ or Iced 0.12+ (configured with OpenGL/Vulkan rendering).
-- System D-Bus daemons: PipeWire 1.0+, WirePlumber, NetworkManager, systemd-logind.
-- Rust dependencies: `zbus = "4.2"`, `rusqlite = "0.31"`, `image = "0.25"`.
+- P0 Foundation base image (`quay.io/fedora/fedora-bootc:44`), P1 NebuCompositor display substrate.
+- Development Environment: Dedicated VM103 (`nebuos-p2-desktop`, Fedora 44 bootc) isolated from locked VM101/VM102.
+- Rust GUI framework: Slint 1.7+ ([ADR-0019](../decisions/ADR-0019-slint-toolkit-adoption.md)).
+- System D-Bus daemons: PipeWire 1.0+, WirePlumber, NetworkManager, UPower, BlueZ, systemd-logind.
+- Rust dependencies: `zbus = "4.2"`, `rusqlite = "0.31"`, `image = "0.25"`, `calloop = "0.14"`.
 
 #### 3.5 Deliverables
-- **Crates:** `crates/nebu-shell/nebu-shell-core`, `crates/nebu-shell/nebu-shell-layout`, `crates/nebu-shell/nebu-shell-theme`, `crates/nebu-shell/nebu-shell-behavior`
+- **Crate:** `crates/nebu-shell` (lean single crate with internal modules: `core`, `layout`, `theme`, `system_api`, `ui`)
 - **Binary:** `/usr/bin/nebu-shell`
 - **Systemd User Unit:** `packaging/systemd/user/nebu-shell.service`
 - **Paradigm Presets:** `/usr/share/nebu/paradigms/{windows,macos,traditional}.ron`
@@ -196,6 +205,7 @@ Implement the native declarative desktop shell (`nebu-shell`) in Rust, deliverin
 2. Pressing the Super key opens the application launcher in < 80ms, displaying indexed desktop applications.
 3. Executing `busctl --user call org.nebu.Shell1 /org/nebu/Shell1 org.nebu.Shell1 SwitchParadigm s "macos"` transitions the UI from bottom taskbar to top bar + floating dock in < 150ms without flickering or closing client windows.
 4. Total idle memory footprint of NebuShell <= 45 MB RSS (Combined Compositor + Shell <= 80 MB RSS).
+5. All 6 P1 regression probes continue to pass with zero regressions.
 
 #### 3.7 Known Risks and Mitigations
 - *Layer-shell protocol race condition during dynamic surface anchor mutation causing surface freeze.*  

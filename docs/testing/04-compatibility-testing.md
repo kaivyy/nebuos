@@ -1,7 +1,7 @@
 # Compatibility Testing Specification — NebuOS
 
 ## 1. Status
-**Status:** DRAFT  
+**Status:** APPROVED  
 **Type:** Subsystem Engineering Specification  
 **Domain:** Windows Binary Compatibility, Wine/Proton Verification, and Application QA  
 **Target Architecture:** x86_64  
@@ -111,9 +111,9 @@ flowchart TD
 
 | Tier | Category | Representative Applications | Validation Workflow | CI Cadence |
 |---|---|---|---|---|
-| **Tier 1** | Enterprise Productivity & CAD | Microsoft Word 2021<br>Microsoft Excel 2021<br>PowerPoint 2021<br>Autodesk AutoCAD 2024 | Document generation, complex formulas (500k rows), macro execution, DWG viewport orbit, PDF/DWG export. | Every Wine/Kernel/Mesa bump; blocks release. |
-| **Tier 2** | Professional DCC & Creative | Autodesk Maya 2024<br>Autodesk 3ds Max<br>Adobe Photoshop 2023 | 3D scene assembly, Direct3D 11 viewport navigation, Arnold CPU render, filter pipeline processing. | Weekly regression run; blocks Stable release. |
-| **Tier 3** | Gaming & 3D Engines | DirectX 11 Benchmark<br>DirectX 12 (VKD3D) Benchmark<br>Steam Proton Test Titles | Automated game launch, frame pacing benchmark, shader compilation test, input responsiveness. | Bi-weekly run; non-blocking advisory. |
+| **Tier 1** | Enterprise Productivity & CAD/BIM | Microsoft Word 2021<br>Microsoft Excel 2021<br>PowerPoint 2021<br>Autodesk AutoCAD 2024<br>Autodesk Revit 2025<br>Dassault SolidWorks 2024 | Document generation, complex formulas (500k rows), macro execution, DWG/RVT model load, Direct3D 11/OpenGL viewport orbit, parametric constraint solve, PDF/DWG export. | Every Wine/Kernel/Mesa bump; blocks release. |
+| **Tier 2** | Professional DCC & Creative Suites | Autodesk Maya 2024<br>Autodesk 3ds Max 2024<br>Adobe Photoshop 2024<br>Adobe Premiere Pro 2024<br>Adobe After Effects 2024 | 3D scene assembly, Direct3D 11 viewport navigation, Arnold CPU render, multi-track 4K ProRes/H.264 timeline playback, motion graphics rendering, filter pipeline processing. | Weekly regression run; blocks Stable release. |
+| **Tier 3** | Gaming & 3D Interactive Engines | DirectX 11 Benchmark<br>DirectX 12 (VKD3D) Benchmark<br>Vulkan Native Games<br>Steam Proton Test Titles | Automated game launch, frame pacing benchmark, shader compilation test, input responsiveness, audio sync. | Bi-weekly run; non-blocking advisory. |
 | **Tier 4** | Long-Tail Desktop Utilities | Notepad++<br>7-Zip<br>Total Commander<br>WinRAR | File compression/decompression, text search & replace, archive parsing, dialog box interaction. | Monthly sweep; community advisory. |
 
 ### 7.2 Automation Subsystems
@@ -121,6 +121,37 @@ flowchart TD
 - **`win-automation-agent`:** Lightweight Python helper running inside Wine via `pywin32`, communicating with the runner via a named pipe or localhost socket to drive Win32 COM interfaces.
 - **Synthetic Input Injector:** Tool using Linux `/dev/uinput` or Xwayland `XTest` extension to simulate hardware keystrokes and mouse motions.
 - **Visual Regression Engine:** Rust-based image comparison tool utilizing `pixelmatch` and Structural Similarity Index (SSIM) calculations.
+- **Differential Trace Engine:** Offline trace comparator aligning native Windows 11 API logs against NebuWine logs.
+
+### 7.3 Application Workflow Evaluation Levels (L0 through L7)
+NebuOS evaluates compatibility beyond binary execution through an 8-level functional progression:
+- **L0 (Launch Verification):** The executable initializes, forks necessary child processes, sets up its windowing context, and maps a surface to Wayland within 15 seconds without unexpected termination.
+- **L1 (UI Presentation):** Windows, menus, dialogs, and toolbars render without missing controls, black rectangles, font distortion, or flickering.
+- **L2 (Core Interaction):** Basic user interactions (mouse clicks, keyboard navigation, menu selection, modal dialogs) function accurately.
+- **L3 (File Interoperability):** Files can be loaded from and saved to storage, preserving full format specifications (e.g., `.dwg`, `.rvt`, `.sldprt`, `.prproj`, `.aep`).
+- **L4 (Graphics & GPU Pipeline):** Hardware-accelerated rendering contexts (D3D9/11/12 via DXVK/VKD3D or OpenGL) operate with correct shading, depth testing, texturing, and frame rates $\ge 30\text{ FPS}$.
+- **L5 (External Extensions & Plugins):** Third-party add-ins, COM automation servers, external render engines, and VST plugins instantiate and execute without segmentation faults.
+- **L6 (Production Pipeline Workflows):** High-load production operations (e.g. 4K video encoding, structural finite element calculation, 3D batch render) complete bit-identically to Windows baselines.
+- **L7 (Long-Running Stability):** Continuous execution under simulated user input for $\ge 4\text{ hours}$ without memory leaks ($< 25\text{ MB/hour}$ growth) or process deadlocks.
+
+### 7.4 Differential Testing Specification (Windows Native vs. NebuWine)
+Differential testing executes identical test harnesses simultaneously against a reference bare-metal Windows 11 environment and the target NebuWine container. The engine captures:
+1. Win32 API return codes and `GetLastError()` values.
+2. Direct3D / Vulkan command stream traces (via RenderDoc and DXVK traces).
+3. Memory allocation profiles and handle counts.
+4. Window placement and input event propagation timing.
+
+#### Classification Matrix
+The differential comparator classifies each divergence into one of four states:
+
+| Classification | Meaning | Action / Policy |
+|---|---|---|
+| **`MATCH`** | NebuWine behavior matches Windows 11 reference within timing tolerance | Validated compatibility pass |
+| **`EXPECTED DIFFERENCE`** | Documented divergence due to Linux architecture (e.g. POSIX path separators, case sensitivity, UID mappings, font metric substitution) | Expected; does not fail gate |
+| **`REGRESSION`** | Divergence in API return code, unhandled NT status, missing COM class, or visual corruption ($SSIM < 0.98$) | Release-blocking defect; opened as issue |
+| **`UNKNOWN`** | Novel divergence with uncharacterized impact on application stability | Quarantined for manual triage in Compatibility Lab |
+
+*Guiding Principle:* Windows behavior is an empirical reference, not an absolute philosophical definition of correctness. Where Windows exhibits undefined behavior or undocumented bugs, NebuWine balances bug-for-bug compatibility against system security and stability.
 
 ---
 

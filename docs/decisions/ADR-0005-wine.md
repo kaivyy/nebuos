@@ -1,11 +1,17 @@
 # ADR-0005: Upstream Wine as Core Windows Application Compatibility Engine
 
-**Status:** APPROVED  
-**Date:** 2026-09-04  
+**Status:** APPROVED (Clarified & Reconciled by ADR-0016 and ADR-0017)  
+**Date:** 2026-09-04 (Updated 2026-09-05)  
 **Deciders:** Principal Systems Architect, Compatibility Engineer  
 **Consulted:** PRD §16, §20, §70, §71  
+**Related ADRs:** ADR-0006 (Proton/DXVK), ADR-0016 (NebuWine Downstream Distribution), ADR-0017 (Decoupled Runtime Storage), ADR-0018 (Gaming Runtime)  
 
 ---
+
+> [!NOTE]
+> **Architectural Reconciliation (ADR-0016 & ADR-0017):**
+> 1. **Downstream Distribution vs. Hard Fork:** The rejection of Option 2 ("Hard Fork of Wine") in this document specifically rejected an unmaintainable, isolated hard fork that severs upstream WineHQ ties. [ADR-0016](file:///root/NebuOS/docs/decisions/ADR-0016-nebuwine-architecture.md) formalizes **NebuWine** as an *Upstream-First Downstream Distribution* ($\text{NebuWine} = \text{Upstream Wine} + \text{Minimal Maintained Delta}$) tracking pristine WineHQ releases (Wine 11..16+) with strict patch governance.
+> 2. **Runtime Storage Decoupling:** The initial storage location `/usr/lib/nebu/runtimes/wine/` in Section 4 has been superseded by [ADR-0017](file:///root/NebuOS/docs/decisions/ADR-0017-decoupled-runtime-packaging-and-storage.md) to `/var/lib/nebu/runtimes/` to resolve coupling with the immutable `/usr` filesystem in `bootc`.
 
 ## 1. Context and Problem Statement
 NebuOS aims to provide seamless execution of Windows applications on Linux without running a Windows virtual machine. The Windows Win32/NT API is massive, encompassing thousands of undocumented system calls, registry semantics, OLE/COM interfaces, and userland DLLs. Re-implementing this API from scratch is impossible. We must decide how NebuOS integrates Wine to achieve maximum application compatibility while maintaining engineering sustainability.
@@ -18,14 +24,14 @@ NebuOS aims to provide seamless execution of Windows applications on Linux witho
 
 ## 3. Considered Options
 - **Option 1: Upstream Wine Integration via Dynamic Prefixes and Declarative Patching [SELECTED]**
-- **Option 2: Hard Fork of Wine (NebuWine)**
+- **Option 2: Hard Fork of Wine (NebuWine) [REJECTED — Reconciled by ADR-0016 as Upstream-First Downstream Distribution]**
 - **Option 3: Binary Translation / Emulation (Box64 / QEMU User Space)**
 - **Option 4: Windows Virtual Machine Fallback (Explicitly Rejected by PRD)**
 
 ## 4. Decision Outcome
 **Chosen Option: Option 1 — Upstream Wine Integration Layer.**
 
-NebuOS treats Wine as an external, immutable dependency. NebuOS packages official upstream Wine Stable and Wine Staging release builds in `/usr/lib/nebu/runtimes/wine/`. Compatibility adjustments are applied externally via declarative compatibility profiles, registry injection, DLL overrides, and environment configuration rather than source code modifications.
+NebuOS treats Wine as an external, upstream-aligned dependency. As refined by [ADR-0016](file:///root/NebuOS/docs/decisions/ADR-0016-nebuwine-architecture.md) and [ADR-0017](file:///root/NebuOS/docs/decisions/ADR-0017-decoupled-runtime-packaging-and-storage.md), NebuOS packages upstream-tracking NebuWine release builds in `/var/lib/nebu/runtimes/` (formerly `/usr/lib/nebu/runtimes/wine/`). Compatibility adjustments are applied via two separate tiers: (A) strictly governed upstream-candidate source patches for Wine itself ([docs/compatibility/07-wine-patch-governance.md](file:///root/NebuOS/docs/compatibility/07-wine-patch-governance.md)), and (B) prefix-level declarative compatibility profiles, registry injection, DLL overrides, and sandboxing managed dynamically by `nebu-patcher` ([docs/compatibility/03-patch-engine.md](file:///root/NebuOS/docs/compatibility/03-patch-engine.md)).
 
 ### Positive Consequences
 - Zero source-code maintenance overhead for the Win32 emulation engine.
@@ -41,7 +47,7 @@ NebuOS treats Wine as an external, immutable dependency. NebuOS packages officia
 
 ### Option 2: Hard Fork of Wine
 - *Pros:* Ability to hack temporary workarounds directly into DLL source code.
-- *Cons:* Disconnects from upstream improvements; rebasing becomes an insurmountable engineering nightmare; project failure mode observed in numerous dead Linux distributions.
+- *Cons:* Disconnects from upstream improvements; rebasing becomes an insurmountable engineering nightmare; project failure mode observed in numerous dead Linux distributions. *(Note: Superseded by the structured downstream model in ADR-0016).*
 
 ### Option 3: Binary Translation (Box64/QEMU)
 - *Pros:* Enables running x86_64 binaries on ARM64 hardware.

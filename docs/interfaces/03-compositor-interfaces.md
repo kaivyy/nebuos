@@ -352,6 +352,47 @@ struct drm_syncobj_timeline_wait wait_args = {
 int ret = ioctl(drm_fd, DRM_IOCTL_SYNCOBJ_TIMELINE_WAIT, &wait_args);
 ```
 
+### 10.4 P2.0 Enablement Protocol Contracts: `xdg_wm_base` & `wlr-layer-shell-unstable-v1`
+
+**Classification:** Additive Capability / Compatible Extension (governed under Milestone P2.0). These extensions do not alter or invalidate the locked Milestone P1 display substrate; they provide higher-level surface negotiation required for desktop applications and desktop shell UI.
+
+#### 10.4.1 XDG-Shell (`xdg_wm_base` v4+)
+- **Purpose & Requirement:** Standard window management protocol for native Linux applications, Wine/Proton top-level windows, file choosers, and desktop settings dialogs. Governs minimize, maximize, fullscreen, interactive move/resize, and server-side decoration (SSD) negotiation.
+- **Ownership:** `nebu-compositor` maintains the authoritative `smithay::wayland::shell::xdg::XdgShellState`.
+- **Surface Lifecycle:**
+  1. Client creates `wl_surface` and requests `xdg_wm_base.get_xdg_surface`.
+  2. Client assigns role: `get_toplevel` or `get_popup`.
+  3. Compositor dispatches initial `configure` event with proposed width, height, and window states.
+  4. Client acknowledges via `ack_configure(serial)`, attaches matching buffer, and commits surface.
+  5. On close request, compositor sends `xdg_toplevel.close` event.
+- **Focus & Keyboard Interaction:** Active toplevel receives exclusive keyboard focus and pointer enter events; inactive surfaces receive unfocused states.
+- **Output Association:** Toplevel geometry is clamped to active `wl_output` spaces. Maximized toplevels automatically subtract exclusive zones reserved by layer surfaces.
+
+#### 10.4.2 WLR-Layer-Shell (`zwlr_layer_shell_v1` v4+)
+- **Purpose & Requirement:** Dedicated protocol for anchoring `nebu-shell` surfaces (taskbar, floating dock, application launcher, notifications, OSD) to specific screen edges and visual layers.
+- **Ownership:** `nebu-compositor` manages layer ordering via `smithay::wayland::shell::wlr_layer::WlrLayerShellState`.
+- **Layer Stacking Hierarchy:**
+  - `Layer::Background` (Z-index 0): Desktop wallpaper canvas (`nebu-wallpaper`).
+  - `Layer::Bottom` (Z-index 10): Persistent desktop status widgets and desktop icons.
+  - *Standard Application Windows (`xdg_toplevel`) render at Z-index 20.*
+  - `Layer::Top` (Z-index 30): Primary taskbar panel (`nebu-panel`), floating dock (`nebu-dock`), and status tray.
+  - `Layer::Overlay` (Z-index 40): Application launcher flyout (`nebu-launcher`), quick settings tray, notification toasts, and volume/brightness OSD.
+- **Exclusive Zones:** Panels request fixed margins (`set_exclusive_zone(44)`). `nebu-compositor` computes usable work areas for client windows, preventing maximized applications from occluding panels.
+- **Keyboard Interactivity Modes:**
+  - `KeyboardInteractivity::None`: Default for persistent panels and docks, preventing focus theft from active apps.
+  - `KeyboardInteractivity::Exclusive`: Temporary modal state for application launcher and lock screen.
+  - `KeyboardInteractivity::OnDemand`: For search widgets and inline quick toggles.
+- **Multi-Monitor Behavior:** Layer surfaces are bound to specific `wl_output` handles. When displays are unplugged, `nebu-compositor` emits output removal events, prompting `nebu-shell` to safely destroy orphaned layer surfaces and re-anchor to surviving outputs.
+
+#### 10.4.3 Security & Access Control
+- **Privileged Protocol Guard:** `wlr-layer-shell-unstable-v1` and `ext-session-lock-v1` are classified as **Privileged Protocols**.
+- **Peer Socket Credential Verification:** `nebu-compositor` inspects connecting client credentials (`SO_PEERCRED` / PID / UID). Only processes running under the session UID (`1000`) and matching authorized binary paths (`/usr/bin/nebu-shell`) may bind layer-shell. Untrusted clients (e.g. applications running inside Bubblewrap sandboxes) attempting to bind these globals are disconnected immediately with `wl_display.error.implementation_error`.
+
+#### 10.4.4 Verification & Testing Requirements
+- **Automated Protocol Conformance:** Pass Wayland Conformance Suite (`wlcs`) for `xdg_wm_base`.
+- **Headless Layer Shell Probe:** Run `nebu-layer-shell-probe` in CI to verify layer surface creation, exclusive zone calculation, and clean destruction.
+- **Mandatory P1 Regression:** Re-run full 6-probe P1 regression suite (`--drm-probe`, `--render-probe`, `--output-probe`, `--input-probe`, `--wayland-probe`, `--presentation-probe`) ensuring zero display regressions.
+
 ## 11. Dependencies
 - **System Libraries:** `libdrm` ($\ge 2.4.120$), `libgbm`, `libinput` ($\ge 1.25$).
 - **Rust Framework:** `smithay = "0.3"`, `wayland-server = "0.31"`, `zbus = "4.0"`.

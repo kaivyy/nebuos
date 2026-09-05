@@ -496,6 +496,6 @@ CREATE INDEX IF NOT EXISTS idx_notif_app_id ON notification_history(app_id);
 - [02-shell.md](02-shell.md) — NebuShell core topology and process architecture.
 - [03-ui-theme-system.md](03-ui-theme-system.md) — UI theme tokens, styling, and visual assets.
 - [04-layout-system.md](04-layout-system.md) — Panel, dock, and widget layout engine.
-- [06-system-integration.md](06-system-integration.md) — System daemon contracts (PipeWire, NetworkManager, UPower).
+- [../interfaces/08-system-api-interfaces.md](../interfaces/08-system-api-interfaces.md) — System daemon contracts (PipeWire, NetworkManager, UPower, BlueZ).
 - [../architecture/05-security.md](../architecture/05-security.md) — Security boundaries and PAM authentication models.
-- [../decisions/ADR-0006-nebu-shell.md](../decisions/ADR-0006-nebu-shell.md) — Native Rust shell architecture decision.
+- [../decisions/ADR-0009-nebushell-ui-architecture.md](../decisions/ADR-0009-nebushell-ui-architecture.md) — Pluggable paradigm desktop shell architecture decision.

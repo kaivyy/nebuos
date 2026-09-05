@@ -1,14 +1,15 @@
 # Wine and Proton Integration Specification — NebuOS
 
 ## Status
-DRAFT
+APPROVED (Updated for Wine 11..16+ and Decoupled Storage)
 
 ## Purpose
-This specification defines how NebuOS packages, selects, isolates, and configures Wine and Valve Proton runtimes. It details the runtime tree filesystem layout, the lifecycle and IPC isolation of `wineserver`, dynamic Win32 DLL override evaluation hierarchies, programmatic registry hive manipulation without external tools, system font bridging, native Rust winetricks verb execution, runtime environment injection, and debug channel log rotation.
+This specification defines how NebuOS packages, selects, isolates, and configures NebuWine and companion runtimes. It details the decoupled runtime filesystem layout on `/var/lib/nebu/runtimes/`, the lifecycle and IPC isolation of `wineserver`, dynamic Win32 DLL override evaluation hierarchies, programmatic registry hive manipulation without external tools, system font bridging, native Rust winetricks verb execution, runtime environment injection, and debug channel log rotation.
 
 ## Scope
 This document encompasses:
-- Packaging, version pinning, and dynamic selection of Wine runtimes (`wine-stable`, `wine-staging`, `proton-ge`) located under `/usr/lib/nebu/runtimes/`.
+- Packaging, version progression, and dynamic selection of Wine runtimes (`nebuwine-stable`, `nebuwine-candidate`, `nebuwine-gaming`, `nebuwine-legacy`) located under `/var/lib/nebu/runtimes/stores/` (per [ADR-0017](file:///root/NebuOS/docs/decisions/ADR-0017-decoupled-runtime-packaging-and-storage.md)).
+- Multi-generation Wine tracking across Wine 11, 12, 13, 14, 15, 16, and beyond (per [ADR-0016](file:///root/NebuOS/docs/decisions/ADR-0016-nebuwine-architecture.md)).
 - The exact lifecycle, socket pathing, and process cleanup of per-prefix `wineserver` instances.
 - Win32 dynamic-link library override syntax, precedence, and lookup paths.
 - Low-level specification of the Wine text-based registry hive format (`WINE REGISTRY Version 2`) and atomic manipulation algorithms in Rust.
@@ -18,19 +19,21 @@ This document encompasses:
 - Debug channel syntax, diagnostic levels, and log rotation policies.
 
 ## Non-goals
-- **Forking Wine / Proton Core:** NebuOS does not maintain a private, permanently divergent fork of Wine; upstream binaries and discrete rebasable patchsets are packaged directly.
+- **Forking Wine / Proton Core:** NebuOS does not maintain a private, permanently divergent fork of Wine; official WineHQ upstream releases with minimal rebaseable downstream patch deltas are packaged directly per [ADR-0016](file:///root/NebuOS/docs/decisions/ADR-0016-nebuwine-architecture.md).
 - **Wine Source Compilation at Runtime:** No just-in-time compilation or build toolchains are invoked on the user desktop; all runtimes are pre-compiled and signed.
 - **Multi-Prefix Shared Wineservers:** Running a single wineserver instance across multiple distinct prefixes is strictly prohibited.
+- **In-Tree Base OS Coupling:** Runtimes are not packaged inside the immutable `/usr` rootfs of the base container image.
 
 ## Requirements
 
 ### Functional Requirements
-- **REQ-WINE-001:** Support modular, side-by-side installations of multiple Wine and Proton runtime trees under `/usr/lib/nebu/runtimes/`.
-- **REQ-WINE-002:** Automatically route applications to the appropriate runtime engine based on compatibility profile declarations or binary analysis.
+- **REQ-WINE-001:** Support modular, side-by-side installations of multiple Wine and gaming runtime trees under `/var/lib/nebu/runtimes/stores/` with symlinks in `/var/lib/nebu/runtimes/active/`.
+- **REQ-WINE-002:** Automatically route applications to the appropriate runtime engine based on compatibility profile declarations, binary analysis, or user selection.
 - **REQ-WINE-003:** Guarantee total wineserver socket isolation by allocating unique, private UNIX domain sockets at `/run/user/1000/nebu/<app_id>/wineserver.sock`.
 - **REQ-WINE-004:** Implement programmatic registry hive editing (`system.reg`, `user.reg`) in memory without spawning `reg.exe` or `regedit.exe`.
 - **REQ-WINE-005:** Bridge host Linux Fontconfig TrueType and OpenType fonts into the Wine prefix dynamically without copying gigabytes of font files.
 - **REQ-WINE-006:** Implement native Rust-based execution for common winetricks verbs (`vcrun2015_2022`, `dotnet48`, `d3dcompiler_47`) via CAB extraction.
+- **REQ-WINE-007:** Dynamically support multi-generation Wine releases (Wine 11 through Wine 16+) without architectural breaking changes.
 
 ### Non-Functional Requirements
 - **NFR-WINE-001 (Startup Overhead):** Wineserver initialization and socket availability must occur in < 400 ms.
@@ -43,10 +46,11 @@ The Wine integration architecture manages execution binaries, background coordin
 
 ```mermaid
 graph TD
-    subgraph RUNTIME_STORAGE [Runtime Packages - /usr/lib/nebu/runtimes/]
-        WINE_STABLE["wine-stable-9.x (Hardened CAD / Office)"]
-        WINE_STAGING["wine-staging-9.x (Modern Tools / Win32 Edge)"]
-        PROTON_GE["proton-ge-latest (Gaming / DXVK / VKD3D)"]
+    subgraph RUNTIME_STORAGE [Decoupled Storage - /var/lib/nebu/runtimes/]
+        WINE_STABLE["nebuwine-stable (Hardened CAD / Office - Wine 11+)"]
+        WINE_CAND["nebuwine-candidate (Next Upstream - Wine 12+)"]
+        WINE_GAMING["nebuwine-gaming (DXVK 2.4+ / VKD3D-Proton / NTSYNC)"]
+        WINE_LEGACY["nebuwine-legacy (Frozen Compatibility LTS)"]
     end
 
     subgraph DAEMON_DISPATCH [nebu-runtime-daemon]
@@ -84,8 +88,8 @@ graph TD
 The Wine integration layer contains four primary modules:
 
 1. **`RuntimeSelector` (`nebu-runtime-core::runtimes`):**
-   - Scans `/usr/lib/nebu/runtimes/` for valid runtime manifests (`runtime.json`).
-   - Resolves application runtime requirements based on profile ID, falling back to `wine-staging` for general software and `proton-ge` for games.
+   - Scans `/var/lib/nebu/runtimes/stores/` for valid runtime manifests (`metadata.json` / `runtime.json`).
+   - Resolves application runtime requirements based on profile ID, falling back to `nebuwine-stable` for general software and `nebuwine-gaming` for games.
 
 2. **`WineserverController` (`nebu-runtime-daemon::wineserver`):**
    - Spawns and supervises the private `wineserver` binary.
@@ -129,31 +133,37 @@ sequenceDiagram
 ## Control Flow
 
 ### 1. Wine Binary Packaging and Selection
-Runtimes are deployed into versioned, immutable directories:
+Runtimes are deployed into decoupled, versioned directories on the `@runtimes` subvolume (per [ADR-0017](file:///root/NebuOS/docs/decisions/ADR-0017-decoupled-runtime-packaging-and-storage.md)):
 
 ```text
-/usr/lib/nebu/runtimes/
-├── wine-stable-9.0/
-│   ├── runtime.json
-│   ├── bin/ (wine, wine64, wineserver, wineboot, regsvr32)
-│   ├── lib/ (wine builtin .so and .fake PE DLLs)
-│   └── share/wine/ (generic registry templates, nls tables)
-├── wine-staging-9.15/
-│   ├── runtime.json
-│   ├── bin/
-│   └── lib/
-└── proton-ge-9.11/
-    ├── runtime.json
-    ├── bin/
-    └── files/ (dxvk, vkd3d-proton, vrclient)
+/var/lib/nebu/runtimes/
+├── active/
+│   ├── default -> ../stores/nebuwine-11.4.0-stable/
+│   ├── candidate -> ../stores/nebuwine-12.0.0-rc1-candidate/
+│   └── gaming -> ../stores/nebuwine-gaming-11.4.0-dxvk2.4/
+└── stores/
+    ├── nebuwine-11.4.0-stable/
+    │   ├── metadata.json
+    │   ├── bin/ (wine, wine64, wineserver, wineboot, regsvr32)
+    │   ├── lib/ & lib64/ (winewayland.drv, ntdll, wine builtin PE DLLs)
+    │   └── share/wine/ (generic registry templates, nls tables)
+    ├── nebuwine-12.0.0-rc1-candidate/
+    │   ├── metadata.json
+    │   ├── bin/
+    │   └── lib64/
+    └── nebuwine-gaming-11.4.0-dxvk2.4/
+        ├── metadata.json
+        ├── bin/
+        ├── lib64/
+        └── files/ (dxvk, vkd3d-proton)
 ```
 
 #### Selection Algorithm
-1. Check compatibility profile (`compat.db`): If profile specifies `"runtime_id": "proton-ge-9.11"`, use Proton.
+1. Check compatibility profile (`compat.db`): If profile specifies `"runtime_id": "nebuwine-gaming-11.4.0-dxvk2.4"` (or channel `"gaming"`), use NebuWine Gaming.
 2. If profile unspecified, inspect PE headers:
-   - Contains Direct3D 12 imports or DirectInput game controller dependencies -> Select `proton-ge`.
-   - Contains complex COM/OLE or .NET dependencies -> Select `wine-staging`.
-   - Standard desktop tools -> Select `wine-stable`.
+   - Contains Direct3D 9/10/11/12 imports, DirectInput or XInput game controller dependencies -> Select `nebuwine-gaming`.
+   - Requires modern bleeding-edge stubs -> Select `nebuwine-candidate`.
+   - Standard desktop tools and CAD suites -> Select `nebuwine-stable`.
 3. Allow user override via environment variable `NEBU_RUNTIME_OVERRIDE=<runtime_id>`.
 
 ### 2. Wineserver Lifecycle per Prefix

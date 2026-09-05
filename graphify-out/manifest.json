@@ -230,13 +230,13 @@
     "semantic_hash": ""
   },
   "docs/INDEX.md": {
-    "mtime": 1788610934.0632732,
-    "ast_hash": "42527ae283590678b4a0090c4f78680f",
+    "mtime": 1788618878.5471988,
+    "ast_hash": "4522211ee5c3fe034f099af69c927158",
     "semantic_hash": ""
   },
   "docs/OPEN_QUESTIONS.md": {
-    "mtime": 1788538367.7113774,
-    "ast_hash": "a61ed1ae3b4372e377f354b13a303c19",
+    "mtime": 1788618731.6822944,
+    "ast_hash": "fefd6c2f9664760c16f61c678a6948e9",
     "semantic_hash": ""
   },
   "docs/README.md": {
@@ -245,13 +245,13 @@
     "semantic_hash": ""
   },
   "docs/RISK_REGISTER.md": {
-    "mtime": 1788539744.8948586,
-    "ast_hash": "4350b835c78a98df523f566a974b1b83",
+    "mtime": 1788615834.7134535,
+    "ast_hash": "c6a50ca74238c37a194339448cd9bfb1",
     "semantic_hash": ""
   },
   "docs/TRACEABILITY.md": {
-    "mtime": 1788538299.93896,
-    "ast_hash": "840d9cdcd1aedf52e3f5731485f9aefe",
+    "mtime": 1788618857.5250692,
+    "ast_hash": "b1e9a5f8ac9f15b393ce1e08780ef25a",
     "semantic_hash": ""
   },
   "docs/applications/00-application-specification.md": {
@@ -405,8 +405,8 @@
     "semantic_hash": ""
   },
   "docs/decisions/ADR-0005-wine.md": {
-    "mtime": 1788500606.67267,
-    "ast_hash": "5d59e426f3f9e77c9441a8c3c95a2caf",
+    "mtime": 1788614658.3132088,
+    "ast_hash": "81bde80b3f7cfd8cda102c6294a0d8e9",
     "semantic_hash": ""
   },
   "docs/decisions/ADR-0006-proton.md": {
@@ -425,8 +425,8 @@
     "semantic_hash": ""
   },
   "docs/decisions/ADR-0009-nebushell-ui-architecture.md": {
-    "mtime": 1788493247.4080925,
-    "ast_hash": "a3aa86b7ba623df5ff444f7d385d5cba",
+    "mtime": 1788618767.8335168,
+    "ast_hash": "5cfd5d40917fed7f175e800a90c7b3be",
     "semantic_hash": ""
   },
   "docs/decisions/ADR-0010-hardware-compatibility-and-power-management.md": {
@@ -445,8 +445,8 @@
     "semantic_hash": ""
   },
   "docs/desktop/02-nebushell-specification.md": {
-    "mtime": 1788538158.0980864,
-    "ast_hash": "d3fc6a70063608eea1fb7fdb645cef48",
+    "mtime": 1788618754.6774359,
+    "ast_hash": "ef87471ef04d996748a9bccfc37cf87f",
     "semantic_hash": ""
   },
   "docs/desktop/03-ui-theme-system.md": {
@@ -470,8 +470,8 @@
     "semantic_hash": ""
   },
   "docs/desktop/07-system-ui.md": {
-    "mtime": 1788493290.720359,
-    "ast_hash": "50990bce4c468506ee30750cbb57a2cf",
+    "mtime": 1788618775.5385644,
+    "ast_hash": "562fbf0651adb08798e94238fc1f02c5",
     "semantic_hash": ""
   },
   "docs/development/00-development-model.md": {
@@ -560,8 +560,8 @@
     "semantic_hash": ""
   },
   "docs/interfaces/03-compositor-interfaces.md": {
-    "mtime": 1788493367.9308348,
-    "ast_hash": "3e9cd58135f98ad5239b4ae1aa309acb",
+    "mtime": 1788618817.0068197,
+    "ast_hash": "bfe1c8d00308c742a2014abb32742284",
     "semantic_hash": ""
   },
   "docs/interfaces/04-shell-interfaces.md": {
@@ -585,8 +585,8 @@
     "semantic_hash": ""
   },
   "docs/performance/00-performance-goals.md": {
-    "mtime": 1788492561.0428255,
-    "ast_hash": "a55950d1d9b502e64194c6f1f784f9e7",
+    "mtime": 1788615797.4412239,
+    "ast_hash": "77f6a6042faca0a852715495fc71b27d",
     "semantic_hash": ""
   },
   "docs/performance/01-memory.md": {
@@ -615,8 +615,8 @@
     "semantic_hash": ""
   },
   "docs/roadmap/00-implementation-roadmap.md": {
-    "mtime": 1788527040.0380514,
-    "ast_hash": "4505a504fdad2e8adfc92494a0cafd77",
+    "mtime": 1788618841.7449722,
+    "ast_hash": "e4f0c55826964a97c965e7549c3c874f",
     "semantic_hash": ""
   },
   "docs/roadmap/01-p0-foundation.md": {
@@ -630,8 +630,8 @@
     "semantic_hash": ""
   },
   "docs/roadmap/03-p2-shell.md": {
-    "mtime": 1788500689.0432045,
-    "ast_hash": "e254584c47af95ab832a0379d3d3f5ac",
+    "mtime": 1788618761.1014755,
+    "ast_hash": "2a582be7fb742431353bb8ad6e5a2e0a",
     "semantic_hash": ""
   },
   "docs/roadmap/04-p3-runtime.md": {
@@ -695,8 +695,8 @@
     "semantic_hash": ""
   },
   "docs/runtime/05-wine-integration.md": {
-    "mtime": 1788499750.6031485,
-    "ast_hash": "8eee9af97b9078880116f4a45d33d195",
+    "mtime": 1788614832.428281,
+    "ast_hash": "eb354289cf432c2a23646e2784952fdc",
     "semantic_hash": ""
   },
   "docs/runtime/06-proton-integration.md": {
@@ -705,8 +705,8 @@
     "semantic_hash": ""
   },
   "docs/runtime/07-runtime-security.md": {
-    "mtime": 1788499750.6031964,
-    "ast_hash": "36e602e6d18e164ea11f47267ecd2884",
+    "mtime": 1788614855.9214256,
+    "ast_hash": "0fe0c12bf3ce0ec1c9ff0cc1135ddc69",
     "semantic_hash": ""
   },
   "docs/specification/00-system-specification.md": {
@@ -765,8 +765,8 @@
     "semantic_hash": ""
   },
   "docs/testing/04-compatibility-testing.md": {
-    "mtime": 1788499750.609554,
-    "ast_hash": "1d156411bfa9c633f20ba42a77983058",
+    "mtime": 1788614874.5305402,
+    "ast_hash": "e71dc7d04662e8f9e20d28de3cdeda06",
     "semantic_hash": ""
   },
   "docs/testing/05-graphics-testing.md": {
@@ -1115,8 +1115,8 @@
     "semantic_hash": ""
   },
   "crates/nebu-compositor/src/main.rs": {
-    "mtime": 1788608115.8349173,
-    "ast_hash": "35f3293c2b831c56a0eb83abde06e317",
+    "mtime": 1788619651.835961,
+    "ast_hash": "73bf4d1cf1d48052a00ed0c3f70cf863",
     "semantic_hash": ""
   },
   "crates/nebu-compositor/src/render.rs": {
@@ -1135,8 +1135,8 @@
     "semantic_hash": ""
   },
   "crates/nebu-compositor/src/wayland.rs": {
-    "mtime": 1788606376.1592035,
-    "ast_hash": "a3c2d5321604b008eb8c9e046a5e5b20",
+    "mtime": 1788619700.5972612,
+    "ast_hash": "44239fae8e509e9796f01784689e3e2f",
     "semantic_hash": ""
   },
   "docs/p1/P1_1_IMPLEMENTATION_NOTE.md": {
@@ -1217,6 +1217,51 @@
   "docs/audit/P1_FINAL_VALIDATION_AUDIT.md": {
     "mtime": 1788610926.3302255,
     "ast_hash": "189e4fff4f3d58917d6d99c610b6d5c6",
+    "semantic_hash": ""
+  },
+  "docs/compatibility/07-wine-patch-governance.md": {
+    "mtime": 1788615726.819789,
+    "ast_hash": "4aabcacf46c440e9f46865a063127d8f",
+    "semantic_hash": ""
+  },
+  "docs/decisions/ADR-0015-compatibility-lab.md": {
+    "mtime": 1788614612.401926,
+    "ast_hash": "bdec429043d285c8bcdc74cf53f7b010",
+    "semantic_hash": ""
+  },
+  "docs/decisions/ADR-0016-nebuwine-architecture.md": {
+    "mtime": 1788614623.097992,
+    "ast_hash": "99b2e72d47c22b236a8fff691dc171ef",
+    "semantic_hash": ""
+  },
+  "docs/decisions/ADR-0017-decoupled-runtime-packaging-and-storage.md": {
+    "mtime": 1788614635.617069,
+    "ast_hash": "4b348f25b9e223db74d536cdfa8d0acb",
+    "semantic_hash": ""
+  },
+  "docs/decisions/ADR-0018-gaming-runtime-architecture.md": {
+    "mtime": 1788615786.1961548,
+    "ast_hash": "0050082ce3d9845479037a0029dd7cf2",
+    "semantic_hash": ""
+  },
+  "docs/runtime/08-nebuwine-specification.md": {
+    "mtime": 1788615757.9259806,
+    "ast_hash": "7ec43f713d7a14d8839ba567dc2ced01",
+    "semantic_hash": ""
+  },
+  "docs/testing/09-compatibility-lab-specification.md": {
+    "mtime": 1788614805.004112,
+    "ast_hash": "d6c880dbae32cbf2427e34183bd94605",
+    "semantic_hash": ""
+  },
+  "docs/decisions/ADR-0019-slint-toolkit-adoption.md": {
+    "mtime": 1788618716.2085102,
+    "ast_hash": "43de87ba4851ce77e3426ca7528421a0",
+    "semantic_hash": ""
+  },
+  "docs/interfaces/08-system-api-interfaces.md": {
+    "mtime": 1788618794.5316455,
+    "ast_hash": "75df1c38755b68b06f60d565dacac71b",
     "semantic_hash": ""
   }
 }

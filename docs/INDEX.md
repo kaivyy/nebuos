@@ -96,6 +96,7 @@ Welcome to the authoritative engineering documentation repository for **NebuOS**
 | [05-wine-integration.md](runtime/05-wine-integration.md) | Wine and Proton Integration Specification |
 | [06-proton-integration.md](runtime/06-proton-integration.md) | Proton Integration Specification |
 | [07-runtime-security.md](runtime/07-runtime-security.md) | Runtime Sandboxing and Security Specification |
+| [08-nebuwine-specification.md](runtime/08-nebuwine-specification.md) | NebuWine Downstream Distribution & Upstream Lifecycle Specification |
 
 ### Compatibility (`docs/compatibility/`)
 *Compatibility Platform (Compat Engine, Database Schema, Profiles, Patch Engine, Detection, Certs, Boundaries)*
@@ -105,10 +106,11 @@ Welcome to the authoritative engineering documentation repository for **NebuOS**
 | [00-compatibility-specification.md](compatibility/00-compatibility-specification.md) | Compatibility Platform Master Specification |
 | [01-database-schema.md](compatibility/01-database-schema.md) | Compatibility Database Schema Specification |
 | [02-compatibility-profile.md](compatibility/02-compatibility-profile.md) | Compatibility Profile Specification |
-| [03-patch-engine.md](compatibility/03-patch-engine.md) | Patch Engine Specification |
+| [03-patch-engine.md](compatibility/03-patch-engine.md) | Patch Engine Specification (Domain B: Prefix Remediation) |
 | [04-application-detection.md](compatibility/04-application-detection.md) | Application Detection Specification |
 | [05-certification-model.md](compatibility/05-certification-model.md) | Compatibility Certification Model Specification |
 | [06-known-limitations.md](compatibility/06-known-limitations.md) | Known Limitations & Non-Compatibility Boundaries Specification |
+| [07-wine-patch-governance.md](compatibility/07-wine-patch-governance.md) | Wine Source Patch Governance & Upstream Equivalence Specification (Domain A) |
 
 ### Graphics (`docs/graphics/`)
 *Graphics Subsystem (GPU Detection, Mesa, Vulkan/OpenGL, DXVK/VKD3D, GPU Profiles, Shader Cache)*
@@ -163,6 +165,7 @@ Welcome to the authoritative engineering documentation repository for **NebuOS**
 | [06-performance-testing.md](testing/06-performance-testing.md) | Performance Testing Specification |
 | [07-hardware-testing.md](testing/07-hardware-testing.md) | Hardware Testing Specification |
 | [08-release-certification.md](testing/08-release-certification.md) | Release Certification Specification |
+| [09-compatibility-lab-specification.md](testing/09-compatibility-lab-specification.md) | Compatibility Lab Architecture & Automated Testing Farm Specification |
 
 ### Interfaces (`docs/interfaces/`)
 *System Interfaces & Wire Contracts (IPC, Runtime Traits, Compositor Wayland, Shell, Installer, Database)*
@@ -177,6 +180,7 @@ Welcome to the authoritative engineering documentation repository for **NebuOS**
 | [05-installer-interfaces.md](interfaces/05-installer-interfaces.md) | Application Installer & Binary Analysis Interface Specification |
 | [06-database-interfaces.md](interfaces/06-database-interfaces.md) | Compatibility Database Relational Schema & Access Interface Specification |
 | [07-update-interfaces.md](interfaces/07-update-interfaces.md) | Update Subsystem D-Bus IPC & Service Traits Specification |
+| [08-system-api-interfaces.md](interfaces/08-system-api-interfaces.md) | System API Subsystem Interfaces Specification |
 
 ### Development (`docs/development/`)
 *Development & Engineering (Model, Repo Structure, Build System, CI/CD, Dependencies, Rust Style, Release)*
@@ -192,7 +196,7 @@ Welcome to the authoritative engineering documentation repository for **NebuOS**
 | [06-release-engineering.md](development/06-release-engineering.md) | Release Engineering Specification |
 
 ### Decisions (`docs/decisions/`)
-*Architectural Decision Records (ADRs 0001 through 0013)*
+*Architectural Decision Records (ADRs 0001 through 0019)*
 
 | Specification Document | Purpose & Scope |
 |---|---|
@@ -210,6 +214,11 @@ Welcome to the authoritative engineering documentation repository for **NebuOS**
 | [ADR-0012-application-distribution-and-marketplace.md](decisions/ADR-0012-application-distribution-and-marketplace.md) | ADR-0012: NebuOS Application Distribution and Marketplace Architecture |
 | [ADR-0013-ui-design-system-and-icon-architecture.md](decisions/ADR-0013-ui-design-system-and-icon-architecture.md) | ADR-0013: NebuOS UI Design System, Iconography, and Desktop Visual Architecture |
 | [ADR-0014-boot-experience-and-graphical-handoff.md](decisions/ADR-0014-boot-experience-and-graphical-handoff.md) | ADR-0014: NebuOS Boot Experience Architecture and Graphical Handoff |
+| [ADR-0015-compatibility-lab.md](decisions/ADR-0015-compatibility-lab.md) | ADR-0015: Compatibility Lab Architecture and Automated Testing Farm |
+| [ADR-0016-nebuwine-architecture.md](decisions/ADR-0016-nebuwine-architecture.md) | ADR-0016: NebuWine Downstream Distribution Architecture and Upstream-First Lifecycle |
+| [ADR-0017-decoupled-runtime-packaging-and-storage.md](decisions/ADR-0017-decoupled-runtime-packaging-and-storage.md) | ADR-0017: Decoupled Compatibility Runtime Packaging and Storage Strategy |
+| [ADR-0018-gaming-runtime-architecture.md](decisions/ADR-0018-gaming-runtime-architecture.md) | ADR-0018: NebuWine Gaming Runtime Architecture and Graphics Translation Pipeline |
+| [ADR-0019-slint-toolkit-adoption.md](decisions/ADR-0019-slint-toolkit-adoption.md) | ADR-0019: Slint Adoption for NebuShell Desktop Toolkit |
 
 ### Roadmap (`docs/roadmap/`)
 *Engineering Implementation Roadmap (Phases P0 through P8, and Future Phases)*

@@ -7,7 +7,24 @@ use std::process::ExitCode;
 
 fn main() -> ExitCode {
     let args: Vec<String> = env::args().collect();
-    if args.iter().any(|arg| arg == "--presentation-probe") {
+    if args
+        .iter()
+        .any(|arg| arg == "--layer-shell-probe" || arg == "--desktop-protocol-probe")
+    {
+        match nebu_compositor::wayland::run_desktop_protocol_probe() {
+            Ok(report) => {
+                if report.probe_success {
+                    ExitCode::SUCCESS
+                } else {
+                    ExitCode::FAILURE
+                }
+            }
+            Err(err) => {
+                eprintln!("nebu-compositor desktop protocol probe failed: {err}");
+                ExitCode::FAILURE
+            }
+        }
+    } else if args.iter().any(|arg| arg == "--presentation-probe") {
         match nebu_compositor::presentation::run_presentation_probe() {
             Ok(report) => {
                 if report.probe_success {
@@ -97,6 +114,12 @@ fn main() -> ExitCode {
         println!("Usage: nebu-compositor [OPTIONS]");
         println!();
         println!("Options:");
+        println!(
+            "  --layer-shell-probe  Execute Milestone P2.0 Compositor Desktop Protocol Enablement Proof"
+        );
+        println!(
+            "  --desktop-protocol-probe Execute Milestone P2.0 Compositor Desktop Protocol Enablement Proof"
+        );
         println!(
             "  --presentation-probe Execute Milestone P1.7 Surface Presentation & Scene Rendering Proof"
         );

@@ -26,7 +26,7 @@ DRAFT — Technical implementation specification for Phase P2.
 - Window compositor responsibilities (rendering done via Wayland client surfaces).
 
 ## 5. Requirements
-1. **R-SHL-01:** Implement NebuShell as a single native Rust binary utilizing Slint or Iced GUI framework.
+1. **R-SHL-01:** Implement NebuShell as a single native Rust binary utilizing the Slint GUI toolkit in accordance with [ADR-0019](../decisions/ADR-0019-slint-toolkit-adoption.md).
 2. **R-SHL-02:** Anchor all UI surfaces via `wlr-layer-shell-unstable-v1` into designated Wayland layers (`Bottom`, `Top`, `Overlay`).
 3. **R-SHL-03:** Support instant paradigm switching (Nebu, Windows-like, macOS-like) in <= 150ms over D-Bus without killing running applications.
 4. **R-SHL-04:** Ensure application launcher response time is <= 80ms from Super key press to visible UI.
@@ -85,7 +85,7 @@ graph TD
 3. Compositor broadcasts window event over Wayland protocol extension.
 4. `nebu-shell` receives event; State Hub updates window list.
 5. Taskbar widget invalidates local rect and triggers minimal repaint.
-6. Slint/Iced renderer draws updated panel UI to DMA-BUF and issues `wl_surface.commit`.
+6. Slint renderer draws updated panel UI to DMA-BUF/SHM and issues `wl_surface.commit`.
 7. Total time from compositor event to committed shell frame: < 8ms.
 
 ## 9. Control Flow

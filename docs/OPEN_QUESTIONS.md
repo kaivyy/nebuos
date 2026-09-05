@@ -11,8 +11,8 @@
 
 | ID | Priority | Domain | Question Summary | Current Recommendation | Decision Deadline |
 |---|---|---|---|---|---|
-| **OQ-001** | P0 | Shell | Slint vs Iced for native NebuShell toolkit? | Slint (C++-free, low-RAM, clean DSL) | Milestone P1 Exit |
-| **OQ-002** | P0 | Compatibility | Exact Wine version pinning strategy: Stable vs Staging? | Dual-track: Staging for general, Stable for certified | Milestone P5 Exit |
+| **OQ-001** | P0 | Shell | Slint vs Iced for native NebuShell toolkit? | **RESOLVED (ADR-0019):** Slint 1.7+ adopted as exclusive native desktop toolkit | RESOLVED |
+| **OQ-002** | P0 | Compatibility | Exact Wine version pinning strategy: Stable vs Staging? | **RESOLVED (ADR-0016/0017):** NebuWine downstream distribution with Stable/Candidate/Gaming/Legacy channels on `/var/lib/nebu/runtimes/` | RESOLVED |
 | **OQ-003** | P0 | Compatibility | Proton vs Wine Staging for non-Steam applications? | Wine Staging for Desktop/CAD, Proton for Games | Milestone P6 Exit |
 | **OQ-004** | P0 | System | SELinux enforcing vs permissive initial policy? | Permissive during P0–P4, Enforcing at P5 | Milestone P1 Exit |
 | **OQ-005** | P1 | System | Flatpak vs native packaging for NebuOS components? | Native OSTree for OS, Flatpak for 3rd-party Linux apps | Milestone P2 Exit |
@@ -62,6 +62,10 @@
 | **OQ-049** | P2 | Boot & Shell | Plymouth Boot Splash vs Native Rust Splash Daemon in Milestone P2? | Plymouth baseline for initial P2; native Rust daemon optimization in P8 | Milestone P2 Start |
 | **OQ-050** | P2 | Graphics & Boot | Dynamic BGRT Geometry Normalization across Non-Standard Displays? | Aspect ratio validation with center-snapped letterboxing | Milestone P1 Exit |
 | **OQ-051** | P1 | Boot & Systems | Silent Boot Diagnostic Mode Persistent Logging Retention? | Dedicated diagnostic snapshot dumped to `/var/log/nebu-diag-boot-<timestamp>.log` | Milestone P0 Exit |
+| **OQ-052** | P1 | Compatibility | Upstream Wine Candidate Quarantine Duration Before Stable Promotion? | 14-day zero-regression quarantine in Compatibility Lab | Milestone P4 Exit |
+| **OQ-053** | P1 | Compatibility | Downstream Delta Eviction Thresholds & Upstream Escalation Policy past 180 days? | Mandatory architectural audit; convert to prefix workaround or drop | Milestone P4 Exit |
+| **OQ-054** | P1 | Testing & Lab | Compatibility Lab Bare-Metal Farm Scaling Model for Milestone P7? | Hybrid: On-premise 4-node reference rack + virtualized cloud CI | Milestone P7 Start |
+| **OQ-055** | P1 | Kernel & Runtime | NTSYNC Kernel Integration: In-Tree Fedora Module vs Out-of-Tree DKMS? | In-tree preferred (kernel 7.x upstream adoption); futex_waitv fallback | Milestone P5 Exit |
 
 ---
 
@@ -178,12 +182,10 @@
 
 #### OQ-001: Slint vs Iced for Native NebuShell UI Toolkit
 - **Priority:** P0 | **Domain:** Shell | **Deadline:** Milestone P1 Exit
+- **Status:** **RESOLVED** via [ADR-0019](decisions/ADR-0019-slint-toolkit-adoption.md)
 - **Question:** Which pure-Rust GUI toolkit should power `nebu-shell` (taskbar, launcher, quick settings)?
-- **Context:** The shell must idle at $<60\text{MB}$ RAM, render at 60 FPS on low-end Intel Gen 8 iGPUs, and provide declarative component styling.
-- **Options:**
-  1. *Slint:* Dedicated lightweight markup DSL (`.slint`), clean design-to-code separation, exceptional low-memory footprint (<30MB), commercial-grade dual licensing.
-  2. *Iced:* Pure Rust Elm-architecture toolkit, fully community-driven open source (MIT), reactive state machine, but requires manual layout tuning and lacks hot-reloading.
-- **Recommendation:** Slint. Provides superior memory efficiency and declarative tooling required for responsive shell paradigms.
+- **Context:** The shell must idle at $\le 45\text{MB}$ RAM, render at 60 FPS on low-end Intel Gen 8 iGPUs, and provide declarative component styling.
+- **Decision:** **Slint (1.7+)** is formally adopted. Offers compile-time verified DSL, fine-grained reactive dirty tracking, native layer-shell handle extraction, AT-SPI2 accessibility integration, and comfortable compliance with the $\le 45\text{MB}$ idle RSS target.
 
 #### OQ-015: Shell Component IPC Architecture
 - **Priority:** P1 | **Domain:** Shell | **Deadline:** Milestone P3 Exit
@@ -275,22 +277,14 @@
 ### 2.5 Compatibility & Wine/Proton Engine
 
 #### OQ-002: Exact Wine Upstream Version Pinning Strategy
-- **Priority:** P0 | **Domain:** Compatibility | **Deadline:** Milestone P5 Exit
+- **Priority:** P0 | **Domain:** Compatibility | **Status:** **RESOLVED** by [ADR-0016](decisions/ADR-0016-nebuwine-architecture.md) and [ADR-0017](decisions/ADR-0017-decoupled-runtime-packaging-and-storage.md)
 - **Question:** Which upstream Wine release cadence should NebuOS integrate and certify?
-- **Context:** Wine releases bi-weekly Staging builds and annual Stable releases. Staging has critical bug fixes for modern apps but introduces regressions.
-- **Options:**
-  1. *Track Wine-Staging Bi-Weekly:* Rapid bug fixes, but creates continuous QA instability and risk of silent breakage.
-  2. *Dual-Track Pinning:* Maintain an enterprise "Certified" Wine runtime pinned to Wine-Stable + cherry-picked patches, alongside a "Fast" runtime tracking validated Wine-Staging tags.
-- **Recommendation:** Option 2. Guarantees stability for office/CAD suites while enabling fast compatibility for consumer software.
+- **Resolution:** Formally resolved via the Upstream-First Downstream Distribution Model ($\text{NebuWine} = \text{Upstream Wine} + \text{Minimal Maintained Delta}$) with decoupled packaging on `/var/lib/nebu/runtimes/`. NebuWine manages four channels (`Stable`, `Candidate`, `Gaming`, `Legacy`) tracking official WineHQ releases (Wine 11 through Wine 16+) with an automated 17-stage synchronization pipeline and Compatibility Lab regression gates.
 
 #### OQ-003: Proton vs Wine Staging for Non-Steam Applications
-- **Priority:** P0 | **Domain:** Compatibility | **Deadline:** Milestone P6 Exit
+- **Priority:** P0 | **Domain:** Compatibility | **Status:** **RESOLVED** by [ADR-0018](decisions/ADR-0018-gaming-runtime-architecture.md)
 - **Question:** Should Proton be used for general productivity software or kept exclusively for gaming?
-- **Context:** Proton contains Valve game-specific hacks, fsync patches, and custom DXVK integrations that may degrade COM/OLE stability in Microsoft Office.
-- **Options:**
-  1. *Universal Proton:* Use Proton for all Windows applications to reduce disk footprint.
-  2. *Domain Separation:* Upstream Wine-Staging for productivity, enterprise, and CAD apps; Proton strictly for gaming workloads and 3D simulation.
-- **Recommendation:** Option 2. Eliminates unintended regressions in complex Win32 desktop software.
+- **Resolution:** Formally resolved in ADR-0018: NebuWine Gaming is defined as an extension profile ($\text{NebuWine Gaming} = \text{NebuWine Core} + \text{Gaming Runtime Components}$). Core NebuWine powers CAD and enterprise productivity without gaming hacks, while the Gaming profile dynamically provisions DXVK, VKD3D-Proton, NTSYNC/fsync, and low-latency audio for interactive 3D and gaming workloads.
 
 #### OQ-024: Microsoft .NET Framework Runtime Bridge
 - **Priority:** P1 | **Domain:** Compatibility | **Deadline:** Milestone P6 Exit
@@ -556,6 +550,43 @@
   2. *Dedicated Diagnostic Snapshot (`/var/log/nebu-diag-boot-<timestamp>.log`):* Systemd unit detects diagnostic boot flag and dumps full dmesg and journal trace to a dedicated file for easy export.
 - **Recommendation:** Option 2. Provides immediate, user-accessible troubleshooting artifact.
 
+#### OQ-052: Upstream Wine Candidate Quarantine Duration Before Stable Promotion
+- **Priority:** P1 | **Domain:** Compatibility | **Deadline:** Milestone P4 Exit
+- **Question:** How long must a newly synchronized Wine upstream release candidate (`Candidate` channel) remain in quarantine under Compatibility Lab automation before being promoted to `Stable`?
+- **Context:** Rapid promotion risks shipping regressions into enterprise workflows (e.g. AutoCAD, Revit, Office), while excessively long quarantine leaves users without modern upstream fixes.
+- **Options:**
+  1. *7-Day Rapid Quarantine:* Fast turnaround, but insufficient time to detect subtle memory leaks or long-running stability defects.
+  2. *14-Day Quarantine with Multi-Tier Lab Gates:* Standard 14-day burn-in across physical lab nodes running L0-L7 workflows; zero regressions required.
+  3. *30-Day Extended Quarantine:* Maximizes stability at the cost of slow upstream feature delivery.
+- **Recommendation:** Option 2 (14-day quarantine). Balances stability guarantees with continuous upstream alignment.
+
+#### OQ-053: Downstream Delta Eviction Thresholds and Upstream Escalation Policy
+- **Priority:** P1 | **Domain:** Compatibility | **Deadline:** Milestone P4 Exit
+- **Question:** What operational protocol must govern downstream source patches in `wine.git` that remain unmerged upstream past 180 days?
+- **Context:** The upstream-first principle mandates minimal maintained delta ($\le 60\text{ patches}$). Long-lived downstream patches create rebase drag and merge conflict debt.
+- **Options:**
+  1. *Permanent Local Maintenance:* Continue rebasing indefinitely as long as an application depends on it.
+  2. *Mandatory 180-Day Architectural Review:* If a patch cannot be upstreamed within 180 days, either refactor into a prefix-level configuration workaround (`nebu-patcher`), redesign the patch with WineHQ feedback, or flag for deprecation.
+- **Recommendation:** Option 2. Enforces delta discipline and prevents perpetual fork accumulation.
+
+#### OQ-054: Compatibility Lab Bare-Metal Farm Scaling Model for Milestone P7
+- **Priority:** P1 | **Domain:** Testing & Lab | **Deadline:** Milestone P7 Start
+- **Question:** How should the physical hardware farm for Milestone P7 be scaled and housed to support 24/7 automated matrix validation?
+- **Context:** The lab requires testing physical Intel, AMD, NVIDIA, and laptop platforms across disparate display, power, and graphics topologies.
+- **Options:**
+  1. *Pure Colocated Bare-Metal Cloud (e.g. Equinix Metal / AWS Bare Metal):* High operating expense, limited consumer GPU and laptop display/lid testing capabilities.
+  2. *On-Premise 4-Node Reference Rack + Virtualized Cloud CI:* Low-cost, high-control physical rack for specialized hardware nodes (Node-INTEL, Node-AMD, Node-NVIDIA, Node-HYBRID) paired with scalable cloud CI for headless Wayland runs.
+- **Recommendation:** Option 2. Delivers necessary hardware access (displays, laptop S0ix, dGPU switching) at manageable capital expenditure.
+
+#### OQ-055: NTSYNC Kernel Synchronization Integration Strategy
+- **Priority:** P1 | **Domain:** Kernel & Runtime | **Deadline:** Milestone P5 Exit
+- **Question:** How should NebuOS package and maintain the NTSYNC kernel synchronization driver (`/dev/ntsync`) across kernel updates?
+- **Context:** NTSYNC provides high-performance kernel-level NT synchronization, dramatically reducing wineserver context switching for multi-threaded applications and games. Upstream Linux kernel adoption is progressing.
+- **Options:**
+  1. *DKMS / Out-of-Tree Kernel Module:* Complex build management across atomic OSTree image deployments.
+  2. *Wait for In-Tree Linux Kernel Integration:* Rely on standard `futex_waitv` (`fsync`) until NTSYNC lands in upstream Fedora kernel trees (Linux 7.x+).
+- **Recommendation:** Option 2. Avoids out-of-tree kernel module brittleness while preserving native Linux `futex_waitv` acceleration as baseline.
+
 ---
 
 ## 3. Governance & Decision Process
@@ -572,4 +603,4 @@
 - [ASSUMPTIONS.md](ASSUMPTIONS.md) — Foundational engineering assumptions
 - [decisions/](decisions/) — Formal Architectural Decision Records
 - [decisions/ADR-0014-boot-experience-and-graphical-handoff.md](decisions/ADR-0014-boot-experience-and-graphical-handoff.md) — Boot experience and graphical handoff
-- [roadmap/00-engineering-roadmap.md](roadmap/00-engineering-roadmap.md) — Phase deliverables and milestones P0–P12
+- [roadmap/00-implementation-roadmap.md](roadmap/00-implementation-roadmap.md) — Phase deliverables and milestones P0–P12
