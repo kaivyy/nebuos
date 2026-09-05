@@ -1,0 +1,34 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/nebu-compositor",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.80.1"
+license = "MPL-2.0"
+authors = ["NebuOS Core Systems Team"]
+repository = "https://github.com/nebu-os/nebu-os"
+
+[workspace.dependencies]
+smithay = { version = "0.7", default-features = false }
+calloop = "0.14"
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
+
+[workspace.lints.clippy]
+all = "warn"
+
+[profile.dev]
+opt-level = 1
+debug = true
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+codegen-units = 1
+panic = "abort"
+strip = true

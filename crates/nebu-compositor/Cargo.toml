@@ -1,0 +1,16 @@
+[package]
+name = "nebu-compositor"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+description = "NebuOS native Wayland display server substrate"
+
+[lints]
+workspace = true
+
+[dependencies]
+smithay = { workspace = true, features = ["backend_session_libseat"] }
+calloop = { workspace = true }
