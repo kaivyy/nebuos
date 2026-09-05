@@ -17,9 +17,12 @@ smithay = { workspace = true, features = [
     "backend_drm",
     "backend_gbm",
     "backend_egl",
+    "backend_libinput",
+    "backend_udev",
     "renderer_gl",
     "renderer_multi",
 ] }
 calloop = { workspace = true }
 tracing = "0.1"
 tracing-core = "0.1"
+xkbcommon = "0.8"

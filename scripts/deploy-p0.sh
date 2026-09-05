@@ -10,7 +10,7 @@ REPO_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
 TARGET_DIR="${REPO_ROOT}/target"
 
 IMAGE_TAG="${IMAGE_TAG:-nebuos:p0-latest}"
-RAW_DISK="${TARGET_DIR}/nebuos-p0.raw"
+RAW_DISK="${RAW_DISK:-${TARGET_DIR}/nebuos-p0.raw}"
 DISK_SIZE_GIB="${DISK_SIZE_GIB:-10}"
 ROOTFS_SIZE_GIB="${ROOTFS_SIZE_GIB:-8}"
 ESP_SIZE_MIB="${ESP_SIZE_MIB:-512}"

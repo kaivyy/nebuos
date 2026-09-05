@@ -118,15 +118,26 @@ impl SessionHandle {
 
     /// Opens a device through the active session.
     pub fn open_device(&mut self, path: &Path) -> Result<OwnedFd, SessionError> {
+        self.open_device_with_flags(path, (OFlags::RDWR | OFlags::CLOEXEC).bits() as i32)
+    }
+
+    /// Opens a device with explicit open flags through the active session.
+    pub fn open_device_with_flags(
+        &mut self,
+        path: &Path,
+        flags: i32,
+    ) -> Result<OwnedFd, SessionError> {
+        let oflags = OFlags::from_bits_truncate(flags as u32) | OFlags::CLOEXEC | OFlags::NONBLOCK;
         if let Some(ref mut session) = self.libseat {
-            let flags = OFlags::RDWR | OFlags::CLOEXEC;
             session
-                .open(path, flags)
+                .open(path, oflags)
                 .map_err(|e| SessionError::DeviceOpenFailed(path.to_path_buf(), e.to_string()))
         } else {
+            use std::os::unix::fs::OpenOptionsExt;
             std::fs::OpenOptions::new()
                 .read(true)
                 .write(true)
+                .custom_flags(oflags.bits() as i32)
                 .open(path)
                 .map(std::convert::Into::into)
                 .map_err(|e| SessionError::DeviceOpenFailed(path.to_path_buf(), e.to_string()))

@@ -7,7 +7,21 @@ use std::process::ExitCode;
 
 fn main() -> ExitCode {
     let args: Vec<String> = env::args().collect();
-    if args.iter().any(|arg| arg == "--output-probe") {
+    if args.iter().any(|arg| arg == "--input-probe") {
+        match nebu_compositor::input::run_input_probe() {
+            Ok(report) => {
+                if report.probe_success {
+                    ExitCode::SUCCESS
+                } else {
+                    ExitCode::FAILURE
+                }
+            }
+            Err(err) => {
+                eprintln!("nebu-compositor --input-probe failed: {err}");
+                ExitCode::FAILURE
+            }
+        }
+    } else if args.iter().any(|arg| arg == "--output-probe") {
         match nebu_compositor::output::run_output_probe() {
             Ok(report) => {
                 if report.probe_success {
@@ -55,6 +69,7 @@ fn main() -> ExitCode {
         println!("Usage: nebu-compositor [OPTIONS]");
         println!();
         println!("Options:");
+        println!("  --input-probe      Execute Milestone P1.5 Input Subsystem Integration Proof");
         println!(
             "  --output-probe     Execute Milestone P1.4 Output Presentation & Event-Loop Proof"
         );

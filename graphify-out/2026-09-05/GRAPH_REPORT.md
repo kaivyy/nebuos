@@ -1,16 +1,16 @@
 # Graph Report - NebuOS  (2026-09-05)
 
 ## Corpus Check
-- 233 files · ~447,384 words
+- 236 files · ~452,903 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 4344 nodes · 4598 edges · 294 communities (276 shown, 18 thin omitted)
-- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 1 edges (avg confidence: 0.8)
+- 4431 nodes · 4743 edges · 300 communities (281 shown, 19 thin omitted)
+- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 3 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `5bea1bb1`
+- Built from commit: `69082f17`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -207,6 +207,7 @@
 - 8. GRUB, BLS, and Boot Flow
 - 2.3 Desktop Shell & User Interface
 - 2.4 Runtime Engine & Sandboxing
+- ARCHITECTURE.md
 - 2. Detailed Question Specifications by Domain
 - Application Launch Optimization Specification — NebuOS
 - docs/README.md
@@ -246,7 +247,9 @@
 - 4. DRM/KMS Findings
 - 5. Render-Node Findings
 - 6. Mesa Findings
+- 7. EGL Findings
 - 8. GBM Findings
+- 9. Renderer Findings
 - backend.rs
 - render.rs
 - session.rs
@@ -258,6 +261,12 @@
 - 11. Dependencies
 - 5. Requirements
 - 7. Components
+- 6. Mesa Findings
+- 8. GBM Findings
+- 5. Requirements
+- 7. Components
+- 10. Interfaces
+- 5. Requirements
 
 ## God Nodes (most connected - your core abstractions)
 1. `NebuOS P0 Ready Gate Verification Report` - 37 edges
@@ -265,28 +274,28 @@
 3. `Operating System Update Architecture & bootc Integration Audit Report — NebuOS` - 36 edges
 4. `Application Platform & Nebu Marketplace Phase Enhancement Audit Report — NebuOS` - 28 edges
 5. `Master Documentation Audit & Forensic Verification Report — NebuOS` - 28 edges
-6. `Universal Agent Operating Contract & Repository Governance — NebuOS` - 26 edges
-7. `Hardware Compatibility Technical Hardening Audit Report — NebuOS` - 25 edges
-8. `2.6 Graphics & Driver Pipeline` - 24 edges
-9. `UI/UX, Design System, Iconography & Phase Ownership Enhancement Audit Report — NebuOS` - 23 edges
-10. `NebuOS Milestone P1.3: Renderer Initialization Layer Verification Report` - 23 edges
+6. `NebuOS Milestone P1.4: Output Presentation & Event-Loop Layer Verification Report` - 27 edges
+7. `Universal Agent Operating Contract & Repository Governance — NebuOS` - 26 edges
+8. `Hardware Compatibility Technical Hardening Audit Report — NebuOS` - 25 edges
+9. `2.6 Graphics & Driver Pipeline` - 24 edges
+10. `UI/UX, Design System, Iconography & Phase Ownership Enhancement Audit Report — NebuOS` - 23 edges
 
 ## Surprising Connections (you probably didn't know these)
+- `run_output_probe()` --calls--> `discover_drm_devices()`  [INFERRED]
+  crates/nebu-compositor/src/output.rs → crates/nebu-compositor/src/backend.rs
 - `run_renderer_probe()` --calls--> `discover_drm_devices()`  [INFERRED]
   crates/nebu-compositor/src/render.rs → crates/nebu-compositor/src/backend.rs
+- `run_output_probe()` --calls--> `classify_renderer_string()`  [INFERRED]
+  crates/nebu-compositor/src/output.rs → crates/nebu-compositor/src/render.rs
 - `DrmProbeReport` --references--> `SessionManagerType`  [EXTRACTED]
   crates/nebu-compositor/src/backend.rs → crates/nebu-compositor/src/session.rs
 - `DrmProbeError` --references--> `SessionError`  [EXTRACTED]
   crates/nebu-compositor/src/backend.rs → crates/nebu-compositor/src/session.rs
-- `RendererProbeReport` --references--> `SessionManagerType`  [EXTRACTED]
-  crates/nebu-compositor/src/render.rs → crates/nebu-compositor/src/session.rs
-- `RendererProbeError` --references--> `SessionError`  [EXTRACTED]
-  crates/nebu-compositor/src/render.rs → crates/nebu-compositor/src/session.rs
 
 ## Import Cycles
 - None detected.
 
-## Communities (294 total, 18 thin omitted)
+## Communities (300 total, 19 thin omitted)
 
 ### Community 1 - "2.6 Graphics & Driver Pipeline"
 Cohesion: 0.04
@@ -461,8 +470,8 @@ Cohesion: 0.07
 Nodes (30): 10. Input Findings, 11. Network Findings, 12. Audio Findings, 13. Firmware Findings, 14. Database Findings, 15. NebuShell Boundary Findings, 16. P0 Independence Findings, 17. Performance Findings (+22 more)
 
 ### Community 44 - "Process Supervision and Cgroups Model — NebuOS"
-Cohesion: 0.11
-Nodes (18): 12. Security, 13. Resource Requirements, 14. Failure Modes, 15. Recovery Behavior, 16. Testing Requirements, 17. Performance Requirements, 18. Compatibility Considerations, 19. Open Questions (+10 more)
+Cohesion: 0.07
+Nodes (30): 10.1 Master Workspace Manifest (`Cargo.toml`), 10.2 Feature Flags Matrix, 10. Interfaces, 11.1 Internal Workspace Dependencies, 11.2 External C Libraries (Dynamic Linking), 11. Dependencies, 12. Security, 13. Resource Requirements (+22 more)
 
 ### Community 45 - "Compatibility Testing Specification — NebuOS"
 Cohesion: 0.07
@@ -493,8 +502,8 @@ Cohesion: 0.07
 Nodes (29): 10.1 Structured Error Pattern (`thiserror`), 10.2 Structured Logging Pattern (`tracing`), 10. Interfaces, 11.1 Cargo Crates for Quality and Diagnostics, 11. Dependencies, 12. Security, 13. Resource Requirements, 14. Failure Modes (+21 more)
 
 ### Community 52 - "Master Graphics Specification — NebuOS"
-Cohesion: 0.07
-Nodes (29): 10.1 Changelog Configuration (`cliff.toml`), 10.2 Release Commands, 10. Interfaces, 11.1 Release Toolchain, 11. Dependencies, 12. Security, 13. Resource Requirements, 14. Failure Modes (+21 more)
+Cohesion: 0.09
+Nodes (23): 11.1 Release Toolchain, 11. Dependencies, 12. Security, 13. Resource Requirements, 14. Failure Modes, 15. Recovery Behavior, 16. Testing Requirements, 17. Performance Requirements (+15 more)
 
 ### Community 53 - "NebuOS P0 Ready Gate Verification Report"
 Cohesion: 0.07
@@ -505,8 +514,8 @@ Cohesion: 0.07
 Nodes (29): 10. P0 GUI Boundary, 11. Smithay and Wayland Architecture (Milestones P1–P2), 12. Slint vs. Iced Decision (Milestone P2), 13. D-Bus IPC Architecture (Milestones P2–P3), 14. SELinux, Bubblewrap, and seccomp Stack, 15. Wine and Proton Architecture (Milestones P3–P5), 16. Licensing and Packaging, 17. NVIDIA Strategy (+21 more)
 
 ### Community 55 - "Release Certification Specification — NebuOS"
-Cohesion: 0.07
-Nodes (28): 10.1 Pull Request Workflow Manifest (`.github/workflows/pr-gate.yml`), 10. Interfaces, 11.1 CI Actions & Tools, 11. Dependencies, 12. Security, 13. Resource Requirements, 14. Failure Modes, 15. Recovery Behavior (+20 more)
+Cohesion: 0.09
+Nodes (22): 10.1 Pull Request Workflow Manifest (`.github/workflows/pr-gate.yml`), 10. Interfaces, 11.1 CI Actions & Tools, 11. Dependencies, 12. Security, 13. Resource Requirements, 14. Failure Modes, 15. Recovery Behavior (+14 more)
 
 ### Community 56 - "CI/CD Pipeline Specification — NebuOS"
 Cohesion: 0.07
@@ -709,8 +718,8 @@ Cohesion: 0.14
 Nodes (7): Baseline & Architecture Foundation:, Claude Code Agent Configuration — NebuOS, Mandatory Startup Sequence:, Strict Prohibitions:, **FINAL VERDICT: PASS**, Gemini / Antigravity Agent Configuration — NebuOS, Mandatory Directives:
 
 ### Community 108 - "Boot and Initialization Specification — NebuOS"
-Cohesion: 0.22
-Nodes (9): 3.1 Gate 1: Static Analysis & Supply Chain Security, 3.2 Gate 2: Headless Virtual Boot & P0 Verification, 3.3 Gate 3: Subsystem-Specific Update Policies, 3.4 Gate 4: Hardware Compatibility Lab Matrix, 3.5 Gate 5: Performance SLAs & Executive Sign-off, 3. Gate Definitions and Acceptance Thresholds, A. Kernel Update Policy (PRD §75), B. Mesa & Graphics Update Policy (PRD §74) (+1 more)
+Cohesion: 0.13
+Nodes (15): 1. Status and Invariants, 2. Multi-Tiered Gating Pipeline Architecture, 3.1 Gate 1: Static Analysis & Supply Chain Security, 3.2 Gate 2: Headless Virtual Boot & P0 Verification, 3.3 Gate 3: Subsystem-Specific Update Policies, 3.4 Gate 4: Hardware Compatibility Lab Matrix, 3.5 Gate 5: Performance SLAs & Executive Sign-off, 3. Gate Definitions and Acceptance Thresholds (+7 more)
 
 ### Community 109 - "ADR-0007: Absolute Prohibition of Virtual Machines for Windows Compatibility"
 Cohesion: 0.25
@@ -721,7 +730,7 @@ Cohesion: 0.29
 Nodes (7): 1. Executive Status Dashboard, 2. Milestone Progress Tracker, 3. Subsystem Implementation Status Matrix, 4. Empirical Verification Evidence (Milestone P0), 5. Artifact Registry, 6. Immediate Next Action for Implementation, NebuOS Project State Snapshot
 
 ### Community 111 - "3. Subsystem Directory Navigation"
-Cohesion: 0.17
+Cohesion: 0.15
 Nodes (11): 1. Status and Invariants, 2.1 Introspection XML, 2. D-Bus Interface Definition: `org.nebu.Update1`, 3.1 `version_info` Dictionary, 3.2 `release_metadata` Dictionary, 3.3 `health_dict` Dictionary, 3. Data Dictionary for Variant Dictionaries (`a{sv}`), 4. Rust Trait Definition (Specification Model) (+3 more)
 
 ### Community 112 - "34. Issues Classification Matrix"
@@ -905,8 +914,8 @@ Cohesion: 0.22
 Nodes (8): 1. Objective, 2. Post-1.0 Phase Roadmap, 3. Guiding Principles for Future Phases, Future Phases Specification — NebuOS, Phase P10: Enterprise Central Management & Directory Integration, Phase P11: Advanced Gaming & VR Subsystem, Phase P12: NebuCloud Hybrid Workspace Sync, Phase P9: ARM64 (AArch64) Architecture Support
 
 ### Community 194 - "3. Subsystem Directory Navigation"
-Cohesion: 0.22
-Nodes (9): 1. System Vision & Invariants, 2. Conceptual Layer Topology, 3. Subsystem Directory Navigation, Architectural Decision Records (`docs/decisions/`), Core System Specifications (`docs/specification/`), Implementation Roadmap (`docs/roadmap/`), Interface & Contract Specifications (`docs/interfaces/`), NebuOS Architecture Navigation Map (+1 more)
+Cohesion: 0.40
+Nodes (5): 3. Subsystem Directory Navigation, Architectural Decision Records (`docs/decisions/`), Core System Specifications (`docs/specification/`), Implementation Roadmap (`docs/roadmap/`), Interface & Contract Specifications (`docs/interfaces/`)
 
 ### Community 195 - "4. Decision Outcome"
 Cohesion: 0.25
@@ -949,7 +958,7 @@ Cohesion: 0.07
 Nodes (28): 10. `GEMINI.md`, 10. Security Guidance, 11. `.cursorrules`, 11. Reproducibility Guidance, 12. Instruction Conflicts Found & Resolved, 13. Changes Made (Detail per File), 14. Remaining Issues / Debt, 15. VERIFY_REQUIRED Status (+20 more)
 
 ### Community 207 - "GPU Profiles Specification — NebuOS"
-Cohesion: 0.33
+Cohesion: 0.20
 Nodes (6): 1. Threat Model & Adversary Capabilities, 2. Sandboxing Architecture (`nebu-sandbox`), 3. Privilege Escalation Mitigation, 4. Related Documents, Sandbox Launch Arguments Specification, Security Architecture Specification — NebuOS
 
 ### Community 208 - "Claude Code Agent Configuration — NebuOS"
@@ -1024,6 +1033,10 @@ Nodes (6): 2.3 Desktop Shell & User Interface, OQ-001: Slint vs Iced for Native 
 Cohesion: 0.33
 Nodes (6): 2.4 Runtime Engine & Sandboxing, OQ-019: Sandboxing Mechanism for Windows Executables (Bubblewrap vs Landlock), OQ-020: Prefix Storage Deduplication (Btrfs Reflink vs Base Overlay), OQ-021: Application Process Lifecycle Supervision, OQ-022: Pre-Warmed Runtime Resident Memory Budget, OQ-023: Virtual Drive (`Z:\`) Host Filesystem Access Security
 
+### Community 233 - "ARCHITECTURE.md"
+Cohesion: 0.44
+Nodes (4): 1. System Vision & Invariants, 2. Conceptual Layer Topology, NebuOS Architecture Navigation Map, The Three Master Invariants:
+
 ### Community 234 - "2. Detailed Question Specifications by Domain"
 Cohesion: 0.40
 Nodes (5): 1. Summary Matrix, 2. Detailed Question Specifications by Domain, 3. Governance & Decision Process, 4. Related Documents, NebuOS Open Architectural Questions Register
@@ -1097,24 +1110,24 @@ Cohesion: 0.67
 Nodes (3): 9.1 Broken Links by Source Document (Top Offenders), 9.2 High-Frequency Broken Targets & Correct Canonical Replacements, 9. Broken References
 
 ### Community 261 - "Architecture Decision Record: NebuOS Milestone P1 Graphical Environment"
-Cohesion: 0.05
-Nodes (44): 10.1 Framework Assessment Matrix, 10.2 Smithay Verification Verdict, 10. Smithay Evaluation, 11.1 Mechanism Evaluation, 11. Session Management Decision, 12.1 Input Pipeline Stack, 12.2 Virtualization Input Handling, 12. Input Architecture Decision (+36 more)
+Cohesion: 0.09
+Nodes (22): 10.1 Framework Assessment Matrix, 10.2 Smithay Verification Verdict, 10. Smithay Evaluation, 11.1 Mechanism Evaluation, 11. Session Management Decision, 13. Known Limitations, 14. Rejected Alternatives, 16. P1/P2 Scope Boundary (+14 more)
 
 ### Community 262 - "skills/README.md"
 Cohesion: 0.22
 Nodes (4): 1. Purpose of Skills in NebuOS, 2. Skill Discovery Catalog, 3. Mandatory Structure of Every SKILL.md, NebuOS Modular Agent Skills Catalog
 
 ### Community 264 - "System Architecture Specification — NebuOS"
-Cohesion: 0.27
-Nodes (6): 1. Status and Invariants, 2. Multi-Tiered Gating Pipeline Architecture, 4. Decoupled Subsystem Update Lifecycle, 5. Failure Handling and Triage Protocol, 6. Related Specifications, Regression Gates and Release Promotion Specification — NebuOS
+Cohesion: 0.06
+Nodes (36): 10. Pixel Format Selection, 11. GBM Presentation Target, 12. EGL / Renderer Integration, 13. Test Frame, 14. Framebuffer Creation, 15. Atomic Commit, 16. Page-Flip Event, 17. Event-Loop Architecture (+28 more)
 
 ### Community 265 - "Control Flow"
 Cohesion: 0.40
 Nodes (5): Cgroups v2 Slice Hierarchy and Configuration, Control Flow, Controller Limits per Scope, OOM Score Adjustment Architecture, Process Teardown & Signal Handling
 
 ### Community 266 - "Memory Management & Low-End Mode Specification — NebuOS"
-Cohesion: 0.15
-Nodes (10): Arc, Attributes, GlLogCapture, Option, Event, Id, Metadata, Mutex (+2 more)
+Cohesion: 0.11
+Nodes (15): Arc, Attributes, GlLogCapture, Option, String, Visitor, Debug, Event (+7 more)
 
 ### Community 268 - "Interfaces"
 Cohesion: 0.67
@@ -1125,16 +1138,16 @@ Cohesion: 0.67
 Nodes (3): Functional Requirements, Non-Functional Requirements, Requirements
 
 ### Community 270 - "15. Final Architecture"
-Cohesion: 0.29
-Nodes (13): classify_plane(), discover_drm_devices(), discover_drm_devices_in(), DrmProbeReport, print_probe_report(), Option, Path, PathBuf (+5 more)
+Cohesion: 0.14
+Nodes (21): classify_plane(), discover_drm_devices(), discover_drm_devices_in(), DrmProbeError, DrmProbeReport, print_probe_report(), Display, Error (+13 more)
 
 ### Community 271 - "2. Dedicated P1 Graphical Validation Environment"
-Cohesion: 0.20
-Nodes (8): DrmProbeError, Display, Error, Formatter, From, Result, Self, String
+Cohesion: 0.14
+Nodes (18): negotiate_pixel_format(), OutputMode, OutputPresentationReport, PresentationLoopContext, print_output_probe_report(), Option, PathBuf, Self (+10 more)
 
 ### Community 272 - "3. GPU Selection"
-Cohesion: 0.33
-Nodes (5): String, Visitor, Debug, Field, Visit
+Cohesion: 0.20
+Nodes (11): LifecycleError, OutputProbeError, PresentationLifecycle, PresentationStage, Display, Error, Formatter, From (+3 more)
 
 ### Community 273 - "4. DRM/KMS Findings"
 Cohesion: 0.29
@@ -1151,6 +1164,10 @@ Nodes (6): 1. System Topology & Layers, 3. Data Interfaces & Contracts, 4. Secur
 ### Community 277 - "8. GBM Findings"
 Cohesion: 0.29
 Nodes (7): 3.1 Kernel Release and Command Line, 3.2 PCI Device Identification, 3.3 Active Kernel Modules, 3.4 DRM Device Node Hierarchy, 3.5 udevadm Device Inspection, 3.6 Installed Runtime Libraries, 3. Kernel & DRM Driver Telemetry (VM 102)
+
+### Community 278 - "9. Renderer Findings"
+Cohesion: 0.50
+Nodes (4): 1.1 Reference Environment Definition, 1.2 Invariant Hardware Specification, 1.3 Strict Protection & Non-Invasive Governance, 1. Protected P0 VM Policy
 
 ### Community 279 - "backend.rs"
 Cohesion: 0.18
@@ -1174,36 +1191,60 @@ Nodes (3): 2.1 Protected P0 Reference VM (VM 101), 2.2 Dedicated P1 Graphical Va
 
 ### Community 290 - "10. Interfaces"
 Cohesion: 0.67
-Nodes (3): 10.1 Master Workspace Manifest (`Cargo.toml`), 10.2 Feature Flags Matrix, 10. Interfaces
+Nodes (3): 12.1 Input Pipeline Stack, 12.2 Virtualization Input Handling, 12. Input Architecture Decision
 
 ### Community 291 - "11. Dependencies"
 Cohesion: 0.67
-Nodes (3): 11.1 Internal Workspace Dependencies, 11.2 External C Libraries (Dynamic Linking), 11. Dependencies
+Nodes (3): 15.1 Architectural Blueprint, 15.2 End-to-End Boot & Session Flow, 15. Final Architecture
 
 ### Community 292 - "5. Requirements"
 Cohesion: 0.67
-Nodes (3): 5.1 Functional Requirements, 5.2 Non-Functional Requirements, 5. Requirements
+Nodes (3): 2.1 Identification and Isolation, 2.2 Validation Topologies, 2. Dedicated P1 Graphical Validation Environment
 
 ### Community 293 - "7. Components"
 Cohesion: 0.67
-Nodes (3): 7.1 Monorepo Topography, 7.2 Crate Taxonomy & Responsibilities, 7. Components
+Nodes (3): 4.1 Driver & Kernel Verification, 4.2 Modesetting Capabilities, 4. DRM/KMS Findings
+
+### Community 294 - "6. Mesa Findings"
+Cohesion: 0.67
+Nodes (3): 6.1 Userspace Mesa Stack in Fedora 44, 6.2 Installed Driver Shared Objects, 6. Mesa Findings
+
+### Community 295 - "8. GBM Findings"
+Cohesion: 0.67
+Nodes (3): 8.1 Buffer Allocation Subsystem, 8.2 Memory Backing Behavior, 8. GBM Findings
+
+### Community 296 - "5. Requirements"
+Cohesion: 0.67
+Nodes (3): 5.1 Functional Requirements, 5.2 Non-Functional Requirements, 5. Requirements
+
+### Community 297 - "7. Components"
+Cohesion: 0.67
+Nodes (3): 7.1 Workflow Definitions (`.github/workflows/`), 7.2 Subsystem Ownership Classification, 7. Components
+
+### Community 298 - "10. Interfaces"
+Cohesion: 0.67
+Nodes (3): 10.1 Changelog Configuration (`cliff.toml`), 10.2 Release Commands, 10. Interfaces
+
+### Community 299 - "5. Requirements"
+Cohesion: 0.67
+Nodes (3): 5.1 Functional Requirements, 5.2 Non-Functional Requirements, 5. Requirements
 
 ## Knowledge Gaps
-- **3276 isolated node(s):** `build-p0.sh script`, `deploy-p0.sh script`, `p0-ci.sh script`, `The Core Invariant`, `What NebuOS Is` (+3271 more)
+- **3308 isolated node(s):** `build-p0.sh script`, `deploy-p0.sh script`, `p0-ci.sh script`, `The Core Invariant`, `What NebuOS Is` (+3303 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **18 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **19 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `UI Theme System Specification — NebuOS` connect `Patch Engine Specification — NebuOS` to `7. EGL Findings`?**
-  _High betweenness centrality (0.026) - this node is a cross-community bridge._
-- **Why does `System UI Components Specification — NebuOS` connect `Known Limitations & Non-Compatibility Boundaries Specification — NebuOS` to `7. EGL Findings`?**
-  _High betweenness centrality (0.025) - this node is a cross-community bridge._
-- **Why does `Master Development Specification — NebuOS` connect `Master Development Specification — NebuOS` to `Verification & Testing Engineering Skill — NebuOS`?**
-  _High betweenness centrality (0.024) - this node is a cross-community bridge._
+- **Why does `Repository Structure Specification — NebuOS` connect `Process Supervision and Cgroups Model — NebuOS` to `Verification & Testing Engineering Skill — NebuOS`?**
+  _High betweenness centrality (0.023) - this node is a cross-community bridge._
+- **Why does `Compatibility Database Schema Specification — NebuOS` connect `UI Theme System Specification — NebuOS` to `01-database-schema.md`?**
+  _High betweenness centrality (0.018) - this node is a cross-community bridge._
+- **Why does `System UI Components Specification — NebuOS` connect `Known Limitations & Non-Compatibility Boundaries Specification — NebuOS` to `GPU Profiles Specification — NebuOS`?**
+  _High betweenness centrality (0.018) - this node is a cross-community bridge._
 - **What connects `build-p0.sh script`, `deploy-p0.sh script`, `p0-ci.sh script` to the rest of the system?**
-  _3276 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _3308 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `2.6 Graphics & Driver Pipeline` be split into smaller, more focused modules?**
   _Cohesion score 0.0425531914893617 - nodes in this community are weakly interconnected._
 - **Should `Patch Engine Specification — NebuOS` be split into smaller, more focused modules?**
