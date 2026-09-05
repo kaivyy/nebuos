@@ -1,0 +1,1092 @@
+{
+  "build_docs/align_testing.py": {
+    "mtime": 1788527040.0461068,
+    "ast_hash": "7c2bbea1c1b9b844ce33125b8ced8893",
+    "semantic_hash": ""
+  },
+  "build_docs/audit_data.json": {
+    "mtime": 1788527040.0490172,
+    "ast_hash": "3252e5774ef85f13aec7393582623520",
+    "semantic_hash": ""
+  },
+  "build_docs/enhance_hardware_architecture.py": {
+    "mtime": 1788527040.0525396,
+    "ast_hash": "8bd37a6a2f05a55d0a205d42769d69b9",
+    "semantic_hash": ""
+  },
+  "build_docs/enhance_hardware_testing.py": {
+    "mtime": 1788527040.0533872,
+    "ast_hash": "8fd8621f7de28fd54ace06de7cbe00ba",
+    "semantic_hash": ""
+  },
+  "build_docs/gen_applications.py": {
+    "mtime": 1788527040.0462584,
+    "ast_hash": "731f2b8de2453854aa1dac64249ec607",
+    "semantic_hash": ""
+  },
+  "build_docs/gen_architecture.py": {
+    "mtime": 1788527040.051522,
+    "ast_hash": "6ae2d48de937276ee6d39bf448497ddf",
+    "semantic_hash": ""
+  },
+  "build_docs/gen_audit_report.py": {
+    "mtime": 1788527040.047401,
+    "ast_hash": "840bcd75adf5b2dc7fd10ddb7b15e46f",
+    "semantic_hash": ""
+  },
+  "build_docs/gen_clean_index_readme.py": {
+    "mtime": 1788527040.0555148,
+    "ast_hash": "4a41180b27a67cdd64f93830a3fb60d7",
+    "semantic_hash": ""
+  },
+  "build_docs/gen_compatibility.py": {
+    "mtime": 1788527040.0518365,
+    "ast_hash": "bbf7971e8f2a0be05dd4c6ed0301a06c",
+    "semantic_hash": ""
+  },
+  "build_docs/gen_decisions.py": {
+    "mtime": 1788527040.0510337,
+    "ast_hash": "792afdd8610494637507bbcd07af0335",
+    "semantic_hash": ""
+  },
+  "build_docs/gen_desktop.py": {
+    "mtime": 1788527040.0477252,
+    "ast_hash": "49221b4837ef477324d4f3fa5d6fa336",
+    "semantic_hash": ""
+  },
+  "build_docs/gen_development.py": {
+    "mtime": 1788527040.0485296,
+    "ast_hash": "c063fc61da6af9ba7b7c58ad635366e0",
+    "semantic_hash": ""
+  },
+  "build_docs/gen_governance.py": {
+    "mtime": 1788527040.0471082,
+    "ast_hash": "385ab3879bd93da7afb1388efb41c0d0",
+    "semantic_hash": ""
+  },
+  "build_docs/gen_governance_audit.py": {
+    "mtime": 1788527040.0558033,
+    "ast_hash": "02a860fe60fafb475df23d48b40ac910",
+    "semantic_hash": ""
+  },
+  "build_docs/gen_graphics.py": {
+    "mtime": 1788527040.0556583,
+    "ast_hash": "7cc003c54cc078a03d9333bbe02a92ff",
+    "semantic_hash": ""
+  },
+  "build_docs/gen_hardware_spec.py": {
+    "mtime": 1788527040.049617,
+    "ast_hash": "666bebe68605987ae487cb441fa49c76",
+    "semantic_hash": ""
+  },
+  "build_docs/gen_hw_audit_report.py": {
+    "mtime": 1788527040.0523427,
+    "ast_hash": "63588c106287d53cb6abd4b41000cb1c",
+    "semantic_hash": ""
+  },
+  "build_docs/gen_p0_ready_gate.py": {
+    "mtime": 1788527040.0508795,
+    "ast_hash": "e7670351f2d6f16a9c530e637753cbff",
+    "semantic_hash": ""
+  },
+  "build_docs/gen_performance.py": {
+    "mtime": 1788527040.0486906,
+    "ast_hash": "387df80bf25f31a49e91c39d4bc29a48",
+    "semantic_hash": ""
+  },
+  "build_docs/gen_roadmap.py": {
+    "mtime": 1788527040.0512054,
+    "ast_hash": "37e2c8b9c72afb2dd1e27a76243901d2",
+    "semantic_hash": ""
+  },
+  "build_docs/gen_root_governance.py": {
+    "mtime": 1788527040.0482695,
+    "ast_hash": "5f5f50aeb6a42cd9c52b68b5ace7270b",
+    "semantic_hash": ""
+  },
+  "build_docs/gen_runtime.py": {
+    "mtime": 1788527040.0559726,
+    "ast_hash": "7548b930c6b88d0585a7a233119b5178",
+    "semantic_hash": ""
+  },
+  "build_docs/gen_skills.py": {
+    "mtime": 1788527040.044617,
+    "ast_hash": "37213c1dd22fc21714ab5b3d8b379e5d",
+    "semantic_hash": ""
+  },
+  "build_docs/gen_spec_batch1.py": {
+    "mtime": 1788527040.0521355,
+    "ast_hash": "e34e0236bb7cdb40c24ad52ed2df6b8a",
+    "semantic_hash": ""
+  },
+  "build_docs/gen_spec_batch2_graphics.py": {
+    "mtime": 1788527040.0531788,
+    "ast_hash": "0524c58e228bdee64e73a6d90a0e0075",
+    "semantic_hash": ""
+  },
+  "build_docs/gen_spec_batch3_applications.py": {
+    "mtime": 1788527040.0466726,
+    "ast_hash": "fe30655200a3cb4071d9b927236cbfd3",
+    "semantic_hash": ""
+  },
+  "build_docs/gen_spec_batch4_updates.py": {
+    "mtime": 1788527040.055327,
+    "ast_hash": "cddfdfa09a5fa9ff9fc9ba3e398063c7",
+    "semantic_hash": ""
+  },
+  "build_docs/gen_spec_batch7_decisions.py": {
+    "mtime": 1788527040.04698,
+    "ast_hash": "44e255c5ed384ecf9008c663d723a8a7",
+    "semantic_hash": ""
+  },
+  "build_docs/gen_spec_batch8_roadmap.py": {
+    "mtime": 1788527040.045794,
+    "ast_hash": "eee92d4db35311543ce3a6be268186a1",
+    "semantic_hash": ""
+  },
+  "build_docs/gen_testing.py": {
+    "mtime": 1788527040.0455666,
+    "ast_hash": "974b0a1672531eb9bb96828195df1e71",
+    "semantic_hash": ""
+  },
+  "build_docs/gen_top_level.py": {
+    "mtime": 1788527040.05503,
+    "ast_hash": "621b060902c7d1a46e6c4f14d581d51a",
+    "semantic_hash": ""
+  },
+  "build_docs/gen_updates.py": {
+    "mtime": 1788527040.049208,
+    "ast_hash": "f7f396ce240e145c03b4238afb48d520",
+    "semantic_hash": ""
+  },
+  "build_docs/harden_hardware_docs.py": {
+    "mtime": 1788527040.0475562,
+    "ast_hash": "91e4b3d868a277651e4172de5b0a32a0",
+    "semantic_hash": ""
+  },
+  "build_docs/harden_hardware_spec.py": {
+    "mtime": 1788527040.0529022,
+    "ast_hash": "ee39252a5571b37a85c01d718e24f87c",
+    "semantic_hash": ""
+  },
+  "build_docs/harden_hardware_testing.py": {
+    "mtime": 1788527040.051683,
+    "ast_hash": "89b22dc100638cbbbf06542ed4b1af07",
+    "semantic_hash": ""
+  },
+  "build_docs/run_audit_collector.py": {
+    "mtime": 1788527040.0513217,
+    "ast_hash": "17b2713f57f4d24fa1a1ca231d29c371",
+    "semantic_hash": ""
+  },
+  "AGENTS.md": {
+    "mtime": 1788542576.846299,
+    "ast_hash": "ae9f4c42321a0def64826c5e714535a4",
+    "semantic_hash": ""
+  },
+  "ARCHITECTURE.md": {
+    "mtime": 1788503228.5147998,
+    "ast_hash": "9fc5aca3e0e2bf2de933718e07af670f",
+    "semantic_hash": ""
+  },
+  "CLAUDE.md": {
+    "mtime": 1788520681.8250453,
+    "ast_hash": "502e5b816ed7c8956d74ea81c70e408f",
+    "semantic_hash": ""
+  },
+  "CONTRIBUTING.md": {
+    "mtime": 1788520671.4409814,
+    "ast_hash": "2806ce6eb2f8b224a00f1a40337bfb9d",
+    "semantic_hash": ""
+  },
+  "GEMINI.md": {
+    "mtime": 1788520687.793082,
+    "ast_hash": "9a623c44eadecfefef654f2a120d45d3",
+    "semantic_hash": ""
+  },
+  "HANDOFF.md": {
+    "mtime": 1788544592.48307,
+    "ast_hash": "d83c98290004d90cd87b791e8a0f91d0",
+    "semantic_hash": ""
+  },
+  "PRD.md": {
+    "mtime": 1788490320.3870666,
+    "ast_hash": "0e6b09cd3d7debd4a1e96b3b50bba37e",
+    "semantic_hash": ""
+  },
+  "PRD_NEBU_OS.md": {
+    "mtime": 1788490320.3870666,
+    "ast_hash": "0e6b09cd3d7debd4a1e96b3b50bba37e",
+    "semantic_hash": ""
+  },
+  "PROJECT_STATE.md": {
+    "mtime": 1788544580.4806383,
+    "ast_hash": "fafb3dab1dfe1d2c9a12dc39e202e750",
+    "semantic_hash": ""
+  },
+  "docs/ASSUMPTIONS.md": {
+    "mtime": 1788527040.036549,
+    "ast_hash": "f2aa9ba03abec5371ea49134684adcbc",
+    "semantic_hash": ""
+  },
+  "docs/INDEX.md": {
+    "mtime": 1788538385.372486,
+    "ast_hash": "45cac15d147b47821b710a23f698b008",
+    "semantic_hash": ""
+  },
+  "docs/OPEN_QUESTIONS.md": {
+    "mtime": 1788538367.7113774,
+    "ast_hash": "a61ed1ae3b4372e377f354b13a303c19",
+    "semantic_hash": ""
+  },
+  "docs/README.md": {
+    "mtime": 1788500780.1011052,
+    "ast_hash": "ef6c8bbb220af55b8cd06b6da1a13a1d",
+    "semantic_hash": ""
+  },
+  "docs/RISK_REGISTER.md": {
+    "mtime": 1788539744.8948586,
+    "ast_hash": "4350b835c78a98df523f566a974b1b83",
+    "semantic_hash": ""
+  },
+  "docs/TRACEABILITY.md": {
+    "mtime": 1788538299.93896,
+    "ast_hash": "840d9cdcd1aedf52e3f5731485f9aefe",
+    "semantic_hash": ""
+  },
+  "docs/applications/00-application-specification.md": {
+    "mtime": 1788521104.6466491,
+    "ast_hash": "d74cd980b710bfc92e0270a1d435e93b",
+    "semantic_hash": ""
+  },
+  "docs/applications/01-installer.md": {
+    "mtime": 1788500173.927326,
+    "ast_hash": "ffa2bbbc17c7f7a0514af488efe4bd7e",
+    "semantic_hash": ""
+  },
+  "docs/applications/02-application-registration.md": {
+    "mtime": 1788500173.9274473,
+    "ast_hash": "36b1df0dd7530c5533bb8641710238d8",
+    "semantic_hash": ""
+  },
+  "docs/applications/03-filesystem-mapping.md": {
+    "mtime": 1788500173.9275632,
+    "ast_hash": "4706a61e059e9eca9ab8a654c089e3c6",
+    "semantic_hash": ""
+  },
+  "docs/applications/04-file-associations.md": {
+    "mtime": 1788500173.9276645,
+    "ast_hash": "a88c6a18e4c4e33a4699080c5599e55c",
+    "semantic_hash": ""
+  },
+  "docs/applications/05-uninstallation.md": {
+    "mtime": 1788500173.9277608,
+    "ast_hash": "49146338c55aff5fd53a15c0cbaf8d9f",
+    "semantic_hash": ""
+  },
+  "docs/applications/06-software-center.md": {
+    "mtime": 1788521164.8760202,
+    "ast_hash": "703615210742abe7a7e162e18e13f6e2",
+    "semantic_hash": ""
+  },
+  "docs/architecture/00-overview.md": {
+    "mtime": 1788491831.9631717,
+    "ast_hash": "28819ad50007281248937e0cbaa382e4",
+    "semantic_hash": ""
+  },
+  "docs/architecture/01-system-architecture.md": {
+    "mtime": 1788491831.9632938,
+    "ast_hash": "305c4dce0c43c46fe1c86637d2d3db8d",
+    "semantic_hash": ""
+  },
+  "docs/architecture/02-boot-and-init.md": {
+    "mtime": 1788491831.963399,
+    "ast_hash": "b67c07be5fee8ae3ccbae15df393c5b3",
+    "semantic_hash": ""
+  },
+  "docs/architecture/03-process-and-ipc.md": {
+    "mtime": 1788491831.9634686,
+    "ast_hash": "86492d68802aeb98bbb7279113de235f",
+    "semantic_hash": ""
+  },
+  "docs/architecture/04-filesystem.md": {
+    "mtime": 1788491831.963552,
+    "ast_hash": "ccfb69a97808f42a28098b97532f7232",
+    "semantic_hash": ""
+  },
+  "docs/architecture/05-security.md": {
+    "mtime": 1788491831.9636273,
+    "ast_hash": "6707d73801d4a478e174dad2e0472171",
+    "semantic_hash": ""
+  },
+  "docs/architecture/06-hardware.md": {
+    "mtime": 1788491831.9637008,
+    "ast_hash": "6a7a05b880a7713b8261e95a03320158",
+    "semantic_hash": ""
+  },
+  "docs/audit/AGENT_GOVERNANCE_AUDIT.md": {
+    "mtime": 1788503394.033082,
+    "ast_hash": "55e46f582482f07aca5250048ea2bd14",
+    "semantic_hash": ""
+  },
+  "docs/audit/DOCUMENTATION_AUDIT_REPORT.md": {
+    "mtime": 1788527040.0445762,
+    "ast_hash": "b2bd336fff4dacac96cfecaddee78951",
+    "semantic_hash": ""
+  },
+  "docs/audit/HARDWARE_COMPATIBILITY_ENHANCEMENT_AUDIT.md": {
+    "mtime": 1788503918.057217,
+    "ast_hash": "26094ee3fb11b772b7a14e2f298a4e24",
+    "semantic_hash": ""
+  },
+  "docs/audit/HARDWARE_COMPATIBILITY_TECHNICAL_HARDENING_AUDIT.md": {
+    "mtime": 1788508999.3130991,
+    "ast_hash": "9d590be6120ed0c3731a2ab61af6a110",
+    "semantic_hash": ""
+  },
+  "docs/audit/P0_READY_GATE.md": {
+    "mtime": 1788519620.5265093,
+    "ast_hash": "1c3511d603ef54bef2b883701fcae984",
+    "semantic_hash": ""
+  },
+  "docs/compatibility/00-compatibility-specification.md": {
+    "mtime": 1788493301.3614247,
+    "ast_hash": "65115fa08d3e731a362525cc4c356cf4",
+    "semantic_hash": ""
+  },
+  "docs/compatibility/01-database-schema.md": {
+    "mtime": 1788503808.0941296,
+    "ast_hash": "7cf2f0de9cc3bb46c7eb21e10dca61a4",
+    "semantic_hash": ""
+  },
+  "docs/compatibility/02-compatibility-profile.md": {
+    "mtime": 1788493508.760702,
+    "ast_hash": "fa8b73b912b572a5d396c6a8cda985f1",
+    "semantic_hash": ""
+  },
+  "docs/compatibility/03-patch-engine.md": {
+    "mtime": 1788493582.0871534,
+    "ast_hash": "0e743f1fba2cb08f10f497d579f4347c",
+    "semantic_hash": ""
+  },
+  "docs/compatibility/04-application-detection.md": {
+    "mtime": 1788499750.600932,
+    "ast_hash": "7c0d4c164a3e6afa551a0afc427e183b",
+    "semantic_hash": ""
+  },
+  "docs/compatibility/05-certification-model.md": {
+    "mtime": 1788499750.6010027,
+    "ast_hash": "06471c5384ed27037fe082d072f447c5",
+    "semantic_hash": ""
+  },
+  "docs/compatibility/06-known-limitations.md": {
+    "mtime": 1788499750.6010723,
+    "ast_hash": "4fdb4d20a75b3b54e3d3a945704b8e9f",
+    "semantic_hash": ""
+  },
+  "docs/decisions/ADR-0001-linux-kernel.md": {
+    "mtime": 1788500606.6717858,
+    "ast_hash": "851c0c3501b8a796ccea00f158990a91",
+    "semantic_hash": ""
+  },
+  "docs/decisions/ADR-0002-fedora-base.md": {
+    "mtime": 1788519306.1275733,
+    "ast_hash": "7f3dc624439df871887362ddf1481d4b",
+    "semantic_hash": ""
+  },
+  "docs/decisions/ADR-0003-wayland.md": {
+    "mtime": 1788500606.672473,
+    "ast_hash": "35b0498c1d21f536f11a53b92458b91b",
+    "semantic_hash": ""
+  },
+  "docs/decisions/ADR-0004-rust.md": {
+    "mtime": 1788500606.6725664,
+    "ast_hash": "b762bdd6cc9b4cc3d218eb89efc38529",
+    "semantic_hash": ""
+  },
+  "docs/decisions/ADR-0005-wine.md": {
+    "mtime": 1788500606.67267,
+    "ast_hash": "5d59e426f3f9e77c9441a8c3c95a2caf",
+    "semantic_hash": ""
+  },
+  "docs/decisions/ADR-0006-proton.md": {
+    "mtime": 1788500606.6727345,
+    "ast_hash": "0e4cefbdc6af0dccce0a6ffd4f9ca4d3",
+    "semantic_hash": ""
+  },
+  "docs/decisions/ADR-0007-no-vm.md": {
+    "mtime": 1788500606.6727936,
+    "ast_hash": "deea8e3216a2509e79e8f47789aaf45a",
+    "semantic_hash": ""
+  },
+  "docs/decisions/ADR-0008-atomic-updates.md": {
+    "mtime": 1788500606.6728547,
+    "ast_hash": "0ae778a870fead76eac55572c26b2cad",
+    "semantic_hash": ""
+  },
+  "docs/decisions/ADR-0009-nebushell-ui-architecture.md": {
+    "mtime": 1788493247.4080925,
+    "ast_hash": "a3aa86b7ba623df5ff444f7d385d5cba",
+    "semantic_hash": ""
+  },
+  "docs/decisions/ADR-0010-hardware-compatibility-and-power-management.md": {
+    "mtime": 1788505062.4688547,
+    "ast_hash": "b439613ca1f7f8743131ccfa02b42d6a",
+    "semantic_hash": ""
+  },
+  "docs/desktop/00-desktop-specification.md": {
+    "mtime": 1788524099.6465087,
+    "ast_hash": "d5fdbd9a457d3dfd5bc2a4e33c56e414",
+    "semantic_hash": ""
+  },
+  "docs/desktop/01-nebucompositor-specification.md": {
+    "mtime": 1788539181.7443905,
+    "ast_hash": "bda4e538b4411cd2be2f6e253be8e8c8",
+    "semantic_hash": ""
+  },
+  "docs/desktop/02-nebushell-specification.md": {
+    "mtime": 1788538158.0980864,
+    "ast_hash": "d3fc6a70063608eea1fb7fdb645cef48",
+    "semantic_hash": ""
+  },
+  "docs/desktop/03-ui-theme-system.md": {
+    "mtime": 1788493206.237839,
+    "ast_hash": "446c49ec56e4bc6e622835b91eb2a612",
+    "semantic_hash": ""
+  },
+  "docs/desktop/04-layout-system.md": {
+    "mtime": 1788493253.194128,
+    "ast_hash": "d42edd7aa7bc6f8247653804db3181c1",
+    "semantic_hash": ""
+  },
+  "docs/desktop/05-window-management.md": {
+    "mtime": 1788499963.5088737,
+    "ast_hash": "4e073165ef0c5f9d74e71bf71e66395d",
+    "semantic_hash": ""
+  },
+  "docs/desktop/06-input-display.md": {
+    "mtime": 1788499963.5089746,
+    "ast_hash": "7ce72cd1616df38950356964829956ef",
+    "semantic_hash": ""
+  },
+  "docs/desktop/07-system-ui.md": {
+    "mtime": 1788493290.720359,
+    "ast_hash": "50990bce4c468506ee30750cbb57a2cf",
+    "semantic_hash": ""
+  },
+  "docs/development/00-development-model.md": {
+    "mtime": 1788519479.656642,
+    "ast_hash": "3d1097345fb3663f99d14784e40b2904",
+    "semantic_hash": ""
+  },
+  "docs/development/01-repository-structure.md": {
+    "mtime": 1788499750.6116743,
+    "ast_hash": "39193c32ad290a92454e997fd0721830",
+    "semantic_hash": ""
+  },
+  "docs/development/02-build-system.md": {
+    "mtime": 1788519399.3371472,
+    "ast_hash": "dde5ec34e184c8b278d263a54ee960a1",
+    "semantic_hash": ""
+  },
+  "docs/development/03-ci-cd.md": {
+    "mtime": 1788499750.6119466,
+    "ast_hash": "c013781edc2a186c37702d1ac298848a",
+    "semantic_hash": ""
+  },
+  "docs/development/04-dependency-policy.md": {
+    "mtime": 1788499750.6120653,
+    "ast_hash": "f2f7178c1238b37debfe51b8797af1c3",
+    "semantic_hash": ""
+  },
+  "docs/development/05-rust-guidelines.md": {
+    "mtime": 1788499750.612183,
+    "ast_hash": "4c7e4ccc2a8c2b4bed6503c71bcd223b",
+    "semantic_hash": ""
+  },
+  "docs/development/06-release-engineering.md": {
+    "mtime": 1788499750.6123052,
+    "ast_hash": "45894946c846b066b57317916b55bf98",
+    "semantic_hash": ""
+  },
+  "docs/graphics/00-graphics-specification.md": {
+    "mtime": 1788493315.6115124,
+    "ast_hash": "f6be7d7f94ae9945c01d8a1b9dbc7d19",
+    "semantic_hash": ""
+  },
+  "docs/graphics/01-gpu-detection.md": {
+    "mtime": 1788493356.786766,
+    "ast_hash": "1db120c447eb47e0ddd3d433150d0dd3",
+    "semantic_hash": ""
+  },
+  "docs/graphics/02-mesa-integration.md": {
+    "mtime": 1788493415.8371296,
+    "ast_hash": "a5b2a8337c71a14c6d763c94838af65f",
+    "semantic_hash": ""
+  },
+  "docs/graphics/03-vulkan-opengl.md": {
+    "mtime": 1788493602.59828,
+    "ast_hash": "f16527f6c250b7e0e2737a7ae019fb3b",
+    "semantic_hash": ""
+  },
+  "docs/graphics/04-dxvk-vkd3d.md": {
+    "mtime": 1788500011.8499632,
+    "ast_hash": "150c65b20043751fe968e4f73a0f6c4a",
+    "semantic_hash": ""
+  },
+  "docs/graphics/05-gpu-profiles.md": {
+    "mtime": 1788500011.8501642,
+    "ast_hash": "942df1216302af20fb4bbf6676b59742",
+    "semantic_hash": ""
+  },
+  "docs/graphics/06-shader-cache.md": {
+    "mtime": 1788500011.850286,
+    "ast_hash": "18b6e4ddeef1cf68cf2db165f4ba3b25",
+    "semantic_hash": ""
+  },
+  "docs/interfaces/00-interface-overview.md": {
+    "mtime": 1788518947.560365,
+    "ast_hash": "c5a4273b94ca74b25ac61f66844c84c5",
+    "semantic_hash": ""
+  },
+  "docs/interfaces/01-ipc-interfaces.md": {
+    "mtime": 1788493286.5573335,
+    "ast_hash": "8756a8c63d02305d7878109fa9106c86",
+    "semantic_hash": ""
+  },
+  "docs/interfaces/02-runtime-interfaces.md": {
+    "mtime": 1788493323.2025592,
+    "ast_hash": "02084720be14cabf5556c7b7b5ded2d5",
+    "semantic_hash": ""
+  },
+  "docs/interfaces/03-compositor-interfaces.md": {
+    "mtime": 1788493367.9308348,
+    "ast_hash": "3e9cd58135f98ad5239b4ae1aa309acb",
+    "semantic_hash": ""
+  },
+  "docs/interfaces/04-shell-interfaces.md": {
+    "mtime": 1788493413.2751138,
+    "ast_hash": "f667aa57c68c82a886489c1808b09c62",
+    "semantic_hash": ""
+  },
+  "docs/interfaces/05-installer-interfaces.md": {
+    "mtime": 1788493574.9711096,
+    "ast_hash": "13c7791e7e21e7ff44a6c857ee929b0c",
+    "semantic_hash": ""
+  },
+  "docs/interfaces/06-database-interfaces.md": {
+    "mtime": 1788499750.5930243,
+    "ast_hash": "61b58b89a3ca3265029862c1661e7bb3",
+    "semantic_hash": ""
+  },
+  "docs/p0-ready-gate-verification.md": {
+    "mtime": 1788519602.8294003,
+    "ast_hash": "1c3511d603ef54bef2b883701fcae984",
+    "semantic_hash": ""
+  },
+  "docs/performance/00-performance-goals.md": {
+    "mtime": 1788492561.0428255,
+    "ast_hash": "a55950d1d9b502e64194c6f1f784f9e7",
+    "semantic_hash": ""
+  },
+  "docs/performance/01-memory.md": {
+    "mtime": 1788492561.0429363,
+    "ast_hash": "aa21b3b8015939d3a279601ad59c1195",
+    "semantic_hash": ""
+  },
+  "docs/performance/02-cpu.md": {
+    "mtime": 1788492561.0430012,
+    "ast_hash": "fd11296a1fcbd2e45f8b4196ba0b2346",
+    "semantic_hash": ""
+  },
+  "docs/performance/03-boot.md": {
+    "mtime": 1788492561.0430639,
+    "ast_hash": "7b6e1efadc7dfc38cfc345b053149302",
+    "semantic_hash": ""
+  },
+  "docs/performance/04-launch.md": {
+    "mtime": 1788492561.0431197,
+    "ast_hash": "de4f40fad494b8232781ee42734ec535",
+    "semantic_hash": ""
+  },
+  "docs/performance/05-storage.md": {
+    "mtime": 1788492561.043172,
+    "ast_hash": "ab2d8546bd6b05a719d4b4929f882497",
+    "semantic_hash": ""
+  },
+  "docs/roadmap/00-implementation-roadmap.md": {
+    "mtime": 1788527040.0380514,
+    "ast_hash": "4505a504fdad2e8adfc92494a0cafd77",
+    "semantic_hash": ""
+  },
+  "docs/roadmap/01-p0-foundation.md": {
+    "mtime": 1788519437.5223823,
+    "ast_hash": "69d3806b45ee77c31b2900865e22620e",
+    "semantic_hash": ""
+  },
+  "docs/roadmap/02-p1-compositor.md": {
+    "mtime": 1788500689.043138,
+    "ast_hash": "790d71ef67d0893b573b806c821c73ce",
+    "semantic_hash": ""
+  },
+  "docs/roadmap/03-p2-shell.md": {
+    "mtime": 1788500689.0432045,
+    "ast_hash": "e254584c47af95ab832a0379d3d3f5ac",
+    "semantic_hash": ""
+  },
+  "docs/roadmap/04-p3-runtime.md": {
+    "mtime": 1788500689.043263,
+    "ast_hash": "5e3f07f3817a8c53dfb5191aded4d725",
+    "semantic_hash": ""
+  },
+  "docs/roadmap/05-p4-compatibility.md": {
+    "mtime": 1788500689.0433195,
+    "ast_hash": "ece1b5d85a3fe54ae202158d12685557",
+    "semantic_hash": ""
+  },
+  "docs/roadmap/06-p5-graphics.md": {
+    "mtime": 1788500689.0433872,
+    "ast_hash": "adb596f454097b273c9a5d43e25b3a03",
+    "semantic_hash": ""
+  },
+  "docs/roadmap/07-p6-applications.md": {
+    "mtime": 1788500689.0434422,
+    "ast_hash": "fb94e6b1ff17000eb0c9cb9e0bebe243",
+    "semantic_hash": ""
+  },
+  "docs/roadmap/08-p7-testing.md": {
+    "mtime": 1788500689.0434964,
+    "ast_hash": "7b8130f8c1359c1228259285800c0710",
+    "semantic_hash": ""
+  },
+  "docs/roadmap/09-p8-production-validation.md": {
+    "mtime": 1788500689.0435524,
+    "ast_hash": "a890e5c8fa4adf953f1381f8ee44f2aa",
+    "semantic_hash": ""
+  },
+  "docs/roadmap/10-future-phases.md": {
+    "mtime": 1788500689.0436072,
+    "ast_hash": "2387e04a7b27d3f123796b5c148255e4",
+    "semantic_hash": ""
+  },
+  "docs/runtime/00-runtime-specification.md": {
+    "mtime": 1788499750.6027167,
+    "ast_hash": "67f6e626c9a3e68e890c40f580e65877",
+    "semantic_hash": ""
+  },
+  "docs/runtime/01-application-lifecycle.md": {
+    "mtime": 1788499750.6028342,
+    "ast_hash": "b2ddf27071c6700496ec7e75e2014556",
+    "semantic_hash": ""
+  },
+  "docs/runtime/02-process-model.md": {
+    "mtime": 1788499750.602935,
+    "ast_hash": "5e92db078f5b4315ff9e6b775906f22b",
+    "semantic_hash": ""
+  },
+  "docs/runtime/03-windows-runtime.md": {
+    "mtime": 1788499750.6030152,
+    "ast_hash": "dea2ae16aec188f26fea45279cffa1ee",
+    "semantic_hash": ""
+  },
+  "docs/runtime/04-prefix-management.md": {
+    "mtime": 1788499750.6030922,
+    "ast_hash": "cb199f6957eff286d74ceffe4e3581c9",
+    "semantic_hash": ""
+  },
+  "docs/runtime/05-wine-integration.md": {
+    "mtime": 1788499750.6031485,
+    "ast_hash": "8eee9af97b9078880116f4a45d33d195",
+    "semantic_hash": ""
+  },
+  "docs/runtime/06-proton-integration.md": {
+    "mtime": 1788499963.5083005,
+    "ast_hash": "f6edcb014acd3fcf9b536bcd1f328f4a",
+    "semantic_hash": ""
+  },
+  "docs/runtime/07-runtime-security.md": {
+    "mtime": 1788499750.6031964,
+    "ast_hash": "36e602e6d18e164ea11f47267ecd2884",
+    "semantic_hash": ""
+  },
+  "docs/specification/00-system-specification.md": {
+    "mtime": 1788519466.4005601,
+    "ast_hash": "46efca8e43f2740335f7189630e4c560",
+    "semantic_hash": ""
+  },
+  "docs/specification/01-boot-specification.md": {
+    "mtime": 1788539637.120195,
+    "ast_hash": "fb07933c3f816d1ed112b7d0385d14f7",
+    "semantic_hash": ""
+  },
+  "docs/specification/02-process-ipc-specification.md": {
+    "mtime": 1788493303.0804353,
+    "ast_hash": "37a08ab98e65aefe368aad3337d8a58b",
+    "semantic_hash": ""
+  },
+  "docs/specification/03-filesystem-specification.md": {
+    "mtime": 1788493361.5267951,
+    "ast_hash": "a7dbcb08b8bf2c7a2c07b14ff57d27d6",
+    "semantic_hash": ""
+  },
+  "docs/specification/04-security-specification.md": {
+    "mtime": 1788493421.396164,
+    "ast_hash": "f6a84dcb8ef4c3c4f69a795cab0d644c",
+    "semantic_hash": ""
+  },
+  "docs/specification/05-hardware-specification.md": {
+    "mtime": 1788505235.517659,
+    "ast_hash": "f7ff2e718ba2f10368612341d01dc1bb",
+    "semantic_hash": ""
+  },
+  "docs/specification/06-resource-management.md": {
+    "mtime": 1788499750.5885391,
+    "ast_hash": "5865a1046f1123ccac7927cd94016259",
+    "semantic_hash": ""
+  },
+  "docs/testing/00-test-strategy.md": {
+    "mtime": 1788499750.6091142,
+    "ast_hash": "a38ffb830bf18736ba00c4188d0d031b",
+    "semantic_hash": ""
+  },
+  "docs/testing/01-unit-testing.md": {
+    "mtime": 1788499750.6092947,
+    "ast_hash": "41eafc311998b920d577e06deff9e003",
+    "semantic_hash": ""
+  },
+  "docs/testing/02-integration-testing.md": {
+    "mtime": 1788499750.6094308,
+    "ast_hash": "7335720f6a40aba0084a3ed5db6bf229",
+    "semantic_hash": ""
+  },
+  "docs/testing/03-system-testing.md": {
+    "mtime": 1788500481.5520332,
+    "ast_hash": "374bf6b7becc5da0d8335379f09502bc",
+    "semantic_hash": ""
+  },
+  "docs/testing/04-compatibility-testing.md": {
+    "mtime": 1788499750.609554,
+    "ast_hash": "1d156411bfa9c633f20ba42a77983058",
+    "semantic_hash": ""
+  },
+  "docs/testing/05-graphics-testing.md": {
+    "mtime": 1788499750.6096773,
+    "ast_hash": "6e10b3b8010955c240fe30704d539090",
+    "semantic_hash": ""
+  },
+  "docs/testing/06-performance-testing.md": {
+    "mtime": 1788499750.609801,
+    "ast_hash": "5b76461f058629bccd6d49f6284a2d57",
+    "semantic_hash": ""
+  },
+  "docs/testing/07-hardware-testing.md": {
+    "mtime": 1788508725.0820556,
+    "ast_hash": "e3ca6be16a22100efa32cdbb5e4e08bb",
+    "semantic_hash": ""
+  },
+  "docs/testing/08-release-certification.md": {
+    "mtime": 1788499750.6100445,
+    "ast_hash": "0e2d2101f60d7ed65b92c3ee8f42a6f3",
+    "semantic_hash": ""
+  },
+  "docs/updates/00-update-specification.md": {
+    "mtime": 1788539770.2040145,
+    "ast_hash": "ca58ec61a0461a386543fde91e8f6760",
+    "semantic_hash": ""
+  },
+  "docs/updates/01-image-build.md": {
+    "mtime": 1788519370.0059667,
+    "ast_hash": "50641c8ffe142ad699499ded64ae69ce",
+    "semantic_hash": ""
+  },
+  "docs/updates/02-release-channels.md": {
+    "mtime": 1788519379.3060238,
+    "ast_hash": "c340b313474de602f88f8b6b994fe0f4",
+    "semantic_hash": ""
+  },
+  "docs/updates/03-regression-gates.md": {
+    "mtime": 1788518891.4380193,
+    "ast_hash": "949f56e0c15b365c1e06c3522a7fdd4d",
+    "semantic_hash": ""
+  },
+  "docs/updates/04-rollback-recovery.md": {
+    "mtime": 1788539652.9432924,
+    "ast_hash": "0fcdd2803191d40a7fb99aa300e0dfa9",
+    "semantic_hash": ""
+  },
+  "prd nebu os.md": {
+    "mtime": 1788490320.3870666,
+    "ast_hash": "0e6b09cd3d7debd4a1e96b3b50bba37e",
+    "semantic_hash": ""
+  },
+  "prd-nebu-os.md": {
+    "mtime": 1788490320.3870666,
+    "ast_hash": "0e6b09cd3d7debd4a1e96b3b50bba37e",
+    "semantic_hash": ""
+  },
+  "prd.md": {
+    "mtime": 1788490320.3870666,
+    "ast_hash": "0e6b09cd3d7debd4a1e96b3b50bba37e",
+    "semantic_hash": ""
+  },
+  "skills/README.md": {
+    "mtime": 1788542593.7924032,
+    "ast_hash": "98d03d7ef29a3725a58e0566f3abe703",
+    "semantic_hash": ""
+  },
+  "skills/architecture/SKILL.md": {
+    "mtime": 1788524140.3897595,
+    "ast_hash": "393340990f14f9d1159636afd3d124f8",
+    "semantic_hash": ""
+  },
+  "skills/compatibility/SKILL.md": {
+    "mtime": 1788503376.3845344,
+    "ast_hash": "c5153e7eaeafe4d4553aef3e5eb8715f",
+    "semantic_hash": ""
+  },
+  "skills/compositor/SKILL.md": {
+    "mtime": 1788539221.0086322,
+    "ast_hash": "44f72ef8a97e732f9c1e0148a6581409",
+    "semantic_hash": ""
+  },
+  "skills/documentation/SKILL.md": {
+    "mtime": 1788503376.3849416,
+    "ast_hash": "ce53a537dbacbb07882eb504ccea3c84",
+    "semantic_hash": ""
+  },
+  "skills/graphics/SKILL.md": {
+    "mtime": 1788503376.3846145,
+    "ast_hash": "8769d15142d5f956e9120446a38b439f",
+    "semantic_hash": ""
+  },
+  "skills/performance/SKILL.md": {
+    "mtime": 1788503376.3848627,
+    "ast_hash": "50a370730b0a19ff1741fe6fc4f6d85a",
+    "semantic_hash": ""
+  },
+  "skills/release/SKILL.md": {
+    "mtime": 1788539687.5305054,
+    "ast_hash": "8fa9926e9b2e1dd62401885c16696aa0",
+    "semantic_hash": ""
+  },
+  "skills/runtime/SKILL.md": {
+    "mtime": 1788503376.384453,
+    "ast_hash": "94e359b119f945c5b2709dce6d017913",
+    "semantic_hash": ""
+  },
+  "skills/rust/SKILL.md": {
+    "mtime": 1788503376.3840997,
+    "ast_hash": "bad592c4ff50e873e51a6ffe4484b0f0",
+    "semantic_hash": ""
+  },
+  "skills/security/SKILL.md": {
+    "mtime": 1788521825.242087,
+    "ast_hash": "109e657979e53b0dc1c4e082fdec9a7f",
+    "semantic_hash": ""
+  },
+  "skills/shell/SKILL.md": {
+    "mtime": 1788538239.7645893,
+    "ast_hash": "ffa04be39e36dec5dd4b7b1052f5108e",
+    "semantic_hash": ""
+  },
+  "skills/system/SKILL.md": {
+    "mtime": 1788539697.6715677,
+    "ast_hash": "365626a3f4e67edb961f20378f2c9c34",
+    "semantic_hash": ""
+  },
+  "skills/testing/SKILL.md": {
+    "mtime": 1788520593.6495023,
+    "ast_hash": "e464f8dffb9a9a27e62f4bb47a536de9",
+    "semantic_hash": ""
+  },
+  "docs/audit/OS_UPDATE_ARCHITECTURE_ENHANCEMENT_AUDIT.md": {
+    "mtime": 1788519809.9386759,
+    "ast_hash": "841661c7fd9849c9d401f7e28f3664a9",
+    "semantic_hash": ""
+  },
+  "docs/decisions/ADR-0011-os-image-updates-and-rollback.md": {
+    "mtime": 1788539757.4439359,
+    "ast_hash": "1880498b29cbe14a21f7331b9a8e489c",
+    "semantic_hash": ""
+  },
+  "docs/interfaces/07-update-interfaces.md": {
+    "mtime": 1788519410.4492157,
+    "ast_hash": "4bb7d49679cc4b2dbdd86680e2f22579",
+    "semantic_hash": ""
+  },
+  "docs/audit/FEDORA_44_BASELINE_AUDIT.md": {
+    "mtime": 1788527040.0437279,
+    "ast_hash": "63bac9d74ebe08046b643a1140de00b3",
+    "semantic_hash": ""
+  },
+  "docs/audit/AGENTS_SKILLS_ALIGNMENT_AUDIT.md": {
+    "mtime": 1788527040.0426168,
+    "ast_hash": "4fc3750a2c11d2f9808546468b1295ff",
+    "semantic_hash": ""
+  },
+  "docs/applications/07-app-manager-specification.md": {
+    "mtime": 1788521300.5278556,
+    "ast_hash": "87051e260f33821cfab3b039009a4c46",
+    "semantic_hash": ""
+  },
+  "docs/applications/08-developer-platform-and-security.md": {
+    "mtime": 1788521316.4289534,
+    "ast_hash": "01809c827c576bac4730960ea624ff62",
+    "semantic_hash": ""
+  },
+  "docs/audit/APPLICATION_PLATFORM_MARKETPLACE_ENHANCEMENT_AUDIT.md": {
+    "mtime": 1788527040.043969,
+    "ast_hash": "0f6afd7bb216b2acc4b624bccc601674",
+    "semantic_hash": ""
+  },
+  "docs/decisions/ADR-0012-application-distribution-and-marketplace.md": {
+    "mtime": 1788521004.7180338,
+    "ast_hash": "73b97d69e4ffa6f09cbc2b987a2c207b",
+    "semantic_hash": ""
+  },
+  "skills/application/SKILL.md": {
+    "mtime": 1788524148.3848088,
+    "ast_hash": "8676bcaeb548a167e9c06d38d1d46225",
+    "semantic_hash": ""
+  },
+  "docs/audit/UI_DESIGN_AND_ICON_ARCHITECTURE_AUDIT.md": {
+    "mtime": 1788524261.4565053,
+    "ast_hash": "b51879b637fe790f9ac3762808e00700",
+    "semantic_hash": ""
+  },
+  "docs/decisions/ADR-0013-ui-design-system-and-icon-architecture.md": {
+    "mtime": 1788523992.5988495,
+    "ast_hash": "0f07ec80a235f5d7764de1fdec2118d0",
+    "semantic_hash": ""
+  },
+  "docs/design/00-design-system.md": {
+    "mtime": 1788538181.7382321,
+    "ast_hash": "9b24b8c9f45b243bec22688badd95004",
+    "semantic_hash": ""
+  },
+  "docs/design/01-iconography.md": {
+    "mtime": 1788524032.4180946,
+    "ast_hash": "558b58c9ee0e4875cd64b8ffd04ea019",
+    "semantic_hash": ""
+  },
+  "docs/design/02-theming-layout-behavior.md": {
+    "mtime": 1788524048.081191,
+    "ast_hash": "49af558a469e73663d111948f3c6873f",
+    "semantic_hash": ""
+  },
+  "docs/design/03-components.md": {
+    "mtime": 1788524062.834282,
+    "ast_hash": "d75dfc7f84c560db3f4cfe4f69bcc877",
+    "semantic_hash": ""
+  },
+  "docs/design/04-accessibility-and-performance.md": {
+    "mtime": 1788524077.4713721,
+    "ast_hash": "fe15087919c93abe94dea4b7e9657f9f",
+    "semantic_hash": ""
+  },
+  "docs/design/05-external-assets-and-licensing.md": {
+    "mtime": 1788524088.8804424,
+    "ast_hash": "7ed80c3e131458d6f2ee5464f798632a",
+    "semantic_hash": ""
+  },
+  "docs/design/README.md": {
+    "mtime": 1788524000.2548966,
+    "ast_hash": "00b2fe1943f655537a2749dbec3a76c3",
+    "semantic_hash": ""
+  },
+  "docs/audit/BOOT_EXPERIENCE_ARCHITECTURE_AUDIT.md": {
+    "mtime": 1788539713.104663,
+    "ast_hash": "f5dd3d80cb2997b356d6d36748b364e3",
+    "semantic_hash": ""
+  },
+  "docs/decisions/ADR-0014-boot-experience-and-graphical-handoff.md": {
+    "mtime": 1788539609.839027,
+    "ast_hash": "ce985993898c676470adecac2224900e",
+    "semantic_hash": ""
+  },
+  "config/scripts/nebu-boot-check": {
+    "mtime": 1788543731.1154075,
+    "ast_hash": "27866e8c65f852397092153aaf6acf92",
+    "semantic_hash": ""
+  },
+  "scripts/build-p0.sh": {
+    "mtime": 1788543430.451556,
+    "ast_hash": "0b855c7a6db66ca0a841046143f1fca1",
+    "semantic_hash": ""
+  },
+  "scripts/deploy-p0.sh": {
+    "mtime": 1788543741.759473,
+    "ast_hash": "58836302012c95fe30603834a1269b31",
+    "semantic_hash": ""
+  },
+  "scripts/p0-ci.sh": {
+    "mtime": 1788543405.3294013,
+    "ast_hash": "5d46d7b92689ef1fe9b8fff5981c94ec",
+    "semantic_hash": ""
+  },
+  "scripts/test-p0.sh": {
+    "mtime": 1788544412.5779126,
+    "ast_hash": "aefe7b21cc78e1920e1b66505926bb4a",
+    "semantic_hash": ""
+  },
+  "docs/operations/PROXMOX_TEST_ENV.md": {
+    "mtime": 1788542618.5105555,
+    "ast_hash": "c649ac24ba1a09b9f31a3b82a030fdf2",
+    "semantic_hash": ""
+  },
+  "docs/p0/P0_ARTIFACT.md": {
+    "mtime": 1788542611.9545152,
+    "ast_hash": "0993541ba9b55598028b55a2594bfe7c",
+    "semantic_hash": ""
+  },
+  "docs/p0/P0_BUILD.md": {
+    "mtime": 1788542600.7144458,
+    "ast_hash": "3ce249eeea2ff968676b1cec0f327f16",
+    "semantic_hash": ""
+  },
+  "docs/p0/P0_IMPLEMENTATION_REPORT.md": {
+    "mtime": 1788544608.0360599,
+    "ast_hash": "ac0cca05c82d3dfc08ba7278e8f216a0",
+    "semantic_hash": ""
+  },
+  "docs/p0/P0_TESTING.md": {
+    "mtime": 1788542606.3664808,
+    "ast_hash": "90bbaefea86f617a0b41f15e92047fdd",
+    "semantic_hash": ""
+  },
+  "docs/superpowers/plans/2026-09-05-nebuos-p0-implementation.md": {
+    "mtime": 1788542520.1259496,
+    "ast_hash": "f3647d22c70028da37d05e39ebe6ef8d",
+    "semantic_hash": ""
+  },
+  "skills/p0-build-test/SKILL.md": {
+    "mtime": 1788542587.2813632,
+    "ast_hash": "8dc72da0c831d2bca7e9fec6f4849aeb",
+    "semantic_hash": ""
+  },
+  "scripts/vm101_audit.py": {
+    "mtime": 1788564023.8433793,
+    "ast_hash": "c67362ae01ceeef50a2f3e964e6310c6",
+    "semantic_hash": ""
+  },
+  "scripts/vm101_post_reboot.py": {
+    "mtime": 1788564167.4613297,
+    "ast_hash": "d4ff349117b1ce799a421730b8d8097e",
+    "semantic_hash": ""
+  },
+  "scripts/vm101_reboot_test.py": {
+    "mtime": 1788564066.514642,
+    "ast_hash": "3bf06f11ad1c9a4647e36992029def0b",
+    "semantic_hash": ""
+  },
+  "docs/DOCUMENTATION_AUDIT_REPORT.md": {
+    "mtime": 1788544742.4082155,
+    "ast_hash": "0f3c1a6fa02f3fe1708b2e674f95eb95",
+    "semantic_hash": ""
+  },
+  "docs/p0/P0_PROXMOX_VERIFICATION_REPORT.md": {
+    "mtime": 1788564305.5761778,
+    "ast_hash": "c569abe6788a4cf68ea55de3252f0785",
+    "semantic_hash": ""
+  }
+}

@@ -1,0 +1,15 @@
+[Unit]
+Description=NebuOS Transient Var Overlay Setup
+Documentation=https://github.com/NebuOS/nebu-os
+DefaultDependencies=no
+Conflicts=shutdown.target
+Before=sysinit.target local-fs.target systemd-journald.service
+After=systemd-modules-load.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/bin/sh -c 'modprobe overlay 2>/dev/null || true; mkdir -p /run/nebu-var/upper /run/nebu-var/work && mount -t overlay overlay -o lowerdir=/var,upperdir=/run/nebu-var/upper,workdir=/run/nebu-var/work /var'
+
+[Install]
+WantedBy=sysinit.target

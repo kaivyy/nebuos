@@ -1,0 +1,2967 @@
+[
+  {
+    "path": "docs/ASSUMPTIONS.md",
+    "name": "ASSUMPTIONS.md",
+    "domain": "root",
+    "title": "NebuOS Engineering Assumptions Register",
+    "lines": 126,
+    "words": 2453,
+    "status": "APPROVED",
+    "outbound_links": [
+      "docs/file:/root/NebuOS/docs/RISK_REGISTER.md",
+      "docs/file:/root/NebuOS/docs/README.md",
+      "docs/file:/root/NebuOS/docs/INDEX.md",
+      "docs/file:/root/NebuOS/docs/OPEN_QUESTIONS.md",
+      "docs/file:/root/NebuOS/docs/RISK_REGISTER.md",
+      "docs/file:/root/NebuOS/docs/TRACEABILITY.md",
+      "docs/file:/root/NebuOS/docs/performance/00-performance-goals.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/OPEN_QUESTIONS.md",
+      "docs/README.md",
+      "docs/TRACEABILITY.md"
+    ]
+  },
+  {
+    "path": "docs/INDEX.md",
+    "name": "INDEX.md",
+    "domain": "root",
+    "title": "Master Documentation Index \u2014 NebuOS",
+    "lines": 222,
+    "words": 1402,
+    "status": "UNSPECIFIED",
+    "outbound_links": [
+      "docs/README.md",
+      "docs/INDEX.md",
+      "docs/OPEN_QUESTIONS.md",
+      "docs/RISK_REGISTER.md",
+      "docs/ASSUMPTIONS.md",
+      "docs/TRACEABILITY.md",
+      "docs/specification/00-system-specification.md",
+      "docs/specification/01-boot-specification.md",
+      "docs/specification/02-process-ipc-specification.md",
+      "docs/specification/03-filesystem-specification.md",
+      "docs/specification/04-security-specification.md",
+      "docs/specification/05-hardware-specification.md",
+      "docs/specification/06-resource-management.md",
+      "docs/desktop/00-desktop-specification.md",
+      "docs/desktop/01-nebucompositor-specification.md",
+      "docs/desktop/02-nebushell-specification.md",
+      "docs/desktop/03-ui-theme-system.md",
+      "docs/desktop/04-layout-system.md",
+      "docs/desktop/05-window-management.md",
+      "docs/desktop/06-input-display.md",
+      "docs/desktop/07-system-ui.md",
+      "docs/runtime/00-runtime-specification.md",
+      "docs/runtime/01-application-lifecycle.md",
+      "docs/runtime/02-process-model.md",
+      "docs/runtime/03-windows-runtime.md",
+      "docs/runtime/04-prefix-management.md",
+      "docs/runtime/05-wine-integration.md",
+      "docs/runtime/06-proton-integration.md",
+      "docs/runtime/07-runtime-security.md",
+      "docs/compatibility/00-compatibility-specification.md",
+      "docs/compatibility/01-database-schema.md",
+      "docs/compatibility/02-compatibility-profile.md",
+      "docs/compatibility/03-patch-engine.md",
+      "docs/compatibility/04-application-detection.md",
+      "docs/compatibility/05-certification-model.md",
+      "docs/compatibility/06-known-limitations.md",
+      "docs/graphics/00-graphics-specification.md",
+      "docs/graphics/01-gpu-detection.md",
+      "docs/graphics/02-mesa-integration.md",
+      "docs/graphics/03-vulkan-opengl.md",
+      "docs/graphics/04-dxvk-vkd3d.md",
+      "docs/graphics/05-gpu-profiles.md",
+      "docs/graphics/06-shader-cache.md",
+      "docs/applications/00-application-specification.md",
+      "docs/applications/01-installer.md",
+      "docs/applications/02-application-registration.md",
+      "docs/applications/03-filesystem-mapping.md",
+      "docs/applications/04-file-associations.md",
+      "docs/applications/05-uninstallation.md",
+      "docs/applications/06-software-center.md",
+      "docs/updates/00-update-specification.md",
+      "docs/updates/01-image-build.md",
+      "docs/updates/02-release-channels.md",
+      "docs/updates/03-regression-gates.md",
+      "docs/updates/04-rollback-recovery.md",
+      "docs/testing/00-test-strategy.md",
+      "docs/testing/01-unit-testing.md",
+      "docs/testing/02-integration-testing.md",
+      "docs/testing/03-system-testing.md",
+      "docs/testing/04-compatibility-testing.md",
+      "docs/testing/05-graphics-testing.md",
+      "docs/testing/06-performance-testing.md",
+      "docs/testing/07-hardware-testing.md",
+      "docs/testing/08-release-certification.md",
+      "docs/interfaces/00-interface-overview.md",
+      "docs/interfaces/01-ipc-interfaces.md",
+      "docs/interfaces/02-runtime-interfaces.md",
+      "docs/interfaces/03-compositor-interfaces.md",
+      "docs/interfaces/04-shell-interfaces.md",
+      "docs/interfaces/05-installer-interfaces.md",
+      "docs/interfaces/06-database-interfaces.md",
+      "docs/development/00-development-model.md",
+      "docs/development/01-repository-structure.md",
+      "docs/development/02-build-system.md",
+      "docs/development/03-ci-cd.md",
+      "docs/development/04-dependency-policy.md",
+      "docs/development/05-rust-guidelines.md",
+      "docs/development/06-release-engineering.md",
+      "docs/decisions/ADR-0001-linux-kernel.md",
+      "docs/decisions/ADR-0002-fedora-base.md",
+      "docs/decisions/ADR-0003-wayland.md",
+      "docs/decisions/ADR-0004-rust.md",
+      "docs/decisions/ADR-0005-wine.md",
+      "docs/decisions/ADR-0006-proton.md",
+      "docs/decisions/ADR-0007-no-vm.md",
+      "docs/decisions/ADR-0008-atomic-updates.md",
+      "docs/decisions/ADR-0009-nebushell-ui-architecture.md",
+      "docs/roadmap/00-implementation-roadmap.md",
+      "docs/roadmap/01-p0-foundation.md",
+      "docs/roadmap/02-p1-compositor.md",
+      "docs/roadmap/03-p2-shell.md",
+      "docs/roadmap/04-p3-runtime.md",
+      "docs/roadmap/05-p4-compatibility.md",
+      "docs/roadmap/06-p5-graphics.md",
+      "docs/roadmap/07-p6-applications.md",
+      "docs/roadmap/08-p7-testing.md",
+      "docs/roadmap/09-p8-production-validation.md",
+      "docs/roadmap/10-future-phases.md",
+      "docs/README.md",
+      "docs/specification/00-system-specification.md",
+      "docs/specification/01-boot-specification.md",
+      "docs/interfaces/00-interface-overview.md",
+      "docs/decisions/ADR-0009-nebushell-ui-architecture.md",
+      "docs/roadmap/00-implementation-roadmap.md",
+      "docs/desktop/00-desktop-specification.md",
+      "docs/desktop/01-nebucompositor-specification.md",
+      "docs/desktop/02-nebushell-specification.md",
+      "docs/desktop/03-ui-theme-system.md",
+      "docs/desktop/04-layout-system.md",
+      "docs/graphics/00-graphics-specification.md",
+      "docs/graphics/04-dxvk-vkd3d.md",
+      "docs/runtime/00-runtime-specification.md",
+      "docs/runtime/01-application-lifecycle.md",
+      "docs/runtime/04-prefix-management.md",
+      "docs/runtime/05-wine-integration.md",
+      "docs/runtime/07-runtime-security.md",
+      "docs/compatibility/01-database-schema.md",
+      "docs/compatibility/03-patch-engine.md",
+      "docs/testing/00-test-strategy.md",
+      "docs/testing/02-integration-testing.md",
+      "docs/testing/03-system-testing.md",
+      "docs/testing/04-compatibility-testing.md",
+      "docs/updates/03-regression-gates.md",
+      "docs/updates/04-rollback-recovery.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/README.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md"
+    ]
+  },
+  {
+    "path": "docs/OPEN_QUESTIONS.md",
+    "name": "OPEN_QUESTIONS.md",
+    "domain": "root",
+    "title": "NebuOS Open Architectural Questions Register",
+    "lines": 396,
+    "words": 4952,
+    "status": "OPEN",
+    "outbound_links": [
+      "docs/decisions",
+      "docs/README.md",
+      "docs/RISK_REGISTER.md",
+      "docs/ASSUMPTIONS.md",
+      "docs/decisions",
+      "docs/roadmap/00-engineering-roadmap.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/README.md",
+      "docs/TRACEABILITY.md"
+    ]
+  },
+  {
+    "path": "docs/README.md",
+    "name": "README.md",
+    "domain": "root",
+    "title": "NebuOS \u2014 Master Engineering Blueprint & Technical Specification",
+    "lines": 108,
+    "words": 692,
+    "status": "UNSPECIFIED",
+    "outbound_links": [
+      "docs/specification/00-system-specification.md",
+      "docs/desktop/00-desktop-specification.md",
+      "docs/runtime/00-runtime-specification.md",
+      "docs/compatibility/00-compatibility-specification.md",
+      "docs/graphics/00-graphics-specification.md",
+      "docs/applications/00-application-specification.md",
+      "docs/updates/00-update-specification.md",
+      "docs/testing/00-test-strategy.md",
+      "docs/interfaces/00-interface-overview.md",
+      "docs/development/00-development-model.md",
+      "docs/decisions/ADR-0001-linux-kernel.md",
+      "docs/roadmap/00-implementation-roadmap.md",
+      "docs/INDEX.md",
+      "docs/OPEN_QUESTIONS.md",
+      "docs/RISK_REGISTER.md",
+      "docs/ASSUMPTIONS.md",
+      "docs/TRACEABILITY.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/INDEX.md",
+      "docs/OPEN_QUESTIONS.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md"
+    ]
+  },
+  {
+    "path": "docs/RISK_REGISTER.md",
+    "name": "RISK_REGISTER.md",
+    "domain": "root",
+    "title": "NebuOS Systems Risk Register",
+    "lines": 131,
+    "words": 2203,
+    "status": "ACTIVE",
+    "outbound_links": [
+      "docs/file:/root/NebuOS/docs/README.md",
+      "docs/file:/root/NebuOS/docs/OPEN_QUESTIONS.md",
+      "docs/file:/root/NebuOS/docs/ASSUMPTIONS.md",
+      "docs/file:/root/NebuOS/docs/decisions/ADR-0009-no-vm.md",
+      "docs/file:/root/NebuOS/docs/testing/00-testing-strategy.md",
+      "docs/file:/root/NebuOS/docs/updates/04-rollback.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/OPEN_QUESTIONS.md",
+      "docs/README.md",
+      "docs/TRACEABILITY.md"
+    ]
+  },
+  {
+    "path": "docs/TRACEABILITY.md",
+    "name": "TRACEABILITY.md",
+    "domain": "root",
+    "title": "NebuOS Requirements Traceability Matrix",
+    "lines": 251,
+    "words": 2803,
+    "status": "APPROVED",
+    "outbound_links": [
+      "docs/specification/00-system-specification.md",
+      "docs/architecture/00-overview.md",
+      "docs/decisions/ADR-0001-linux-kernel.md",
+      "docs/decisions/ADR-0004-rust.md",
+      "docs/specification/00-system-specification.md",
+      "docs/performance/00-performance-goals.md",
+      "docs/decisions/ADR-0002-fedora-base.md",
+      "docs/specification/00-system-specification.md",
+      "docs/compatibility/06-known-limitations.md",
+      "docs/decisions/ADR-0009-no-vm.md",
+      "docs/specification/00-system-specification.md",
+      "docs/desktop/00-desktop-overview.md",
+      "docs/decisions/ADR-0006-nebu-shell.md",
+      "docs/development/04-dependency-policy.md",
+      "docs/compatibility/06-known-limitations.md",
+      "docs/decisions/ADR-0007-wine.md",
+      "docs/development/00-development-model.md",
+      "docs/development/04-dependency-policy.md",
+      "docs/decisions/ADR-0004-rust.md",
+      "docs/development/05-coding-guidelines.md",
+      "docs/development/00-development-model.md",
+      "docs/decisions/ADR-0004-rust.md",
+      "docs/specification/00-system-specification.md",
+      "docs/runtime/00-runtime-specification.md",
+      "docs/decisions/ADR-0009-no-vm.md",
+      "docs/specification/00-system-specification.md",
+      "docs/runtime/00-runtime-specification.md",
+      "docs/decisions/ADR-0009-no-vm.md",
+      "docs/compatibility/01-database-schema.md",
+      "docs/runtime/04-wine-integration.md",
+      "docs/decisions/ADR-0007-wine.md",
+      "docs/decisions/ADR-0014-compatibility-database.md",
+      "docs/specification/00-system-specification.md",
+      "docs/architecture/01-system-architecture.md",
+      "docs/specification/00-system-specification.md",
+      "docs/development/05-coding-guidelines.md",
+      "docs/testing/07-release-certification.md",
+      "docs/roadmap/00-engineering-roadmap.md",
+      "docs/decisions/ADR-0015-compatibility-lab.md",
+      "docs/roadmap/00-engineering-roadmap.md",
+      "docs/roadmap/13-p12.md",
+      "docs/architecture/06-hardware.md",
+      "docs/specification/00-system-specification.md",
+      "docs/decisions/ADR-0001-linux-kernel.md",
+      "docs/architecture/01-system-architecture.md",
+      "docs/specification/00-system-specification.md",
+      "docs/decisions/ADR-0001-linux-kernel.md",
+      "docs/decisions/ADR-0002-fedora-base.md",
+      "docs/architecture/01-system-architecture.md",
+      "docs/specification/01-boot-specification.md",
+      "docs/decisions/ADR-0002-fedora-base.md",
+      "docs/architecture/06-hardware.md",
+      "docs/performance/02-cpu.md",
+      "docs/architecture/06-hardware.md",
+      "docs/performance/02-cpu.md",
+      "docs/testing/06-hardware-testing.md",
+      "docs/roadmap/01-p0.md",
+      "docs/desktop/01-compositor.md",
+      "docs/desktop/05-display.md",
+      "docs/decisions/ADR-0003-wayland.md",
+      "docs/decisions/ADR-0005-nebu-compositor.md",
+      "docs/desktop/02-shell.md",
+      "docs/desktop/04-layout-system.md",
+      "docs/decisions/ADR-0006-nebu-shell.md",
+      "docs/decisions/ADR-0009-nebushell-ui-architecture.md",
+      "docs/desktop/00-desktop-overview.md",
+      "docs/desktop/03-ui-theme-system.md",
+      "docs/decisions/ADR-0006-nebu-shell.md",
+      "docs/decisions/ADR-0009-nebushell-ui-architecture.md",
+      "docs/desktop/07-system-ui.md",
+      "docs/runtime/01-application-lifecycle.md",
+      "docs/desktop/06-system-integration.md",
+      "docs/applications/02-filesystem-mapping.md",
+      "docs/applications/03-file-associations.md",
+      "docs/desktop/05-display.md",
+      "docs/desktop/04-layout-system.md",
+      "docs/desktop/04-input.md",
+      "docs/desktop/03-ui-theme-system.md",
+      "docs/performance/01-memory.md",
+      "docs/applications/00-application-model.md",
+      "docs/runtime/00-runtime-specification.md",
+      "docs/decisions/ADR-0010-per-application-wine-prefixes.md",
+      "docs/runtime/03-prefix-management.md",
+      "docs/decisions/ADR-0010-per-application-wine-prefixes.md",
+      "docs/decisions/ADR-0012-btrfs.md",
+      "docs/runtime/00-runtime-specification.md",
+      "docs/runtime/01-application-lifecycle.md",
+      "docs/decisions/ADR-0007-wine.md",
+      "docs/applications/01-installation.md",
+      "docs/applications/00-application-model.md",
+      "docs/applications/03-file-associations.md",
+      "docs/runtime/00-runtime-specification.md",
+      "docs/performance/04-launch.md",
+      "docs/runtime/03-prefix-management.md",
+      "docs/architecture/04-filesystem.md",
+      "docs/decisions/ADR-0012-btrfs.md",
+      "docs/performance/04-launch.md",
+      "docs/graphics/05-shader-cache.md",
+      "docs/applications/04-uninstallation.md",
+      "docs/applications/01-installation.md",
+      "docs/desktop/07-system-ui.md",
+      "docs/applications/01-installation.md",
+      "docs/compatibility/01-database-schema.md",
+      "docs/runtime/01-application-lifecycle.md",
+      "docs/runtime/00-runtime-specification.md",
+      "docs/runtime/03-prefix-management.md",
+      "docs/applications/04-uninstallation.md",
+      "docs/runtime/00-runtime-specification.md",
+      "docs/interfaces/01-ipc-interfaces.md",
+      "docs/runtime/00-runtime-specification.md",
+      "docs/development/01-repository-structure.md",
+      "docs/performance/04-launch.md",
+      "docs/performance/00-performance-goals.md",
+      "docs/runtime/01-application-lifecycle.md",
+      "docs/runtime/00-runtime-specification.md",
+      "docs/performance/04-launch.md",
+      "docs/runtime/00-runtime-specification.md",
+      "docs/runtime/00-runtime-specification.md",
+      "docs/interfaces/00-interface-overview.md",
+      "docs/applications/02-filesystem-mapping.md",
+      "docs/decisions/ADR-0010-per-application-wine-prefixes.md",
+      "docs/architecture/04-filesystem.md",
+      "docs/performance/05-storage.md",
+      "docs/decisions/ADR-0012-btrfs.md",
+      "docs/architecture/04-filesystem.md",
+      "docs/runtime/03-prefix-management.md",
+      "docs/decisions/ADR-0012-btrfs.md",
+      "docs/applications/02-filesystem-mapping.md",
+      "docs/compatibility/01-database-schema.md",
+      "docs/decisions/ADR-0011-sqlite.md",
+      "docs/decisions/ADR-0014-compatibility-database.md",
+      "docs/compatibility/01-database-schema.md",
+      "docs/runtime/00-runtime-specification.md",
+      "docs/decisions/ADR-0014-compatibility-database.md",
+      "docs/compatibility/01-database-schema.md",
+      "docs/runtime/00-runtime-specification.md",
+      "docs/runtime/04-wine-integration.md",
+      "docs/decisions/ADR-0007-wine.md",
+      "docs/runtime/05-proton-integration.md",
+      "docs/decisions/ADR-0008-proton.md",
+      "docs/compatibility/01-database-schema.md",
+      "docs/runtime/00-runtime-specification.md",
+      "docs/decisions/ADR-0011-sqlite.md",
+      "docs/runtime/04-wine-integration.md",
+      "docs/updates/02-release-channels.md",
+      "docs/decisions/ADR-0007-wine.md",
+      "docs/graphics/00-graphics-overview.md",
+      "docs/graphics/00-graphics-specification.md",
+      "docs/graphics/03-dxvk-vkd3d.md",
+      "docs/graphics/01-gpu-detection.md",
+      "docs/graphics/04-gpu-profiles.md",
+      "docs/graphics/00-graphics-specification.md",
+      "docs/updates/03-regression-gates.md",
+      "docs/testing/03-compatibility-testing.md",
+      "docs/compatibility/01-database-schema.md",
+      "docs/testing/03-compatibility-testing.md",
+      "docs/compatibility/01-database-schema.md",
+      "docs/testing/03-compatibility-testing.md",
+      "docs/graphics/04-gpu-profiles.md",
+      "docs/testing/03-compatibility-testing.md",
+      "docs/runtime/06-dependencies.md",
+      "docs/testing/07-release-certification.md",
+      "docs/decisions/ADR-0015-compatibility-lab.md",
+      "docs/testing/07-release-certification.md",
+      "docs/compatibility/01-database-schema.md",
+      "docs/testing/07-release-certification.md",
+      "docs/testing/03-compatibility-testing.md",
+      "docs/applications/05-software-center.md",
+      "docs/architecture/01-system-architecture.md",
+      "docs/decisions/ADR-0002-fedora-base.md",
+      "docs/applications/05-software-center.md",
+      "docs/architecture/05-security.md",
+      "docs/specification/00-system-specification.md",
+      "docs/architecture/05-security.md",
+      "docs/runtime/00-runtime-specification.md",
+      "docs/performance/00-performance-goals.md",
+      "docs/performance/01-memory.md",
+      "docs/performance/01-memory.md",
+      "docs/desktop/01-compositor.md",
+      "docs/performance/02-cpu.md",
+      "docs/graphics/04-gpu-profiles.md",
+      "docs/architecture/05-security.md",
+      "docs/runtime/00-runtime-specification.md",
+      "docs/performance/00-performance-goals.md",
+      "docs/testing/05-performance-testing.md",
+      "docs/performance/00-performance-goals.md",
+      "docs/testing/07-release-certification.md",
+      "docs/updates/00-update-overview.md",
+      "docs/updates/01-image-build.md",
+      "docs/decisions/ADR-0002-fedora-base.md",
+      "docs/decisions/ADR-0013-atomic-updates.md",
+      "docs/updates/02-release-channels.md",
+      "docs/updates/03-regression-gates.md",
+      "docs/updates/04-rollback.md",
+      "docs/decisions/ADR-0013-atomic-updates.md",
+      "docs/updates/03-regression-gates.md",
+      "docs/architecture/01-system-architecture.md",
+      "docs/testing/06-hardware-testing.md",
+      "docs/testing/00-testing-strategy.md",
+      "docs/decisions/ADR-0015-compatibility-lab.md",
+      "docs/testing/00-testing-strategy.md",
+      "docs/testing/02-integration-testing.md",
+      "docs/testing/00-testing-strategy.md",
+      "docs/testing/07-release-certification.md",
+      "docs/compatibility/01-database-schema.md",
+      "docs/testing/03-compatibility-testing.md",
+      "docs/testing/00-testing-strategy.md",
+      "docs/updates/03-regression-gates.md",
+      "docs/testing/05-performance-testing.md",
+      "docs/performance/00-performance-goals.md",
+      "docs/testing/06-hardware-testing.md",
+      "docs/decisions/ADR-0015-compatibility-lab.md",
+      "docs/testing/07-release-certification.md",
+      "docs/updates/03-regression-gates.md",
+      "docs/architecture/03-process-and-ipc.md",
+      "docs/architecture/06-hardware.md",
+      "docs/architecture/03-process-and-ipc.md",
+      "docs/architecture/05-security.md",
+      "docs/development/01-repository-structure.md",
+      "docs/development/05-coding-guidelines.md",
+      "docs/decisions/ADR-0004-rust.md",
+      "docs/development/01-repository-structure.md",
+      "docs/specification/00-system-specification.md",
+      "docs/decisions/ADR-0004-rust.md",
+      "docs/decisions/ADR-0005-nebu-compositor.md",
+      "docs/roadmap/00-engineering-roadmap.md",
+      "docs/roadmap/00-engineering-roadmap.md",
+      "docs/roadmap/06-p5.md",
+      "docs/roadmap/00-engineering-roadmap.md",
+      "docs/roadmap/07-p6.md",
+      "docs/roadmap/01-p0.md",
+      "docs/roadmap/02-p1.md",
+      "docs/development/02-build-system.md",
+      "docs/development/03-ci-cd.md",
+      "docs/README.md",
+      "docs/INDEX.md",
+      "docs/README.md",
+      "docs/INDEX.md",
+      "docs/OPEN_QUESTIONS.md",
+      "docs/RISK_REGISTER.md",
+      "docs/ASSUMPTIONS.md",
+      "docs/roadmap/00-engineering-roadmap.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/README.md"
+    ]
+  },
+  {
+    "path": "docs/applications/00-application-specification.md",
+    "name": "00-application-specification.md",
+    "domain": "applications",
+    "title": "Application Subsystem Specification \u2014 NebuOS",
+    "lines": 172,
+    "words": 902,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/applications/01-installer.md",
+      "docs/applications/02-application-registration.md",
+      "docs/applications/03-filesystem-mapping.md",
+      "docs/applications/04-file-associations.md",
+      "docs/applications/05-uninstallation.md",
+      "docs/applications/06-software-center.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/README.md",
+      "docs/applications/01-installer.md",
+      "docs/applications/02-application-registration.md",
+      "docs/applications/03-filesystem-mapping.md",
+      "docs/applications/04-file-associations.md",
+      "docs/applications/05-uninstallation.md",
+      "docs/applications/06-software-center.md"
+    ]
+  },
+  {
+    "path": "docs/applications/01-installer.md",
+    "name": "01-installer.md",
+    "domain": "applications",
+    "title": "Installer Subsystem Specification \u2014 NebuOS",
+    "lines": 162,
+    "words": 922,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/applications/00-application-specification.md",
+      "docs/applications/02-application-registration.md",
+      "docs/applications/03-filesystem-mapping.md",
+      "docs/applications/05-uninstallation.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/applications/00-application-specification.md",
+      "docs/applications/02-application-registration.md",
+      "docs/applications/03-filesystem-mapping.md",
+      "docs/applications/05-uninstallation.md",
+      "docs/applications/06-software-center.md"
+    ]
+  },
+  {
+    "path": "docs/applications/02-application-registration.md",
+    "name": "02-application-registration.md",
+    "domain": "applications",
+    "title": "Application Registration Specification \u2014 NebuOS",
+    "lines": 181,
+    "words": 913,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/applications/00-application-specification.md",
+      "docs/applications/01-installer.md",
+      "docs/applications/03-filesystem-mapping.md",
+      "docs/applications/04-file-associations.md",
+      "docs/applications/05-uninstallation.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/applications/00-application-specification.md",
+      "docs/applications/01-installer.md",
+      "docs/applications/03-filesystem-mapping.md",
+      "docs/applications/04-file-associations.md",
+      "docs/applications/05-uninstallation.md",
+      "docs/applications/06-software-center.md"
+    ]
+  },
+  {
+    "path": "docs/applications/03-filesystem-mapping.md",
+    "name": "03-filesystem-mapping.md",
+    "domain": "applications",
+    "title": "Filesystem Mapping Specification \u2014 NebuOS",
+    "lines": 155,
+    "words": 836,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/applications/00-application-specification.md",
+      "docs/applications/01-installer.md",
+      "docs/applications/02-application-registration.md",
+      "docs/applications/04-file-associations.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/applications/00-application-specification.md",
+      "docs/applications/01-installer.md",
+      "docs/applications/02-application-registration.md",
+      "docs/applications/04-file-associations.md"
+    ]
+  },
+  {
+    "path": "docs/applications/04-file-associations.md",
+    "name": "04-file-associations.md",
+    "domain": "applications",
+    "title": "File Associations Specification \u2014 NebuOS",
+    "lines": 148,
+    "words": 811,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/applications/00-application-specification.md",
+      "docs/applications/02-application-registration.md",
+      "docs/applications/03-filesystem-mapping.md",
+      "docs/applications/05-uninstallation.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/applications/00-application-specification.md",
+      "docs/applications/02-application-registration.md",
+      "docs/applications/03-filesystem-mapping.md",
+      "docs/applications/05-uninstallation.md"
+    ]
+  },
+  {
+    "path": "docs/applications/05-uninstallation.md",
+    "name": "05-uninstallation.md",
+    "domain": "applications",
+    "title": "Application Uninstallation Specification \u2014 NebuOS",
+    "lines": 159,
+    "words": 827,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/applications/00-application-specification.md",
+      "docs/applications/01-installer.md",
+      "docs/applications/02-application-registration.md",
+      "docs/applications/04-file-associations.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/applications/00-application-specification.md",
+      "docs/applications/01-installer.md",
+      "docs/applications/02-application-registration.md",
+      "docs/applications/04-file-associations.md",
+      "docs/applications/06-software-center.md"
+    ]
+  },
+  {
+    "path": "docs/applications/06-software-center.md",
+    "name": "06-software-center.md",
+    "domain": "applications",
+    "title": "Software Center Specification \u2014 NebuOS",
+    "lines": 169,
+    "words": 860,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/applications/00-application-specification.md",
+      "docs/applications/01-installer.md",
+      "docs/applications/02-application-registration.md",
+      "docs/applications/05-uninstallation.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/applications/00-application-specification.md"
+    ]
+  },
+  {
+    "path": "docs/architecture/00-overview.md",
+    "name": "00-overview.md",
+    "domain": "architecture",
+    "title": "Architecture Overview \u2014 NebuOS",
+    "lines": 97,
+    "words": 558,
+    "status": "REVIEW",
+    "outbound_links": [
+      "docs/architecture/01-system-architecture.md",
+      "docs/architecture/02-boot-and-init.md",
+      "docs/runtime/00-runtime-overview.md"
+    ],
+    "inbound_links": [
+      "docs/TRACEABILITY.md"
+    ]
+  },
+  {
+    "path": "docs/architecture/01-system-architecture.md",
+    "name": "01-system-architecture.md",
+    "domain": "architecture",
+    "title": "System Architecture Specification \u2014 NebuOS",
+    "lines": 89,
+    "words": 559,
+    "status": "REVIEW",
+    "outbound_links": [
+      "docs/architecture/02-boot-and-init.md",
+      "docs/architecture/03-process-and-ipc.md",
+      "docs/architecture/05-security.md"
+    ],
+    "inbound_links": [
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/architecture/00-overview.md",
+      "docs/architecture/02-boot-and-init.md",
+      "docs/architecture/03-process-and-ipc.md",
+      "docs/architecture/04-filesystem.md",
+      "docs/architecture/05-security.md",
+      "docs/architecture/06-hardware.md",
+      "docs/development/01-repository-structure.md",
+      "docs/roadmap/00-implementation-roadmap.md",
+      "docs/specification/00-system-specification.md",
+      "docs/testing/07-hardware-testing.md"
+    ]
+  },
+  {
+    "path": "docs/architecture/02-boot-and-init.md",
+    "name": "02-boot-and-init.md",
+    "domain": "architecture",
+    "title": "Boot and Initialization Specification \u2014 NebuOS",
+    "lines": 75,
+    "words": 530,
+    "status": "REVIEW",
+    "outbound_links": [
+      "docs/architecture/01-system-architecture.md",
+      "docs/updates/04-rollback.md",
+      "docs/performance/03-boot.md"
+    ],
+    "inbound_links": [
+      "docs/architecture/00-overview.md",
+      "docs/architecture/01-system-architecture.md",
+      "docs/performance/03-boot.md",
+      "docs/specification/01-boot-specification.md"
+    ]
+  },
+  {
+    "path": "docs/architecture/03-process-and-ipc.md",
+    "name": "03-process-and-ipc.md",
+    "domain": "architecture",
+    "title": "Process and IPC Architecture Specification \u2014 NebuOS",
+    "lines": 97,
+    "words": 402,
+    "status": "REVIEW",
+    "outbound_links": [
+      "docs/architecture/01-system-architecture.md",
+      "docs/architecture/05-security.md",
+      "docs/runtime/02-windows-runtime.md"
+    ],
+    "inbound_links": [
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/architecture/01-system-architecture.md",
+      "docs/decisions/ADR-0009-nebushell-ui-architecture.md",
+      "docs/interfaces/00-interface-overview.md",
+      "docs/specification/02-process-ipc-specification.md",
+      "docs/testing/02-integration-testing.md"
+    ]
+  },
+  {
+    "path": "docs/architecture/04-filesystem.md",
+    "name": "04-filesystem.md",
+    "domain": "architecture",
+    "title": "Filesystem Architecture Specification \u2014 NebuOS",
+    "lines": 82,
+    "words": 492,
+    "status": "REVIEW",
+    "outbound_links": [
+      "docs/architecture/01-system-architecture.md",
+      "docs/architecture/05-security.md",
+      "docs/runtime/03-prefix-management.md"
+    ],
+    "inbound_links": [
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/architecture/05-security.md",
+      "docs/performance/05-storage.md",
+      "docs/specification/03-filesystem-specification.md"
+    ]
+  },
+  {
+    "path": "docs/architecture/05-security.md",
+    "name": "05-security.md",
+    "domain": "architecture",
+    "title": "Security Architecture Specification \u2014 NebuOS",
+    "lines": 59,
+    "words": 417,
+    "status": "REVIEW",
+    "outbound_links": [
+      "docs/architecture/01-system-architecture.md",
+      "docs/architecture/04-filesystem.md",
+      "docs/runtime/02-windows-runtime.md"
+    ],
+    "inbound_links": [
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/architecture/01-system-architecture.md",
+      "docs/architecture/03-process-and-ipc.md",
+      "docs/architecture/04-filesystem.md",
+      "docs/desktop/03-ui-theme-system.md",
+      "docs/desktop/07-system-ui.md",
+      "docs/development/04-dependency-policy.md",
+      "docs/development/05-rust-guidelines.md",
+      "docs/specification/04-security-specification.md"
+    ]
+  },
+  {
+    "path": "docs/architecture/06-hardware.md",
+    "name": "06-hardware.md",
+    "domain": "architecture",
+    "title": "Hardware Architecture Specification \u2014 NebuOS",
+    "lines": 53,
+    "words": 436,
+    "status": "REVIEW",
+    "outbound_links": [
+      "docs/architecture/01-system-architecture.md",
+      "docs/graphics/01-gpu-detection.md",
+      "docs/performance/01-memory.md"
+    ],
+    "inbound_links": [
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/specification/05-hardware-specification.md"
+    ]
+  },
+  {
+    "path": "docs/compatibility/00-compatibility-specification.md",
+    "name": "00-compatibility-specification.md",
+    "domain": "compatibility",
+    "title": "Compatibility Platform Master Specification \u2014 NebuOS",
+    "lines": 428,
+    "words": 3449,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/compatibility/01-database-schema.md",
+      "docs/compatibility/02-compatibility-profile.md",
+      "docs/compatibility/03-patch-engine.md",
+      "docs/compatibility/04-application-detection.md",
+      "docs/compatibility/05-certification-model.md",
+      "docs/compatibility/06-known-limitations.md",
+      "docs/runtime/04-wine-integration.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/README.md",
+      "docs/compatibility/01-database-schema.md",
+      "docs/compatibility/02-compatibility-profile.md",
+      "docs/compatibility/03-patch-engine.md",
+      "docs/compatibility/04-application-detection.md",
+      "docs/compatibility/05-certification-model.md",
+      "docs/compatibility/06-known-limitations.md"
+    ]
+  },
+  {
+    "path": "docs/compatibility/01-database-schema.md",
+    "name": "01-database-schema.md",
+    "domain": "compatibility",
+    "title": "Compatibility Database Schema Specification \u2014 NebuOS",
+    "lines": 728,
+    "words": 3498,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/compatibility/00-compatibility-specification.md",
+      "docs/compatibility/02-compatibility-profile.md",
+      "docs/compatibility/03-patch-engine.md",
+      "docs/compatibility/04-application-detection.md",
+      "docs/compatibility/05-certification-model.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/INDEX.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/compatibility/00-compatibility-specification.md",
+      "docs/compatibility/02-compatibility-profile.md",
+      "docs/compatibility/03-patch-engine.md",
+      "docs/compatibility/04-application-detection.md",
+      "docs/compatibility/05-certification-model.md",
+      "docs/compatibility/06-known-limitations.md",
+      "docs/graphics/03-vulkan-opengl.md",
+      "docs/interfaces/06-database-interfaces.md"
+    ]
+  },
+  {
+    "path": "docs/compatibility/02-compatibility-profile.md",
+    "name": "02-compatibility-profile.md",
+    "domain": "compatibility",
+    "title": "Compatibility Profile Specification \u2014 NebuOS",
+    "lines": 674,
+    "words": 2797,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/compatibility/00-compatibility-specification.md",
+      "docs/compatibility/01-database-schema.md",
+      "docs/compatibility/03-patch-engine.md",
+      "docs/compatibility/04-application-detection.md",
+      "docs/compatibility/05-certification-model.md",
+      "docs/compatibility/06-known-limitations.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/compatibility/00-compatibility-specification.md",
+      "docs/compatibility/01-database-schema.md",
+      "docs/compatibility/03-patch-engine.md",
+      "docs/compatibility/04-application-detection.md",
+      "docs/compatibility/05-certification-model.md",
+      "docs/compatibility/06-known-limitations.md"
+    ]
+  },
+  {
+    "path": "docs/compatibility/03-patch-engine.md",
+    "name": "03-patch-engine.md",
+    "domain": "compatibility",
+    "title": "Patch Engine Specification \u2014 NebuOS",
+    "lines": 489,
+    "words": 2674,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/compatibility/00-compatibility-specification.md",
+      "docs/compatibility/01-database-schema.md",
+      "docs/compatibility/02-compatibility-profile.md",
+      "docs/compatibility/04-application-detection.md",
+      "docs/compatibility/05-certification-model.md",
+      "docs/compatibility/06-known-limitations.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/INDEX.md",
+      "docs/compatibility/00-compatibility-specification.md",
+      "docs/compatibility/01-database-schema.md",
+      "docs/compatibility/02-compatibility-profile.md",
+      "docs/compatibility/04-application-detection.md",
+      "docs/compatibility/05-certification-model.md",
+      "docs/compatibility/06-known-limitations.md"
+    ]
+  },
+  {
+    "path": "docs/compatibility/04-application-detection.md",
+    "name": "04-application-detection.md",
+    "domain": "compatibility",
+    "title": "Application Detection Specification \u2014 NebuOS",
+    "lines": 405,
+    "words": 2697,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/compatibility/00-compatibility-specification.md",
+      "docs/compatibility/01-database-schema.md",
+      "docs/compatibility/02-compatibility-profile.md",
+      "docs/compatibility/03-patch-engine.md",
+      "docs/compatibility/05-certification-model.md",
+      "docs/compatibility/06-known-limitations.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/compatibility/00-compatibility-specification.md",
+      "docs/compatibility/01-database-schema.md",
+      "docs/compatibility/02-compatibility-profile.md",
+      "docs/compatibility/03-patch-engine.md",
+      "docs/compatibility/05-certification-model.md",
+      "docs/compatibility/06-known-limitations.md"
+    ]
+  },
+  {
+    "path": "docs/compatibility/05-certification-model.md",
+    "name": "05-certification-model.md",
+    "domain": "compatibility",
+    "title": "Compatibility Certification Model Specification \u2014 NebuOS",
+    "lines": 406,
+    "words": 3263,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/compatibility/00-compatibility-specification.md",
+      "docs/compatibility/01-database-schema.md",
+      "docs/compatibility/02-compatibility-profile.md",
+      "docs/compatibility/03-patch-engine.md",
+      "docs/compatibility/04-application-detection.md",
+      "docs/compatibility/06-known-limitations.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/compatibility/00-compatibility-specification.md",
+      "docs/compatibility/01-database-schema.md",
+      "docs/compatibility/02-compatibility-profile.md",
+      "docs/compatibility/03-patch-engine.md",
+      "docs/compatibility/04-application-detection.md",
+      "docs/compatibility/06-known-limitations.md"
+    ]
+  },
+  {
+    "path": "docs/compatibility/06-known-limitations.md",
+    "name": "06-known-limitations.md",
+    "domain": "compatibility",
+    "title": "Known Limitations & Non-Compatibility Boundaries Specification \u2014 NebuOS",
+    "lines": 401,
+    "words": 3405,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/compatibility/00-compatibility-specification.md",
+      "docs/compatibility/01-database-schema.md",
+      "docs/compatibility/02-compatibility-profile.md",
+      "docs/compatibility/03-patch-engine.md",
+      "docs/compatibility/04-application-detection.md",
+      "docs/compatibility/05-certification-model.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/compatibility/00-compatibility-specification.md",
+      "docs/compatibility/02-compatibility-profile.md",
+      "docs/compatibility/03-patch-engine.md",
+      "docs/compatibility/04-application-detection.md",
+      "docs/compatibility/05-certification-model.md"
+    ]
+  },
+  {
+    "path": "docs/decisions/ADR-0001-linux-kernel.md",
+    "name": "ADR-0001-linux-kernel.md",
+    "domain": "decisions",
+    "title": "ADR-0001: Standard LTS Linux Kernel as Hardware and Operating System Foundation",
+    "lines": 57,
+    "words": 510,
+    "status": "APPROVED",
+    "outbound_links": [],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/README.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/roadmap/00-implementation-roadmap.md"
+    ]
+  },
+  {
+    "path": "docs/decisions/ADR-0002-fedora-base.md",
+    "name": "ADR-0002-fedora-base.md",
+    "domain": "decisions",
+    "title": "ADR-0002: Fedora Atomic / Image-Based Base Operating System",
+    "lines": 57,
+    "words": 476,
+    "status": "APPROVED",
+    "outbound_links": [],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/roadmap/00-implementation-roadmap.md",
+      "docs/roadmap/00-implementation-roadmap.md"
+    ]
+  },
+  {
+    "path": "docs/decisions/ADR-0003-wayland.md",
+    "name": "ADR-0003-wayland.md",
+    "domain": "decisions",
+    "title": "ADR-0003: Pure Wayland Display Architecture and Rejection of X11",
+    "lines": 51,
+    "words": 424,
+    "status": "APPROVED",
+    "outbound_links": [],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/TRACEABILITY.md",
+      "docs/roadmap/00-implementation-roadmap.md"
+    ]
+  },
+  {
+    "path": "docs/decisions/ADR-0004-rust.md",
+    "name": "ADR-0004-rust.md",
+    "domain": "decisions",
+    "title": "ADR-0004: Rust as Primary Implementation Language for Core Components",
+    "lines": 56,
+    "words": 442,
+    "status": "APPROVED",
+    "outbound_links": [],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/roadmap/00-implementation-roadmap.md"
+    ]
+  },
+  {
+    "path": "docs/decisions/ADR-0005-wine.md",
+    "name": "ADR-0005-wine.md",
+    "domain": "decisions",
+    "title": "ADR-0005: Upstream Wine as Core Windows Application Compatibility Engine",
+    "lines": 55,
+    "words": 454,
+    "status": "APPROVED",
+    "outbound_links": [],
+    "inbound_links": [
+      "docs/INDEX.md"
+    ]
+  },
+  {
+    "path": "docs/decisions/ADR-0006-proton.md",
+    "name": "ADR-0006-proton.md",
+    "domain": "decisions",
+    "title": "ADR-0006: Proton and DXVK/VKD3D Integration for 3D and Gaming Workloads",
+    "lines": 49,
+    "words": 398,
+    "status": "APPROVED",
+    "outbound_links": [],
+    "inbound_links": [
+      "docs/INDEX.md"
+    ]
+  },
+  {
+    "path": "docs/decisions/ADR-0007-no-vm.md",
+    "name": "ADR-0007-no-vm.md",
+    "domain": "decisions",
+    "title": "ADR-0007: Absolute Prohibition of Virtual Machines for Windows Compatibility",
+    "lines": 46,
+    "words": 449,
+    "status": "APPROVED",
+    "outbound_links": [],
+    "inbound_links": [
+      "docs/INDEX.md"
+    ]
+  },
+  {
+    "path": "docs/decisions/ADR-0008-atomic-updates.md",
+    "name": "ADR-0008-atomic-updates.md",
+    "domain": "decisions",
+    "title": "ADR-0008: Atomic Image Deployments and Btrfs Subvolume Topology",
+    "lines": 60,
+    "words": 460,
+    "status": "APPROVED",
+    "outbound_links": [],
+    "inbound_links": [
+      "docs/INDEX.md"
+    ]
+  },
+  {
+    "path": "docs/decisions/ADR-0009-nebushell-ui-architecture.md",
+    "name": "ADR-0009-nebushell-ui-architecture.md",
+    "domain": "decisions",
+    "title": "ADR-0009: NebuShell UI Architecture \u2014 Pluggable Paradigm Engine (Theme, Layout, and Behavior)",
+    "lines": 338,
+    "words": 2844,
+    "status": "APPROVED",
+    "outbound_links": [
+      "docs/decisions/ADR-0006-nebu-shell.md",
+      "docs/desktop/02-shell.md",
+      "docs/desktop/01-compositor.md",
+      "docs/desktop/03-window-management.md",
+      "docs/architecture/03-process-and-ipc.md",
+      "docs/performance/01-memory.md",
+      "docs/decisions/ADR-0006-nebu-shell.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/INDEX.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/desktop/02-nebushell-specification.md",
+      "docs/roadmap/00-implementation-roadmap.md",
+      "docs/roadmap/00-implementation-roadmap.md"
+    ]
+  },
+  {
+    "path": "docs/desktop/00-desktop-specification.md",
+    "name": "00-desktop-specification.md",
+    "domain": "desktop",
+    "title": "Desktop Subsystem Specification \u2014 NebuOS",
+    "lines": 176,
+    "words": 1093,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/desktop/01-nebucompositor-specification.md",
+      "docs/desktop/02-nebushell-specification.md",
+      "docs/desktop/03-ui-theme-system.md",
+      "docs/desktop/04-layout-system.md",
+      "docs/desktop/05-window-management.md",
+      "docs/desktop/06-input-display.md",
+      "docs/desktop/07-system-ui.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/INDEX.md",
+      "docs/README.md",
+      "docs/desktop/01-nebucompositor-specification.md",
+      "docs/desktop/02-nebushell-specification.md",
+      "docs/desktop/05-window-management.md",
+      "docs/desktop/06-input-display.md"
+    ]
+  },
+  {
+    "path": "docs/desktop/01-nebucompositor-specification.md",
+    "name": "01-nebucompositor-specification.md",
+    "domain": "desktop",
+    "title": "NebuCompositor Technical Specification \u2014 NebuOS",
+    "lines": 173,
+    "words": 1089,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/desktop/00-desktop-specification.md",
+      "docs/desktop/02-nebushell-specification.md",
+      "docs/desktop/05-window-management.md",
+      "docs/desktop/06-input-display.md",
+      "docs/decisions/ADR-0005-nebu-compositor.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/INDEX.md",
+      "docs/desktop/00-desktop-specification.md",
+      "docs/desktop/02-nebushell-specification.md",
+      "docs/desktop/05-window-management.md",
+      "docs/desktop/06-input-display.md"
+    ]
+  },
+  {
+    "path": "docs/desktop/02-nebushell-specification.md",
+    "name": "02-nebushell-specification.md",
+    "domain": "desktop",
+    "title": "NebuShell Technical Specification \u2014 NebuOS",
+    "lines": 170,
+    "words": 1050,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/desktop/00-desktop-specification.md",
+      "docs/desktop/01-nebucompositor-specification.md",
+      "docs/desktop/03-ui-theme-system.md",
+      "docs/desktop/04-layout-system.md",
+      "docs/desktop/07-system-ui.md",
+      "docs/decisions/ADR-0009-nebushell-ui-architecture.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/INDEX.md",
+      "docs/desktop/00-desktop-specification.md",
+      "docs/desktop/01-nebucompositor-specification.md",
+      "docs/desktop/05-window-management.md",
+      "docs/desktop/06-input-display.md"
+    ]
+  },
+  {
+    "path": "docs/desktop/03-ui-theme-system.md",
+    "name": "03-ui-theme-system.md",
+    "domain": "desktop",
+    "title": "UI Theme System Specification \u2014 NebuOS",
+    "lines": 630,
+    "words": 3891,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/desktop/00-desktop-overview.md",
+      "docs/desktop/01-compositor.md",
+      "docs/desktop/02-shell.md",
+      "docs/desktop/04-layout-system.md",
+      "docs/desktop/07-system-ui.md",
+      "docs/architecture/05-security.md",
+      "docs/decisions/ADR-0006-nebu-shell.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/INDEX.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/desktop/00-desktop-specification.md",
+      "docs/desktop/02-nebushell-specification.md",
+      "docs/desktop/04-layout-system.md",
+      "docs/desktop/07-system-ui.md"
+    ]
+  },
+  {
+    "path": "docs/desktop/04-layout-system.md",
+    "name": "04-layout-system.md",
+    "domain": "desktop",
+    "title": "Layout System Specification \u2014 NebuOS",
+    "lines": 571,
+    "words": 3432,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/desktop/00-desktop-overview.md",
+      "docs/desktop/01-compositor.md",
+      "docs/desktop/02-shell.md",
+      "docs/desktop/03-ui-theme-system.md",
+      "docs/desktop/03-window-management.md",
+      "docs/desktop/07-system-ui.md",
+      "docs/decisions/ADR-0006-nebu-shell.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/INDEX.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/desktop/00-desktop-specification.md",
+      "docs/desktop/02-nebushell-specification.md",
+      "docs/desktop/03-ui-theme-system.md",
+      "docs/desktop/05-window-management.md",
+      "docs/desktop/07-system-ui.md"
+    ]
+  },
+  {
+    "path": "docs/desktop/05-window-management.md",
+    "name": "05-window-management.md",
+    "domain": "desktop",
+    "title": "Window Management Specification \u2014 NebuOS",
+    "lines": 156,
+    "words": 968,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/desktop/00-desktop-specification.md",
+      "docs/desktop/01-nebucompositor-specification.md",
+      "docs/desktop/02-nebushell-specification.md",
+      "docs/desktop/04-layout-system.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/desktop/00-desktop-specification.md",
+      "docs/desktop/01-nebucompositor-specification.md",
+      "docs/desktop/06-input-display.md"
+    ]
+  },
+  {
+    "path": "docs/desktop/06-input-display.md",
+    "name": "06-input-display.md",
+    "domain": "desktop",
+    "title": "Input and Display Management Specification \u2014 NebuOS",
+    "lines": 163,
+    "words": 993,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/desktop/00-desktop-specification.md",
+      "docs/desktop/01-nebucompositor-specification.md",
+      "docs/desktop/02-nebushell-specification.md",
+      "docs/desktop/05-window-management.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/desktop/00-desktop-specification.md",
+      "docs/desktop/01-nebucompositor-specification.md"
+    ]
+  },
+  {
+    "path": "docs/desktop/07-system-ui.md",
+    "name": "07-system-ui.md",
+    "domain": "desktop",
+    "title": "System UI Components Specification \u2014 NebuOS",
+    "lines": 501,
+    "words": 3438,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/desktop/00-desktop-overview.md",
+      "docs/desktop/01-compositor.md",
+      "docs/desktop/02-shell.md",
+      "docs/desktop/03-ui-theme-system.md",
+      "docs/desktop/04-layout-system.md",
+      "docs/desktop/06-system-integration.md",
+      "docs/architecture/05-security.md",
+      "docs/decisions/ADR-0006-nebu-shell.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/desktop/00-desktop-specification.md",
+      "docs/desktop/02-nebushell-specification.md",
+      "docs/desktop/03-ui-theme-system.md",
+      "docs/desktop/04-layout-system.md"
+    ]
+  },
+  {
+    "path": "docs/development/00-development-model.md",
+    "name": "00-development-model.md",
+    "domain": "development",
+    "title": "Master Development Specification \u2014 NebuOS",
+    "lines": 301,
+    "words": 2147,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/development/06-release-engineering.md",
+      "docs/development/01-repository-structure.md",
+      "docs/development/02-build-system.md",
+      "docs/development/03-ci-cd.md",
+      "docs/development/05-coding-guidelines.md",
+      "docs/development/06-release-engineering.md",
+      "docs/testing/00-testing-specification.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/README.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md"
+    ]
+  },
+  {
+    "path": "docs/development/01-repository-structure.md",
+    "name": "01-repository-structure.md",
+    "domain": "development",
+    "title": "Repository Structure Specification \u2014 NebuOS",
+    "lines": 328,
+    "words": 1882,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/development/00-development-specification.md",
+      "docs/development/02-build-system.md",
+      "docs/development/04-dependency-policy.md",
+      "docs/development/05-coding-guidelines.md",
+      "docs/architecture/01-system-architecture.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/development/00-development-model.md",
+      "docs/development/02-build-system.md",
+      "docs/development/04-dependency-policy.md",
+      "docs/development/05-rust-guidelines.md",
+      "docs/testing/01-unit-testing.md"
+    ]
+  },
+  {
+    "path": "docs/development/02-build-system.md",
+    "name": "02-build-system.md",
+    "domain": "development",
+    "title": "Build System Specification \u2014 NebuOS",
+    "lines": 314,
+    "words": 1775,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/development/00-development-specification.md",
+      "docs/development/01-repository-structure.md",
+      "docs/development/03-ci-cd.md",
+      "docs/development/06-release-engineering.md",
+      "docs/updates/00-update-strategy.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/TRACEABILITY.md",
+      "docs/development/00-development-model.md",
+      "docs/development/01-repository-structure.md",
+      "docs/development/03-ci-cd.md",
+      "docs/development/06-release-engineering.md"
+    ]
+  },
+  {
+    "path": "docs/development/03-ci-cd.md",
+    "name": "03-ci-cd.md",
+    "domain": "development",
+    "title": "CI/CD Pipeline Specification \u2014 NebuOS",
+    "lines": 300,
+    "words": 1782,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/development/00-development-specification.md",
+      "docs/development/02-build-system.md",
+      "docs/development/06-release-engineering.md",
+      "docs/testing/00-testing-specification.md",
+      "docs/updates/00-update-strategy.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/TRACEABILITY.md",
+      "docs/development/00-development-model.md",
+      "docs/development/02-build-system.md",
+      "docs/development/04-dependency-policy.md",
+      "docs/development/06-release-engineering.md",
+      "docs/testing/00-test-strategy.md"
+    ]
+  },
+  {
+    "path": "docs/development/04-dependency-policy.md",
+    "name": "04-dependency-policy.md",
+    "domain": "development",
+    "title": "Dependency Policy Specification \u2014 NebuOS",
+    "lines": 298,
+    "words": 2011,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/development/00-development-specification.md",
+      "docs/development/01-repository-structure.md",
+      "docs/development/03-ci-cd.md",
+      "docs/development/05-coding-guidelines.md",
+      "docs/architecture/05-security.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/development/01-repository-structure.md",
+      "docs/development/05-rust-guidelines.md"
+    ]
+  },
+  {
+    "path": "docs/development/05-rust-guidelines.md",
+    "name": "05-rust-guidelines.md",
+    "domain": "development",
+    "title": "Coding Guidelines Specification \u2014 NebuOS",
+    "lines": 300,
+    "words": 1586,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/development/00-development-specification.md",
+      "docs/development/01-repository-structure.md",
+      "docs/development/04-dependency-policy.md",
+      "docs/testing/01-unit-testing.md",
+      "docs/architecture/05-security.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md"
+    ]
+  },
+  {
+    "path": "docs/development/06-release-engineering.md",
+    "name": "06-release-engineering.md",
+    "domain": "development",
+    "title": "Release Engineering Specification \u2014 NebuOS",
+    "lines": 305,
+    "words": 1820,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/development/07-release-certification.md",
+      "docs/development/{{ commit.id }}",
+      "docs/development/00-development-specification.md",
+      "docs/development/02-build-system.md",
+      "docs/development/03-ci-cd.md",
+      "docs/testing/07-release-certification.md",
+      "docs/updates/00-update-strategy.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/development/00-development-model.md",
+      "docs/development/00-development-model.md",
+      "docs/development/02-build-system.md",
+      "docs/development/03-ci-cd.md",
+      "docs/testing/08-release-certification.md"
+    ]
+  },
+  {
+    "path": "docs/graphics/00-graphics-specification.md",
+    "name": "00-graphics-specification.md",
+    "domain": "graphics",
+    "title": "Master Graphics Specification \u2014 NebuOS",
+    "lines": 336,
+    "words": 2905,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/graphics/01-gpu-detection.md",
+      "docs/graphics/02-mesa-integration.md",
+      "docs/graphics/03-vulkan-opengl.md",
+      "docs/graphics/04-dxvk-vkd3d.md",
+      "docs/graphics/05-gpu-profiles.md",
+      "docs/graphics/06-shader-cache.md",
+      "docs/desktop/01-compositor.md",
+      "docs/runtime/04-wine-integration.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/INDEX.md",
+      "docs/README.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/graphics/01-gpu-detection.md",
+      "docs/graphics/02-mesa-integration.md",
+      "docs/graphics/03-vulkan-opengl.md",
+      "docs/graphics/04-dxvk-vkd3d.md",
+      "docs/graphics/05-gpu-profiles.md",
+      "docs/graphics/06-shader-cache.md"
+    ]
+  },
+  {
+    "path": "docs/graphics/01-gpu-detection.md",
+    "name": "01-gpu-detection.md",
+    "domain": "graphics",
+    "title": "GPU Detection Specification \u2014 NebuOS",
+    "lines": 362,
+    "words": 2118,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/graphics/00-graphics-specification.md",
+      "docs/graphics/05-gpu-profiles.md",
+      "docs/desktop/05-display.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/TRACEABILITY.md",
+      "docs/architecture/06-hardware.md",
+      "docs/graphics/00-graphics-specification.md",
+      "docs/graphics/04-dxvk-vkd3d.md",
+      "docs/graphics/05-gpu-profiles.md",
+      "docs/graphics/06-shader-cache.md"
+    ]
+  },
+  {
+    "path": "docs/graphics/02-mesa-integration.md",
+    "name": "02-mesa-integration.md",
+    "domain": "graphics",
+    "title": "Mesa Driver Integration Specification \u2014 NebuOS",
+    "lines": 311,
+    "words": 2373,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/graphics/00-graphics-specification.md",
+      "docs/graphics/03-vulkan-opengl.md",
+      "docs/graphics/04-dxvk-vkd3d.md",
+      "docs/updates/01-image-build.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/graphics/00-graphics-specification.md",
+      "docs/graphics/03-vulkan-opengl.md",
+      "docs/graphics/04-dxvk-vkd3d.md",
+      "docs/graphics/05-gpu-profiles.md",
+      "docs/graphics/06-shader-cache.md"
+    ]
+  },
+  {
+    "path": "docs/graphics/03-vulkan-opengl.md",
+    "name": "03-vulkan-opengl.md",
+    "domain": "graphics",
+    "title": "Vulkan and OpenGL Architecture Specification \u2014 NebuOS",
+    "lines": 302,
+    "words": 2072,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/graphics/00-graphics-specification.md",
+      "docs/graphics/02-mesa-integration.md",
+      "docs/graphics/04-dxvk-vkd3d.md",
+      "docs/compatibility/01-database-schema.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/graphics/00-graphics-specification.md",
+      "docs/graphics/02-mesa-integration.md",
+      "docs/graphics/04-dxvk-vkd3d.md"
+    ]
+  },
+  {
+    "path": "docs/graphics/04-dxvk-vkd3d.md",
+    "name": "04-dxvk-vkd3d.md",
+    "domain": "graphics",
+    "title": "DXVK and VKD3D-Proton Translation Layer Specification \u2014 NebuOS",
+    "lines": 174,
+    "words": 1074,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/graphics/00-graphics-specification.md",
+      "docs/graphics/01-gpu-detection.md",
+      "docs/graphics/02-mesa-integration.md",
+      "docs/graphics/03-vulkan-opengl.md",
+      "docs/graphics/05-gpu-profiles.md",
+      "docs/graphics/06-shader-cache.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/INDEX.md",
+      "docs/graphics/00-graphics-specification.md",
+      "docs/graphics/02-mesa-integration.md",
+      "docs/graphics/03-vulkan-opengl.md",
+      "docs/graphics/05-gpu-profiles.md",
+      "docs/graphics/06-shader-cache.md",
+      "docs/runtime/06-proton-integration.md"
+    ]
+  },
+  {
+    "path": "docs/graphics/05-gpu-profiles.md",
+    "name": "05-gpu-profiles.md",
+    "domain": "graphics",
+    "title": "GPU Profiles Specification \u2014 NebuOS",
+    "lines": 170,
+    "words": 929,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/graphics/00-graphics-specification.md",
+      "docs/graphics/01-gpu-detection.md",
+      "docs/graphics/02-mesa-integration.md",
+      "docs/graphics/04-dxvk-vkd3d.md",
+      "docs/graphics/06-shader-cache.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/graphics/00-graphics-specification.md",
+      "docs/graphics/01-gpu-detection.md",
+      "docs/graphics/04-dxvk-vkd3d.md",
+      "docs/graphics/06-shader-cache.md"
+    ]
+  },
+  {
+    "path": "docs/graphics/06-shader-cache.md",
+    "name": "06-shader-cache.md",
+    "domain": "graphics",
+    "title": "Shader Cache Specification \u2014 NebuOS",
+    "lines": 162,
+    "words": 982,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/graphics/00-graphics-specification.md",
+      "docs/graphics/01-gpu-detection.md",
+      "docs/graphics/02-mesa-integration.md",
+      "docs/graphics/04-dxvk-vkd3d.md",
+      "docs/graphics/05-gpu-profiles.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/graphics/00-graphics-specification.md",
+      "docs/graphics/04-dxvk-vkd3d.md",
+      "docs/graphics/05-gpu-profiles.md"
+    ]
+  },
+  {
+    "path": "docs/interfaces/00-interface-overview.md",
+    "name": "00-interface-overview.md",
+    "domain": "interfaces",
+    "title": "Interface Architecture & IPC Overview Specification \u2014 NebuOS",
+    "lines": 373,
+    "words": 3127,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/interfaces/01-ipc-interfaces.md",
+      "docs/interfaces/02-runtime-interfaces.md",
+      "docs/interfaces/03-compositor-interfaces.md",
+      "docs/interfaces/04-shell-interfaces.md",
+      "docs/interfaces/05-installer-interfaces.md",
+      "docs/interfaces/06-database-interfaces.md",
+      "docs/architecture/03-process-and-ipc.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/INDEX.md",
+      "docs/README.md",
+      "docs/TRACEABILITY.md",
+      "docs/interfaces/01-ipc-interfaces.md",
+      "docs/interfaces/02-runtime-interfaces.md",
+      "docs/interfaces/03-compositor-interfaces.md",
+      "docs/interfaces/04-shell-interfaces.md",
+      "docs/interfaces/05-installer-interfaces.md",
+      "docs/interfaces/06-database-interfaces.md"
+    ]
+  },
+  {
+    "path": "docs/interfaces/01-ipc-interfaces.md",
+    "name": "01-ipc-interfaces.md",
+    "domain": "interfaces",
+    "title": "D-Bus IPC Interface Specification \u2014 NebuOS",
+    "lines": 401,
+    "words": 2390,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/interfaces/03-compositor-interfaces.md",
+      "docs/interfaces/02-runtime-interfaces.md",
+      "docs/interfaces/00-interface-overview.md",
+      "docs/interfaces/02-runtime-interfaces.md",
+      "docs/interfaces/05-installer-interfaces.md",
+      "docs/interfaces/06-database-interfaces.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/TRACEABILITY.md",
+      "docs/interfaces/00-interface-overview.md",
+      "docs/interfaces/02-runtime-interfaces.md",
+      "docs/interfaces/02-runtime-interfaces.md",
+      "docs/interfaces/03-compositor-interfaces.md",
+      "docs/interfaces/04-shell-interfaces.md",
+      "docs/interfaces/05-installer-interfaces.md",
+      "docs/interfaces/06-database-interfaces.md"
+    ]
+  },
+  {
+    "path": "docs/interfaces/02-runtime-interfaces.md",
+    "name": "02-runtime-interfaces.md",
+    "domain": "interfaces",
+    "title": "Runtime Engine Trait & Internal API Specification \u2014 NebuOS",
+    "lines": 590,
+    "words": 2696,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/interfaces/01-ipc-interfaces.md",
+      "docs/interfaces/03-compositor-interfaces.md",
+      "docs/interfaces/04-shell-interfaces.md",
+      "docs/interfaces/00-interface-overview.md",
+      "docs/interfaces/01-ipc-interfaces.md",
+      "docs/interfaces/05-installer-interfaces.md",
+      "docs/interfaces/06-database-interfaces.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/interfaces/00-interface-overview.md",
+      "docs/interfaces/01-ipc-interfaces.md",
+      "docs/interfaces/01-ipc-interfaces.md",
+      "docs/interfaces/05-installer-interfaces.md",
+      "docs/interfaces/06-database-interfaces.md"
+    ]
+  },
+  {
+    "path": "docs/interfaces/03-compositor-interfaces.md",
+    "name": "03-compositor-interfaces.md",
+    "domain": "interfaces",
+    "title": "Compositor Wayland & DRM/KMS Interface Specification \u2014 NebuOS",
+    "lines": 402,
+    "words": 2256,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/interfaces/04-shell-interfaces.md",
+      "docs/interfaces/00-interface-overview.md",
+      "docs/interfaces/01-ipc-interfaces.md",
+      "docs/interfaces/04-shell-interfaces.md",
+      "docs/desktop/01-compositor.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/interfaces/00-interface-overview.md",
+      "docs/interfaces/01-ipc-interfaces.md",
+      "docs/interfaces/02-runtime-interfaces.md",
+      "docs/interfaces/04-shell-interfaces.md"
+    ]
+  },
+  {
+    "path": "docs/interfaces/04-shell-interfaces.md",
+    "name": "04-shell-interfaces.md",
+    "domain": "interfaces",
+    "title": "Shell Subsystem Interfaces & Protocols Specification \u2014 NebuOS",
+    "lines": 414,
+    "words": 2059,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/interfaces/06-database-interfaces.md",
+      "docs/interfaces/00-interface-overview.md",
+      "docs/interfaces/01-ipc-interfaces.md",
+      "docs/interfaces/03-compositor-interfaces.md",
+      "docs/desktop/02-shell.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/interfaces/00-interface-overview.md",
+      "docs/interfaces/02-runtime-interfaces.md",
+      "docs/interfaces/03-compositor-interfaces.md",
+      "docs/interfaces/03-compositor-interfaces.md",
+      "docs/interfaces/05-installer-interfaces.md"
+    ]
+  },
+  {
+    "path": "docs/interfaces/05-installer-interfaces.md",
+    "name": "05-installer-interfaces.md",
+    "domain": "interfaces",
+    "title": "Application Installer & Binary Analysis Interface Specification \u2014 NebuOS",
+    "lines": 430,
+    "words": 2017,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/interfaces/00-interface-overview.md",
+      "docs/interfaces/01-ipc-interfaces.md",
+      "docs/interfaces/02-runtime-interfaces.md",
+      "docs/interfaces/04-shell-interfaces.md",
+      "docs/applications/01-installation.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/interfaces/00-interface-overview.md",
+      "docs/interfaces/01-ipc-interfaces.md",
+      "docs/interfaces/02-runtime-interfaces.md"
+    ]
+  },
+  {
+    "path": "docs/interfaces/06-database-interfaces.md",
+    "name": "06-database-interfaces.md",
+    "domain": "interfaces",
+    "title": "Compatibility Database Relational Schema & Access Interface Specification \u2014 NebuOS",
+    "lines": 468,
+    "words": 2524,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/interfaces/00-interface-overview.md",
+      "docs/interfaces/01-ipc-interfaces.md",
+      "docs/interfaces/02-runtime-interfaces.md",
+      "docs/compatibility/01-database-schema.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/interfaces/00-interface-overview.md",
+      "docs/interfaces/01-ipc-interfaces.md",
+      "docs/interfaces/02-runtime-interfaces.md",
+      "docs/interfaces/04-shell-interfaces.md"
+    ]
+  },
+  {
+    "path": "docs/performance/00-performance-goals.md",
+    "name": "00-performance-goals.md",
+    "domain": "performance",
+    "title": "Performance Goals & Engineering Targets \u2014 NebuOS",
+    "lines": 32,
+    "words": 291,
+    "status": "REVIEW",
+    "outbound_links": [
+      "docs/performance/01-memory.md",
+      "docs/performance/03-boot.md",
+      "docs/performance/04-launch.md"
+    ],
+    "inbound_links": [
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/performance/01-memory.md",
+      "docs/performance/02-cpu.md",
+      "docs/performance/03-boot.md",
+      "docs/performance/04-launch.md",
+      "docs/performance/05-storage.md"
+    ]
+  },
+  {
+    "path": "docs/performance/01-memory.md",
+    "name": "01-memory.md",
+    "domain": "performance",
+    "title": "Memory Management & Low-End Mode Specification \u2014 NebuOS",
+    "lines": 35,
+    "words": 210,
+    "status": "REVIEW",
+    "outbound_links": [
+      "docs/performance/00-performance-goals.md",
+      "docs/performance/02-cpu.md"
+    ],
+    "inbound_links": [
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/architecture/06-hardware.md",
+      "docs/decisions/ADR-0009-nebushell-ui-architecture.md",
+      "docs/performance/00-performance-goals.md",
+      "docs/performance/02-cpu.md",
+      "docs/roadmap/00-implementation-roadmap.md",
+      "docs/specification/06-resource-management.md"
+    ]
+  },
+  {
+    "path": "docs/performance/02-cpu.md",
+    "name": "02-cpu.md",
+    "domain": "performance",
+    "title": "CPU Utilization & Wakeup Architecture \u2014 NebuOS",
+    "lines": 18,
+    "words": 134,
+    "status": "REVIEW",
+    "outbound_links": [
+      "docs/performance/00-performance-goals.md",
+      "docs/performance/01-memory.md"
+    ],
+    "inbound_links": [
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/performance/01-memory.md"
+    ]
+  },
+  {
+    "path": "docs/performance/03-boot.md",
+    "name": "03-boot.md",
+    "domain": "performance",
+    "title": "Boot Optimization Specification \u2014 NebuOS",
+    "lines": 36,
+    "words": 151,
+    "status": "REVIEW",
+    "outbound_links": [
+      "docs/performance/00-performance-goals.md",
+      "docs/architecture/02-boot-and-init.md"
+    ],
+    "inbound_links": [
+      "docs/architecture/02-boot-and-init.md",
+      "docs/performance/00-performance-goals.md"
+    ]
+  },
+  {
+    "path": "docs/performance/04-launch.md",
+    "name": "04-launch.md",
+    "domain": "performance",
+    "title": "Application Launch Optimization Specification \u2014 NebuOS",
+    "lines": 28,
+    "words": 135,
+    "status": "REVIEW",
+    "outbound_links": [
+      "docs/performance/00-performance-goals.md",
+      "docs/runtime/01-application-lifecycle.md"
+    ],
+    "inbound_links": [
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/performance/00-performance-goals.md"
+    ]
+  },
+  {
+    "path": "docs/performance/05-storage.md",
+    "name": "05-storage.md",
+    "domain": "performance",
+    "title": "Storage Performance & Quota Specification \u2014 NebuOS",
+    "lines": 20,
+    "words": 129,
+    "status": "REVIEW",
+    "outbound_links": [
+      "docs/performance/00-performance-goals.md",
+      "docs/architecture/04-filesystem.md"
+    ],
+    "inbound_links": [
+      "docs/TRACEABILITY.md"
+    ]
+  },
+  {
+    "path": "docs/roadmap/00-implementation-roadmap.md",
+    "name": "00-implementation-roadmap.md",
+    "domain": "roadmap",
+    "title": "Master Implementation Roadmap (P0\u2013P8) \u2014 NebuOS",
+    "lines": 643,
+    "words": 5484,
+    "status": "STABLE",
+    "outbound_links": [
+      "docs/decisions/ADR-0009-no-vm.md",
+      "docs/roadmap/00-engineering-roadmap.md",
+      "docs/decisions/ADR-0002-fedora-base.md",
+      "docs/decisions/ADR-0005-nebu-compositor.md",
+      "docs/decisions/ADR-0009-nebushell-ui-architecture.md",
+      "docs/decisions/ADR-0010-per-application-wine-prefixes.md",
+      "docs/architecture/01-system-architecture.md",
+      "docs/runtime/00-runtime-overview.md",
+      "docs/roadmap/ADR-0009-nebushell-ui-architecture.md",
+      "docs/decisions/ADR-0010-per-application-wine-prefixes.md",
+      "docs/roadmap/00-engineering-roadmap.md",
+      "docs/decisions/ADR-0001-linux-kernel.md",
+      "docs/decisions/ADR-0002-fedora-base.md",
+      "docs/decisions/ADR-0003-wayland.md",
+      "docs/decisions/ADR-0004-rust.md",
+      "docs/decisions/ADR-0005-nebu-compositor.md",
+      "docs/decisions/ADR-0006-nebu-shell.md",
+      "docs/decisions/ADR-0007-wine.md",
+      "docs/decisions/ADR-0008-proton.md",
+      "docs/decisions/ADR-0009-no-vm.md",
+      "docs/decisions/ADR-0009-nebushell-ui-architecture.md",
+      "docs/decisions/ADR-0010-per-application-wine-prefixes.md",
+      "docs/decisions/ADR-0011-sqlite.md",
+      "docs/decisions/ADR-0012-btrfs.md",
+      "docs/decisions/ADR-0013-atomic-updates.md",
+      "docs/desktop/02-shell.md",
+      "docs/desktop/01-compositor.md",
+      "docs/runtime/00-runtime-overview.md",
+      "docs/performance/01-memory.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/INDEX.md",
+      "docs/README.md"
+    ]
+  },
+  {
+    "path": "docs/roadmap/01-p0-foundation.md",
+    "name": "01-p0-foundation.md",
+    "domain": "roadmap",
+    "title": "Phase P0: Foundation Specification \u2014 NebuOS",
+    "lines": 56,
+    "words": 376,
+    "status": "APPROVED",
+    "outbound_links": [],
+    "inbound_links": [
+      "docs/INDEX.md"
+    ]
+  },
+  {
+    "path": "docs/roadmap/02-p1-compositor.md",
+    "name": "02-p1-compositor.md",
+    "domain": "roadmap",
+    "title": "Phase P1: NebuCompositor Specification \u2014 NebuOS",
+    "lines": 52,
+    "words": 348,
+    "status": "APPROVED",
+    "outbound_links": [],
+    "inbound_links": [
+      "docs/INDEX.md"
+    ]
+  },
+  {
+    "path": "docs/roadmap/03-p2-shell.md",
+    "name": "03-p2-shell.md",
+    "domain": "roadmap",
+    "title": "Phase P2: NebuShell Specification \u2014 NebuOS",
+    "lines": 49,
+    "words": 358,
+    "status": "APPROVED",
+    "outbound_links": [],
+    "inbound_links": [
+      "docs/INDEX.md"
+    ]
+  },
+  {
+    "path": "docs/roadmap/04-p3-runtime.md",
+    "name": "04-p3-runtime.md",
+    "domain": "roadmap",
+    "title": "Phase P3: NebuRuntime Specification \u2014 NebuOS",
+    "lines": 48,
+    "words": 344,
+    "status": "APPROVED",
+    "outbound_links": [],
+    "inbound_links": [
+      "docs/INDEX.md"
+    ]
+  },
+  {
+    "path": "docs/roadmap/05-p4-compatibility.md",
+    "name": "05-p4-compatibility.md",
+    "domain": "roadmap",
+    "title": "Phase P4: Compatibility Subsystem Specification \u2014 NebuOS",
+    "lines": 44,
+    "words": 321,
+    "status": "APPROVED",
+    "outbound_links": [],
+    "inbound_links": [
+      "docs/INDEX.md"
+    ]
+  },
+  {
+    "path": "docs/roadmap/06-p5-graphics.md",
+    "name": "06-p5-graphics.md",
+    "domain": "roadmap",
+    "title": "Phase P5: Graphics Subsystem Specification \u2014 NebuOS",
+    "lines": 45,
+    "words": 324,
+    "status": "APPROVED",
+    "outbound_links": [],
+    "inbound_links": [
+      "docs/INDEX.md"
+    ]
+  },
+  {
+    "path": "docs/roadmap/07-p6-applications.md",
+    "name": "07-p6-applications.md",
+    "domain": "roadmap",
+    "title": "Phase P6: Applications Subsystem Specification \u2014 NebuOS",
+    "lines": 44,
+    "words": 319,
+    "status": "APPROVED",
+    "outbound_links": [],
+    "inbound_links": [
+      "docs/INDEX.md"
+    ]
+  },
+  {
+    "path": "docs/roadmap/08-p7-testing.md",
+    "name": "08-p7-testing.md",
+    "domain": "roadmap",
+    "title": "Phase P7: Testing Subsystem Specification \u2014 NebuOS",
+    "lines": 47,
+    "words": 343,
+    "status": "APPROVED",
+    "outbound_links": [],
+    "inbound_links": [
+      "docs/INDEX.md"
+    ]
+  },
+  {
+    "path": "docs/roadmap/09-p8-production-validation.md",
+    "name": "09-p8-production-validation.md",
+    "domain": "roadmap",
+    "title": "Phase P8: Production Validation Specification \u2014 NebuOS",
+    "lines": 45,
+    "words": 333,
+    "status": "APPROVED",
+    "outbound_links": [],
+    "inbound_links": [
+      "docs/INDEX.md"
+    ]
+  },
+  {
+    "path": "docs/roadmap/10-future-phases.md",
+    "name": "10-future-phases.md",
+    "domain": "roadmap",
+    "title": "Future Phases Specification \u2014 NebuOS",
+    "lines": 40,
+    "words": 287,
+    "status": "PROPOSED",
+    "outbound_links": [],
+    "inbound_links": [
+      "docs/INDEX.md"
+    ]
+  },
+  {
+    "path": "docs/runtime/00-runtime-specification.md",
+    "name": "00-runtime-specification.md",
+    "domain": "runtime",
+    "title": "Runtime Master Specification \u2014 NebuOS",
+    "lines": 453,
+    "words": 2632,
+    "status": "UNSPECIFIED",
+    "outbound_links": [
+      "docs/runtime/01-application-lifecycle.md",
+      "docs/runtime/02-process-model.md",
+      "docs/runtime/03-windows-runtime.md",
+      "docs/runtime/04-prefix-management.md",
+      "docs/runtime/05-wine-integration.md",
+      "docs/runtime/07-runtime-security.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/INDEX.md",
+      "docs/README.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/runtime/01-application-lifecycle.md",
+      "docs/runtime/02-process-model.md",
+      "docs/runtime/03-windows-runtime.md",
+      "docs/runtime/04-prefix-management.md",
+      "docs/runtime/05-wine-integration.md",
+      "docs/runtime/06-proton-integration.md",
+      "docs/runtime/07-runtime-security.md"
+    ]
+  },
+  {
+    "path": "docs/runtime/01-application-lifecycle.md",
+    "name": "01-application-lifecycle.md",
+    "domain": "runtime",
+    "title": "Application Lifecycle Specification \u2014 NebuOS",
+    "lines": 437,
+    "words": 3575,
+    "status": "UNSPECIFIED",
+    "outbound_links": [
+      "docs/runtime/00-runtime-specification.md",
+      "docs/runtime/02-process-model.md",
+      "docs/runtime/03-windows-runtime.md",
+      "docs/runtime/04-prefix-management.md",
+      "docs/runtime/05-wine-integration.md",
+      "docs/runtime/07-runtime-security.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/INDEX.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/performance/04-launch.md",
+      "docs/runtime/00-runtime-specification.md",
+      "docs/runtime/02-process-model.md",
+      "docs/runtime/03-windows-runtime.md",
+      "docs/runtime/04-prefix-management.md",
+      "docs/runtime/05-wine-integration.md",
+      "docs/runtime/07-runtime-security.md"
+    ]
+  },
+  {
+    "path": "docs/runtime/02-process-model.md",
+    "name": "02-process-model.md",
+    "domain": "runtime",
+    "title": "Process Supervision and Cgroups Model \u2014 NebuOS",
+    "lines": 348,
+    "words": 2304,
+    "status": "UNSPECIFIED",
+    "outbound_links": [
+      "docs/runtime/00-runtime-specification.md",
+      "docs/runtime/01-application-lifecycle.md",
+      "docs/runtime/03-windows-runtime.md",
+      "docs/runtime/04-prefix-management.md",
+      "docs/runtime/05-wine-integration.md",
+      "docs/runtime/07-runtime-security.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/runtime/00-runtime-specification.md",
+      "docs/runtime/01-application-lifecycle.md",
+      "docs/runtime/03-windows-runtime.md",
+      "docs/runtime/04-prefix-management.md",
+      "docs/runtime/05-wine-integration.md",
+      "docs/runtime/07-runtime-security.md"
+    ]
+  },
+  {
+    "path": "docs/runtime/03-windows-runtime.md",
+    "name": "03-windows-runtime.md",
+    "domain": "runtime",
+    "title": "Windows Runtime Execution Specification \u2014 NebuOS",
+    "lines": 383,
+    "words": 2313,
+    "status": "UNSPECIFIED",
+    "outbound_links": [
+      "docs/runtime/00-runtime-specification.md",
+      "docs/runtime/01-application-lifecycle.md",
+      "docs/runtime/02-process-model.md",
+      "docs/runtime/04-prefix-management.md",
+      "docs/runtime/05-wine-integration.md",
+      "docs/runtime/07-runtime-security.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/runtime/00-runtime-specification.md",
+      "docs/runtime/01-application-lifecycle.md",
+      "docs/runtime/02-process-model.md",
+      "docs/runtime/04-prefix-management.md",
+      "docs/runtime/05-wine-integration.md",
+      "docs/runtime/07-runtime-security.md"
+    ]
+  },
+  {
+    "path": "docs/runtime/04-prefix-management.md",
+    "name": "04-prefix-management.md",
+    "domain": "runtime",
+    "title": "Prefix Management and Reflink Snapshot Specification \u2014 NebuOS",
+    "lines": 395,
+    "words": 2589,
+    "status": "UNSPECIFIED",
+    "outbound_links": [
+      "docs/runtime/00-runtime-specification.md",
+      "docs/runtime/01-application-lifecycle.md",
+      "docs/runtime/02-process-model.md",
+      "docs/runtime/03-windows-runtime.md",
+      "docs/runtime/05-wine-integration.md",
+      "docs/runtime/07-runtime-security.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/INDEX.md",
+      "docs/runtime/00-runtime-specification.md",
+      "docs/runtime/01-application-lifecycle.md",
+      "docs/runtime/02-process-model.md",
+      "docs/runtime/03-windows-runtime.md",
+      "docs/runtime/05-wine-integration.md",
+      "docs/runtime/06-proton-integration.md",
+      "docs/runtime/07-runtime-security.md"
+    ]
+  },
+  {
+    "path": "docs/runtime/05-wine-integration.md",
+    "name": "05-wine-integration.md",
+    "domain": "runtime",
+    "title": "Wine and Proton Integration Specification \u2014 NebuOS",
+    "lines": 385,
+    "words": 2434,
+    "status": "UNSPECIFIED",
+    "outbound_links": [
+      "docs/runtime/00-runtime-specification.md",
+      "docs/runtime/01-application-lifecycle.md",
+      "docs/runtime/02-process-model.md",
+      "docs/runtime/03-windows-runtime.md",
+      "docs/runtime/04-prefix-management.md",
+      "docs/runtime/07-runtime-security.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/INDEX.md",
+      "docs/runtime/00-runtime-specification.md",
+      "docs/runtime/01-application-lifecycle.md",
+      "docs/runtime/02-process-model.md",
+      "docs/runtime/03-windows-runtime.md",
+      "docs/runtime/04-prefix-management.md",
+      "docs/runtime/06-proton-integration.md",
+      "docs/runtime/07-runtime-security.md"
+    ]
+  },
+  {
+    "path": "docs/runtime/06-proton-integration.md",
+    "name": "06-proton-integration.md",
+    "domain": "runtime",
+    "title": "Proton Integration Specification \u2014 NebuOS",
+    "lines": 173,
+    "words": 1151,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/runtime/00-runtime-specification.md",
+      "docs/runtime/04-prefix-management.md",
+      "docs/runtime/05-wine-integration.md",
+      "docs/runtime/07-runtime-security.md",
+      "docs/graphics/04-dxvk-vkd3d.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md"
+    ]
+  },
+  {
+    "path": "docs/runtime/07-runtime-security.md",
+    "name": "07-runtime-security.md",
+    "domain": "runtime",
+    "title": "Runtime Sandboxing and Security Specification \u2014 NebuOS",
+    "lines": 372,
+    "words": 2325,
+    "status": "UNSPECIFIED",
+    "outbound_links": [
+      "docs/runtime/00-runtime-specification.md",
+      "docs/runtime/01-application-lifecycle.md",
+      "docs/runtime/02-process-model.md",
+      "docs/runtime/03-windows-runtime.md",
+      "docs/runtime/04-prefix-management.md",
+      "docs/runtime/05-wine-integration.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/INDEX.md",
+      "docs/runtime/00-runtime-specification.md",
+      "docs/runtime/01-application-lifecycle.md",
+      "docs/runtime/02-process-model.md",
+      "docs/runtime/03-windows-runtime.md",
+      "docs/runtime/04-prefix-management.md",
+      "docs/runtime/05-wine-integration.md",
+      "docs/runtime/06-proton-integration.md"
+    ]
+  },
+  {
+    "path": "docs/specification/00-system-specification.md",
+    "name": "00-system-specification.md",
+    "domain": "specification",
+    "title": "System Specification \u2014 NebuOS",
+    "lines": 634,
+    "words": 2731,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/specification/03-filesystem-specification.md",
+      "docs/specification/04-security-specification.md",
+      "docs/specification/05-hardware-specification.md",
+      "docs/specification/06-resource-management.md",
+      "docs/specification/01-boot-specification.md",
+      "docs/specification/02-process-ipc-specification.md",
+      "docs/specification/03-filesystem-specification.md",
+      "docs/specification/04-security-specification.md",
+      "docs/specification/05-hardware-specification.md",
+      "docs/specification/06-resource-management.md",
+      "docs/architecture/01-system-architecture.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/INDEX.md",
+      "docs/README.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/specification/01-boot-specification.md",
+      "docs/specification/02-process-ipc-specification.md",
+      "docs/specification/02-process-ipc-specification.md",
+      "docs/specification/03-filesystem-specification.md",
+      "docs/specification/04-security-specification.md",
+      "docs/specification/05-hardware-specification.md",
+      "docs/specification/06-resource-management.md"
+    ]
+  },
+  {
+    "path": "docs/specification/01-boot-specification.md",
+    "name": "01-boot-specification.md",
+    "domain": "specification",
+    "title": "Boot Specification \u2014 NebuOS",
+    "lines": 467,
+    "words": 2400,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/specification/06-resource-management.md",
+      "docs/specification/04-security-specification.md",
+      "docs/specification/00-system-specification.md",
+      "docs/specification/02-process-ipc-specification.md",
+      "docs/specification/03-filesystem-specification.md",
+      "docs/specification/04-security-specification.md",
+      "docs/specification/05-hardware-specification.md",
+      "docs/specification/06-resource-management.md",
+      "docs/architecture/02-boot-and-init.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/INDEX.md",
+      "docs/TRACEABILITY.md",
+      "docs/specification/00-system-specification.md",
+      "docs/specification/02-process-ipc-specification.md",
+      "docs/specification/03-filesystem-specification.md",
+      "docs/specification/04-security-specification.md",
+      "docs/specification/05-hardware-specification.md",
+      "docs/specification/06-resource-management.md"
+    ]
+  },
+  {
+    "path": "docs/specification/02-process-ipc-specification.md",
+    "name": "02-process-ipc-specification.md",
+    "domain": "specification",
+    "title": "Process and IPC Specification \u2014 NebuOS",
+    "lines": 448,
+    "words": 2458,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/specification/00-system-specification.md",
+      "docs/specification/03-filesystem-specification.md",
+      "docs/specification/00-system-specification.md",
+      "docs/specification/01-boot-specification.md",
+      "docs/specification/03-filesystem-specification.md",
+      "docs/specification/04-security-specification.md",
+      "docs/specification/05-hardware-specification.md",
+      "docs/specification/06-resource-management.md",
+      "docs/architecture/03-process-and-ipc.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/specification/00-system-specification.md",
+      "docs/specification/01-boot-specification.md",
+      "docs/specification/03-filesystem-specification.md",
+      "docs/specification/04-security-specification.md",
+      "docs/specification/05-hardware-specification.md",
+      "docs/specification/06-resource-management.md"
+    ]
+  },
+  {
+    "path": "docs/specification/03-filesystem-specification.md",
+    "name": "03-filesystem-specification.md",
+    "domain": "specification",
+    "title": "Filesystem Specification \u2014 NebuOS",
+    "lines": 455,
+    "words": 2690,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/specification/06-resource-management.md",
+      "docs/specification/00-system-specification.md",
+      "docs/specification/01-boot-specification.md",
+      "docs/specification/02-process-ipc-specification.md",
+      "docs/specification/04-security-specification.md",
+      "docs/specification/05-hardware-specification.md",
+      "docs/specification/06-resource-management.md",
+      "docs/architecture/04-filesystem.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/specification/00-system-specification.md",
+      "docs/specification/00-system-specification.md",
+      "docs/specification/01-boot-specification.md",
+      "docs/specification/02-process-ipc-specification.md",
+      "docs/specification/02-process-ipc-specification.md",
+      "docs/specification/04-security-specification.md",
+      "docs/specification/05-hardware-specification.md",
+      "docs/specification/06-resource-management.md"
+    ]
+  },
+  {
+    "path": "docs/specification/04-security-specification.md",
+    "name": "04-security-specification.md",
+    "domain": "specification",
+    "title": "Security Specification \u2014 NebuOS",
+    "lines": 398,
+    "words": 2664,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/specification/00-system-specification.md",
+      "docs/specification/01-boot-specification.md",
+      "docs/specification/02-process-ipc-specification.md",
+      "docs/specification/03-filesystem-specification.md",
+      "docs/specification/05-hardware-specification.md",
+      "docs/specification/06-resource-management.md",
+      "docs/architecture/05-security.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/specification/00-system-specification.md",
+      "docs/specification/00-system-specification.md",
+      "docs/specification/01-boot-specification.md",
+      "docs/specification/01-boot-specification.md",
+      "docs/specification/02-process-ipc-specification.md",
+      "docs/specification/03-filesystem-specification.md",
+      "docs/specification/05-hardware-specification.md",
+      "docs/specification/06-resource-management.md"
+    ]
+  },
+  {
+    "path": "docs/specification/05-hardware-specification.md",
+    "name": "05-hardware-specification.md",
+    "domain": "specification",
+    "title": "Hardware Specification \u2014 NebuOS",
+    "lines": 448,
+    "words": 2399,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/specification/00-system-specification.md",
+      "docs/specification/01-boot-specification.md",
+      "docs/specification/02-process-ipc-specification.md",
+      "docs/specification/03-filesystem-specification.md",
+      "docs/specification/04-security-specification.md",
+      "docs/specification/06-resource-management.md",
+      "docs/architecture/06-hardware.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/specification/00-system-specification.md",
+      "docs/specification/00-system-specification.md",
+      "docs/specification/01-boot-specification.md",
+      "docs/specification/02-process-ipc-specification.md",
+      "docs/specification/03-filesystem-specification.md",
+      "docs/specification/04-security-specification.md",
+      "docs/specification/06-resource-management.md"
+    ]
+  },
+  {
+    "path": "docs/specification/06-resource-management.md",
+    "name": "06-resource-management.md",
+    "domain": "specification",
+    "title": "Resource Management Specification \u2014 NebuOS",
+    "lines": 420,
+    "words": 2516,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/specification/00-system-specification.md",
+      "docs/specification/01-boot-specification.md",
+      "docs/specification/02-process-ipc-specification.md",
+      "docs/specification/03-filesystem-specification.md",
+      "docs/specification/04-security-specification.md",
+      "docs/specification/05-hardware-specification.md",
+      "docs/performance/01-memory.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/specification/00-system-specification.md",
+      "docs/specification/00-system-specification.md",
+      "docs/specification/01-boot-specification.md",
+      "docs/specification/01-boot-specification.md",
+      "docs/specification/02-process-ipc-specification.md",
+      "docs/specification/03-filesystem-specification.md",
+      "docs/specification/03-filesystem-specification.md",
+      "docs/specification/04-security-specification.md",
+      "docs/specification/05-hardware-specification.md"
+    ]
+  },
+  {
+    "path": "docs/testing/00-test-strategy.md",
+    "name": "00-test-strategy.md",
+    "domain": "testing",
+    "title": "Master Testing Specification \u2014 NebuOS",
+    "lines": 327,
+    "words": 2694,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/testing/01-unit-testing.md",
+      "docs/testing/02-integration-testing.md",
+      "docs/testing/03-compatibility-testing.md",
+      "docs/testing/04-graphics-testing.md",
+      "docs/testing/05-performance-testing.md",
+      "docs/testing/06-hardware-testing.md",
+      "docs/testing/07-release-certification.md",
+      "docs/development/03-ci-cd.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/INDEX.md",
+      "docs/README.md",
+      "docs/testing/03-system-testing.md",
+      "docs/updates/03-regression-gates.md"
+    ]
+  },
+  {
+    "path": "docs/testing/01-unit-testing.md",
+    "name": "01-unit-testing.md",
+    "domain": "testing",
+    "title": "Unit Testing Specification \u2014 NebuOS",
+    "lines": 314,
+    "words": 2012,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/testing/02-integration-testing.md",
+      "docs/testing/03-compatibility-testing.md",
+      "docs/testing/00-testing-specification.md",
+      "docs/testing/02-integration-testing.md",
+      "docs/testing/03-compatibility-testing.md",
+      "docs/development/05-coding-guidelines.md",
+      "docs/development/01-repository-structure.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/development/05-rust-guidelines.md",
+      "docs/testing/00-test-strategy.md",
+      "docs/testing/02-integration-testing.md",
+      "docs/testing/02-integration-testing.md",
+      "docs/testing/03-system-testing.md"
+    ]
+  },
+  {
+    "path": "docs/testing/02-integration-testing.md",
+    "name": "02-integration-testing.md",
+    "domain": "testing",
+    "title": "Integration Testing Specification \u2014 NebuOS",
+    "lines": 310,
+    "words": 1948,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/testing/01-unit-testing.md",
+      "docs/testing/03-compatibility-testing.md",
+      "docs/testing/06-hardware-testing.md",
+      "docs/testing/05-performance-testing.md",
+      "docs/testing/00-testing-specification.md",
+      "docs/testing/01-unit-testing.md",
+      "docs/testing/03-compatibility-testing.md",
+      "docs/testing/04-graphics-testing.md",
+      "docs/architecture/03-process-and-ipc.md",
+      "docs/desktop/01-compositor.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/INDEX.md",
+      "docs/TRACEABILITY.md",
+      "docs/testing/00-test-strategy.md",
+      "docs/testing/01-unit-testing.md",
+      "docs/testing/01-unit-testing.md",
+      "docs/testing/03-system-testing.md"
+    ]
+  },
+  {
+    "path": "docs/testing/03-system-testing.md",
+    "name": "03-system-testing.md",
+    "domain": "testing",
+    "title": "System Testing Specification \u2014 NebuOS",
+    "lines": 160,
+    "words": 883,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/testing/00-test-strategy.md",
+      "docs/testing/01-unit-testing.md",
+      "docs/testing/02-integration-testing.md",
+      "docs/testing/04-compatibility-testing.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/INDEX.md"
+    ]
+  },
+  {
+    "path": "docs/testing/04-compatibility-testing.md",
+    "name": "04-compatibility-testing.md",
+    "domain": "testing",
+    "title": "Compatibility Testing Specification \u2014 NebuOS",
+    "lines": 312,
+    "words": 2008,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/testing/00-testing-specification.md",
+      "docs/testing/04-graphics-testing.md",
+      "docs/testing/05-performance-testing.md",
+      "docs/compatibility/00-compatibility-overview.md",
+      "docs/runtime/03-prefix-management.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/INDEX.md",
+      "docs/testing/03-system-testing.md"
+    ]
+  },
+  {
+    "path": "docs/testing/05-graphics-testing.md",
+    "name": "05-graphics-testing.md",
+    "domain": "testing",
+    "title": "Graphics Testing Specification \u2014 NebuOS",
+    "lines": 300,
+    "words": 1899,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/testing/00-testing-specification.md",
+      "docs/testing/03-compatibility-testing.md",
+      "docs/testing/05-performance-testing.md",
+      "docs/testing/06-hardware-testing.md",
+      "docs/graphics/00-graphics-overview.md",
+      "docs/graphics/03-dxvk-vkd3d.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md"
+    ]
+  },
+  {
+    "path": "docs/testing/06-performance-testing.md",
+    "name": "06-performance-testing.md",
+    "domain": "testing",
+    "title": "Performance Testing Specification \u2014 NebuOS",
+    "lines": 302,
+    "words": 1965,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/testing/00-testing-specification.md",
+      "docs/testing/04-graphics-testing.md",
+      "docs/testing/06-hardware-testing.md",
+      "docs/performance/00-performance-specification.md",
+      "docs/performance/01-memory-budget.md",
+      "docs/performance/04-launch-performance.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md"
+    ]
+  },
+  {
+    "path": "docs/testing/07-hardware-testing.md",
+    "name": "07-hardware-testing.md",
+    "domain": "testing",
+    "title": "Hardware Testing Specification \u2014 NebuOS",
+    "lines": 305,
+    "words": 2052,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/testing/00-testing-specification.md",
+      "docs/testing/04-graphics-testing.md",
+      "docs/testing/05-performance-testing.md",
+      "docs/testing/07-release-certification.md",
+      "docs/architecture/01-system-architecture.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md"
+    ]
+  },
+  {
+    "path": "docs/testing/08-release-certification.md",
+    "name": "08-release-certification.md",
+    "domain": "testing",
+    "title": "Release Certification Specification \u2014 NebuOS",
+    "lines": 300,
+    "words": 2184,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/testing/00-testing-specification.md",
+      "docs/testing/03-compatibility-testing.md",
+      "docs/testing/05-performance-testing.md",
+      "docs/testing/06-hardware-testing.md",
+      "docs/development/06-release-engineering.md",
+      "docs/updates/00-update-strategy.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md"
+    ]
+  },
+  {
+    "path": "docs/updates/00-update-specification.md",
+    "name": "00-update-specification.md",
+    "domain": "updates",
+    "title": "Update Subsystem Specification \u2014 NebuOS",
+    "lines": 162,
+    "words": 953,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/updates/01-image-build.md",
+      "docs/updates/02-release-channels.md",
+      "docs/updates/03-regression-gates.md",
+      "docs/updates/04-rollback-recovery.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/README.md",
+      "docs/updates/01-image-build.md",
+      "docs/updates/02-release-channels.md",
+      "docs/updates/03-regression-gates.md",
+      "docs/updates/04-rollback-recovery.md"
+    ]
+  },
+  {
+    "path": "docs/updates/01-image-build.md",
+    "name": "01-image-build.md",
+    "domain": "updates",
+    "title": "Image Build Specification \u2014 NebuOS",
+    "lines": 170,
+    "words": 886,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/updates/00-update-specification.md",
+      "docs/updates/02-release-channels.md",
+      "docs/updates/03-regression-gates.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/TRACEABILITY.md",
+      "docs/graphics/02-mesa-integration.md",
+      "docs/updates/00-update-specification.md",
+      "docs/updates/02-release-channels.md",
+      "docs/updates/03-regression-gates.md",
+      "docs/updates/04-rollback-recovery.md"
+    ]
+  },
+  {
+    "path": "docs/updates/02-release-channels.md",
+    "name": "02-release-channels.md",
+    "domain": "updates",
+    "title": "Release Channels Specification \u2014 NebuOS",
+    "lines": 135,
+    "words": 746,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/updates/00-update-specification.md",
+      "docs/updates/01-image-build.md",
+      "docs/updates/03-regression-gates.md",
+      "docs/updates/04-rollback-recovery.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/updates/00-update-specification.md",
+      "docs/updates/01-image-build.md",
+      "docs/updates/03-regression-gates.md",
+      "docs/updates/04-rollback-recovery.md"
+    ]
+  },
+  {
+    "path": "docs/updates/03-regression-gates.md",
+    "name": "03-regression-gates.md",
+    "domain": "updates",
+    "title": "Regression Gates Specification \u2014 NebuOS",
+    "lines": 155,
+    "words": 889,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/updates/00-update-specification.md",
+      "docs/updates/01-image-build.md",
+      "docs/updates/02-release-channels.md",
+      "docs/updates/04-rollback-recovery.md",
+      "docs/testing/00-test-strategy.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/INDEX.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/TRACEABILITY.md",
+      "docs/updates/00-update-specification.md",
+      "docs/updates/01-image-build.md",
+      "docs/updates/02-release-channels.md",
+      "docs/updates/04-rollback-recovery.md"
+    ]
+  },
+  {
+    "path": "docs/updates/04-rollback-recovery.md",
+    "name": "04-rollback-recovery.md",
+    "domain": "updates",
+    "title": "Rollback and Recovery Specification \u2014 NebuOS",
+    "lines": 159,
+    "words": 927,
+    "status": "DRAFT",
+    "outbound_links": [
+      "docs/updates/00-update-specification.md",
+      "docs/updates/01-image-build.md",
+      "docs/updates/02-release-channels.md",
+      "docs/updates/03-regression-gates.md"
+    ],
+    "inbound_links": [
+      "docs/INDEX.md",
+      "docs/INDEX.md",
+      "docs/updates/00-update-specification.md",
+      "docs/updates/02-release-channels.md",
+      "docs/updates/03-regression-gates.md"
+    ]
+  }
+]

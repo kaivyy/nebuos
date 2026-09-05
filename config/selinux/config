@@ -1,0 +1,4 @@
+# NebuOS SELinux Configuration
+# In Milestone P0, SELinux is set to permissive to log audit events without blocking headless boot
+SELINUX=permissive
+SELINUXTYPE=targeted

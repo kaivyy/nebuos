@@ -1,0 +1,62 @@
+# ==============================================================================
+# NebuOS Milestone P0 Containerfile
+# Base Image: Fedora Linux 44 Atomic / bootc
+# Target: 100% Headless Foundation Operating System
+# ==============================================================================
+FROM quay.io/fedora/fedora-bootc:44@sha256:41ad34d292a531ebb9f82e00cd99c65ffa07111ffe865be781aa47f891ef2825
+
+LABEL org.opencontainers.image.title="NebuOS Foundation" \
+      org.opencontainers.image.version="0.1.0-p0" \
+      org.opencontainers.image.vendor="NebuOS Project" \
+      org.nebu.os.milestone="P0" \
+      org.nebu.os.headless="true"
+
+# Install minimal headless packages (strictly no GUI/audio/Plymouth)
+RUN dnf -y install --setopt=install_weak_deps=False \
+    kernel-core \
+    kernel-modules \
+    btrfs-progs \
+    systemd \
+    NetworkManager \
+    util-linux \
+    shadow-utils \
+    iproute \
+    dracut \
+    grub2-efi-x64 \
+    grub2-tools \
+    efibootmgr \
+    && dnf clean all
+
+# Copy NebuOS baseline system configurations
+COPY config/dracut/50-nebu.conf /etc/dracut.conf.d/50-nebu.conf
+COPY config/sysctl/99-nebuos-p0.conf /etc/sysctl.d/99-nebuos-p0.conf
+COPY config/systemd/nebu-base.target /usr/lib/systemd/system/nebu-base.target
+COPY config/systemd/nebu-boot-check.service /usr/lib/systemd/system/nebu-boot-check.service
+COPY config/scripts/nebu-boot-check /usr/libexec/nebu/nebu-boot-check
+COPY config/systemd/nebu-var-setup.service /usr/lib/systemd/system/nebu-var-setup.service
+COPY config/selinux/config /etc/selinux/config
+
+# Configure permissions, systemd targets, and root credentials for verification
+RUN chmod 755 /usr/libexec/nebu/nebu-boot-check && \
+    mkdir -p /etc/systemd/system/multi-user.target.wants /etc/systemd/system/sysinit.target.wants && \
+    ln -sf /usr/lib/systemd/system/nebu-boot-check.service /etc/systemd/system/multi-user.target.wants/nebu-boot-check.service && \
+    ln -sf /usr/lib/systemd/system/nebu-var-setup.service /etc/systemd/system/sysinit.target.wants/nebu-var-setup.service && \
+    systemctl disable chronyd.service sshd.service bootloader-update.service 2>/dev/null || true && \
+    systemctl set-default multi-user.target && \
+    echo "root:nebuos" | chpasswd
+
+# Configure agetty autologin on ttyS0 for automated serial test harness
+RUN mkdir -p /etc/systemd/system/serial-getty@ttyS0.service.d && \
+    printf "[Service]\nExecStart=\nExecStart=-/sbin/agetty --autologin root --keep-baud 115200,38400,9600 %%I \$TERM\n" \
+    > /etc/systemd/system/serial-getty@ttyS0.service.d/autologin.conf
+
+# Rebuild dracut initramfs without Plymouth and with Btrfs + storage drivers
+RUN KERNEL_VER=$(rpm -q --qf "%{VERSION}-%{RELEASE}.%{ARCH}\n" kernel-core | head -n 1) && \
+    echo "Regenerating Dracut initramfs for kernel: ${KERNEL_VER}" && \
+    DRACUT_NO_XATTR=1 dracut -f --kver "${KERNEL_VER}" "/usr/lib/modules/${KERNEL_VER}/initramfs.img" && \
+    mkdir -p /boot && \
+    cp "/usr/lib/modules/${KERNEL_VER}/vmlinuz" /boot/vmlinuz-"${KERNEL_VER}" && \
+    cp "/usr/lib/modules/${KERNEL_VER}/initramfs.img" /boot/initramfs-"${KERNEL_VER}".img
+
+# Clean temporary files to minimize layer footprint
+RUN rm -rf /var/cache/* /var/log/* /tmp/* /var/tmp/*

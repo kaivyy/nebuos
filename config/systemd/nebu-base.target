@@ -1,0 +1,7 @@
+[Unit]
+Description=NebuOS Base Operating System Target (Milestone P0)
+Documentation=https://github.com/nebuos/nebuos
+After=basic.target sysinit.target
+Wants=basic.target
+Before=multi-user.target
+Conflicts=emergency.target rescue.target

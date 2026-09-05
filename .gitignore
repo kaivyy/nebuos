@@ -1,0 +1,12 @@
+# Build and disk artifacts
+target/*.raw
+target/*.img
+target/vmlinuz*
+target/tmp-*
+target/*.pid
+*.qcow2
+*.iso
+
+# Logs and runtime sockets
+*.sock
+/tmp/

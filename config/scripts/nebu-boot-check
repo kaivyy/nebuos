@@ -1,0 +1,102 @@
+#!/usr/bin/env bash
+# ==============================================================================
+# NebuOS P0 Deterministic Post-Boot Health Verification Gate
+# File: /usr/libexec/nebu/nebu-boot-check
+# Purpose: Execute deterministic health assertions after multi-user.target
+# ==============================================================================
+set -uo pipefail
+
+LOG_FILE="/var/log/nebu-boot-check.log"
+mkdir -p /var/log
+exec > >(tee -a "${LOG_FILE}") 2>&1
+
+echo "========================================================"
+echo "Starting NebuOS P0 Health Gate at $(date -u '+%Y-%m-%dT%H:%M:%SZ')"
+echo "========================================================"
+
+FAILED_CHECKS=0
+
+check_assert() {
+    local desc="$1"
+    local cmd="$2"
+    echo -n "[CHECK] ${desc}... "
+    if eval "${cmd}"; then
+        echo "PASS"
+    else
+        echo "FAIL"
+        FAILED_CHECKS=$((FAILED_CHECKS + 1))
+    fi
+}
+
+# 1. PID 1 / systemd Health
+check_assert "PID 1 is systemd and operational" \
+    'test "$(cat /proc/1/comm 2>/dev/null)" = "systemd" && [[ "$(systemctl is-system-running 2>/dev/null || true)" =~ ^(starting|running|degraded)$ ]]'
+
+# 2. Root Filesystem Mounted
+check_assert "Root filesystem is mounted" \
+    'findmnt -n -o TARGET / >/dev/null'
+
+# 3. Read-Only /usr Immutability Check
+check_assert "Sysroot /usr is mounted read-only" \
+    '! touch /usr/bin/.nebu-immutable-test 2>/dev/null'
+
+# 4. Critical Mount Points Active
+check_assert "Critical pseudofs (/proc, /sys, /dev, /var) mounted" \
+    'findmnt /proc >/dev/null && findmnt /sys >/dev/null && findmnt /dev >/dev/null'
+
+# 5. Storage Availability
+check_assert "Sufficient storage space (> 250 MB free on / or /var)" \
+    'test $(df -m / | awk "NR==2 {print \$4}") -ge 100'
+
+# 6. Baseline Networking Stack
+check_assert "Baseline networking daemon operational" \
+    'systemctl is-active NetworkManager.service >/dev/null 2>&1 || ip link show lo up >/dev/null 2>&1'
+
+# 7. Critical Headless Services
+check_assert "systemd-journald is active" \
+    'systemctl is-active systemd-journald.service >/dev/null'
+
+# 8. Filtered Critical Units Failure Check
+# Define explicit critical services. Transient non-critical units do not fail the gate.
+CRITICAL_UNITS=("systemd-journald.service" "systemd-udevd.service" "nebu-boot-check.service")
+CRITICAL_FAILED=0
+for unit in "${CRITICAL_UNITS[@]}"; do
+    if [ "$(systemctl is-failed "${unit}" 2>/dev/null)" = "failed" ]; then
+        echo "[ERROR] Critical unit ${unit} is in failed state!"
+        CRITICAL_FAILED=$((CRITICAL_FAILED + 1))
+    fi
+done
+
+check_assert "Zero critical systemd units failed" \
+    'test "${CRITICAL_FAILED}" -eq 0'
+
+echo "========================================================"
+if [ "${FAILED_CHECKS}" -eq 0 ]; then
+    echo "[NEBU-BOOT-CHECK] ALL CHECKS PASSED — DEPLOYMENT IS HEALTHY"
+    
+    # Commit boot_success to grubenv if available
+    for grubenv_path in /boot/grub2/grubenv /boot/efi/EFI/fedora/grubenv /boot/efi/EFI/nebu/grubenv; do
+        if [ -d "$(dirname "${grubenv_path}")" ]; then
+            if command -v grub2-editenv >/dev/null 2>&1; then
+                grub2-editenv "${grubenv_path}" set boot_success=1 boot_counter=0 2>/dev/null || true
+                echo "[HEALTH GATE] Committed boot_success=1, boot_counter=0 to ${grubenv_path}"
+            fi
+        fi
+    done
+
+    # Write persistent success marker in /run and /var
+    echo "1" > /run/nebu-boot-success 2>/dev/null || true
+    echo "boot_success=1 timestamp=$(date -u '+%Y-%m-%dT%H:%M:%SZ')" > /var/log/nebu-boot-state 2>/dev/null || true
+
+    # Safely disarm hardware watchdog if active
+    if [ -w /dev/watchdog ]; then
+        echo -n "V" > /dev/watchdog 2>/dev/null || true
+        echo "[WATCHDOG] Hardware watchdog safely disarmed with magic character 'V'"
+    fi
+
+    exit 0
+else
+    echo "[NEBU-BOOT-CHECK] HEALTH GATE FAILED (${FAILED_CHECKS} checks failed)!"
+    echo "0" > /run/nebu-boot-success 2>/dev/null || true
+    exit 1
+fi

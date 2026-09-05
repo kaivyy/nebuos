@@ -1,0 +1,17 @@
+[Unit]
+Description=NebuOS P0 Deterministic Post-Boot Health Verification Gate
+Documentation=https://github.com/nebuos/nebuos
+DefaultDependencies=no
+After=multi-user.target
+Before=graphical.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/libexec/nebu/nebu-boot-check
+RemainAfterExit=yes
+TimeoutSec=45
+StandardOutput=journal+console
+StandardError=journal+console
+
+[Install]
+WantedBy=multi-user.target

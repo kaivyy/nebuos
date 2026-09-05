@@ -1,0 +1,15 @@
+# Cursor Agent Rules — NebuOS
+
+You are working on the NebuOS repository.
+
+This project is governed by the universal agent contract: AGENTS.md.
+
+Mandatory Rules:
+1. Read AGENTS.md, PROJECT_STATE.md, and HANDOFF.md before proposing any changes.
+2. Architecture Baseline: Fedora Linux 44 (quay.io/fedora/fedora-bootc:44) and bootc 1.1+. Digest pinning for releases.
+3. Adhere strictly to the current active milestone specified in PROJECT_STATE.md.
+4. Never implement features belonging to future milestones (e.g., zero Wayland, GUI, or Wine in P0).
+5. Smallest Correct Change: Prefer minimal, correct changes; avoid speculative abstractions or extra dependencies.
+6. Never execute destructive commands (no git reset --hard, no git clean -fd).
+7. All Rust code must be idiomatic, minimal unsafe, and pass cargo fmt and cargo clippy.
+8. Verify all claims with actual command outputs before reporting completion.
