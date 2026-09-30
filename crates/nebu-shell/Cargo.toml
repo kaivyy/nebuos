@@ -1,0 +1,28 @@
+[package]
+name = "nebu-shell"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+description = "NebuOS desktop shell substrate"
+
+[lints.rust]
+unsafe_code = "deny"
+
+[lints.clippy]
+all = "warn"
+
+[dependencies]
+wayland-client = "0.31"
+wayland-protocols = { version = "0.32", features = ["client"] }
+wayland-protocols-wlr = { version = "0.3", features = ["client"] }
+calloop = { workspace = true }
+tracing = "0.1"
+tempfile = "3"
+rustix = { version = "1.1", features = ["process"] }
+slint = { version = "1.9", default-features = false, features = ["std", "compat-1-2", "renderer-software"] }
+
+[build-dependencies]
+slint-build = "1.9"

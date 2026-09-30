@@ -2,6 +2,7 @@
 resolver = "2"
 members = [
     "crates/nebu-compositor",
+    "crates/nebu-shell",
 ]
 
 [workspace.package]

@@ -1,13 +1,22 @@
 # Build and disk artifacts
-target/*.raw
-target/*.img
-target/vmlinuz*
-target/tmp-*
-target/*.pid
-target/vm102_*.json
+target/
+*.raw
+*.img
+vmlinuz*
+tmp-*
+*.pid
+vm102_*.json
 *.qcow2
 *.iso
 
 # Logs and runtime sockets
 *.sock
 /tmp/
+
+# Secrets & Environment
+.env
+.env.*
+*.env
+*.pem
+*.key
+*.secret

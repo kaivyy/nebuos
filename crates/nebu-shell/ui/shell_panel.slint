@@ -1,0 +1,48 @@
+export component ShellPanelWindow inherits Window {
+    title: "NebuOS Desktop";
+    in-out property <string> brand_title: "NebuOS Desktop";
+    in-out property <string> status_text: "Milestone P2.1 Active";
+    in-out property <string> clock_text: "00:00 UTC";
+
+    width: 640px;
+    height: 32px;
+    background: #0f172a;
+    
+    HorizontalLayout {
+        padding-left: 16px;
+        padding-right: 16px;
+        spacing: 12px;
+        
+        Text {
+            text: root.brand_title;
+            color: #38bdf8;
+            font-size: 13px;
+            font-weight: 700;
+            vertical-alignment: center;
+        }
+        
+        Rectangle {
+            horizontal-stretch: 1;
+        }
+        
+        Text {
+            text: root.status_text;
+            color: #4ade80;
+            font-size: 11px;
+            vertical-alignment: center;
+        }
+
+        Rectangle {
+            width: 1px;
+            height: 16px;
+            background: #334155;
+        }
+
+        Text {
+            text: root.clock_text;
+            color: #e2e8f0;
+            font-size: 11px;
+            vertical-alignment: center;
+        }
+    }
+}

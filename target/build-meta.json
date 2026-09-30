@@ -1,9 +1,0 @@
-{
-  "milestone": "P0",
-  "image_tag": "nebuos:p0-latest",
-  "image_id": "sha256:54b02d09bb1ca65c26b6877114e9dc66903e90c2c20759defe5176c3eecb5831",
-  "image_size_bytes": 2081498307,
-  "created_at": "2026-09-05T00:48:45.380535916+07:00",
-  "build_timestamp": "2026-09-04T17:49:30Z",
-  "status": "VALIDATED"
-}
